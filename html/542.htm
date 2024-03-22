@@ -1,0 +1,109 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+<link rel="stylesheet" type="text/css" href="Labels.css">
+<TITLE>Screen 0</TITLE>
+<script type="text/javascript">
+if (typeof document.onselectstart!="undefined") {
+  document.onselectstart=new Function ("return false");
+}
+else{
+  document.onmousedown=new Function ("return false");
+  document.onmouseup=new Function ("return true");
+}
+</script>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+<link rel="stylesheet" href="style.css" >
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="doeffect()" style="filter:revealTrans(duration=0.0,transition=23)">
+<P id="lblGreetings" style="margin-top:-64px"></p>
+<div style="width: 1028px;
+    height: 685px;
+    padding: 0px;
+    margin-left: -12px;
+    margin-top: 112px;
+    border-radius: 0px;
+    background: rgb(255, 255, 255);
+    color: #1F1F1F;"><p class="" style="font-size: 26pt; font-family: Montserrat; line-height: 1.2;
+     padding: 0px; margin-left: 170px; margin-right: 170px; position: absolute; text-align: center; margin-top: 90px;">Unable to print receipt. Do you want to continue?</p>
+
+			
+		<div>
+			<a class="btnSelect3 " style="font-family:Montserrat;font-size:20px">Press to continue</a>
+				
+		</div>
+		<div>
+			<a class=" btnSelect4 " style="font-family:Montserrat;font-size:20px">Press to cancel</a>
+		</div>
+</div>
+
+</BODY>
+<script type="text/javascript">
+   document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/pin_change_bg.png";
+
+
+				var time = new Date().toLocaleTimeString();
+				
+				var str_opcode = 'T';
+
+				//str_opcode = parent.leftFrame.COM_UCDI_INTERFACE.ucdiString("lang_type");
+				
+			
+				if(time.charAt(time.length-2)=='A'){
+7:21 PM 4/4/2019								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Umaga!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Morning!";
+								}
+				}
+				else{
+				
+					time = time.replace(" ","");
+					
+						if(parseInt(time.charAt(0)) >= 6 && time.charAt(1) == ":" || parseInt(time.charAt(1)) == 0 || parseInt(time.charAt(1)) == 1){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Gabi!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Evening!";
+								}
+								//evening
+						}
+						else if (parseInt(time.charAt(0)) == 1 && time.charAt(1) == 2 && parseInt(time.charAt(3)) >= 0  || parseInt(time.charAt(0)) < 2){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Tanghali!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+								}
+								//Tanghali
+						}
+						else{
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Hapon!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+								}
+								//Hapon
+						}
+							
+						
+						
+				}
+
+	
+				if(str_opcode=="T"){
+					document.getElementById("msg-act").innerHTML="Success! Na-activate na ang iyong </br> Mobile Banking enrollment.";
+				}
+</script>
+
+</HTML>

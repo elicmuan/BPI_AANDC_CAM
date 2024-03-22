@@ -1,0 +1,265 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+
+<TITLE>Screen 622</TITLE>
+<script type="text/javascript">
+if (typeof document.onselectstart!="undefined") {
+  document.onselectstart=new Function ("return false");
+}
+else{
+  document.onmousedown=new Function ("return false");
+  document.onmouseup=new Function ("return true");
+}
+</script>
+
+<style>
+    @font-face {
+      font-family: 'Montserrat';
+      src: url('../../projectAssets/fonts/DaxRegular.ttf'),
+           url('../../projectAssets/fonts/DaxMedium.eot?') format('embedded-opentype');
+      src: url('../../projectAssets/fonts/DaxRegular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Dax-bold';
+      src: url('../../projectAssets/fonts/DaxRegular.ttf'),
+           url('../../projectAssets/fonts/DaxRegular.eot?') format('embedded-opentype');;
+      src: url('../../projectAssets/fonts/DaxRegular.ttf') format('truetype');
+      font-weight: bold;
+    }
+    @font-face {
+      font-family: 'Montserrat';
+      src: url('../../projectAssets/fonts/DaxRegular.ttf'),
+            url('../../projectAssets/fonts/DaxRegular.eot?') format('embedded-opentype');
+      src: url('../../projectAssets/fonts/DaxRegular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Dax-Medium';
+      src: url('../../projectAssets/fonts/Dax-Medium.ttf'),
+           url('../../projectAssets/fonts/Montserrat.eot?') format('embedded-opentype');
+      src: url('../../projectAssets/fonts/Dax-Medium.ttf') format('truetype');
+    } 
+        .lblMainMenuGreetings {
+        font-family: 'Montserrat';
+        position: absolute;
+        margin-top: 40px;
+        color: #c0010c;
+        font-size: 30px !important;
+        
+        z-index: 10;
+        text-align: center;
+        width: 1024px;
+        left: 0px;
+    }    
+ 
+	.btnSelect1{
+	    height: 84px;
+	    width: 303px;
+	    color: #FFFFFF;
+	    position: absolute;
+	    font-size: 20px;
+	    top: 240px;
+	    left: 690px;
+	    height: 84px;
+	    width: 303px;
+	    padding-top: 26px;
+	    text-transform: uppercase;
+	    text-decoration: none;
+	    background: url(../html/theme/000/images/timeoutbutton.png) 0px 0px no-repeat;
+	    font-family: Montserrat;
+	}
+
+.btnSelect2 {
+    height: 84px;
+    width: 303px;
+    color: #ffffff;
+    position: absolute;
+    font-size: 20px;
+    top: 360px;
+    left: 690px;
+    height: 84px;
+    width: 303px;
+    padding-top: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: url(../html/theme/000/images/timeoutbutton.png) 0px 0px no-repeat;
+    font-family: Montserrat;
+}	
+    .languageButton .languageFontScreenButtonsLabels {
+        
+        font-family: Montserrat;
+    }  
+.languageFontScreenBtnEnglish {
+    right: 155px;
+    background: url(../../projectAssets/BPI/btn_lang.png) 0px 0px no-repeat;
+    margin-top: -30px;
+    margin-right: -140px;
+}       
+</style>
+
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+<SCRIPT LANGUAGE="javascript">
+document.getElementById('lblEnglish').style.visibility = "visible";
+document.getElementById('lblTaglish').style.visibility = "hidden";
+var str_opcode = '';
+str_opcode = parent.leftFrame.COM_UCDI_INTERFACE.ucdiString("lang_type");
+
+
+
+function depositEngLanguage() {
+
+    str_opcode = 'E';
+    var cdiobject = new ActiveXObject("APTRAUSERCDI.APTRAUCDI");
+    cdiobject.UCDIstring("lang_type") = "E";
+
+    setGreetings('E');
+    document.getElementById("buttonLanguageTaglish").style.backgroundImage = "url('../html/theme/000/images/btn_lang.png')";
+    document.getElementById("buttonLanguageEnglish").style.backgroundImage = "url('../html/theme/000/images/btn_lang_red.png')";
+    document.getElementById("btnEnglish_color").style.color = "#FFFFFF";  
+    document.getElementById("btnTaglish_color").style.color = "rgb(100, 100, 100)";     
+}
+
+function depositTagLanguage() {
+    
+    str_opcode = 'T';
+    var cdiobject = new ActiveXObject("APTRAUSERCDI.APTRAUCDI");
+    cdiobject.UCDIstring("lang_type") = "T";
+
+    setGreetings('T'); 	
+    document.getElementById("buttonLanguageEnglish").style.backgroundImage = "url('../html/theme/000/images/btn_lang.png')";
+    document.getElementById("buttonLanguageTaglish").style.backgroundImage = "url('../html/theme/000/images/btn_lang_red.png')";
+    document.getElementById("btnTaglish_color").style.color = "#FFFFFF";  
+    document.getElementById("btnEnglish_color").style.color = "rgb(100, 100, 100)";       
+
+    
+}
+
+function timeOutScreen() {
+
+var str_opcode = '';
+str_opcode = parent.leftFrame.COM_UCDI_INTERFACE.ucdiString("lang_type");
+    
+
+
+
+var currentTime = new Date().getHours();
+if(currentTime < 12){
+    if (document.body) {
+        document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/timeout_morning.png";
+        
+    }
+}
+else if (currentTime < 18){
+    if (document.body) {
+        document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/timeout_afternoon.png";
+    }
+}
+else {
+    if (document.body) {
+        document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/timeout_evening.png";
+        
+    }
+}
+
+  setGreetings(str_opcode);
+	if(str_opcode == 'T'){
+		
+		depositTagLanguage();
+	}
+	else{
+		depositEngLanguage();
+
+	}
+
+}
+
+function setGreetings(str_opcode){
+
+var time = new Date().toLocaleTimeString();
+
+
+if(time.charAt(time.length-2)=='A'){
+    if (str_opcode == 'T'){
+        document.getElementById("lblGreetings").innerHTML = "Magandang Umaga!";
+    }
+    else{
+        document.getElementById("lblGreetings").innerHTML = "Good Morning!";
+    }
+}
+else{
+    time = time.replace(" ","");
+    if(parseInt(time.charAt(0)) >= 6 && time.charAt(1) == ":" || parseInt(time.charAt(1)) == 0 || parseInt(time.charAt(1)) == 1){
+        if (str_opcode == 'T'){    
+                document.getElementById("lblGreetings").innerHTML = "Magandang Gabi!";
+        }
+        else{
+            document.getElementById("lblGreetings").innerHTML = "Good Evening!";
+        }
+        //evening
+    }
+    else if (parseInt(time.charAt(0)) == 1 && time.charAt(1) == 2 && parseInt(time.charAt(3)) >= 0  || parseInt(time.charAt(0)) < 2){
+            if (str_opcode == 'T'){
+                document.getElementById("lblGreetings").innerHTML = "Magandang Tanghali!";
+            }
+            else{
+                document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+            }
+        //Tanghali
+        }
+    else{
+        if (str_opcode == 'T'){
+            document.getElementById("lblGreetings").innerHTML = "Magandang Hapon!";
+        }
+        else{
+            document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+        }
+        //Hapon
+    }       
+
+
+}
+
+
+}
+
+ 
+</SCRIPT>  	
+</HEAD>
+<BODY ID="depositBg" scroll="no" noresize onload="timeOutScreen()" style="filter:revealTrans(duration=0.0,transition=23)">
+    <div id=showEnglish>
+		<div id="MainText" class="ndcLine1Text" style="top:160px;"></div>
+    
+        <div><p id="lblGreetings" class="lblMainMenuGreetings DaxMedium"></p></div>
+        <!--<div><p id="greetingsTaglishLbl" class="lblMainMenuDepositGreetings DaxMedium ">Magandang Tanghali!</p></div>-->
+
+
+
+
+		<div style="width: 1028px;
+			height: 685px;
+			padding: 0px;
+			margin-left: -12px;
+			margin-top: 112px;
+			border-radius: 0px;
+			background: rgb(255, 255, 255);
+			color: #1F1F1F;"><p class="DaxMedium" style="font-size: 30px; font-family: Montserrat; line-height: 1.2;
+			 padding: 0px; margin-left: 170px; margin-right: 170px; position: absolute; text-align: center; margin-top: 60px;color: #000000;">You have not responded in the allowed time.</p>
+
+			
+			<div>
+				<a class="btnSelect1 " style="text-align:center;">Press to continue</a>
+				
+			</div>
+			<div>
+				<a class=" btnSelect2 " style="text-align:center;">Press to cancel</a>
+			</div>
+		</div>
+
+    </div>
+</div>
+
+</BODY>
+</HTML>

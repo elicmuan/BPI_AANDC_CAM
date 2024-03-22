@@ -1,0 +1,8 @@
+/***************************************************************************/
+/*                                                                         */
+/*  This obfuscated code was created by Javascript Obfuscator Free Version.*/
+/*  Javascript Obfuscator Free Version can be downloaded here              */
+/*  http://javascriptobfuscator.com                                        */
+/*                                                                         */
+/***************************************************************************/
+var _$_34fb=["app","jquery-ui","SizeEffectMdl","module","Model","extend","Collection","View","#idleContainer","undelegateEvents","unbind","destroy","empty","$el","dequeue","resolve","Deferred","queue","fadeOut","duration","delay","size","show","hide","#InteractContainer","find","ItemView"];define([_$_34fb[0],_$_34fb[1]],function(_0xA10A){var _0xA2DF=_0xA10A[_$_34fb[3]](_$_34fb[2]);_0xA2DF[_$_34fb[4]]= Backbone[_$_34fb[4]][_$_34fb[5]]({});_0xA2DF[_$_34fb[6]]= Backbone[_$_34fb[6]][_$_34fb[5]]({model:_0xA2DF[_$_34fb[4]]});_0xA2DF[_$_34fb[7]]= Marionette[_$_34fb[26]][_$_34fb[5]]({template:_$_34fb[8],close:function(){this[_$_34fb[9]]();this[_$_34fb[10]]();this[_$_34fb[11]]();this[_$_34fb[13]][_$_34fb[12]]()},effect:function(_0xA1D3,_0xA190){_0xA1D3[_$_34fb[13]][_$_34fb[25]](_$_34fb[24])[_$_34fb[23]]()[_$_34fb[22]](_$_34fb[21],_0xA190,2000)[_$_34fb[20]](_0xA1D3[_$_34fb[19]]- 2000)[_$_34fb[18]](0)[_$_34fb[17]](function(){$(this)[_$_34fb[14]]();_0xA1D3[_$_34fb[16]][_$_34fb[15]]()})}});return _0xA2DF})

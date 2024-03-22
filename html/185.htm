@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+ <TITLE>Screen 185</TITLE>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+
+<SCRIPT LANGUAGE="javascript">
+	var  track2 = parent.leftFrame.COMCDIINTERFACE.comString(2043); 
+	
+</SCRIPT>
+
+<SCRIPT  LANGUAGE="VBScript">
+	dim myUCDI
+	dim CDIText
+	'fnPrintMessageToScreen "KCCURR  BAL  :MCAVAIL BAL  :","", "replyMessage",0,0
+	CDIText=parent.leftFrame.COM_UCDI_INTERFACE.UCDIstring("DMITRData")
+	'if CDIText <> "" Then
+	'	fnPrintMessageToScreen CDIText,"", "replyMessage",0,0
+	'	document.getElementById('ndcLine4Text').style.visibility = 'visible'
+	'	document.getElementById('ndcLine5Text').style.visibility = 'visible'
+	'end if
+   </SCRIPT> 
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="doeffect()" style="filter:revealTrans(duration=0.0,transition=23)">
+<P class="ndcLine4Text">Please wait <br>Your transaction is being processed.</P>
+<P class="ndcLine5Text" >For cancelled transactions, please wait for ATM to eject card.<br>In case of card capture, call 89-100 immediately</P>
+</BODY>
+</HTML>

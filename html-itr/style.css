@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Dax-Regular';
+  src: url('../html/font/DaxRegular.ttf'),
+       url('../html/font/DaxMedium.eot?') format('embedded-opentype');
+  src: url('../html/font/DaxRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Dax-bold';
+  src: url('../html/font/DaxRegular.ttf'),
+       url('../html/font/DaxRegular.eot?') format('embedded-opentype');;
+  src: url('../html/font/DaxRegular.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Dax-Regular';
+  src: url('../html/font/DaxRegular.ttf'),
+        url('../html/font/DaxRegular.eot?') format('embedded-opentype');
+  src: url('../html/font/DaxRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Dax-Medium';
+  src: url('../html/font/Dax-Medium.ttf'),
+       url('../html/font/Dax-Regular.eot?') format('embedded-opentype');
+  src: url('../html/font/Dax-Medium.ttf') format('truetype');
+} 
+
+.Dax-Regular {
+    font-family: 'Dax-Regular';
+    font-weight: bold;
+    color: #606060;
+}
+.Dax-Medium {
+    font-family: 'Dax-Regular';
+    font-weight: bold;
+}
+
+.panel-container{
+    width: 1024px;
+    height: 768px;
+    overflow: hidden;
+    display: block;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+
+}
+
+.headerbg{
+  background: url(../html/projectAssets/BPI/header.png) 0px 0px repeat-x; height: 135px;
+}
+
+.header-logo{
+    background-image: url(../html/projectAssets/BPI/logo.png);
+    width: 165px;
+    height: 85px;
+    position: absolute;
+    margin-left: 48px;
+    z-index: 4;
+    margin-top: 19px;
+}
+
+.p-style{
+    font-size: 26pt; 
+    font-family: Dax-Regular; 
+    line-height: 1.2;
+    font-weight: bold; 
+    padding: 0px; 
+    margin-left: 170px;
+    margin-right: 170px; 
+    position: absolute; 
+    text-align: center; 
+    margin-top: 220px;
+}
+
+.btnSelect1{
+
+    height: 84px;
+    width: 303px;
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 25px;
+    top: 300px;
+    left: 630px;
+    height: 84px;
+    width: 303px;
+    padding-left: 37px;
+    padding-top: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: url(../html/projectAssets/BPI/timeoutbutton.png) 0px 0px no-repeat;
+    font-family: Dax-Regular;
+}
+
+
+.btnSelect2 {
+    height: 84px;
+    width: 303px;
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 25px;
+    top: 448px;
+    left: 630px;
+    height: 84px;
+    width: 303px;
+    padding-left: 37px;
+    padding-top: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: url(../html/projectAssets/BPI/timeoutbutton.png) 0px 0px no-repeat;
+    font-family: Dax-Regular;
+
+}
+
+.btnSelect3 {
+    height: 84px;
+    width: 303px;
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 25px;
+    top: 500px;
+    left: 630px;
+    height: 84px;
+    width: 303px;
+    padding-left: 37px;
+    padding-top: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: url(../html/projectAssets/BPI/timeoutbutton.png) 0px 0px no-repeat;
+    font-family: Dax-Regular;
+
+}
+
+.btnSelect4 {
+    height: 84px;
+    width: 303px;
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 25px;
+    top: 630px;
+    left: 630px;
+    height: 84px;
+    width: 303px;
+    padding-left: 37px;
+    padding-top: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: url(../html/projectAssets/BPI/timeoutbutton.png) 0px 0px no-repeat;
+    font-family: Dax-Regular;
+
+}
+
+
+.bgsq{ background: url("../html/projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;}
+
+
+h1 { margin-bottom: 10px; }
+div { 
+  width: 680px;
+  padding: 10px 25px;
+  margin: 50px auto;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.4); 
+  color: #1F1F1F;
+}
+
+
+
+.btnwhite-err{
+    width: 258px;
+    height: 84px;
+    z-index: 41;
+    font-size: 25px;
+    font-family: Dax-Regular;
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 229px;
+    padding-top: 30px;
+    background: url("../html/projectAssets/BPI/btnwhite.png") 0px 0px no-repeat;
+}
+.btnred-err{
+  width:258px;
+  height:84px;
+  z-index:41;
+  font-size:25px;
+  font-family:Dax-Regular;
+  position:absolute;
+  margin-top:520px;
+  margin-left:530px;
+  padding-top:28px;
+  background:url("../html/projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;
+}

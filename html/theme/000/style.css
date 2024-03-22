@@ -1,0 +1,1303 @@
+BODY#BODYID
+{
+    BACKGROUND-IMAGE: url(bg.png);
+    BACKGROUND-REPEAT: no-repeat
+}
+BODY#BODYPLEASEWAIT
+{
+    BACKGROUND-IMAGE: url(images\001_APTRA.jpg);
+    BACKGROUND-REPEAT: no-repeat
+}
+BODY#tres
+{
+     /*BACKGROUND-IMAGE: url(images\bgbalancebox.png);
+    BACKGROUND-REPEAT: no-repeat*/
+}
+BODY#cuatro
+{
+    BACKGROUND-IMAGE: url(images\backround800X600.JPG);
+    BACKGROUND-REPEAT: no-repeat
+}
+.p
+{
+    FONT-FAMILY: Verdana
+}
+.p
+{
+    FONT-SIZE: 187%
+}
+.p
+{
+    FONT-WEIGHT: bold
+}
+.p
+{
+    COLOR: black
+}
+
+.headerBigText
+{
+    FONT-SIZE: 23pt;
+    FLOAT: none;
+    WIDTH: 800px;
+    LEFT: 10px;
+    COLOR: white;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 5px;
+    TEXT-ALIGN: left
+}
+
+.headerSmallText
+{
+    FONT-SIZE: 12pt;
+    FLOAT: none;
+    WIDTH: 800px;
+    LEFT: 10px;
+    COLOR: white;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 40px;
+    TEXT-ALIGN: left
+}
+
+.ndcDoubleText
+{
+    FONT-SIZE: 500%;
+    COLOR: navy;
+    FONT-FAMILY: Verdana
+}
+
+.ndcLineTextLeft
+{
+    FONT-SIZE: 23pt;
+    FLOAT: none;
+    WIDTH: 800px;
+    LEFT: -90px;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 110px;
+    TEXT-ALIGN: right;
+}
+
+.ndcLine1Text
+{
+    FONT-SIZE: 30pt;
+    FLOAT: none;
+    WIDTH: 800px;
+    LEFT: 100px;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 130px;
+    TEXT-ALIGN: right;
+}
+.ndcLine2Text
+{
+    FONT-SIZE: 23pt;
+    LEFT: 100px;
+    FLOAT: none;
+    WIDTH: 800px;
+    COLOR: Black;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 220px;
+    TEXT-ALIGN: center
+    
+}
+.ndcLine3Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: -100px;
+    FLOAT: none;
+    WIDTH: 800px;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 130px;
+    TEXT-ALIGN: center
+}
+.ndcLine3Text2
+{
+    FONT-SIZE: 28pt;
+    LEFT: 16px;
+    FLOAT: none;
+    WIDTH: 800px;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 220px;
+    TEXT-ALIGN: center
+}
+.ndcLine4Text
+{
+    FONT-SIZE: 30px;
+    LEFT: 120px;
+    FLOAT: none;
+    WIDTH: 800px;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 260px;
+    TEXT-ALIGN: Center
+}
+.ndcLine5Text
+{
+    FONT-SIZE: 20px;
+    LEFT: 0px;
+    FLOAT: none;
+    WIDTH: 800px;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 530px;
+    TEXT-ALIGN: center
+}
+.ndcLine6Text
+{
+    FONT-SIZE: 30pt;
+    LEFT: 50px;
+    FLOAT: none;
+    WIDTH: 800px;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 250px;
+    TEXT-ALIGN: left
+}
+.ndcLine7Text
+{
+    FONT-SIZE: 19pt;
+    LEFT: 0px;
+    FLOAT: none;
+    WIDTH: 800px;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 200px;
+    TEXT-ALIGN: left
+}
+.ndcLine8Text
+{
+    FONT-SIZE: 23pt;
+    LEFT: 150px;
+    FLOAT: none;
+    WIDTH: 800px;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 330px;
+    TEXT-ALIGN: left
+}
+
+.inputLineText
+{
+    FONT-SIZE: 23pt;
+    LEFT: 150px;
+    FLOAT: none;
+    WIDTH: 800px;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 330px;
+    TEXT-ALIGN: left
+}
+
+.PINEntry
+{
+    BORDER-RIGHT: white thin solid;
+    BORDER-TOP: white thin solid;
+    LEFT: 275px;
+    BORDER-LEFT: white thin solid;
+    WIDTH: 250px;
+    COLOR: navy;
+    BORDER-BOTTOM: white thin solid;
+    POSITION: absolute;
+    TOP: 188px;
+    HEIGHT: 40px;
+    BACKGROUND-COLOR: black
+}
+.PINPillbox
+{
+    LEFT: 275px;
+    VISIBILITY: visible;
+    WIDTH: 176px;
+    POSITION: absolute;
+    TOP: 188px;
+    HEIGHT: 40px
+}
+.AmountPillbox
+{
+    LEFT: 275px;
+    VISIBILITY: visible;
+    WIDTH: 276px;
+    POSITION: absolute;
+    TOP: 188px;
+    HEIGHT: 40px
+}
+
+.PINBox
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 200px;
+    BORDER-LEFT: none;
+    WIDTH: 312px;
+    COLOR: black;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 400px;
+    /* HEIGHT: 40px;*/
+    /*BACKGROUND-COLOR: black;*/
+	HEIGHT: 66px;
+	BACKGROUND-IMAGE: url(images\PinEntry.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-FAMILY: Montserrat;
+    FONT-SIZE: 50px;
+	TEXT-INDENT: 5px;
+	padding:15px;
+}
+.MOBILEBox
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 50px;
+    BORDER-LEFT: none;
+    WIDTH: 400x;
+	TOP: 400px;
+    COLOR: black;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+	HEIGHT: 66px;
+	BACKGROUND-IMAGE: url(images\MobileEntry.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+	FONT-FAMILY: Montserrat;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 1px;
+	FLOAT: none;
+	padding:15px;
+}
+
+.Title
+{
+    FONT-SIZE: 20pt;
+    LEFT: 0pt;
+    FLOAT: none;
+    WIDTH: 800px;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 100px;
+    TEXT-ALIGN: center
+}
+.SubTitle
+{
+    FONT-SIZE: 18pt;
+    LEFT: 0px;
+    FLOAT: none;
+    WIDTH: 800px;
+    COLOR: navy;
+    FONT-FAMILY: Verdana;
+    POSITION: absolute;
+    TOP: 100px;
+    TEXT-ALIGN: center
+}
+
+#FDK1
+{
+   
+    LEFT: 400px; /*680*/
+    WIDTH: 400px;
+    POSITION: absolute;
+    TOP: 187px;
+    HEIGHT: 96px;
+    ALIGN: right;
+	/*BACKGROUND-COLOR: transparent;*/
+	BACKGROUND-IMAGE: url(images\button_fdkA.png);
+	BACKGROUND-REPEAT: no-repeat;
+}
+.FDK1Text
+{
+    FONT-SIZE: 32pt;
+    LEFT: 400px; /* 377*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 322px; /*223*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: RIGHT; /*right*/
+}
+#FDK2
+{
+    LEFT: 400px; /*680*/
+    WIDTH: 400px;
+    POSITION: absolute;
+    TOP: 295px;
+    HEIGHT: 96px;
+    ALIGN: right;
+	BACKGROUND-IMAGE: url(images\button_fdkA.png);
+	BACKGROUND-REPEAT: no-repeat;
+}
+.FDK2Text
+{
+    FONT-SIZE: 32pt;
+    LEFT: 400px; /* 377*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 432px;  /*338*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: right; /*right*/
+}
+#FDK3
+{
+    LEFT: 400px; /*680*/
+    WIDTH: 400px;
+    POSITION: absolute;
+    TOP: 400px;
+    HEIGHT: 96px;
+    ALIGN: right;
+	BACKGROUND-IMAGE: url(images\button_fdkA.png);
+	BACKGROUND-REPEAT: no-repeat;
+}
+.FDK3Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 250px; /* 377*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 427px;  /*338*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: right; /*right*/
+}
+#FDK4
+{
+
+    LEFT: 400px;
+    WIDTH: 400px;
+    COLOR: navy;
+    POSITION: absolute;
+    TOP: 504px;
+    HEIGHT: 96px;
+    ALIGN: right;
+	BACKGROUND-IMAGE: url(images\button_fdkA.png);
+	BACKGROUND-REPEAT: no-repeat;
+}
+.FDK4Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 250px;
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 520px;
+    TEXT-ALIGN: right;
+    LINE-HEIGHT: 200%;
+}
+#FDK5
+{
+
+    LEFT: 0px;
+    WIDTH: 400px;
+    POSITION: absolute;
+    TOP: 187px;
+    HEIGHT: 113px;
+	BACKGROUND-IMAGE: url(images\button_fdkI.png);
+	BACKGROUND-REPEAT: no-repeat;
+}
+.FDK5Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 50px;
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 212px;
+    TEXT-ALIGN: LEFT
+}
+#FDK6
+{
+    LEFT: 0px;
+    WIDTH: 400px;
+    POSITION: absolute;
+    TOP: 295px;
+    HEIGHT: 113px;
+	BACKGROUND-IMAGE: url(images\button_fdkI.png);
+	BACKGROUND-REPEAT: no-repeat;
+}
+.FDK6Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 50px;
+    WIDTH: 300px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 322px;
+    HEIGHT: 50px;
+    TEXT-ALIGN: left
+}
+#FDK7
+{
+    LEFT: 0px;
+    WIDTH: 400px;
+    POSITION: absolute;
+    TOP: 400px;
+    HEIGHT: 113px;
+	BACKGROUND-IMAGE: url(images\button_fdkI.png);
+	BACKGROUND-REPEAT: no-repeat;
+	
+}
+.FDK7Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 50px;
+    WIDTH: 300px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 427px;
+    HEIGHT: 50px;
+    TEXT-ALIGN: left
+}
+#FDK8
+{
+    LEFT: 0px;
+    WIDTH: 400px;
+    POSITION: absolute;
+    TOP: 504px;
+    HEIGHT: 113px;
+	BACKGROUND-IMAGE: url(images\button_fdkI.png);
+	BACKGROUND-REPEAT: no-repeat;
+}
+.FDK8Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 50px;
+    WIDTH: 300px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 520px;
+    HEIGHT: 50px;
+    TEXT-ALIGN: left;
+    LINE-HEIGHT: 200%;
+}
+.FDKCenterText1
+{
+    FONT-SIZE: 28pt;
+    LEFT: 0px;
+	WIDTH: 800px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 212px;
+    HEIGHT: 50px;
+	TEXT-ALIGN: center;
+}
+.FDKCenterText2
+{
+    FONT-SIZE: 28pt;
+    LEFT: 0px;
+	WIDTH: 800px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 322px;
+    HEIGHT: 50px;
+    TEXT-ALIGN: center;
+}
+.FDKCenterText3
+{
+    FONT-SIZE: 28pt;
+    LEFT: 0px;
+	WIDTH: 800px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 427px;
+    HEIGHT: 50px;
+    TEXT-ALIGN: center;
+}
+.FDKCenterText4
+{
+    FONT-SIZE: 28pt;
+    LEFT: 0px;
+	WIDTH: 800px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 532px;
+    HEIGHT: 50px;
+    TEXT-ALIGN: center;
+}
+.AmountBox
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 50px;
+    BORDER-LEFT: none;
+    WIDTH: 500px;
+    COLOR: black;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 400px;
+    /*BACKGROUND-COLOR: black;*/
+	HEIGHT: 66px;
+	BACKGROUND-IMAGE: url(images\AmountEntry.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:15px;
+	FONT-FAMILY: Montserrat;
+}
+.AmountDisplayBox
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-SIZE: 21pt;
+    LEFT: 313px;
+    VISIBILITY: visible;
+    BORDER-LEFT: medium none;
+    WIDTH: 275px;
+    COLOR: navy;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 250px;
+    HEIGHT: 30pt;
+    BACKGROUND-COLOR: transparent;
+    TEXT-ALIGN: left
+}
+.PINEntryBox
+{
+    BORDER-RIGHT: white thin solid;
+    BORDER-TOP: white thin solid;
+    LEFT: 275px;
+    BORDER-LEFT: white thin solid;
+    WIDTH: 250px;
+    COLOR: white;
+    BORDER-BOTTOM: white thin solid;
+    POSITION: absolute;
+    TOP: 230px;
+    HEIGHT: 32px;
+    BACKGROUND-COLOR: black
+}
+.ReplyMessage
+{   FLOAT: none;
+    FONT-SIZE: 28pt;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+
+}
+.ReplyMessageSmall
+{   FLOAT: none;
+    FONT-SIZE: 18pt;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+
+}
+.PrepaidCardNoBox
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 250px;
+    BORDER-LEFT: none;
+    WIDTH: 500px;
+    COLOR: black;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 400px;
+    HEIGHT: 40px;
+    /*BACKGROUND-COLOR: black;*/
+	HEIGHT: 66px;
+	BACKGROUND-IMAGE: url(images\MobileEntry.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 0px;
+	FLOAT: none;
+	padding:15px;
+	FONT-FAMILY: Montserrat;
+}
+.PrepaidCardNo
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 300px;
+    BORDER-LEFT: none;
+    WIDTH: 500px;
+    COLOR: black;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 400px;
+    HEIGHT: 40px;
+    /*BACKGROUND-COLOR: black;*/
+	HEIGHT: 66px;
+	/*BACKGROUND-IMAGE: url(images\MobileEntry.png);*/
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 0px;
+	FLOAT: none;
+	padding:15px;
+	FONT-FAMILY: Montserrat;
+}
+.CardNumber
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 200px;
+    BORDER-LEFT: none;
+    WIDTH: 400px;
+    COLOR: #444444;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    /*TOP: 188px;
+    HEIGHT: 40px;*/
+    /*BACKGROUND-COLOR: black;*/
+	HEIGHT: 66px;
+	BACKGROUND-IMAGE: url(images\MobileEntry.gif);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:1px;
+}
+.ContactNumber
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 50px;
+    BORDER-LEFT: none;
+    WIDTH: 400px;
+    COLOR: black;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 400px;
+    HEIGHT: 40px;*/
+    /*BACKGROUND-COLOR: black;*/
+	HEIGHT: 66px;
+	BACKGROUND-IMAGE: url(images\MobileEntry.gif);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:1px;
+	FONT-FAMILY: Montserrat;
+}
+.AccountNumber
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 50px;
+    BORDER-LEFT: none;
+    WIDTH: 400px;
+    COLOR: black;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 400px;
+    HEIGHT: 40px;
+    /*BACKGROUND-COLOR: black;*/
+	HEIGHT: 66px;
+	BACKGROUND-IMAGE: url(images\MobileEntry.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 0px;
+	FLOAT: none;
+	padding:15px;
+	FONT-FAMILY: Montserrat;
+}
+.EnvelopeNumber
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 50px;
+    BORDER-LEFT: none;
+    WIDTH: 400px;
+    COLOR: black;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 400px;
+    HEIGHT: 40px;*/
+    /*BACKGROUND-COLOR: black;*/
+	HEIGHT: 66px;
+	BACKGROUND-IMAGE: url(images\AmountEntry.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:10px;
+	FONT-FAMILY: Montserrat;
+}
+.TextboxBackground
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 180px;
+    BORDER-LEFT: none;
+    WIDTH: 400px;
+    COLOR: #444444;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 180px;
+    HEIGHT: 400px;
+	BACKGROUND-IMAGE: url(images\textboxbg.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:12px;
+}
+.TakeCash
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 250px;
+    BORDER-LEFT: none;
+    WIDTH: 558px;
+    COLOR: #444444;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 370px;
+    HEIGHT: 400px;
+	BACKGROUND-IMAGE: url(images\TakeCash.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:12px;
+}
+.TakeCard
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 470px;
+    BORDER-LEFT: none;
+    WIDTH: 558px;
+    COLOR: #444444;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 180px;
+    HEIGHT: 400px;
+	BACKGROUND-IMAGE: url(images\GetCard.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:12px;
+}
+.InsertEnvelope
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 300px;
+    BORDER-LEFT: none;
+    WIDTH: 558px;
+    COLOR: #444444;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 330px;
+    HEIGHT: 400px;
+	BACKGROUND-IMAGE: url(images\Envelope.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:12px;
+}
+.TakeCash2
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 400px;
+    BORDER-LEFT: none;
+    WIDTH: 558px;
+    COLOR: #444444;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 180px;
+    HEIGHT: 400px;
+	BACKGROUND-IMAGE: url(images\TakeCash2.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:12px;
+}
+.TakeCard2
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 400px;
+    BORDER-LEFT: none;
+    WIDTH: 558px;
+    COLOR: #444444;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 180px;
+    HEIGHT: 400px;
+	BACKGROUND-IMAGE: url(images\GetCard.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:12px;
+}
+.TakeReceipt2
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 300px;
+    BORDER-LEFT: none;
+    WIDTH: 558px;
+    COLOR: #444444;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 340px;
+    HEIGHT: 400px;
+	BACKGROUND-IMAGE: url(images\TakeReceipt.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:12px;
+}
+
+.TakeCard3
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 180px;
+    BORDER-LEFT: none;
+    WIDTH: 558px;
+    COLOR: #444444;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 150px;
+    HEIGHT: 400px;
+	BACKGROUND-IMAGE: url(images\GetCard.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:12px;
+}
+.TakeReceipt3
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 280px;
+    BORDER-LEFT: none;
+    WIDTH: 558px;
+    COLOR: #444444;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 370px;
+    HEIGHT: 400px;
+	BACKGROUND-IMAGE: url(images\TakeReceipt.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:12px;
+}
+.TakeReceipt
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 520px;
+    BORDER-LEFT: none;
+    WIDTH: 558px;
+    COLOR: #444444;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 200px;
+    HEIGHT: 400px;
+	BACKGROUND-IMAGE: url(images\TakeReceipt.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:12px;
+}
+.BalanceBox
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 410px;
+    BORDER-LEFT: none;
+    WIDTH: 558px;
+    COLOR: #444444;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 400px;
+    HEIGHT: 400px;
+	BACKGROUND-IMAGE: url(images\balancebox.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:12px;
+}
+.NCRKeyPad
+{
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+    LEFT: 380px;
+    BORDER-LEFT: none;
+    WIDTH: 558px;
+    COLOR: #444444;
+    BORDER-BOTTOM: none;
+    POSITION: absolute;
+    TOP: 220px;
+    HEIGHT: 400px;
+	BACKGROUND-IMAGE: url(images\NCRKeypad.png);
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-COLOR: transparent;
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 30px;
+	TEXT-INDENT: 10px;
+	FLOAT: none;
+	padding:12px;
+}
+
+.ndcLine1AText
+{
+    FONT-SIZE: 23pt;
+    FLOAT: none;
+    WIDTH: 800px;
+    LEFT: 10px;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 123px;
+    TEXT-ALIGN: center
+}
+
+.ndcLine1BText
+{
+    FONT-SIZE: 23pt;
+    FLOAT: none;
+    WIDTH: 800px;
+    LEFT: 10px;
+    COLOR: black;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 198px;
+    TEXT-ALIGN: center
+}
+
+.FDKA1Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 250px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 195px; /*223*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: RIGHT; /*right*/
+}
+
+.FDKA2Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 250px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 235px;  /*338*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: RIGHT; /*right*/
+}
+
+.FDKB1Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 250px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 303px; /*223*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: RIGHT; /*right*/
+}
+
+.FDKB2Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 250px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 343px;  /*338*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: RIGHT; /*right*/
+}
+
+.FDKC1Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 250px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 408px; /*223*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: RIGHT; /*right*/
+}
+
+.FDKC2Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 250px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 448px;  /*338*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: RIGHT; /*right*/
+}
+
+.FDKD1Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 250px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 512px; /*223*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: RIGHT; /*right*/
+}
+
+.FDKD2Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 250px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 552px;  /*338*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: RIGHT; /*right*/
+}
+
+.FDKF1Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 50px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 512px; /*223*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: LEFT; /*right*/
+}
+
+.FDKF2Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 50px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 552px;  /*338*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: LEFT; /*right*/
+}
+
+.FDKG1Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 50px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 408px; /*223*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: LEFT; /*right*/
+}
+
+.FDKG2Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 50px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 448px;  /*338*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: LEFT; /*right*/
+}
+
+.FDKH1Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 50px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 303px; /*223*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: LEFT; /*right*/
+}
+
+.FDKH2Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 50px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 343px;  /*338*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: LEFT; /*right*/
+}
+
+.FDKI1Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 50px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 195px; /*223*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: LEFT; /*right*/
+}
+
+.FDKI2Text
+{
+    FONT-SIZE: 28pt;
+    LEFT: 50px; /* 377*/
+    /*WIDTH: 280px;*/
+    WIDTH: 500px;
+    COLOR: black;
+	FONT-WEIGHT: regular;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 235px;  /*338*/
+    HEIGHT: 50px;
+    TEXT-ALIGN: LEFT; /*right*/
+}
+
+.TXTREM{
+    FONT-SIZE: 18pt;
+    LEFT: 400px;
+    FONT-FAMILY: Montserrat;
+    POSITION: absolute;
+    TOP: 370px;
+    text-align:left;
+}
+#title{
+	FONT-SIZE:32PX;
+}
+#thanks{
+	FONT-SIZE:26PX;
+	FONT-STYLE:Montserrat;
+}

@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+ <TITLE>Screen 208</TITLE>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript">
+
+'=====================
+Sub KeyEchoed(data)
+'=====================
+
+	If Len(TextBox.value) <= 15 Then
+		TextBox.value = TextBox.value & data
+	End If 
+
+
+	end sub
+</SCRIPT>
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="doeffect()" style="filter:revealTrans(duration=0.0,transition=23)">
+
+<P class="ndcLine1Text">Enter validation data  <br>If no validation routine press continue</P>
+<div><INPUT  id="TextBox" name="PrepaidCardNoBox" value="" class="PrepaidCardNoBox" style="left:385px;top:250px" ></div>
+<div id="FDK4"></div>
+<div class="FDK4Text" style="top:515px;">CONTINUE</div>
+</P>
+</BODY>
+</HTML>

@@ -1,0 +1,165 @@
+﻿<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+<link rel="stylesheet" type="text/css" href="Labels.css">
+<TITLE>Screen 391</TITLE>
+<script type="text/javascript">
+if (typeof document.onselectstart!="undefined") {
+  document.onselectstart=new Function ("return false");
+}
+else{
+  document.onmousedown=new Function ("return false");
+  document.onmouseup=new Function ("return true");
+}
+</script>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript">
+
+ 	Set objStore = CreateObject("COMCDI.COMCDIdata") 
+ 	On Error Resume Next 
+
+	Dim myUCDI
+
+	Set myUCDI = CreateObject("APTRAUSERCDI.APTRAUCDI")
+
+	myUCDI.UCDIstring("Temp_U") = objStore.comString(2002)
+	
+	Sub KeyEchoed(data)
+    		TextBox.value = "*" & TextBox.value
+		
+	End Sub
+	Sub InitStatebUCDI()
+		Set UCDI = CreateObject("APTRAUSERCDI.APTRAUCDI")
+		Dim intStatebFlagUCDI
+		intStatebFlagUCDI = UCDI.UCDIinteger("BPIStatebFlagUCDI")
+		If intStatebFlagUCDI = 0 Then
+			document.getElementById("ErrorLine1").style.visibility = "hidden"
+			document.getElementById("ErrorLine2").style.visibility = "hidden"
+		Else
+			document.getElementById("ErrorLine1").style.visibility = "visible"
+			document.getElementById("ErrorLine2").style.visibility = "visible"
+		End If
+	End Sub
+</SCRIPT>
+<style>
+.td{
+	font-family:Montserrat;
+}
+
+</style>
+<SCRIPT LANGUAGE="vbscript">
+	Sub KeyEchoed(data)
+	    TextBox.value = " ■" & TextBox.value
+	End sub
+	Sub InitStatebUCDI()
+		Dim UCDI
+		Dim blnSuccess
+		Set UCDI = CreateObject("APTRAUSERCDI.APTRAUCDI")
+		blnSuccess = UCDI.newUCDIstore("BPIStatebFlagUCDI", 0, "Normal")
+		UCDI.UCDIinteger("BPIStatebFlagUCDI") = 0
+		Set UCDI = Nothing
+	End Sub
+</SCRIPT>
+</HEAD>
+<style>
+#digit{
+	color:red;
+}
+</style>
+<BODY scroll="no" noresize onload="vbscript:InitStatebUCDI()" style="filter:revealTrans(duration=0.0,transition=23);">
+<P id="lblGreetings"></p>
+<FORM NAME="form1">
+<input Name="UCDITEXT" type="hidden"></input>
+</FORM>
+<div id="warning" style="background-image:url('RedWarning.png');width:50px;height:50px;position:absolute;margin-top:236px;margin-left:135px;"></div>
+<TABLE style="WIDTH: 220px; HEIGHT: 7px" cellSpacing=0 cellPadding=0 width=500 border=0 height=30 align=right>
+ <TR>
+ <TD class="TextboxBackground"></TD>
+ <TD class="ndcLine2Text" style="top:250px;"><p id="txtheader"  style="text-align:center;margin-left:-100px;width:1024px;">Your PIN entries did not match. Try again.</p></TD>
+ <TD class="ndcLine2Text" style="top:360px;"><p id="L1" style="text-align:center;margin-left:-100px;width:1024px;">Enter new <span id="digit" >6-digit</span> PIN</p></TD>
+ <TD><INPUT  id="TextBox"  value="" style="padding-top:20px;height:91px;width:331px;border:0;background:transparent;position:absolute;top:400px;left:346px;font-size:40px;background:url('C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/input-box.png');text-align:center;"></TD>
+ <TD class="ndcLine2Text" style="top:520px;"><p id="L2" style="text-align:center;margin-left:-100px;width:1024px;">Re-enter new <span id="digit" >6-digit</span> PIN</p></TD>
+ <TD><INPUT  id="TextBox0"  value="" style="padding-top:20px;height:91px;width:331px;border:0;background:transparent;position:absolute;top:558px;left:346px;font-size:40px;padding-left:50px;background:url('C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/input-box.png')"></TD>
+ </TABLE>
+</BODY>
+
+<script type="text/javascript">
+document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/pin_change_bg.png";
+
+</script>
+<SCRIPT LANGUAGE="javascript">
+var str_opcode = '';
+var time = new Date().toLocaleTimeString();
+str_opcode = parent.leftFrame.COM_UCDI_INTERFACE.ucdiString("lang_type");
+
+
+if(str_opcode == 'T' ){
+	document.getElementById("warning").style.marginLeft="125px";	
+	document.getElementById("txtheader").innerHTML = "Ang iyong PIN entries ay hindi nag-match. </br> Mangyaring paki-ulit. ";
+	document.getElementById("L1").innerHTML = "Ilagay ang bagong <span id='digit' >6-digit</span> PIN";
+	document.getElementById("L2").innerHTML = "Ilagay muli ang bagong <span id='digit' >6-digit</span> PIN";
+	
+	
+}
+
+			
+				if(time.charAt(time.length-2)=='A'){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Umaga!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Morning!";
+								}
+				}
+				else{
+				
+					time = time.replace(" ","");
+					
+						if(parseInt(time.charAt(0)) >= 6 && time.charAt(1) == ":" || parseInt(time.charAt(1)) == 0 || parseInt(time.charAt(1)) == 1){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Gabi!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Evening!";
+								}
+								//evening
+						}
+						else if (parseInt(time.charAt(0)) == 1 && time.charAt(1) == 2 && parseInt(time.charAt(3)) >= 0  || parseInt(time.charAt(0)) < 2){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Tanghali!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+								}
+								//Tanghali
+						}
+						else{
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Hapon!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+								}
+								//Hapon
+						}
+							
+						
+						
+				}
+
+
+
+
+
+</SCRIPT>
+
+
+
+</HTML>

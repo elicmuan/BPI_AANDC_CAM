@@ -1,0 +1,48 @@
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=10" charset="UTF-8">
+	<SCRIPT LANGUAGE="JavaScript">
+
+		function initApp() {
+			window.focus();
+			unload();
+			parent.frames["ACContainer"].ACCoreJS.DisplayTransactScreen('INSERT_CASH');
+			parent.maximizeTransactContainer();
+
+		}
+
+        function unload() {
+          //  parent.frames["ACContainer"].ACCoreJS.unloadApp();
+            parent.maximizeRightFrame();
+        }
+		
+		function setBackground() {
+			var background = "";
+				
+				var time = new Date().toLocaleTimeString();
+				if(time.charAt(time.length-2)=='A'){
+					background = "../projectAssets/IDLE/S1_morning.png";				
+				}
+				else{
+					time = time.replace(" ","");
+					
+						if(parseInt(time.charAt(0)) >= 6 && time.charAt(1) == ":" || parseInt(time.charAt(1)) == 0 || parseInt(time.charAt(1)) == 1){
+							background = "../projectAssets/IDLE/S1_evening.png";
+						}
+						else {
+							background = "../projectAssets/IDLE/S1_afternoon.png";
+						}		
+						
+				}
+			document.body.style.backgroundImage = "url('" + background + "')";
+			document.body.style.backgroundRepeat = "no-repeat";
+
+
+
+		}
+	</script>
+</head>
+<body onload="initApp()" onunload="unload()"></body>	
+</html>
+
+

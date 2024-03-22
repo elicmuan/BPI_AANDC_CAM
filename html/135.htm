@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+<link rel="stylesheet" type="text/css" href="Labels.css">
+ <TITLE>Screen 221</TITLE>
+<script type="text/javascript">
+if (typeof document.onselectstart!="undefined") {
+  document.onselectstart=new Function ("return false");
+}
+else{
+  document.onmousedown=new Function ("return false");
+  document.onmouseup=new Function ("return true");
+}
+</script>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="doeffect()" style="filter:revealTrans(duration=0.0,transition=23)">
+<div id="warning" style="background-image:url('RedWarning.png');width:50px;height:50px;position:absolute;margin-top:390px;margin-left:180px;"></div>
+<P id="lblGreetings"></p>
+<P class="ndcLine4Text" id="msg_err2" style="font-family:Montserrat;"></BR></BR>You are required to change your PIN.</P></BODY>
+
+<script>
+
+				var time = new Date().toLocaleTimeString();
+				
+				var str_opcode = '';
+
+				str_opcode = parent.leftFrame.COM_UCDI_INTERFACE.ucdiString("lang_type");
+				
+			
+				if(time.charAt(time.length-2)=='A'){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Umaga!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Morning!";
+								}
+				}
+				else{
+				
+					time = time.replace(" ","");
+					
+						if(parseInt(time.charAt(0)) >= 6 && time.charAt(1) == ":" || parseInt(time.charAt(1)) == 0 || parseInt(time.charAt(1)) == 1){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Gabi!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Evening!";
+								}
+								//evening
+						}
+						else if (parseInt(time.charAt(0)) == 1 && time.charAt(1) == 2 && parseInt(time.charAt(3)) >= 0  || parseInt(time.charAt(0)) < 2){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Tanghali!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+								}
+								//Tanghali
+						}
+						else{
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Hapon!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+								}
+								//Hapon
+						}
+									
+				}
+				if(str_opcode == 'T'){
+						document.getElementById("msg_err2").innerHTML = "</BR></BR>Kailangan  mong baguhin ang iyong PIN.";
+						document.getElementById("msg_err2").style.marginTop ="152px";
+						document.getElementById("warning").style.marginLeft ="145px";
+						document.getElementById("warning").style.marginTop ="395px";
+				}
+				
+</script>
+</HTML>

@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+ <TITLE>Screen 805</TITLE>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript">
+dim count
+count =0
+'=====================
+Sub KeyEchoed(data)
+'=====================
+    'TextBox.value = prefix & data & Mid(TextBox.value,1,Len(TextBox.value)-1) 
+	if Len(data) = 0 then 
+		TextBox.value="---------------------------"
+		count =0
+	else if Len(data) > 0 and count = 0 then
+		TextBox.value=""
+	else
+		'TextBox.value =Replace(TextBox.value,"-",data,1,1)
+		TextBox.value = TextBox.value & data
+		count = count + 1
+    end if
+	end sub
+</SCRIPT>
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="doeffect()" style="filter:revealTrans(duration=0.0,transition=23)">
+<FORM NAME="form1">
+<input Name="UCDITEXT" type="hidden"></input>
+</form>
+<TABLE style="WIDTH: 220px; HEIGHT: 7px" cellSpacing=0 cellPadding=0 width=500 
+border=0 height=30 align=right>
+ <TR>
+ <TD class="TextboxBackground"></TD>	
+ <TD class="ndcLine4Text" style="top:180px">Enter reference number<br><br><br><br>and press CONTINUE</td>
+  <td><INPUT  id="TextBox" name="MOBILEBox" value = "---------------------------" class="PrepaidCardNoBox" style="top:250px"></td>
+ </TABLE>
+<div id="FDK4"></div>
+<div class="FDK4Text">CONTINUE</div>	
+</BODY>
+</HTML>

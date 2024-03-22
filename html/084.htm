@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+ <TITLE>Screen 84</TITLE>
+ <SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript">
+
+dim count
+count =0
+
+Sub KeyEchoed(data)
+
+    'TextBox.value = prefix & data & Mid(TextBox.value,1,Len(TextBox.value)-1) 
+	'msgBox(Len(data))
+	if Len(data) = 0 then 
+		TextBox.value="----------------"
+		count =0
+	else 
+		TextBox.value =Replace(TextBox.value,"-",data,1,1)
+		count = count +1
+    end if
+
+	end sub
+</SCRIPT>
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="doeffect()" style="filter:revealTrans(duration=0.0,transition=23)">
+<FORM NAME="form1">
+<input Name="UCDITEXT" type="hidden"></input>
+</form>
+<TABLE style="WIDTH: 220px; HEIGHT: 7px" cellSpacing=0 cellPadding=0 width=500 
+border=0 height=30 align=right>
+ <TR>
+ <TD class="TextboxBackground"></TD>	
+ <TD class="ndcLine4Text">Please enter the 16-Digit Prepaid Card<br>Number that you want to load.</td>
+ <!--TD class="ndcLine6Text" style="top:410">557753</td-->
+ <td><INPUT  id="TextBox" name="PrepaidCardNoBox" value="----------------" class="PrepaidCardNoBox"></td>
+ </TABLE>	
+</BODY>
+</HTML>

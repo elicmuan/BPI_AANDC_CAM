@@ -1,0 +1,8 @@
+/***************************************************************************/
+/*                                                                         */
+/*  This obfuscated code was created by Javascript Obfuscator Free Version.*/
+/*  Javascript Obfuscator Free Version can be downloaded here              */
+/*  http://javascriptobfuscator.com                                        */
+/*                                                                         */
+/***************************************************************************/
+var _$_d8b1=["app","EmptyScreenView","module","Model","extend","Collection","View","html","#emptyScreen","template","class","attr","$el","**********************************************","Trace","Loaded Empty Container","ItemView"];define([_$_d8b1[0]],function(_0xDE7C){var _0xE6FB=_0xDE7C[_$_d8b1[2]](_$_d8b1[1]);_0xE6FB[_$_d8b1[3]]= Backbone[_$_d8b1[3]][_$_d8b1[4]]({});_0xE6FB[_$_d8b1[5]]= Backbone[_$_d8b1[5]][_$_d8b1[4]]({model:_0xE6FB[_$_d8b1[3]]});_0xE6FB[_$_d8b1[6]]= Marionette[_$_d8b1[16]][_$_d8b1[4]]({template:_[_$_d8b1[9]]($(_$_d8b1[8])[_$_d8b1[7]]()),className:$(_$_d8b1[8])[_$_d8b1[11]](_$_d8b1[10]),render:function(){this[_$_d8b1[12]][_$_d8b1[7]](this[_$_d8b1[9]]());ACCoreJS[_$_d8b1[14]](_$_d8b1[13]);ACCoreJS[_$_d8b1[14]](_$_d8b1[15]);return this},close:function(){},initialize:function(){},FDKPress:function(_0xDF5D){},PinPadPress:function(_0xDF5D){}});return _0xE6FB})

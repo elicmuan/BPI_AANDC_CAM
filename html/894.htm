@@ -1,0 +1,93 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+
+ <TITLE>Screen 894<TITLE>
+<SCRIPT src="includes.js"></SCRIPT>
+<script type="text/javascript">
+if (typeof document.onselectstart!="undefined") {
+  document.onselectstart=new Function ("return false");
+}
+else{
+  document.onmousedown=new Function ("return false");
+  document.onmouseup=new Function ("return true");
+}
+</script>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript">
+ 	Set objStore = CreateObject("COMCDI.COMCDIdata") 
+ 	On Error Resume Next 
+
+	Dim myUCDI
+
+	Set myUCDI = CreateObject("APTRAUSERCDI.APTRAUCDI")
+
+	myUCDI.UCDIstring("Temp_U") = objStore.comString(2002)
+	
+	Sub KeyEchoed(data)
+    		TextBox.value = "*" & TextBox.value
+		
+	End Sub
+
+	Sub InitStatebUCDI()
+		Set UCDI = CreateObject("APTRAUSERCDI.APTRAUCDI")
+		Dim intStatebFlagUCDI
+
+		intStatebFlagUCDI = UCDI.UCDIinteger("BPIStatebFlagUCDI")
+		If intStatebFlagUCDI = 0 Then
+			document.getElementById("ErrorLine1").style.visibility = "visible"
+			document.getElementById("ErrorLine2").style.visibility = "hidden"
+		Else
+			document.getElementById("ErrorLine1").style.visibility = "visible"
+			document.getElementById("ErrorLine2").style.visibility = "visible"
+		End If
+	End Sub
+</SCRIPT>
+</HEAD>
+<BODY ID="" scroll="no" noresize onload="vbscript:InitStatebUCDI()" style="filter:revealTrans(duration=0.0,transition=23)">
+<FORM NAME="form1">
+<input Name="UCDITEXT" type="hidden"></input>
+</form>
+
+<TABLE style="WIDTH: 220px; HEIGHT: 7px" cellSpacing=0 cellPadding=0 width=500 border=0 height=30 align=right>
+	<TR>
+		<TD class="TextboxBackground"></TD>
+		<TD id="ErrorLine1" class="ndcLine1Text" style="top: 120px;">PIN Nomination error, magkaiba<br>ang pinasok na PIN. Pakiulit.</td>
+		<TD class="ndcLine2Text" style="top:200px;left:120px">PIN Nomination</td>
+		<TD class="ndcLine2Text" style="top:250px;left:120px">Ipasok ang bagong PIN:</td>
+		<td><INPUT id="TextBox0" name="PinBox" class="PinBox" style="top:280;left:120px" value="******"></td>
+		<TD class="ndcLine2Text" style="top:350px;left:120px">Ipasok muli ang bagong PIN:</td>
+		<td><INPUT id="TextBox" name="PinBox" class="PinBox" style="top: 380px;left:120px"></td>
+		<TD id="ErrorLine2" class="ndcLine2Text" style="top:500px;left:120px;">Babala: Hanggang 3 beses lamang<br>maaaring sumubok.</td>
+	</TR>
+ </TABLE>
+</BODY>
+
+
+
+<script type="text/javascript">
+var currentTime = new Date().getHours();
+if(currentTime < 12){
+    if (document.body) {
+        document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/timeout_morning.png";
+        
+    }
+}
+else if (currentTime < 18){
+    if (document.body) {
+        document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/timeout_afternoon.png";
+    }
+}
+else {
+    if (document.body) {
+        document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/timeout_evening.png";
+        
+    }
+}
+
+</script>
+
+
+</HTML>

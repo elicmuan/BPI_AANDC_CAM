@@ -1,0 +1,3086 @@
+/* Font */
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../../projectAssets/fonts/Montserrat.ttf');
+  src: url('../../projectAssets/fonts/Montserrat.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../../projectAssets/fonts/Montserrat.ttf');
+  src: url('../../projectAssets/fonts/Montserrat.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Montserrat';
+ 
+}
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../../projectAssets/fonts/Montserrat.ttf');
+  src: url('../../projectAssets/fonts/Montserrat.ttf') format('truetype');
+} 
+/* End */
+/* Generic */
+body { font-family: 'Montserrat'; margin: 0; overflow :hidden; -ms-user-select: none; user-select: none; -webkit-touch-callup :none; -webkit-user-select : none; user-drag: none; color: #000000; }
+a, a:hover, a:link, a:active, a:visited { text-decoration: none; color: #FFFFFF; }
+table, tr, td, input { background: transparent; }
+.absolute { position: absolute; }
+.hidden { display: none; }
+.columns, .column { padding: 0px; }
+#main > div { position: fixed;}
+.invisible { visibility: hidden; }
+
+#headerContainer { height: 135px; }
+.logo { width: 165px; height: 85px; margin-left: auto; margin-right: auto; }
+#headerButtonsContainer { display: none !important; }
+/* End */
+
+/* Colour */
+.white, a, a:hover, a:link, a:active, a:visited, #inputBoxContainer { color: #FFFFFF; }
+.white {
+    margin-left: 22px;
+}
+
+.whiteBg,.pinIcon { background-color: #FFFFFF; }
+.black { color: #000000; }
+.blackBg { background-color: #000000; }
+.yellow { color: #FFF227; }
+.blue { color: #6BA1CF; }
+.blueBg { background-color: #6BA1CF; }
+.grey { color: #464646; }
+.greyBg { background-color: #5E6A6F; }
+.red { color: #AD0101; }
+#main { background: url("C:/Program Files/NCR APTRA/Advance NDC/webatm/builder/projectAssets/BPI/bg.png") 0px 50% no-repeat;  }
+/*#main { background: #000000; }*/
+.popUpPanelBG 
+  { background: url(../../projectAssets/BPI/pleasewaitBG.png) 0px 100% no-repeat;
+    margin-top: 0.6rem;
+    background-size: 65rem;
+  }
+
+.popUpPanelPleaseWait { 
+  width: 1024px;
+  height: 780px;
+  background: url(../../projectAssets/BPI/pleasewaitBG.PNG) 100% 100% no-repeat;
+  background-size: contain;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: -3rem;
+  z-index: -1;
+}
+
+.lblPleaseWait {
+  padding-top: 65px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}       
+
+/*.popUpPanelReceipt {
+    width: 1024px;
+    height: 780px;
+    background: url(../../projectAssets/BPI/pleasewaitBG_TOP.PNG) 100% 100% no-repeat;
+    background-size: contain;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: -23.5rem;
+    z-index: -1;
+} */
+/*.popUpPanelReceipt {
+    width: 1024px;
+    height: 780px;
+    background: url(../../projectAssets/BPI/pleasewaitBG.PNG) 100% 100% no-repeat;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: -400px;
+    z-index: -1;
+}*/
+#popUpContainer, .enterPin, .cashWithdrawalAmountInput, .deviceProcessingCommonEffects, .bankSelectionListBox {  }
+.bg80 { background: url("../../projectAssets/BPI/graybg.png") 0px 0px repeat; }
+.bg50 { background: url("../../projectAssets/BPI/gray_rounded.png") 0px 0px no-repeat; }
+.bg_with_white { background: url("../../projectAssets/BPI/bg_with_white.png") 0px 0px no-repeat; }
+.bgsq{ background: url("../../projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;}
+.bgsq_gray{ background: url("../../projectAssets/BPI/Amount Button gray.png") 0px 0px no-repeat;}
+.bg_bottom_left{background: url("../../projectAssets/BPI/gray_left_bottom.png") 0px 0px no-repeat;}
+.bg_top_left{background: url("../../projectAssets/BPI/gray_rounded_top.png") 0px 0px no-repeat;}
+#headerContainer { background: url("../../projectAssets/BPI/header.png") 0px 0px repeat-x; }
+.logo { background: url("../../projectAssets/BPI/logo_big.jpg") 0px 0px no-repeat; background-size: 100% 100%; }
+/* End */
+
+/* Font and Font Size */
+html .large { font-size: 110%; }
+.f12 { font-size: 12px; }    .large .f12 { font-size: 13px; }
+.f13 { font-size: 13px; }    .large .f13 { font-size: 14px; }
+.f14 { font-size: 14px; }    .large .f14 { font-size: 15px; }
+.f15 { font-size: 15px; }    .large .f15 { font-size: 17px; }
+.f16 { font-size: 16px; }    .large .f16 { font-size: 18px; }
+.f17 { font-size: 17px; }    .large .f17 { font-size: 19px; }
+.f18 { font-size: 18px; }    .large .f18 { font-size: 20px; }
+.f19 { font-size: 19px; }    .large .f19 { font-size: 21px; }
+.f20 { font-size: 20px; }    .large .f20 { font-size: 22px; }
+.f21 { font-size: 21px; }    .large .f21 { font-size: 23px; }
+.f22 { font-size: 22px; }    .large .f22 { font-size: 24px; }
+.f23 { font-size: 23px; }    .large .f23 { font-size: 25px; }
+.f24 { font-size: 24px; }    .large .f24 { font-size: 26px; }
+.f25 { font-size: 25px; }    .large .f25 { font-size: 28px; }
+.f26 { font-size: 26px; }    .large .f26 { font-size: 29px; }
+.f27 { font-size: 27px; }    .large .f27 { font-size: 30px; }
+.f28 { font-size: 28px; }    .large .f28 { font-size: 31px; }
+.f29 { font-size: 29px; }    .large .f29 { font-size: 32px; }
+.f30 { font-size: 90px; }    .large .f30 { font-size: 33px; }
+.f31 { font-size: 31px; }    .large .f31 { font-size: 34px; }
+.f32 { font-size: 32px; }    .large .f32 { font-size: 35px; }
+.f33 { font-size: 33px; }    .large .f33 { font-size: 36px; }
+.f34 { font-size: 34px; }    .large .f34 { font-size: 37px; }
+.f35 { font-size: 35px; }    .large .f35 { font-size: 39px; }
+.f36 { font-size: 36px; }    .large .f36 { font-size: 40px; }
+.f37 { font-size: 37px; }    .large .f37 { font-size: 41px; }
+.f38 { font-size: 38px; }    .large .f38 { font-size: 42px; }
+.f39 { font-size: 39px; }    .large .f39 { font-size: 43px; }
+.f40 { font-size: 40px; }    .large .f40 { font-size: 44px; }
+.getcashfont{ font-size: 15pt }
+.heading1-cc { font-size: 10pt }
+.heading1 { font-size: 26pt }
+.heading2 { font-size: 30px; }
+.heading3 { font-size: 22pt; }
+.heading4 { font-size: 20pt; }
+.heading5 { font-size: 18pt; }
+.heading6 { font-size: 16pt; }
+/* End */
+
+/*SELECT ACCOUNT TYPE*/
+
+.accountSelection {
+  font-size: 26px !IMPORTANT;
+  width: 350px !important;
+  text-align:center;
+  margin-left:-15px;
+}
+
+.selectPosition1 {
+}
+
+.selectPosition2 {
+}
+
+/* Line Height */
+p { line-height: 1.2; margin-bottom: 0px; }
+/* End */
+
+/* Height & Width */
+#main, #contentViewContainer, #contentViewContainer > div{
+width: 1024px; 
+height: 768px;
+overflow: hidden;
+display: block;
+top: 0px; 
+left: 0px;
+position: absolute;
+}
+#activeListener {
+width: 1024px; 
+height: 768px;
+overflow: hidden;
+display: block;
+top: 111px; 
+left: 0px;
+position: fixed;
+}
+#main > div, #contentViewContainer, #contentViewContainer > div, #popUpContainer, .popUpContainerScreen { width: 100%; height: 100%; }
+/* End */
+
+/* Pin Entry */
+#contentViewContainer div.enterPin {   width: 924px; height: 595px; top: 14px; left: 50px; position:absolute; }
+.enterPin { border-radius: 25px; margin-left: auto; margin-right: auto; margin-top: 130px; padding-left:100px; text-align:left;}
+.enterPin { -webkit-animation: verticalFlipFadein 1s ease-out 0s 1; animation-fill-mode: forwards; }
+.enterPin.exit { -webkit-animation: verticalFlipFadeoutPause 1s ease-out 0s 1; animation-fill-mode: forwards; }
+.enterPin.exit > div { -webkit-animation: fadeout 0.2s ease-out 0s 1; animation-fill-mode: forwards; }
+.pinTitleLabel  {  width: 100%; }
+.pinTitleLabel  { padding-top: 30px; text-align: center; }
+.pinAreaContainer { padding-top: 90px; text-align: center; border:0px;  }
+/*.pinArea { width: 320px; height: 81px; background-image:url("../../projectAssets/BPI/input-box.png"); border:0px; z-index:10; position:absolute;}*/
+/*.pinArea { padding: 25px;border-radius: 0px; margin-left: 155px; margin-top:250px; }*/
+.pinArea{
+    width: 320px;
+    height: 81px;
+    /* background-image: url(../../projectAssets/BPI/input-box.png); */
+    border: 0px;
+    z-index: 100;
+    position: absolute;
+    padding: 25px;
+    border-radius: 0px;
+    margin-left: 100px;
+    margin-top:  252px;
+}
+.pinIcon { width: 20px; height: 20px; background-color:#464646;}
+.pinIcon { border-radius: 50%; display: inline-block; margin-left: 5px; margin-right: 5px; }
+
+#contentViewContainer div.enterPin2 {   width: 924px; height: 595px; top: 14px; left: 50px; position:absolute; }
+.enterPin2 { border-radius: 25px; margin-left: auto; margin-right: auto; margin-top: 130px; }
+.enterPin2 { -webkit-animation: verticalFlipFadein 1s ease-out 0s 1; animation-fill-mode: forwards; }
+.enterPin2.exit { -webkit-animation: verticalFlipFadeoutPause 1s ease-out 0s 1; animation-fill-mode: forwards; }
+.enterPin2.exit > div { -webkit-animation: fadeout 0.2s ease-out 0s 1; animation-fill-mode: forwards; }
+
+/* End */
+
+/* Main Menu */
+/*
+.lblMainMenu { width: 100%; }
+.lblMainMenu { margin-top: 80px; -webkit-animation: fadein 0.5s ease-out 0s 1; animation-fill-mode: forwards; }
+.MAINMENU .menuButtonScreenButtons { width: 824px; height: 500px; }
+.MAINMENU .menuButtonScreenButtons { border-radius: 25px; position: absolute; top: 150px; left: 100px; }
+.MAINMENU .menuButtonScreenButtons { -webkit-animation: verticalFlipFadein 0.5s ease-out 0s 1; animation-fill-mode: forwards; }
+.mainMenuButton { width: 350px; height: 100px; }
+.mainMenuButton { padding: 10px; border-radius: 15px; }
+.mainMenuButton > div { height: 100%; }
+.mainMenuButton > div { border-radius: 10px; padding-top: 20px; padding-left: 100px; }
+.mainMenuButton, .FCButton { border: 2px solid #FFFFFF; border-radius: 15px; }
+.mainMenuButton, .FCButton { -webkit-animation: fadein 3s ease-out 0s 1; animation-fill-mode: forwards; }
+.mainMenuButton.row1 { margin-top: 50px; }
+.mainMenuButton.row2 { margin-top: 175px; }
+.mainMenuButton.col1 { margin-left: 41px; }
+.mainMenuButton.col2 { margin-left: 432px; }
+.FCButton { width: 235px; height: 70px; }
+.FCButton { padding-top: 18px; padding-left: 100px; border-radius: 10px; }
+.FCButton.row3 { margin-top: 300px; }
+.FCButton.row4 { margin-top: 390px; }
+.FCButton.col1 { margin-left: 41px; }
+.FCButton.col2 { margin-left: 294px; }
+.FCButton.col3 { margin-left: 547px; }
+.exit .menuButtonScreenButtons, .smallButtonContainer.exit .menuButtonScreenButtons { -webkit-animation: verticalFlipFadeoutPause 1s ease-out 0s 1; animation-fill-mode: forwards; }
+.menuButtonScreenButtons .selectedButton { background-color: rgba(255,255,255,0.2); }
+.menuButtonScreenButtons .selectedButton { -webkit-animation: fadeout 0.5s ease-out 0s 1; animation-fill-mode: forwards; }
+.menuButtonScreenButtons .unselectedButton { -webkit-animation: fadeout 0.2s ease-out 0s 1; animation-fill-mode: forwards; }
+.otherButton, .balanceButton, .transferButton { border: 2px solid #A9A9A9; color: #A9A9A9 !important; }
+*/
+.lblMainMenu,.lblMainMenu_Dev, .lblMainMenu_Dev2 { width: 875px; height: 569px; font-family:Montserrat;}
+
+.lblMainMenu { position: absolute; top: 152px;  border-radius: 20px; padding-top: 30px; width:330px; text-align:center;}
+.lblSelect{ position: absolute; top: 145px; left: 347px; padding-top: 53px; padding-left: 56px;  font-size:20px; width:650px; height:546px; font-family:Montserrat}
+.lblSelect2{ position: absolute; top: 145px; left: 347px; padding-top: 53px; padding-left: 35px;  font-size:20px; width:650px; height:546px; font-family:Montserrat}
+
+.lblSelect_act{ position: absolute; top: 145px; left: 347px; padding-top: 53px; padding-left: 47px;  font-size:20px; width:650px; height:546px; font-family:Montserrat}
+.lblSelect2_act{ position: absolute; top: 145px; left: 347px; padding-top: 53px; padding-left: 35px;  font-size:20px; width:650px; height:546px; font-family:Montserrat}
+.lblSelect_pin{ position: absolute; top: 145px; left: 347px; padding-top: 53px; padding-left: 78px;  font-size:20px; width:650px; height:546px; font-family:Montserrat}
+
+
+.tab_bg{
+  background:url("../../projectAssets/BPI/Tab.png") 0px 0px no-repeat; 
+    height: 623px;
+    width: 679px;
+
+    }
+.btngrayDisable {
+    width: 780px;
+    height: 749px;
+    background: url(../../projectAssets/BPI/gray_bg.png) 0px 0px no-repeat;
+    position: absolute;
+    margin-left: 332px;
+    margin-top: 110px;
+    z-index: 29;
+}        
+.btngray2{  
+    width: 1024px;
+    height: 768px;
+    /* background: url(../../projectAssets/BPI/gray_bg.png) 0px 0px no-repeat; */
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 108px;
+    z-index: 30;
+    background-color: #7f7f7f;
+    filter: alpha(opacity=50);
+}
+.btngray3{  
+  width:350px;
+  height:749px;
+  background:url("../../projectAssets/BPI/gray_bg.png") 0px 0px no-repeat;
+  position:absolute;
+  margin-left:-10px;
+  margin-top:110px;
+  z-index:29;}
+.btngray4{  
+    width: 1036px;
+    height: 749px;
+  background:url("../../projectAssets/BPI/background_balance.png") 0px 0px no-repeat;
+  position:absolute;
+  margin-left:-10px;
+  margin-top:110px;
+  z-index:29;}  
+
+.receipt_warning {
+    background: url(../../projectAssets/BPI/RedWarning.png) 0px 0px no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 278px;
+    z-index: 99;
+} 
+.receipt_warning-getcash {
+    background: url(../../projectAssets/BPI/RedWarning.png) 0px 0px no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left: 197px;
+    margin-top: 168px;
+    z-index: 99;
+} 
+.receipt_warning-TRANS {
+    background: url(../../projectAssets/BPI/RedWarning.png) 0px 0px no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left: 178px;
+    margin-top: 283px;
+    z-index: 99;
+}
+.receipt_warning-getcash2 {
+    background: url(../../projectAssets/BPI/RedWarning.png) 0px 0px no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 168px;
+    z-index: 99;
+} 
+
+
+.receipt_warning2 {
+    background: url(../../projectAssets/BPI/RedWarning.png) 0px 0px no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 264px;
+    z-index: 99;
+} 
+.receipt_warning3 {
+    background: url(../../projectAssets/BPI/RedWarning.png) 0px 0px no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 262px;
+    z-index: 99;
+} 
+.receipt_warning4 {
+    background: url(../../projectAssets/BPI/RedWarning.png) 0px 0px no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 262px;
+    z-index: 99;
+} 
+.receipt_warning5 {
+    background: url(../../projectAssets/BPI/RedWarning.png) 0px 0px no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left: 175px;
+    margin-top: 262px;
+    z-index: 99;
+}
+.lblMainMenu_Receipt{  top: 145px; left: 50px; border-radius: 20px; padding-top: 65px; text-align:center; font-size:30px; 
+    width: 875px;
+    height: 569px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #000000;
+}  
+.bgPanel{
+    background: url(../../projectAssets/BPI/notificationBG.PNG) 0px 0px no-repeat;
+    border-radius: 10px;
+    z-index: 31;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+.lblPositionEng {
+    font-size: 29px !important;
+    line-height: 2 !important;
+    padding: 0px 230px 0px 290px;
+    margin-left: 10px;
+}
+.top-position-eng {
+    margin-left: 345px !important;
+    margin-top: 420px !important;
+}
+.top-position-tag {
+    margin-left: 330px !important;
+    margin-top: 460px !important;
+}
+.top-center-eng-bal {
+    margin-left: 260px !important;
+    margin-top: 460px !important;
+}
+.top-center-tag-bal {
+    margin-left: 220px !important;
+    margin-top: 460px !important;
+}
+
+.top-center-eng-bal-no-rec {
+    margin-top: 505px !important;
+    margin-left: 260px !important;
+}
+
+.top-center-tag-bal-no-rec {
+    margin-top: 505px !important;
+    margin-left: 220px !important;
+}
+
+.center-right-sec-tip {  
+    top: 145px;
+    left: 80px;
+    padding-top: 120px;
+    font-size: 25px;
+    font-family: Montserrat;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.center-right-sec-tip2 {
+    top: 125px;
+    left: 80px;
+    padding-top: 120px;
+    font-size: 25px;
+    font-family: Montserrat;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.center-right-sec-tip2-tag {
+    top: 145px;
+    left: 80px;
+    padding-top: 120px;
+    font-size: 30px;
+    font-family: Montserrat;
+    line-height: 1.5;
+}
+
+.center-right-pin-notif {
+    margin-top: 150px !important;
+    margin-left: 335px !important;
+    width: 433px !important;
+    height: 2px !important;
+    position: absolute;
+    text-align: left;
+}
+
+.lblPositionTag {
+    font-size: 29px !important;
+    line-height: 2 !important;
+    padding: 0px 235px 0px 260px;
+    margin-left: 10px;
+}
+
+.lblPositionEngDisp {
+    font-size: 29px !important;
+    line-height: 2 !important;
+    padding: 0px 200px 0px 250px;
+    margin-left: 10px;
+}    
+
+.lblPositionTagDisp {
+    font-size: 29px !important;
+    line-height: 2 !important;
+    padding: 0px 170px 0px 220px;
+    margin-left: 10px;
+
+}
+
+.lblLineEngPosition2 {
+    margin-left: 255px !important;
+    margin-top: 470px !important;
+}
+.lblLineTagPosition2 {
+    text-align: center;
+    line-height: 2;
+    margin: 395px 210px 0px 220px !important;
+}
+.dispenser_warning {
+    background: url(../../projectAssets/BPI/RedWarning.png) 0px 0px no-repeat;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left: 278px;
+    margin-top: 278px;
+    z-index: 99;
+}    
+
+.lblLineTransEng {
+  margin-left: 260px !important;
+}
+
+.lblLineTransTag {
+    margin-left: 210px !important;
+}
+
+.check{ background:url("../../projectAssets/BPI/check.png") 0px 0px no-repeat; width:65px; height:57px; position:absolute;margin-left:330px;margin-top:263px; z-index:41;}
+.warning{background:url("../../projectAssets/BPI/RedWarning.png") 0px 0px no-repeat; width:65px; height:58px; position:absolute;margin-left:125px !important;margin-top:276px; z-index:41;}
+.check2{ background:url("../../projectAssets/BPI/check.png") 0px 0px no-repeat; width:65px; height:57px; position:absolute;margin-left:340px;margin-top:346px; z-index:41;}
+.check2_noreceipt{ background:url("../../projectAssets/BPI/check.png") 0px 0px no-repeat; width:65px; height:57px; position:absolute;margin-left:330px;margin-top:345px; z-index:41;}
+.btnwarning{ background:url("../../projectAssets/BPI/graywarning.png") 0px 0px no-repeat; width:65px; height:65px; position:absolute;margin-left:220px;margin-top:488px; z-index:41;}
+.btnwarning_noreceipt{ background:url("../../projectAssets/BPI/graywarning.png") 0px 0px no-repeat; width:65px; height:65px; position:absolute;margin-left:220px;margin-top:440px; z-index:41;}
+.btnwhite{
+    width: 258px;
+    height: 84px;
+    z-index: 41;
+    font-size: 25px;
+    font-family: Montserrat;
+    position: absolute;
+    margin-top: 555px;
+    margin-left: 229px;
+    padding-top: 30px;
+    background: url(../../projectAssets/BPI/btnwhite.png) 0px 0px no-repeat;
+}
+
+.btnwhite-norec{
+    width: 258px;
+    height: 84px;
+    z-index: 41;
+    font-size: 25px;
+    font-family: Montserrat;
+    position: absolute;
+    margin-top: 660px;
+    margin-left: 730px;
+    padding-top: 30px;
+    background: url(../../projectAssets/BPI/btnwhite.png) 0px 0px no-repeat;
+}
+
+.btnwhite-chain{
+  width:258px;
+  height:84px;
+  z-index:41;
+  font-size:25px;
+  font-family:Montserrat;
+  position:absolute;
+  margin-top:555px;
+  margin-left:537px;
+  padding-top:28px;
+    background: url(../../projectAssets/BPI/btnwhite.png) 0px 0px no-repeat;
+}
+
+.btnred{
+  width:258px;
+  height:84px;
+  z-index:41;
+  font-size:25px;
+  font-family:Montserrat;
+  position:absolute;
+  margin-top:555px;
+  margin-left:537px;
+  padding-top:28px;
+  background:url("../../projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;
+}
+
+
+.btnred-norec{
+  width:258px;
+  height:84px;
+  z-index:41;
+  font-size:25px;
+  font-family:Montserrat;
+  position:absolute;
+  margin-top:570px;
+  margin-left:730px;
+  padding-top:28px;
+  background:url("../../projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;
+}
+
+.btnred-chain{
+    width: 258px;
+    height: 84px;
+    z-index: 41;
+    font-size: 25px;
+    font-family: Montserrat;
+    position: absolute;
+    margin-top: 555px;
+    margin-left: 229px;
+    padding-top: 30px;
+  background:url("../../projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;
+}
+
+
+
+.btnwhite-disabled{
+	visibility: hidden;
+    width: 258px;
+    height: 84px;
+    z-index: 41;
+    font-size: 25px;
+    font-family: Montserrat;
+    position: absolute;
+    margin-top: 555px;
+    margin-left: 229px;
+    padding-top: 30px;
+    background: url(../../projectAssets/BPI/btnwhite.png) 0px 0px no-repeat;
+}
+
+.btnred-disabled{
+  visibility: hidden;
+  width:258px;
+  height:84px;
+  z-index:41;
+  font-size:25px;
+  font-family:Montserrat;
+  position:absolute;
+  margin-top:555px;
+  margin-left:537px;
+  padding-top:28px;
+  background:url("../../projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;
+}
+
+
+.btnred_con{
+  width:258px;
+  height:84px;
+  z-index:41;
+  font-size:25px;
+  font-family:Montserrat;
+  position:absolute;
+  margin-top:520px;
+  margin-left:382px;
+  padding-top:28px;
+  background:url("../../projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;
+}
+.btnwhite-err2{
+    width: 258px;
+    height: 84px;
+    z-index: 41;
+    font-size: 25px;
+    font-family: Montserrat;
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 229px;
+    padding-top: 30px;
+    background: url(../../projectAssets/BPI/btnwhite.png) 0px 0px no-repeat;
+}
+
+.btnwhite-err{
+    width: 258px;
+    height: 84px;
+    z-index: 41;
+    font-size: 25px;
+    font-family: Montserrat;
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 229px;
+    padding-top: 30px;
+    background: url(../../projectAssets/BPI/btnwhite.png) 0px 0px no-repeat;
+}
+.btnwhite-err-chain{
+  width:258px;
+  height:84px;
+  z-index:41;
+  font-size:25px;
+  font-family:Montserrat;
+  position:absolute;
+  margin-top:520px;
+  margin-left:530px;
+  padding-top:28px;
+    background: url(../../projectAssets/BPI/btnwhite.png) 0px 0px no-repeat;
+}
+.btnred-err{
+  width:258px;
+  height:84px;
+  z-index:41;
+  font-size:25px;
+  font-family:Montserrat;
+  position:absolute;
+  margin-top:520px;
+  margin-left:530px;
+  padding-top:28px;
+  background:url("../../projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;
+}
+.btnred-err2{
+  width:258px;
+  height:84px;
+  z-index:41;
+  font-size:25px;
+  font-family:Montserrat;
+  position:absolute;
+  margin-top:520px;
+  margin-left:530px;
+  padding-top:28px;
+  background:url("../../projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;
+}
+
+.btnred-err-chain{
+    width: 258px;
+    height: 84px;
+    z-index: 41;
+    font-size: 25px;
+    font-family: Montserrat;
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 229px;
+    padding-top: 30px;
+  background:url("../../projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;
+}
+.btnOk{
+    width: 258px;
+    height: 84px;
+    z-index: 41;
+    font-size: 25px;
+    font-family: Montserrat;
+    position: absolute;
+    margin-top: 584px;
+    margin-left: 390px;
+    padding-top: 28px;
+    background: url("../../projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;
+}
+
+.f35{
+    font-size:35px;
+}
+.center{
+  text-align:center;
+}
+.lblMainMenu_Bal{top: 145px; width:1024px; border-radius: 20px; padding-top: 65px; text-align:center; font-size:30px; }
+.lblMainMenu_Dev{  top: 145px; left: 80px; border-radius: 20px; padding-top: 65px; text-align:center; font-size:30px; }
+.lblMainMenu_Dev2{   top: 145px; left: 80px; border-radius: 20px; padding-top: 135px; text-align:center; font-size:39px; }
+.lblMainMenu_Dev3{  top: 190px; left: 80px; border-radius: 20px; padding-top: 65px; text-align:center; font-size:30px; }
+.lblMainMenu_Dev4{   top: 145px; padding-top: 135px; text-align:center; font-size:39px;width:1024px; }
+.lblcurrent {
+    font-family: Montserrat;
+    font-size: 28px;
+    color: #000000;
+    margin-top: 274px;
+    text-align: center;
+    width: 1024px;
+}
+
+.lblcurrent_val{font-family:Montserrat;  font-size: 20px; color:#000000; margin-top:314px; margin-left:auto;position:fixed;width:1024px;text-align:center;}
+.lblavaialable {
+    font-family: Montserrat;
+    font-size: 28px;
+    color: #000000;
+    margin-top: 358px;
+    width: 1024px;
+    text-align: center;
+}
+
+.lblavaialable_val{font-family:Montserrat; font-size: 20px; color:#000000; margin-top:394px;width:1024px;text-align:center;}
+.bgDevProcess {}
+
+.lblFastCash { width: 300px; height: 45px; font-family:Montserrat}
+.lblFastCash {  }
+.lblFastCash { position: absolute; top: 230px; left: 67px; border-top-left-radius: 20px; padding-top: 37px; padding-left: 30px; }
+.FCButton { width: 258px; height: 84px; margin-left:-30px; }
+.buttonCashWithdrawal{margin-top: 29px;font-size: 21px;margin-left: -34px;}
+.FCButton_enter{width: 254px; height:78px;margin-top:563px;margin-left:-30px; }
+.FCButton.fc5Button{height:84px;}
+.FCButtonWith.fc5Button{height:84px;}
+.menuButtonScreenButtonLabels{font-family:Montserrat;}
+.inputButton {font-family:Montserrat;}
+.FCButton.fc1Button, .FCButton.fc2Button, .FCButton.fc3Button, .FCButton.fc4Button{ }
+.FCButton.currentFC1, .FCButton.savingsFC2, .FCButton.prepaidButton {  }
+.FCButton,.FCButton_enter { position: absolute; left: 67px; }
+.FCButton .menuButtonScreenButtonLabels, .FCButton_enter.menuButtonScreenButtonLabels { width: 176px; height: 59%; font-family:Montserrat  }
+
+/*.fc1Button .menuButtonScreenButtonLabels { background: url("../../projectAssets/BPI/arrow.png") 60px 40% no-repeat;  }
+.fc2Button .menuButtonScreenButtonLabels { background: url("../../projectAssets/BPI/arrow.png") 60px 40% no-repeat;  }
+.fc3Button .menuButtonScreenButtonLabels { background: url("../../projectAssets/BPI/arrow.png") 60px 40% no-repeat;  }
+.fc4Button .menuButtonScreenButtonLabels { background: url("../../projectAssets/BPI/arrow.png") 60px 40% no-repeat;  }
+.currentFC1 .menuButtonScreenButtonLabels { background: url("../../projectAssets/BPI/arrow.png") 60px 40% no-repeat;  }
+.savingsFC2 .menuButtonScreenButtonLabels { background: url("../../projectAssets/BPI/arrow.png") 60px 40% no-repeat;  }
+.prepaidFC3 .menuButtonScreenButtonLabels { background: url("../../projectAssets/BPI/arrow.png") 60px 40% no-repeat;  }*/
+.dax-reg{
+  font-family:Montserrat;
+}
+
+.FCButton .menuButtonScreenButtonLabels { padding-top: 25px; width:330px; text-align:center; margin-left: -36px;}
+.mainMenuLabels{ font-size: 24px;  }
+.fc1Button { top: 240px; }
+.currentFC1{top:230px; }
+.fc2Button { top: 320px; }
+.savingsFC2 { top: 305px; }
+.fc3Button { top: 400px; }
+.prepaidFC3 { top: 367px; }
+.fcextra { top: 435px; }
+.fc4Button { top: 480px; }
+.fcextra2 { top: 503px; }
+.fcextra3 { top: 576px; }
+.fc5Button { top: 560px; }
+.fcextra4 { top: 575px; }
+.withdrawalButton { border: none; }
+.withdrawalButton { border-bottom-left-radius: 20px; }
+.withdrawalButton .menuButtonScreenButtonLabels { width: 310; height: 65px;}
+.withdrawalButton .menuButtonScreenButtonLabels { background:url("../../projectAssets/BPI/oblong2.png") 0px 0px no-repeat; }
+.withdrawalButton .menuButtonScreenButtonLabels { padding: 0px; padding-top: 10px; margin-top: 9px; margin-left: 10px; border-radius: 25px; }
+.mainMenuButton ,.right_top_corner{ width: 195px; height: 210px; }
+.mainMenuButton { background: #FFFFFF; background-position: 50% 20px; background-repeat: no-repeat; }
+.mainMenuButton.bgrounded{background:url("../../projectAssets/BPI/white_right_top.png") 0px 0px no-repeat; }
+.mainMenuButton.bgrounded_bottom{background:url("../../projectAssets/BPI/white_right_bottom.png") 0px 0px no-repeat; }
+/*.menuButtonScreenButtons .prepaidButton.{  }*/
+.mainMenuButton , .right_top_corner{ position: absolute; }
+.mainMenuButton.row1 { top: 240px;}
+.mainMenuButton.row2 { top: 450px;}
+.mainMenuButton.col1 { width: 200px;}
+.mainMenuButton.col1 { left: 384px; }
+.mainMenuButton.col2 { left: 583px; }
+.mainMenuButton.col3 { left: 772px; }
+.mainMenuButton .menuButtonScreenButtonLabels, .mainMenuButton .inputScreenButtonsLabels { /* background: url("../../projectAssets/BPI/icon_bulletpoint(disabled).png") 20px 155px no-repeat; */ }
+.mainMenuButton .menuButtonScreenButtonLabels, .mainMenuButton .inputScreenButtonsLabels { padding-top: 154px; /* padding-left: 50px; */ text-align: center; }
+.mainMenuButton.shortLabel .menuButtonScreenButtonLabels, .mainMenuButton.shortLabel .inputScreenButtonsLabels { /* padding-left: 60px; */ }
+.mainMenuButton.longLabel .menuButtonScreenButtonLabels, .mainMenuButton.longLabel .inputScreenButtonsLabels { /* padding-left: 45px; */ }
+
+.mainMenuButton.col1, .mainMenuButton.col2 {  }
+.mainMenuButton.row1 {  }
+.mainMenuButton.col3.row2 { }
+.mainMenuButton.col3.row1 {
+    left: 784px;
+}
+.balanceButton, .payBillButton , .balanceButton_disabled{ }
+.transferButton,.prepaidButton,.customerButton,.blank{}
+
+.payBillButton,.customerButton,.blank{}
+.balanceButton { background-image: url("../../projectAssets/BPI/icon_balance.png"); }
+.balanceButton_disabled { background-image: url("../../projectAssets/BPI/icon_balance(disabled).png"); }
+.myAccountButton { background-image: url("../../projectAssets/BPI/icon_myaccount(disabled) - Copy.png"); }
+.prepaidButton{ background-image: url("../../projectAssets/BPI/btnLoadCellphone.PNG");}
+.transferButton { background-image: url("../../projectAssets/BPI/icon_transfer(disabled).png"); }
+.payBillButton { background-image: url("../../projectAssets/BPI/btnLoadCellphone.PNG"); }
+.customerButton { background-image: url("../../projectAssets/BPI/icon_inquiry(disabled).png"); }
+.promotionButton { background-image: url("../../projectAssets/BPI/icon_promotion(disabled).png"); }
+.enrollmentsButton { background-image: url("../../projectAssets/BPI/btnActivateEnrollments.png"); }
+.otherButton { background-image: url("../../projectAssets/BPI/icon_otherservice(disabled).png"); }
+.blank.menuButtonScreenButtons{ background-image: url("../../projectAssets/BPI/white_right_bottom.png"); }
+.buttonOverlayLabel .menuButtonScreenButtons { position: fixed; top: 0%; left: 0%; z-index: 10; }
+.buttonOverlayLabel2 .menuButtonScreenButtons { position: fixed; top: 0%; left: 0%; }
+/* End */
+
+/* Menu - Account Selection */
+
+.smallButtonContainer .menuButtonScreenButtons { width: 824px; height: 268px; font-family:Montserrat }
+.smallButtonContainer .menuButtonScreenButtons { border-radius: 25px; position: absolute; top: 250px; left: 100px; }
+.smallButtonContainer .menuButtonScreenButtons { -webkit-animation: verticalFlipFadein 0.5s ease-out 0s 1; animation-fill-mode: forwards; }
+/*
+.accountTypeButton { width: 350px; height: 100px; }
+.accountTypeButton  { border: 2px solid #FFFFFF; border-radius: 15px; padding-top: 30px; }
+.buttonCurrent { margin-top: 120px; margin-left: 41px; }
+.buttonSaving { margin-top: 120px; margin-left: 432px; }
+.accountTypeTitleLabel { width: 100%; } 
+.accountTypeTitleLabel { margin-top: 280px; } 
+*/
+.languageTitleLabel, .receiptTitleLabel, .genericTitleLabel { width: 100%; } 
+.languageTitleLabel, .genericTitleLabel { margin-top: 100px; } 
+.standardButton, .fdkSelectionScreen a { height: 65px; width: 300px; }
+.standardButton, .fdkSelectionScreen a { background-color: #C0010C; }
+.standardButton, .fdkSelectionScreen a { border-radius: 32px; margin-top: 25px; }
+.buttonEnglish { background: #C0010C url("../../projectAssets/BPI/icon_english.png") 97% 50% no-repeat; background-size: 50px; }
+.buttonTanglish { background: #C0010C url("../../projectAssets/BPI/icon_taglish.png") 97% 50% no-repeat; background-size: 50px; }
+.buttonEnglish, .buttonTanglish, .buttonTwoButtonLeft, .buttonTwoButtonRight { padding-right: 55px; padding-top: 15px; }
+.buttonTwoButtonLeft, .buttonTwoButtonRight { top: 130px; position: absolute; padding-right: 0px; }
+.buttonTwoButtonLeft { left: 50px; }
+.buttonTwoButtonRight { left: 450px; }
+.receiptTitleLabel { margin-top: 230px; } 
+/* End */
+
+/* Device */
+.loadingIconSVG { position: absolute; margin-top: 300px; margin-left: 440px; width: 150px; }
+.deviceTextLineOne200 { margin-top: 420px; }
+
+#contentViewContainer div.deviceProcessingCommonEffects { width: 824px; height: 150px; }
+.deviceProcessingCommonEffects { border-radius: 25px; margin-left: auto; margin-right: auto; margin-top: 284px; }
+.deviceProcessingCommonEffects { -webkit-animation: verticalFlipFadein 1s ease-out 0s 1; animation-fill-mode: forwards; }
+.deviceProcessingCommonEffects.exit { -webkit-animation: verticalFlipFadeout 1s ease-out 0s 1; animation-fill-mode: forwards; }
+.deviceProcessingCommonLabels { padding-top: 320px; margin-left:315px; }
+.deviceProcessingCommonLabels2 { padding-top: 35px; }
+/* End */
+
+/* Input */
+#contentViewContainer div.cashWithdrawalAmountInput { width: 824px; height: 500px; }
+.cashWithdrawalAmountInput { border-radius: 25px; position: absolute; top: 134px; left: 100px; }
+.cashWithdrawalAmountInput { -webkit-animation: verticalFlipFadein 0.5s ease-out 0s 1; animation-fill-mode: forwards; }
+.cashWithdrawalAmountInput > div { -webkit-animation: fadein 3s ease-out 0s 1; animation-fill-mode: forwards; }
+.cashWithdrawalAmountInput input { display: none; }
+.cashWithdrawalAmountInput #inputBoxContainer { position: absolute; margin-top: 180px; margin-left: 40px;  }
+.cashWithdrawalAmountInput .withdrawalLabel { top: 250px; margin-left: 40px;  }
+.cashWithdrawalAmountInput .accountTypeLabel { top: 270px; margin-left: 40px;  }
+/*.buttonCashWithdrawal, .buttonTransfer { width: 260px; height: 70px; }*/
+/*.buttonCashWithdrawal, .buttonTransfer { border: 1px solid #FFFFFF; border-radius: 10px; bottom: 25px; right: 65px; padding-top: 14px; }*/
+.buttonTransferLeft { left: 65px; }
+.inputScreenButtons.withdrawalButton.inputScreenButtonsLabels{background:url("../../projectAssets/BPI/oblong2.png") 0px 0px no-repeat; }
+.inputNum { font-size: 23px; text-align: center; font-weight: bold; font-family:Montserrat;color:#000000; }
+.inputNum { }
+.inputNum { width: 100px; height: 55px; margin-top:-5px; position:absolute;}
+.inputNum { position: absolute; }
+
+.inputScreenSKB_BACKSPACE { display: none; }
+/*.inputScreenSKB_0 {width:200px; position:absolute;}*/
+.inputScreenSKB_1, .inputScreenSKB_2, .inputScreenSKB_3 { top: 309px;  COLOR:#000000;}
+.inputScreenSKB_4, .inputScreenSKB_5, .inputScreenSKB_6 { top: 378px; }
+.inputScreenSKB_7, .inputScreenSKB_8, .inputScreenSKB_9 { top: 449px; }
+.inputScreenSKB_BACKSPACE, .inputScreenSKB_0, .inputScreenSKB_CLEAR { top: 525px; }
+.inputScreenSKB_1, .inputScreenSKB_4, .inputScreenSKB_7, .inputScreenSKB_0, .inputScreenSKB_BACKSPACE { left: 67px; }
+.inputScreenSKB_2, .inputScreenSKB_5, .inputScreenSKB_8{ left: 167px; }
+.inputScreenSKB_3, .inputScreenSKB_6, .inputScreenSKB_9, .inputScreenSKB_CLEAR { left: 267px; }
+.inputScreenSKB_0,.inputScreenSKB_CLEAR{ margin-left:-10px;}
+.inputScreenSKB_0 { border-bottom-left-radius: 20px; }
+.inputScreenSKB_3, .inputScreenSKB_6, .inputScreenSKB_9, .inputScreenSKB_CLEAR { border-right: none; }
+.inputScreenSKBNext{ border-bottom: none; }
+.inputScreenSKBNext{border-top: #FFFFFF 1px solid;}
+.cashWithdrawalAmountInput.exit { -webkit-animation: verticalFlipFadeoutPause 1s ease-out 0s 1; animation-fill-mode: forwards; }
+.cashWithdrawalAmountInput.exit > div { -webkit-animation: fadeout 0.5s ease-out 0s 1; animation-fill-mode: forwards; }
+
+.labelDisplayText { margin-top: 30px; margin-left: 30px; }
+.inputDisplayText { width: 300px; height: 26px; }
+.inputDisplayText { margin-left: 30px; }
+
+.transferPage #inputBoxContainer { margin-left: 30px; }
+.inputAccountNumberPage #inputBoxContainer { margin-top: 120px; }
+.inputReferencePage #inputBoxContainer { margin-top: 190px; }
+.inputAmountPage #inputBoxContainer { margin-top: 260px; }
+.transferPage h1.inputDisplay { font-size: 35px; }
+.transferPage h1.inputDisplay, .labelDisplayText.active, .transferConfirmationPage .inputDisplayText { color: #FF9E4F; }
+.transferConfirmTitle { margin-top: 30px; }
+.transferConfirmationPage .col1 { left: 45px; }
+.transferConfirmationPage .col2 { left: 470px; }
+.transferConfirmationPage .row1 { top: 90px; }
+.transferConfirmationPage .row2 { top: 150px; }
+.transferConfirmationPage .row3 { top: 220px; }
+.transferConfirmationPage .row4 { top: 280px; }
+
+.bankNameText { width: 460px; }
+.transferConfirmationPage .bankNameText { width: 300px; }
+
+.lblAmount { width: 300px; height: 78px; }
+.lblAmount { color: #565555; font-weight: bold; }
+.lblAmount { padding-top:24px;position: absolute;top: 189px;left: 26px;font-size: 33px;border-top-left-radius: 20px;padding-left: 30px;    font-weight: bold; background: url("../../projectAssets/BPI/input_area.png") 0px 0px no-repeat;}
+input.withdrawalAmountInput {position:absolute; width: 300px; height:35px; background:transparent; font-size:30px; border: 0; color:#565555; margin-top:174px; font-family:Montserrat;     font-weight: bold;}
+.cashWithdrawalAmountInput1 .inputDisplay { color: #565555; }
+.cashWithdrawalAmountInput1 .inputDisplay { width: 215px; height: 45px; }
+.cashWithdrawalAmountInput1 .inputDisplay { font-size: 30px; }
+.cashWithdrawalAmountInput1 .inputDisplay { text-align: right; position: absolute; top: 250px; z-index: 10; left: 135px; overflow: hidden; }
+.extraPaddingTop { padding-top: 3px; }
+/* End */
+
+/* List Box */
+.listboxSearchContainer { display: none; }
+#contentViewContainer div.bankSelectionListBox { width: 924px; height: 500px; }
+.bankSelectionListBox { border-radius: 25px; position: absolute; top: 150px; left: 50px; }
+.transferBankSelectionTitle { width: 100%; }
+.transferBankSelectionTitle { margin-top: 10px; }
+.bankSelectionListBox .listBox li { width: 200px; height: 100px; }
+.bankSelectionListBox .listBox li { list-style: none; position: relative; float: left; border-radius: 10px; margin-left: 15px; border: 2px solid #FFFFFF; }
+.bankSelectionListBox .listBox li:nth-child(n+5) { margin-top: 20px; }
+.owl-theme .owl-controls { margin-top: 20px; }
+.owl-theme .owl-controls .owl-page { zoom: 1.5; }
+/*.listBoxScreenButtonsLabels { padding-top: 15px; }*/
+/*.listBoxScreenButtonsLabels p { font-size: 14px; color: #FFFFFF; text-align: right; padding-right: 15px; }*/
+.listBoxScreenButtonsLabels p.bankName { height: 60px; }
+.listBoxScreenButtonsLabels p.bankName { font-size: 22px; color: #FFFFFF; text-align: left; padding-left: 15px; padding-top: 10px; overflow: hidden; }
+
+.bankSelectionListBox { -webkit-animation: verticalFlipFadein 0.5s ease-out 0s 1; animation-fill-mode: forwards; }
+.bankSelectionListBox > div { -webkit-animation: Fadein 2s ease-out 0s 1; animation-fill-mode: forwards; }
+/* End */
+
+/* Idle */
+/*
+.idleScreenLabels { position: relative; }
+.idleLabel { width: 100%; }
+.idleLabel { padding-top: 50px; }
+.idleLabel { -webkit-animation: changeTextColor 2s ease-out 0s infinite; }
+*/
+.idleArea { width:100%; height: 100%; }
+.idleArea { position: absolute; top: 0px; left: 0px; }
+/* End */
+
+/* Pop Up Container */
+/* End */
+
+/* Effects */
+@-webkit-keyframes verticalFlipFadeoutPause {
+    0%{ -webkit-transform: rotateX(0deg); opacity: 1; }
+    15%{ -webkit-transform: rotateX(0deg); opacity: 1; }
+    100% { -webkit-transform: rotateX(360deg);  opacity: 0; }
+}
+@-webkit-keyframes verticalFlipFadeout {
+    0%{ -webkit-transform: rotateX(0deg); opacity: 1; }
+    100% { -webkit-transform: rotateX(360deg);  opacity: 0; }
+}
+@-webkit-keyframes verticalFlipFadein {
+    0%{ -webkit-transform: rotateX(0deg); opacity: 0; }
+    100% { -webkit-transform: rotateX(360deg);  opacity: 1; }
+}
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-webkit-keyframes changeBgColor {
+    from { background-color: rgba(0,0,0,0.5); }
+    to { background-color: rgba(255,255,255,0.5); }
+}
+@-webkit-keyframes changeTextColor {
+    0% { color: #FFFFFF; }
+    50% { color: #599AD8; }
+    100% { color: #FFFFFF; }
+}
+/* End */
+
+/* FDK CSS */
+.FDKButton { position: absolute; }
+.FDKA { top: 265px; right: 15px; }
+.FDKB { top: 390px; right: 15px;; }
+.FDKC { top: 515px; right: 15px; }
+.FDKD { top: 640px; right: 15px; }
+.FDKF { top: 640px; left: 15px; }
+.FDKG { top: 515px; left: 15px; }
+.FDKH { top: 390px; left: 15px; }
+.FDKI { top: 265px; left: 15px; }
+
+.fdkSelectionScreen a { font-size: 26px; }
+.fdkSelectionScreen a { position: absolute; padding-top: 12px; text-align: center; }
+.fdkSelectionScreen .menuTitle1, .fdkSelectionScreen .menuTitle2 { font-size: 26pt; }
+.fdkSelectionScreen .menuTitle1, .fdkSelectionScreen .menuTitle2 { color: #FFFFFF; }
+.fdkSelectionScreen .menuTitle1 { margin-top: 100px; }
+.fdkSelectionScreen .label1, .fdkSelectionScreen .label2, .fdkSelectionScreen .menuTitle1, .fdkSelectionScreen .menuTitle2 { text-align: center; position: absolute; width: 100%;}
+/* End */
+
+/* Language */
+#languageFontContainer { position: absolute; top: 30px; left: 1043px; z-index:20;padding-left:-30px; }
+#languageFontContainer { height: 75px; }
+.languageButton { width: 125px; height: 30px;}
+.languageButton { top: 20px;  }
+.languageButton .languageFontScreenButtonsLabels { padding-top: 5px; font-family:Montserrat; }
+.languageFontScreenBtnTanglish { right: 15px;  background:url("../../projectAssets/BPI/btn_lang.png") 0px 0px no-repeat; margin-top:15px;}
+.languageFontScreenBtnEnglish { right: 155px; background:url("../../projectAssets/BPI/btn_lang.png") 0px 0px no-repeat;  margin-top:-30px;margin-right:-140px; }
+.languageButton.selected .languageFontScreenButtonsLabels { font-family:Montserrat}
+.languageButton.selected p { color: #FFFFFF!important; }
+.btnEnglish_color{ margin-left: 21px; font-size:13px !important; margin-top:1px;}
+.btnTaglish_color{ margin-left: 21px; font-size:13px !important; margin-top:1px;}
+/* End */
+
+
+
+/* For Amount Entry */
+.inputArea{
+  margin-top:256px;
+  width:220px;
+  height:40px;
+  margin-left:160px;
+  position:absolute;
+  background-color:transparent;
+  border:0px;
+  font-size:20px;
+}
+
+/* END */
+
+/* Burger */
+.lblGreetings{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:55px;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px;
+  text-align:center;
+
+}
+
+.lblGreetings_BAL_NOREC{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top: 20px;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px;
+  
+  text-align:center;
+
+}
+.lblGreetings_PL_ICC{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:55px;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px;
+  text-align:center;
+}
+
+.lblGreetings_PL_REM{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:-200px;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px;
+  text-align:center;
+}
+
+.lblGreetings_PL_REM2{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:-225px;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px;
+  text-align:center;
+}
+
+.lblGreetings_ERR{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:54px;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px;
+  text-align:center;
+}
+
+.lblGreetings_CARDREC{
+  font-family: 'Montserrat'; 
+  position:absolute;	
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px;
+  margin-top:54px;
+  text-align:center;
+}
+
+.lblGreetings_PL_REM3{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:-395px;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px;
+  text-align:center;
+}
+.lblGreetings_PL{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:-266px;
+  text-align:center;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px; 
+  
+  
+}
+
+.lblGreetings_PLS{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:-285px;
+  text-align:center;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px; 
+  
+  
+}
+
+.lblGreetings_PLS_ICC{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:-285px;
+  text-align:center;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px; 
+  
+  
+}
+
+.lblGreetings_PLS_ICC2{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:-305px;
+  text-align:center;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px; 
+  
+  
+}
+
+.lblGreetings_PLS2{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:-305px;
+  text-align:center;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px; 
+  
+  
+}
+.lblGreetings_PL_PIN{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:31PX;
+  text-align:center;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px; 
+  
+  
+}
+.lblGreetings_PL_Cancel{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  text-align:center;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px; 
+  margin-top:55px;
+  
+  
+}
+
+.lblGreetings_PL_limit{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  text-align:center;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px; 
+  margin-top:24px;
+  
+  
+}
+
+
+.lblGreetings_PL_Receipt{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:55px;
+  text-align:center;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px; 
+  
+  
+}
+.lblGreetings_PL_GetCash{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  text-align:center;
+  margin-top:25px;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+ 
+  width:1024px;
+}
+.lblGreetings_PL_GetCard{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  text-align:center;
+  margin-top:55px;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  
+  width:1024px;
+}
+.lblGreetings_PL_IMP {
+    font-family: 'Montserrat';
+    position: absolute;
+    text-align: center;
+    margin-top: -395px;
+    color: #c0010c;
+    font-size: 30px !important;
+    
+    z-index: 10;
+    width: 1024px;
+}
+
+
+.lblGreetings_PL_EN{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  text-align:center;
+  margin-top:-226px;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px;
+}
+
+.lblGreetings_PL_EN2{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  text-align:center;
+  margin-top:-250px;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10;
+  width:1024px;
+}
+
+.lblGreetings_PL2{
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:61px;
+  width:1024px;
+  text-align:center;
+  color:#c0010c;
+  font-size:30px !important;
+  
+  z-index:10
+}
+
+.lblGreetings2{
+  font-size:250px;
+  font-family: 'Montserrat'; 
+  position:absolute;
+  margin-top:55px;
+  
+  color:#c0010c;
+  
+  z-index:10
+}
+.top-greetings{
+  margin-top:25px;
+}
+/* END */
+
+/* TIME */
+.lblTime{
+  position:absolute;
+  margin-top:10px;
+  margin-left:920px;
+  color:#ffffff;
+  font-size:20px; 
+}
+/* END */
+
+/* TIME OUT */
+.activeListnerLabel2{
+    position: absolute;
+    font-size: 30px;
+    color: #000000;
+
+    padding: 0px; 
+    margin-left: 170px; 
+    margin-right: 170px; 
+    position: absolute; 
+    text-align: center;
+    margin-top: 60px;
+ 
+}
+
+.activeListnerLabelsStandardLbl{
+    position: absolute;
+    font-size: 30px;
+    color: #746f6f;
+    margin-top: 68px;
+    margin-left: 121px;
+    font-size: 42px;
+        font-family: Montserrat Medium;	
+}
+/* END */
+
+/* TIMEOUT */
+
+#activeListener{
+   background-color:#ffffff;
+   position:fixed;
+   z-index:100;
+}
+.activeTimerBtnYes{
+    color: #FFFFFF;
+    position:absolute;
+    font-size: 20px;
+    top: 189px;
+    left: 630px;
+    height: 84px;
+    width: 303px;
+ 
+    padding-top: 28px;
+    text-align:center;
+    background: url("../../projectAssets/BPI/timeoutbutton.png") 0px 0px no-repeat;
+    font-family: Montserrat;
+}
+.activeTimerBtnNo{
+    color: #FFFFFF;
+    position:absolute;
+    font-size: 20px;
+    top: 328px;
+    left: 630px;
+    height: 84px;
+    width: 303px;
+    padding-top: 28px;
+    text-align:center;
+    background: url("../../projectAssets/BPI/timeoutbutton.png") 0px 0px no-repeat;
+    font-family: Montserrat;
+    margin-top: -65px !important;
+}
+
+.activeTimerBtnLbl2{
+	margin-top:-30px;
+	margin-left:62px;
+    	position:absolute;
+}
+
+/* END */
+
+/* Red Line */
+
+
+#redLine{
+  background-image:url("../../projectAssets/BPI/red.jpg");
+  background-repeat: repeat;
+  width:1024px;
+  height:50px;
+  position:absolute;
+  margin-top:84px;
+  z-index:-1;
+}
+/* END */
+
+.mainTitleLabel{
+  position:absolute;
+}
+
+.title_one_left_top{
+    margin-left: 4%;
+  margin-top:30px;
+}
+
+.title_one_center_bottom{
+    margin-left: 28%;
+  margin-top:320px;
+  color:#000000;
+  font-family:Montserrat;
+}
+.title_one_center_bottom_noreceipt{
+    margin-left: 23%;
+  margin-top:286px;
+  color:#000000;
+  font-family:Montserrat;
+}
+.title_one_center_bottom_chain{
+    margin-left: 16%;
+  font-size:34px;
+  margin-top:200px;
+  color:#000000;
+  font-family:Montserrat;
+}
+
+
+.lblAvailable{
+    margin-left: 30%;
+  margin-top:215px;
+  line-height: 35px;
+  font-family:Montserrat;
+  width:370px;
+  height:166px;
+  text-align:center;
+}
+.lblchain{
+font-family:Montserrat; font-size: 30px; color:#000000; margin-top:450px; width:1024px; text-align:center;
+  }
+.lblchain2{
+font-family:Montserrat; font-weight: bold; font-size: 30px; color:#000000; margin-top:450px; margin-left:300px;
+  }
+.lbl_available_val{
+    margin-left: 30%;
+  margin-top:215px;
+  line-height: 126px;
+  font-family:Montserrat;
+  width:370px;
+  height:166px;
+  text-align:center;
+}
+
+#logo{
+  background-image:url("../../projectAssets/BPI/logo.png");
+  width:165px;
+  height:85px;
+  position:absolute;
+  margin-left:48px;
+  z-index:4;
+  margin-top:19px;
+}
+
+.clocktime{
+ color:#ffffff;
+ position:absolute;
+ top:0px;
+ right:0;
+ z-index: 20px;
+}
+.pinEntryScreen{
+  font-family:Montserrat;
+}
+
+#dateTimeContainer { display: block;z-index: 20;position: absolute; width: 300px;height: 50px;right: -257px;top: 8px; }
+
+
+.txtenter_p_bal{
+  margin-left:-17px;
+  margin-top:3px;
+  padding:10px;
+  font-size:30px;
+}
+
+/*.txtsubmit{
+  margin-top:14px;
+  height:100px;
+  width:310px;
+  text-align:center;
+  background:url("../../projectAssets/BPI/oblong_marg.png") 0px 0px no-repeat;
+}
+*/
+.btnyes{
+  margin-top:370px;
+  margin-left:140px;
+  font-family:Montserrat;
+  height:100px;
+  width:310px;
+  text-align:center;
+  line-height:35px;
+  background:url("../../projectAssets/BPI/oblong.png") 0px 0px no-repeat;
+
+}
+
+.btnno{
+  margin-top:370px;
+  margin-left:440px;
+  font-family:Montserrat;
+  height:100px;
+  width:310px;
+  text-align:center;
+  line-height:35px;
+  background:url("../../projectAssets/BPI/oblong.png") 0px 0px no-repeat;
+
+}
+.btnyes_chaining{
+  margin-top:343px;
+  margin-left:140px;
+  font-family:Montserrat;
+  height:100px;
+  width:310px;
+  text-align:center;
+  line-height:35px;
+  background:url("../../projectAssets/BPI/oblong.png") 0px 0px no-repeat;
+
+}
+
+.btnno_chaining{
+  margin-top:343px;
+  margin-left:440px;
+  font-family:Montserrat;
+  height:100px;
+  width:310px;
+  text-align:center;
+  line-height:35px;
+  background:url("../../projectAssets/BPI/oblong.png") 0px 0px no-repeat;
+
+}
+.mainTitleLabel {
+  font-family: Montserrat;
+}
+
+.pinEntryScreenLabels.mainTitleLabel{
+  margin-left:400px;
+  
+}
+.leftPane{
+  width:350px;
+  height:700px;
+  margin-top:113px;
+  background:url("../../projectAssets/BPI/leftPane.png") 0px 0px no-repeat;
+  position:absolute;
+  
+}
+.DaxBold{
+  font-family: Montserrat;
+
+}
+.DaxBold_taglish{
+  font-family: Montserrat;
+
+}
+.shadow{
+}
+
+.font30{
+  font-size:30px;
+}
+
+.txtmain_pin{
+    margin-left:120px;   
+    margin-top: 172px;
+    padding-top: 36px;
+    line-height: 1.4;
+    /* background: url(../../projectAssets/BPI/pin_bg.png) 0px 0px no-repeat; */
+    width: 500px;
+    height: 584px;
+    z-index: 5;
+    font-size: 30px;
+}
+.txtmain_pin2{
+  font-weight: bold;
+    
+    margin-top: 172px;
+    padding-top: 36px;
+    padding-left:110px;
+    line-height: 1.4;
+    /* background: url(../../projectAssets/BPI/pin_bg.png) 0px 0px no-repeat; */
+    width: 500px;
+    height: 584px;
+    z-index: 5;
+    font-size: 33px;
+}
+.txtmain_pin3 {
+
+    margin-left: 110px;
+    margin-top: 150px;
+    padding-top: 34px;
+    padding-left: 10px;
+    line-height: 1.4;
+    width: 500px;
+    height: 584px;
+    z-index: 5;
+    font-size: 30px;
+}
+
+
+.txtmain_pin-cc{
+  font-weight: bold;
+    margin-left: 37px !important;
+    margin-top: 190px !important;
+    padding-top: 36px;
+    padding-left: 90px;
+    text-align: left;
+    line-height: 1.4;
+    /* background: url(../../projectAssets/BPI/pin_bg.png) 0px 0px no-repeat; */
+    width: 500px;
+    height: 584px;
+    z-index: 5;
+
+}
+
+.txtmain_pin-cc2{
+  font-weight: bold;
+    margin-left: 22px;
+    margin-top: 172px;
+    padding-top: 36px;
+    padding-left: 90px;
+    text-align: left;
+    line-height: 1.4;
+    /* background: url(../../projectAssets/BPI/pin_bg.png) 0px 0px no-repeat; */
+    width: 500px;
+    height: 584px;
+    z-index: 5;
+    font-size: 33px;
+}
+
+.btngray{
+  width:780px;
+  height:749px;
+  background:url("../../projectAssets/BPI/gray_bg.png") 0px 0px no-repeat;
+  position:absolute;
+  margin-left:333px;
+  margin-top:110px;
+  z-index:29;
+}
+
+.lblclock{
+  width:170px;
+  height:170px;	
+  position:absolute;
+  margin-top:360px;
+  margin-left:428px;
+  background:url("../../projectAssets/BPI/clock-icon.png") 0px 0px no-repeat;
+}
+
+.btnback_disabled{
+ 
+  width:90px;
+  height:85px;
+  z-index:11; 
+  background:url("../../projectAssets/BPI/btnback-disabled.png") 0px 0px no-repeat;
+  position:absolute;
+  margin-top:600px;
+  margin-left:30px;
+}
+.btnhome{
+  width:96px;
+  height:86px;
+  z-index:11;
+  background:url("../../projectAssets/BPI/btnhome-disabled.png") 0px 0px no-repeat;
+  position:absolute;
+  margin-top:600px;
+  margin-left:122px;
+
+}
+
+
+.btnhome_disabled{
+  width:96px;
+  height:85px;
+  z-index:11;
+  background:url("../../projectAssets/BPI/btnhome-disabled.png") 0px 0px no-repeat;
+  position:absolute;
+  margin-top:600px;
+  margin-left:122px;
+}
+.btnexit{
+  width:90px;
+  height:85px;
+  z-index:11;
+  background:url("../../projectAssets/BPI/btnexit-disabled.png") 0px 0px no-repeat;
+  position:absolute;
+  margin-top:600px;
+  margin-left:208px;
+}
+
+.btnexit_disabled{
+  width:90px;
+  height:85px;
+  z-index:11;
+  background:url("../../projectAssets/BPI/btnexit-disabled.png") 0px 0px no-repeat;
+  position:absolute;
+  margin-top:600px;
+  margin-left:208px;
+}
+
+
+.btnback{
+  width:90px;
+  height:85px;
+  z-index:11;
+  background:url("../../projectAssets/BPI/btnback-disabled.png") 0px 0px no-repeat;
+  position:absolute;
+  margin-top:600px;
+  margin-left:42px;
+  position:absolute;
+}
+
+
+.btnback_disabled{
+  width:90px;
+  height:85px;
+  z-index:11;
+  background:url("../../projectAssets/BPI/btnback-disabled.png") 0px 0px no-repeat;
+  position:absolute;
+  margin-top:600px;
+  margin-left:42px;
+  position:absolute;
+}
+
+.top_err{
+    padding-top:130px;
+}
+.top_err_option{
+  font-family:Montserrat; font-size: 30px; color:#000000; margin-top:420px; margin-left:300px;
+}
+
+.btnwhite_disp{
+
+}
+
+
+/*Mark config*/
+#withdrawalAmountInput{
+    
+    margin-left: -241px;
+    padding-left: 21px;
+    height: 79px;
+    background: none;
+    margin-top: -65px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    text-align: right;
+    
+}
+.inputScreenSoftkeyboardButtonsLabels{
+    font-size: 24px;
+    color: #666;
+    margin-left: 7px;
+    text-align: center;
+    line-height: 83px;
+    /* border: 2px solid #D6D6D6; */
+    /* border-radius: 14px; */
+    /* font-family: 'Montserrat'; */
+    font-family: 'Montserrat Medium';
+    font-weight: bold;
+    width: 92px;
+    height: 60px;
+    background: #FFFFFF;
+    margin-top:   9px;
+
+}
+.inputScreenSKB_1, .inputScreenSKB_4, .inputScreenSKB_7, .inputScreenSKB_0, .inputScreenSKB_BACKSPACE {
+    left: 19px !important;
+    margin-top: -42px !important;
+}
+.inputScreenSKB_2, .inputScreenSKB_5, .inputScreenSKB_8 {
+    left: 122px !important;
+    margin-top: -42px !important;
+}
+.inputScreenSKB_3, .inputScreenSKB_6, .inputScreenSKB_9, .inputScreenSKB_CLEAR {
+    left: 225px !important;
+    margin-top: -42px !important;
+}
+.buttonSubmit_FASTCASH_OTHER_AMT
+ {
+    height: 85px;
+    width: 300px;
+    background:url("../../projectAssets/BPI/fastcashbtn.PNG") 0px 0px no-repeat;
+    /*background: #c0010c;*/
+    margin-left: 37px;
+    margin-top: 562px;
+    position: absolute;
+    border-radius: 12px;
+    padding-top:-3px;
+    /*box-shadow: 0 0 10px #5a5959;*/
+}
+.txtsubmit{
+  font-family: 'Montserrat'; 
+    position: absolute;
+    margin-top: 25px;
+    /* text-align: center; */
+    margin-left: -37px;
+    font-size: 28px !IMPORTANT;
+    width: 331px;
+    text-align:center;
+}
+
+.buttonBackgound{
+    position: absolute;
+    width: 702px;
+    height: 668px;
+    background: #b7b7b7;
+    margin-left: 344px;
+    margin-top: 93px;
+    filter: alpha(opacity=50);
+}
+.inputScreenSKB_0 {
+    width: 102px;
+    position: absolute;
+}
+.margin-top-650{
+      margin-top: 666px !important;
+}
+.margin-top-650-menu{
+      margin-top: 636px !important;
+}
+.margin-top-668{
+      margin-top: 668px !important;
+}
+.FASTCASH_OTHER_AMT .inputScreenButtonsLabels{
+
+}
+.lblEnterAmount{
+    position: absolute;
+    margin-top: 145px;
+    width: 331px;
+    text-align:center; 	
+    z-index: 1;
+    font-size: 30px;
+
+}
+
+.lblcenteredeng {
+ 
+}
+.lblcentered {
+ 
+}
+.lblcentered2 {
+  margin-left: 30px !important;
+}
+.pin-centered {
+  margin-left: 50px !important;
+}
+
+.margin-left-34{
+	margin-left: 34px !important;
+}
+
+.margin-left-57{
+	margin-left: 57px !important;
+}
+.margin-left-7{
+	margin-left: 7px !important;
+}
+.margin-top-88{
+  margin-top: 108px !important;
+}
+.selectAccount{
+  font-family: 'Montserrat Medium';
+    margin-top: 153px;
+    margin-left: 308px;
+    font-size: 24px;
+    z-index: 1px;
+        position: absolute;
+}
+.ACCOUNT_SELECTION .listBoxScreenButtonsLabels p {
+    font-size: 30px;
+    color: #000000;
+    text-align: left;
+    padding-right: 15px;
+    margin-top: 19px;
+    margin-left: 71px;
+}
+.ACCOUNT_SELECTION .listBoxScreenButtonBackground{
+    height: 73px;
+    width: 310px;
+    background: #FFFFFF;
+    border-color: #000000;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: 33px solid #c0010c;
+    border-right: 1px solid #000000;
+}
+#timerContainer{
+    visibility: hidden;
+}
+.ACCOUNT_SELECTION .listBoxButton{
+  padding: 1px;
+}
+.block4 {
+    margin-left: 115px !important;
+    margin-top: 189px;
+}
+.ACCOUNT_SELECTION li{
+    margin: 0;
+    padding-left: 36px;
+    display: inline-block;
+}
+.itrbackground{
+    /* margin-top: 19px; */
+    position: absolute;
+    width: 789px;
+    height: 599px;
+    background: #FFFFFF;
+    margin-top: 133px;
+    margin-left: 93px;
+}
+.txtenter_p {
+    margin-left: -29px;
+    margin-top: 25px;
+    font-size: 24px;
+    width: 323px;
+}
+.Montserrat {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #606060;
+}
+.Montserrat Medium {
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+.text-center-english-taglish{
+      margin-left: -27px;
+  }
+.ACCOUNT_TYPE_MAG_PINSERVICES_NOREC p,
+.ACCOUNT_TYPE_MAG_PINSERVICES p,
+.ACCOUNT_TYPE_NOREC_ENROLLMENTS p,
+.ACCOUNT_TYPE_MAG_ENROLLMENTS p,
+.ACCOUNT_TYPE_WDL_OFFUS_NOREC p,
+.ACCOUNT_TYPE_BAL_OFFUS_UNABLE_TO_DISPENSE_NOREC p,
+.ACCOUNT_TYPE_BAL_OFFUS_UNABLE_TO_DISPENSE p,
+.ACCOUNT_TYPE_FAST_OFFUS_NOREC p,
+.ACCOUNT_TYPE_BAL_OFFUS_NOREC p,
+.ACCOUNT_TYPE_WDL_OFFUS p,
+.ACCOUNT_TYPE_BAL_DISP_NOREC p,
+.ACCOUNT_TYPE_NOREC p,
+.ACCOUNT_TYPE_PINSERVICES_OFFUS p,
+.ACC_TYPE_BANKING_MPIN_UNABLE_MAG_NOREC p,
+.ACC_TYPE_BANKING_ENROLLMENT_UNABLE_MAG_NOREC p,
+.ACC_TYPE_EXPRESS_MOBILE_APP_UNABLE_MAG_NOREC p,
+.ACC_TYPE_EXPRESS_PHONE_UNABLE_MAG_NOREC p,
+.ACC_TYPE_EXPRESS_ONLINE_UNABLE_MAG_NOREC p,
+.ACCOUNT_TYPE_BANKING_MPIN_NOREC p,
+.ACCOUNT_TYPE_BANKING_ENROLLMENT_NOREC p,
+.ACCOUNT_TYPE_EXPRESS_MOBILE_APP_NOREC p,
+.ACCOUNT_TYPE_EXPRESS_PHONE_NOREC p,
+.ACCOUNT_TYPE_EXPRESS_ONLINE_NOREC p,
+.ACCOUNT_TYPE_FC_ACTIVATE_ENROLLMENT_NOREC p,
+.ACCOUNT_TYPE_FAST_NOREC p,
+.ACCOUNT_TYPE_BAL_NOREC p,
+.ACCOUNT_TYPE_FC_MAGSTRIPE_NOREC  p,
+.ACCOUNT_TYPE_FC_MAGSTRIPE p,  
+.ACCOUNT_TYPE_BAL_UNABLE_OFFUS p,
+.ACC_TYPE_EXPRESS_ONLINE_UNABLE_MAG p,
+.ACC_TYPE_EXPRESS_PHONE_UNABLE_MAG p,
+.ACC_TYPE_EXPRESS_MOBILE_APP_UNABLE_MAG p,
+.ACC_TYPE_BANKING_ENROLLMENT_UNABLE_MAG p,
+.ACC_TYPE_BANKING_MPIN_UNABLE_MAG p,
+.ACCOUNT_TYPE_BAL_DISP p,
+.ACCOUNT_TYPE_BAL_OFFUS p,
+.ACCOUNT_TYPE_FAST_MAINMENU_CREDIT p,
+.ACCOUNT_TYPE_FAST_OFFUS p,
+.ACCOUNT_TYPE_WITHDRAWAL_OFFUS p,
+.ACCOUNT_TYPE_EXPRESS_ONLINE p,
+.ACCOUNT_TYPE_EXPRESS_PHONE p,
+.ACCOUNT_TYPE_EXPRESS_MOBILE_APP p,
+.ACCOUNT_TYPE_BANKING_ENROLLMENT p,
+.ACCOUNT_TYPE_BANKING_MPIN p,
+.ACCOUNT_TYPE_FC_ACTIVATE_ENROLLMENT p,  
+.ACCOUNT_TYPE_FAST p,
+.ACCOUNT_TYPE_BAL p,
+.ACCOUNT_TYPE p{
+line-height: 1.2;
+    margin-bottom: 0px;
+    font-size: 24px;
+	font-family:Montserrat;
+}
+.font-size-xlarge{
+    font-size: 20px !important;
+}
+.inputScreenSKB_1, .inputScreenSKB_2, .inputScreenSKB_3 {
+    top: 455px !important;
+  margin-left:-10px;
+    border-right: #FFFFFF 1px solid;
+    color: #000000;
+}
+.inputScreenSKB_4, .inputScreenSKB_5, .inputScreenSKB_6{
+  top: 382px !important;
+  margin-left:-10px;
+    border-right: #FFFFFF 1px solid;
+    color: #000000; 
+}
+.inputScreenSKB_7, .inputScreenSKB_8, .inputScreenSKB_9{
+  top: 310px !important;
+  margin-left:-10px;
+    /*border-right: #FFFFFF 1px solid;*/
+    color: #000000; 
+}
+.amountLines{
+        position: absolute;
+    margin-top: 276px;
+    height: 282px;
+    margin-left: 20px;
+}
+.lightbulb{
+    margin-top: 340px;
+    margin-left: 225px;
+    position: absolute;
+    z-index: 100;
+    width: 167px;
+}
+
+
+
+/*.pleaseWaitBG{
+    background: url(../../projectAssets/BPI/notificationBG.PNG) 0px 0px no-repeat;
+    margin-top: 283px;
+    margin-left: 233px;
+    position: absolute;
+    z-index: 100;
+    width: 167px;
+}*/
+
+.plswaitdiv{ 
+    margin-top: 320px;
+    margin-left: 17%;
+    /* margin-right: auto; */
+    display: block;
+}
+
+.notifimg{
+    position: absolute;
+}
+.lblnotif{
+    position: relative;
+    margin-left: 150px;
+    width: 1024px !important;
+    height: 50px;
+    padding: 0 !important;
+    margin-top: 60px;
+    font-family: Montserrat;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.changePinNotification{
+    margin-top: 320px !important;
+    font-family:Montserrat;
+	font-size: 30px;
+    width: 1024px !important;
+    position: absolute;
+    text-align:center;
+	margin-left: 0px;
+	line-height:1.5;
+	
+	
+}
+.aware{
+    margin-top: 320px !important;
+    font-family:Montserrat;
+	font-size: 30px;
+    width: 1024px !important;
+    position: absolute;
+    text-align:center;
+	margin-left: 0px;
+	line-height:0;
+	font-weight:bold;
+}
+.changePinNotification2{
+    margin-top: 142px !important;
+    margin-left: 335px !important;
+    width: 433px !important;
+    height: 2px !important;
+    position: absolute;
+        text-align: left;
+}
+.changePinNotification3{
+    margin-top: 125px !important;
+    margin-left: 335px !important;
+    width: 433px !important;
+    height: 0px !important;
+    position: absolute;
+    background:transparent;
+    text-align: left;
+    
+}
+.top-46-left-8{
+top: 170px !important;
+    left: 53px !important;
+    color: #000000;
+    font-size: 30px;
+}
+
+.top-46-left-8-GETCASH {
+    width: 1024px;
+    color: #000000;
+    font-size: 30px;
+    margin-left: -1px;
+    text-align: center;
+    margin-top: 170px;
+}
+
+.cred-get{
+   font-size:20px !important;
+   position:absolute;
+   margin-top:467px;
+   width:1024px;
+   
+}
+.top_rec{
+    top: 170px !important;
+    width:1024px;
+    background:red;
+    color: #000000;
+    font-size: 36px;
+    margin-left:
+}
+.top-80-left-8{
+top:580px !important;
+    left: 53px !important;
+    color: #000000;
+    font-size: 25px;
+position:absolute;
+}
+.top-getcash{
+top:510px !important;
+
+    color: #000000;
+    font-size: 36px;
+position:absolute;
+
+}
+.receiptprintinglogo{
+    position: absolute;
+    margin-top: 321px;
+    margin-left: 328px;
+    z-index: 100;
+    
+    height: 256px;
+}
+.getyourcardlogo{
+    position: absolute;
+    margin-top: 305px;
+    margin-left: 400px;
+	
+	text-align:center;
+    z-index: 100;
+    height: 256px;
+}
+.icon-chaining{
+	background: url(../../projectAssets/BPI/icon-chain.png) 0px 100% no-repeat;
+	width:223px;
+	height:169px;
+	position:abosolute;
+	margin-top:-270px;
+	margin-left:446px;
+}
+.getcashlogo {
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 310px;
+    z-index: 100;
+    height: 236px;
+}
+.getcashlogo_img {
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 320px;
+    z-index: 100;
+    height: 236px;
+    
+}
+
+.margin-top-145{
+    top: 150px !important;
+    
+}
+.margin-top-145-exceed{
+    top: 340px !important;
+    
+    width:1024px;   
+    text-align:center;
+}
+.mainMenu_lbl{
+    font-family: Montserrat;
+    color: #5d5d5d;
+    font-weight: bold;
+    font-size: 18px !important;
+    width: 109px;
+    /* top: -87px; */
+    margin-top: -22px;
+    margin-left: 27px;
+}
+.balanceButton{
+  background-image: url("../../projectAssets/BPI/btnViewBalance.png");
+    width: 183px !important;
+    height: 200px;
+}
+.transferButton{
+/*border: 1px solid #000000;*/
+  background-image: url("../../projectAssets/BPI/btnLoadCellphone.PNG");
+    /*border-left: 10px solid #c0010c;*/
+    width: 183px !important;
+    height: 180px;
+    /*box-shadow: 0 0 10px #5a5959;*/
+}
+.prepaidButton{
+/*border: 1px solid #000000;*/
+  background-image: url("../../projectAssets/BPI/btnReload.png");
+    /*border-left: 10px solid #c0010c;*/
+    width: 183px !important;
+    height: 200px;
+    /*box-shadow: 0 0 10px #5a5959;*/
+}
+.payBillsButton{
+/*border: 1px solid #000000;*/
+  background-image: url("../../projectAssets/BPI/btnPayBills.png");
+    /*border-left: 10px solid #c0010c;*/
+    width: 183px !important;
+    height: 200px;
+    /*box-shadow: 0 0 10px #5a5959;*/
+}
+.btntransfer{
+/*border: 1px solid #000000;*/
+  background-image: url("../../projectAssets/BPI/btnTransfer.png");
+    /*border-left: 10px solid #c0010c;*/
+    width: 183px !important;
+    height: 200px;
+    /*box-shadow: 0 0 10px #5a5959;*/
+}
+.btnPrepaid{
+/*border: 1px solid #000000;*/
+  background-image: url("../../projectAssets/BPI/btnPrepaidServices.PNG");
+    /*border-left: 10px solid #c0010c;*/
+    width: 183px !important;
+    height: 200px;
+    /*box-shadow: 0 0 10px #5a5959;*/
+}
+.pinServices{
+    background-image: url("../../projectAssets/BPI/btnPinServices.png");
+    width: 183px !important;
+    height: 200px;
+}
+.activateDebit{
+    background-image: url("../../projectAssets/BPI/btnActivateDebitEmvCard.png");
+    width: 183px !important;
+    height: 200px;
+}
+.pinChange{
+/*border: 1px solid #000000;*/
+  background-image: url("../../projectAssets/BPI/btnPinChange.png");
+    /*border-left: 10px solid #c0010c;*/
+    width: 183px !important;
+    height: 200px;
+    /*box-shadow: 0 0 10px #5a5959;*/
+}
+.miniStatement{
+/*border: 1px solid #000000;*/
+  background-image: url("../../projectAssets/BPI/btnMini.png");
+    /*border-left: 10px solid #c0010c;*/
+    width: 183px !important;
+    height: 200px;
+    /*box-shadow: 0 0 10px #5a5959;*/
+}
+.enrollmentsButton{
+/*border: 1px solid #000000;*/
+    background-image: url("../../projectAssets/BPI/btnActivateEnrollment.png");
+    /*border-left: 10px solid #888385;*/
+    margin-left: 200px;
+    width: 183px !important;
+    height: 200px;
+   /*     box-shadow: 0 0 10px #5a5959;*/
+}
+
+.ExpressMobileAppButton{
+    background-image: url("../../projectAssets/BPI/btnExpressMobileApp.png");
+    width: 183px !important;
+    height: 200px;
+}
+
+.ExpressOnlineButton{
+    background-image: url("../../projectAssets/BPI/btnExpressOnline.png");
+    width: 183px !important;
+    height: 200px;
+}
+.PinNominationButton{
+    background-image: url("../../projectAssets/BPI/btnPinNomination.png");
+    width: 183px !important;
+    height: 200px;
+}
+
+.ExpressPhoneButton{
+    background-image: url("../../projectAssets/BPI/btnExpressPhone.png");
+    width: 183px !important;
+    height: 200px;
+}
+
+.SIMBankingEnrollmentButton{
+    background-image: url("../../projectAssets/BPI/btnSIMBankingEnrollment.png");
+    width: 183px !important;
+    height: 200px;
+}
+
+.SIMBankingMPINResendButton{
+    background-image: url("../../projectAssets/BPI/btnSIMBankingMPINResend.png");
+    width: 183px !important;
+    height: 200px;
+}
+
+.mainTitleLabel2{
+    font-size: 46px;
+    width: 739px;
+    margin-left: 78px;
+    font-family: Montserrat;
+}
+.font-weight-bold{
+}
+.white-text{
+    color: #FFFFFF !important;
+}
+
+.font-size-line-height{
+    font-size: 29px !important;
+    /* width: 628px; */
+    line-height: 2.5 !important;
+}
+.margin-top{
+      margin-top: 512px !important;
+}
+.margin-top-579-margin-left-381{
+    margin-top: 579px !important;
+    margin-left: 381px !important;
+}
+.btnOk{
+    width: 258px;
+    height: 84px;
+    z-index: 41;
+    font-size: 25px;
+    font-family: Montserrat;
+    position: absolute;
+    margin-top: 584px;
+    margin-left: 390px;
+    padding-top: 28px;
+    background: url(../../projectAssets/BPI/Amount Button.png) 0px 0px no-repeat;
+}
+.alignpinlbl2 {
+    margin-left: 37px !important;
+    margin-top: 159px !important;
+    line-height: 1.6 !important;
+    font-size: 26px !important;
+}
+.alignpinlbl {
+    margin-left: 5px !important;
+    margin-top: 165px !important;
+    line-height: 1.6 !important;
+    font-size: 33px !important;
+}
+.margin-left-227{
+    margin-left: 227px !important;
+}
+.margin-left-157{
+    margin-left: 157px;
+}
+.margin-left-345-margin-top-540{
+    margin-left: 345px !important;
+    margin-top: 505px !important;
+}
+.margin-left-184{
+    margin-left: 184px !important;
+}
+.thankyoulbl {
+    margin-top: 298px;
+    margin-left: 255px;
+    font-size: 118px;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #5a5959;
+    font-weight: bold;
+    z-index: 100;
+    position: absolute;
+}
+
+.thankyoulbl-taglish {
+    margin-top: 298px;
+    margin-left: 270px;
+    font-size: 118px;
+    color: #FFFFFF;
+    text-shadow: 0 0 10px #5a5959;
+    font-weight: bold;
+    z-index: 100;
+    position: absolute;
+}
+
+.lblTime {
+  visibility:   hidden; 
+}
+.buttonCover{
+    width: 338px;
+    height: 660px;
+    /*background-color: #b9b7b7;*/
+	background-image:url('../../projectAssets/BPI/dispenser_err.png');
+    position: absolute;
+    z-index:10;
+	margin-left:-7px;
+    margin-top: 78px;
+    filter: alpha(opacity=50);
+} 
+.cover{
+    position: absolute;
+    height: 656px;
+    width: 1024px;
+    background-color: #000000;
+    margin-top: 82px;
+   filter: alpha(opacity=30);
+    z-index: 30;
+}
+
+.cover-ty{
+    position: absolute;
+    height: 680px;
+    width: 1024px;
+    background-color: #000000;
+    margin-top: 80px;
+   filter: alpha(opacity=30);
+    z-index: 30;
+}
+
+.font-size-26{
+    font-size: 26px !important;
+    margin-left: 6px;
+}
+.topPane{
+   /* background-color: #e6e6e6;
+    width: 678px;
+    height: 36px;
+    margin-top: 110px;
+    position: absolute;
+    margin-left: 347px;*/
+}
+.padding-top-133{
+      padding-top: 133px;
+}
+
+
+/*TEENE CODES*/
+.lblPinChange {
+    font-weight: bold;
+    margin-left: 7.3rem;
+    margin-top: 15rem;
+    text-align: left;
+    width: 500px;
+    height: 584px;
+    font-size: 36px;
+    position: absolute;
+
+}
+.lblNewPin1{
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 19rem;
+    text-align: left;
+    width: 500px;
+    height: 584px;
+    font-size: 26px;
+    position: absolute;
+}
+
+.lblNewPin2{
+    font-weight: bold;
+    margin-left: 7.3rem;
+    margin-top: 29rem;
+    text-align: left;
+    width: 500px;
+    height: 584px;
+    font-size: 26px;
+    position: absolute;
+}
+
+.lblReceipt, .menuButtonScreenLabelsStandardLbl {
+    font-family: 'Montserrat';
+    margin-top: 450px;
+    text-align: center;
+    color: #000000;
+    font-size: 30px;
+    z-index: 10;
+    width:1024px;
+}
+.lblRem{
+    font-family: 'Montserrat';
+    margin-top: 280px;
+    text-align: center;
+    color: #000000;
+    font-size: 30px;
+    z-index: 10;
+    width:1024px;
+    margin-left:0px;
+}
+.lblRem2{
+    font-family: 'Montserrat';
+    margin-top: -170px;
+    text-align: center;
+    color: #000000;
+    font-size: 30px;
+    z-index: 10;
+    width:1024px;
+    margin-left:0px;
+}
+
+.imgcheck{
+	background: url(../../projectAssets/BPI/check.png) 0px 100% no-repeat;
+	width:65px;
+	height:57px;
+	margin-left:475px;
+	text-align:center;
+	margin-top:81px;
+	position:abosolute;
+	z-index:20;
+}
+.lbl_success{
+    font-family: 'Montserrat';
+    margin-top: -300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+	position:abosolute;
+}
+.lblChaining{
+    font-family: 'Montserrat';
+    margin-top: 280px;
+    text-align: center;
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    position:abosolute;
+    width:1024px;
+}
+
+.bt_messagecontainer{
+	position: absolute;
+	top:144px;
+	left:66px;
+}
+
+.lbl_getcash_warning{
+	background: url(../../projectAssets/BPI/btn_Warning.png) 0px 100% no-repeat;
+	width:45px;
+	height:45px;
+	margin-left:180px;
+	margin-top:205px;
+	position:abosolute;
+	z-index:20;
+	
+}
+
+.bring-front{
+	z-index:20;
+}
+.bring-front2{
+	z-index:11;
+}
+.bring-back{
+	z-index:10;
+}
+
+.continue-left {
+    margin-left: -10px;
+    
+    margin-left: 0px;
+    text-align: center;
+}
+
+.inputScreenSKB_CLEAR{
+	margin-left:-19px;
+	font-size:15px;
+}
+.cancel-font{
+	font-size:40px;
+	margin-top: 30px;
+	font-family: Montserrat !important;
+	
+}
+
+.pin-font{
+	font-size:40px;
+	margin-top: 230px !important;
+	position:abosolute !important;
+	text-align: center !important;
+	font-weight:bold;
+	margin-left:0px !important; 
+}
+.imgreceipt{
+	background: url(../../projectAssets/BPI/receiptprintinglogo.png) 0px 100% no-repeat;
+	width:223px;
+	height:169px;
+	position:abosolute;
+	margin-top:-270px;
+	margin-left:400px;
+}
+.lbldev{
+	width:1024px !important;
+	height:50px;
+	position:abosolute !important;
+	padding:0 !important;
+	margin-left:-80px;
+	text-align: center !important;
+	margin-top:60px;
+	font-weight:bold;
+}
+.lbldev_cancel{
+	width:1024px;
+	position:abosolute !important;
+	margin-top: 230px !important;
+	text-align:center;
+	font-size: 30px;
+}
+
+
+.lbldev_GetCard {
+    width: 1024px !important;
+    height: 50px;
+    position: abosolute !important;
+    padding: 0 !important;
+    margin-left: -53px;
+    text-align: center !important;
+    margin-top: 60px;
+   
+    font-size: 30px;
+}
+
+.lbldev_GetCard2{
+	width:1024px !important;
+	height:50px;
+	position:abosolute !important;
+	padding:0 !important;
+	margin-left:-48px;
+	text-align: center !important;
+	margin-top:60px;
+	font-size: 30px;	
+}
+
+.lbldev_GetCash {
+    width: 1024px !important;
+    height: 50px;
+    position: abosolute !important;
+    padding: 0 !important;
+    text-align: center !important;
+    margin-top: 80px;
+   
+    font-size: 30px;
+}
+
+.lblget_card{
+	
+	
+}
+/*PLEASE WAIT CSS*/
+
+
+.initClearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.marginEng{
+    margin-top: 340px;
+    background-color: #7aaad500;
+    padding: 0px 250px;
+    width: 1024px;
+}
+
+.marginTag{
+    margin-top: 360px;
+    background-color: #7aaad500;
+    padding: 0px 200px;
+    width: 1024px;
+    
+}
+
+.initImg{
+  float: left;
+  width: 167px;
+  margin-left:50px;
+  margin-top: 23px !important;
+}
+
+.initlblMainMenu_Dev {
+    top: 195px;
+    border-radius: 20px;
+    padding-top: 65px;
+    text-align: center;
+    font-size: 30px;
+    width: 1024px;
+    height: 569px;
+    font-family: Montserrat;
+}
+.initlblMainMenu_Dev_rec {
+    top: 145px;
+    border-radius: 20px;
+    padding-top: 65px;
+    text-align: center;
+    font-size: 30px;
+    width: 1024px;
+    height: 569px;
+    font-family: Montserrat;
+
+}
+
+.initLblEng{
+    font-size: 20px;
+    padding-top: 80px;
+    line-height: 1.2;
+    margin-left: 230px;
+}
+
+.initLblTag{
+    font-size: 20px;
+    padding-top: 76px;
+    line-height: 1.2;
+    margin-left: 230px;
+}
+
+.lblrec_err{
+	font-size: 30px !important;
+    line-height: 2 !important;
+	width:1024px;
+	text-align:center;
+    margin-top:260px;
+}
+.lblcc-withdrawal{
+	font-size: 30px !important;
+	margin-top: -10px !important;
+        margin-left: 10px !important;
+}
+.lblrec_icon{
+	width:1024px;
+        height:169px;
+	margin-top:355px;
+	background:url(../../projectAssets/BPI/receiptprintinglogo.png) 0px 100% no-repeat;
+	background-position:center;
+	position:absolute;	
+}
+.text-center-selection{
+	text-align:center !important;
+}
+.bgpeep{
+	background: url(../../projectAssets/BPI/Peep-box.png) 0px 100% no-repeat;
+
+	margin-left:0px;
+	background-position:center;
+	height:139px;
+	width:1024px;
+	margin-top:150px;
+	text-align:center;
+	font-size:25px;
+	padding-top:57px;
+
+}
+
+.bgpeep2{
+	background: url(../../projectAssets/BPI/Peep-box-down.png) 0px 100% no-repeat;
+	margin-left:0px;
+	background-position:center;
+	height:139px;
+	width:1024px;
+	margin-top:200px;
+	font-weight:regular;
+        font-family:Montserrat;
+	font-size:25px;
+        padding-left:332px;
+	padding-top:57px;
+	visibility:hidden;
+	
+}
+.bgpeep-tag{
+	background: url(../../projectAssets/BPI/Peep-box.png) 0px 100% no-repeat;
+	margin-left:0px;
+	background-position:center;
+	height:139px;
+	width:1024px;
+	margin-top:150px;
+	text-align:center;
+	font-size:25px;
+	padding-top:57px;
+
+}
+
+.bgpeep2-tag{
+	background: url(../../projectAssets/BPI/Peep-box-down.png) 0px 100% no-repeat;
+	margin-left:0px;
+	background-position:center;
+	height:139px;
+	width:1024px;
+	margin-top:150px;
+	
+	font-size:25px;
+        padding-left:260px;
+	padding-top:57px;
+	visibility:hidden;
+	
+}
+.bgpeep_amt{
+	background: url(../../projectAssets/BPI/Peep-amt.png) 0px 100% no-repeat;
+	margin-left:0px;
+	background-position:center;
+	height:139px;
+	width:1024px;
+	margin-top:250px;
+	text-align:Center;
+	font-size:20px;
+	padding-top:55px;	
+	visibility:hidden;
+}
+.f5-imp{
+	font-size:25px !important;
+}
+.lblchain-peep-bal{
+	font-family:Montserrat; font-size: 30px; color:#000000; margin-top:450px; width:1024px;
+	
+	text-align:center;
+}
+.f20-imp{
+	font-size:20px !important;
+}
+#clickable{
+	
+	background-position:center;
+	height:125px;
+        width:570px;
+	position:absolute;
+	margin-top:150px;
+	margin-left:230px;
+	font-size:20px;
+	z-index:3;
+	padding-top:57px;
+	        
+}
+.peep-left{
+	padding-left:100px;
+}
+.peep-left-tag{
+ 	padding-left:30px;       
+}
+.lblhand{
+	/*background: url("C:/Program File/NCR APTRA/Advance NDC/webatm/builder/projectAssets/BPI/Hand.gif") 0px 100% no-repeat;
+	*/
+	
+	width:70px;
+	height:70px;
+	position:absolute;
+	margin-top:225px;
+	margin-left:730px;
+	z-index:2;
+}
+.lbltop-unable{
+	margin-top:530px;
+	font-size:25px;	
+
+	width:1024px !important;
+	margin-left:0px;
+	text-align:center;	
+}
+.warning-peep{
+	margin-top:516px;
+	
+}
+.top-norec{
+	margin-top: 580px !important;
+}
+
+.lblchain-not{  top: 320px; padding-top: 135px; text-align:center; font-size:30px;width:1024px; }
+.lblchain-not1{
+  font-size: 30px; color:#000000; margin-top:290px; width:1024px; text-align:center;
+}
+.size40{
+	font-size:40px;
+	margin-top: 30px;
+	
+	
+}
+
+
+.btnred_continue{
+  width:358px;
+  height:84px;
+  z-index:41;
+  font-size:25px;
+  font-family:Montserrat;
+  position:absolute;
+  margin-top:450px;
+  margin-left:627px;
+  padding-top:28px;
+  background:url("../../projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;
+}
+
+.btnred_cancel{
+  width:258px;
+  height:84px;
+  z-index:41;
+  font-size:25px;
+  font-family:Montserrat;
+  position:absolute;
+  margin-top:575px;
+  margin-left:637px;
+  padding-top:28px;
+  background:url("../../projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;
+}
+
+.btnSelect1{
+
+    height: 84px;
+    width: 303px;
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 25px;
+    margin-top: 270px;
+    left: 626px;
+    height: 84px;
+    width: 303px;
+    padding-left: 37px;
+    padding-top: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: url("../../projectAssets/BPI/timeoutbutton.png") 0px 0px no-repeat;
+    font-family: Montserrat;
+    position:absolute;	
+}
+
+
+.btnSelectCancel{
+
+    height: 84px;
+    width: 303px;
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 25px;
+    margin-top: 418px;
+    left: 626px;
+    height: 84px;
+    width: 303px;
+    padding-left: 37px;
+    padding-top: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: url("../../projectAssets/BPI/timeoutbutton.png") 0px 0px no-repeat;
+    font-family: Montserrat;
+    position:absolute;	
+}
+
+.white-lbl{
+    color: #FFFFFF !important;
+    width: 303px;
+    margin-left: 10px !important;
+    margin-top:3px;
+}
+
+.white-lbl2{
+    color: #FFFFFF !important;
+    width: 303px;
+    margin-left: 25px !important;
+    margin-top:2px;
+}
+.lbl-margin{
+    margin-top: -25px !important;
+}
+.ad-emv{
+	text-align:center;
+	width: 1024px;
+	margin-top:-25px;
+}
+
+.ad-emv2{
+	text-align:center;
+	width: 1024px;
+	margin-top:-195px;
+}
+.blockLang {
+    width: 500px;
+    height: 90px;
+    background: white;
+    margin-top: -100px;
+    position: fixed;
+    z-index: 0;
+    margin-left: 900px;
+}

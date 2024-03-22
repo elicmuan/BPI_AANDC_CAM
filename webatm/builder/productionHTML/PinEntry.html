@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=10" charset="UTF-8">
+	<SCRIPT LANGUAGE="JavaScript">
+		var userInput = "";
+
+		function initApp() {
+			window.focus();
+			parent.frames["ACContainer"].ACCoreJS.DisplayTransactScreen('PIN_ENTRY');
+            parent.maximizeTransactContainer();
+		}
+
+		function KeyEchoed(data) {
+			userInput += data;
+			parent.frames["ACContainer"].ACCoreJS.Trace(" key echoed >>> " + userInput.length);
+			parent.frames["ACContainer"].ACCoreJS.UpdatePin(userInput.length - 1);
+		}
+
+        function unload() {
+            //parent.frames["ACContainer"].ACCoreJS.unloadApp();
+            parent.maximizeRightFrame();
+        }
+	</script>
+</head>
+<body onload="initApp()" onunload="unload()"></body>
+</html>
+
+

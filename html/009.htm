@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+<TITLE>Screen 9</TITLE>
+<SCRIPT type = "text/javascript">
+          var images = [], x = -1;
+          images[0] = "../media/change_pin.jpg";
+          images[1] = "../media/network_logo.jpg";
+		  images[2] = "../media/logo12.jpg";
+		  images[3] = "../media/cust_update.jpg";
+		  images[4] = "../media/logo00.jpg";
+
+          function changeImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+			setInterval(changeImage, 5000);
+          }
+</SCRIPT>
+</HEAD>
+<BODY onload = startTimer()>
+       <img id="img" src="../media/logo00.jpg" style="left:0px;top:0px;position:absolute"/>
+</BODY>
+</HTML>

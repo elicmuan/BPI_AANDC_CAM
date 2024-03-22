@@ -1,0 +1,168 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+<link rel="stylesheet" type="text/css" href="Labels.css">
+ <TITLE>Screen 047</TITLE>
+<script type="text/javascript">
+if (typeof document.onselectstart!="undefined") {
+  document.onselectstart=new Function ("return false");
+}
+else{
+  document.onmousedown=new Function ("return false");
+  document.onmouseup=new Function ("return true");
+}
+</script>
+<script type="text/javascript" src="includes.js"></script>
+<script type="text/javascript" src="includes2.js"></script>
+<script type="text/vbscript" language="vbscript">
+	Sub KeyEchoed(data)
+		Dim var_val
+		var_val = Replace(Mid(data,6,Len(data)-2),"ONI","")
+		var_val = Replace(Mid(data,6,Len(data)-2)," ","")
+		AmountBox.value = var_val
+	End Sub
+</script>
+<script type="text/javascript" language="javascript">
+	function body_onload(){				
+		
+		var CDIText;	
+		CDIText = parent.leftFrame.COM_UCDI_INTERFACE.UCDIstring("DMITRData");
+ 		
+		var n1 = CDIText.indexOf("");
+		
+		if(n2 > 0){
+		var n2 = CDIText.lastIndexOf(".00");
+		}
+		else{
+		var n2;
+		}
+		var amount = CDIText.substring(n1+3, n2);
+		amount = amount.replace("P","PHP ");	
+		//amount = amount.replace("ONI","");
+		document.getElementById("SO0").innerHTML = amount; 
+                
+		//PrintMessageToSO(CDIText, '');
+		
+	}
+</script>
+
+</HEAD>
+<BODY ID="" scroll="no" noresize onload="javascript:body_onload();" style="filter:revealTrans(duration=0.0,transition=23)">
+<div id="warning" style="background-image:url('RedWarning.png');width:50px;height:50px;position:absolute;margin-top:221px;margin-left:150px;"></div>
+<P id="lblGreetings"></p>
+<FORM NAME="form1">
+<input Name="UCDITEXT" type="hidden"></input>
+</form>
+<TABLE style="WIDTH: 220px; HEIGHT: 7px" cellSpacing=0 cellPadding=0 width=500 border=0 height=30 align=right>
+ <TR>
+ <TD class="TextboxBackground"></TD>	
+ <TD class="ndcLine6Text" style="top: 200px;font-family:Montserrat;font-size:30px;">
+	<p id= "in_title" style="font-size:30px !important;" ></br> The amount you have entered is invalid.</br></BR> Please enter an amount in </br>
+	multiples of <span id="SO0">$1.00</span>.
+	</br></br></br>
+	</>
+	
+	</p>
+	<p id="in_footer">The maximum number of notes that can be dispensed is 40.</p>
+	<br>
+	<span id='lblchange2'>Press &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to confirm.</span><div id='img'><img src='btnEnter_pin.png' ></div><span id='lblchange2'></span>
+	
+	
+</td>
+ <!--<td><INPUT  id="TextBox" name="AmountBox" value="0.00" class="AmountBox" style="width:1024px;height:63px;text-align:right;right;top:570px;font-family:Montserrat;position:absolute;background:url('C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/images/AmountEntry.png');"></td>-->
+<td><INPUT  id="TextBox-47" name="AmountBox" value="0.00" class="AmountBox" style="font-size:30px !important;width:1024px;height:84px;margin-left:-50px;top:480px;font-family:Montserrat;position:absolute;background:url('C:/Program Files/NCR APTRA/Advance NDC/html/input_area.PNG') no-repeat;background-position:center;text-align:right;padding-right:390px;"></td>
+ 
+</TABLE>	
+</BODY>
+
+<script type="text/javascript">
+var currentTime = new Date().getHours();
+var time = new Date().toLocaleTimeString();
+if(currentTime < 12){
+    if (document.body) {
+        document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/timeout_morning.png";
+        
+    }
+}
+else if (currentTime < 18){
+    if (document.body) {
+        document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/timeout_afternoon.png";
+    }
+}
+else {
+    if (document.body) {
+        document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/timeout_evening.png";
+        
+    }
+}
+
+
+var str_opcode = '';
+str_opcode = parent.leftFrame.COM_UCDI_INTERFACE.ucdiString("lang_type");
+
+
+if(str_opcode == 'T' ){
+	document.getElementById("img").style.visibility = "hidden";
+	document.getElementById("in_title").innerHTML = "</BR></BR> Ang halagang iyong inilagay ay invalid. </br></br> Mangyaring maglagay ng halaga </br>sa multiples of <span id='SO0'>$1.00</span>.</br> ";
+	document.getElementById("in_title").style.marginTop = "25px";
+	document.getElementById("warning").style.marginTop = "210px";
+	document.getElementById("warning").style.marginLeft = "156px";
+	document.getElementById("lblchange2").innerHTML = "Pindutin ang &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id='img2'><img src='btnEnter_pin.png'></div>&nbsp;&nbsp;&nbsp;&nbsp; upang kumpirmahin.";
+	document.getElementById("lblchange2").style.marginLeft = "200px";
+	document.getElementById("in_footer").innerHTML = "Ang maximum na bilang ng notes na maaaring i-dispense ay 40.";
+}
+				if(time.charAt(time.length-2)=='A'){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Umaga!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Morning!";
+								}
+				}
+				else{
+				
+					time = time.replace(" ","");
+					
+						if(parseInt(time.charAt(0)) >= 6 && time.charAt(1) == ":" || parseInt(time.charAt(1)) == 0 || parseInt(time.charAt(1)) == 1){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Gabi!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Evening!";
+								}
+								//evening
+						}
+						else if (parseInt(time.charAt(0)) == 1 && time.charAt(1) == 2 && parseInt(time.charAt(3)) >= 0  || parseInt(time.charAt(0)) < 2){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Tanghali!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+								}
+								//Tanghali
+						}
+						else{
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Hapon!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+								}
+								//Hapon
+						}
+							
+						
+						
+				}
+
+
+
+
+</script>
+</HTML>

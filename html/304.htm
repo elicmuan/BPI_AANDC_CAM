@@ -1,0 +1,49 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+ <TITLE>Screen 304</TITLE>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+<SCRIPT LANGUAGE="javascript">
+		var CDIText, i, intResult;
+		//var fields = ["MainText", "FDK1String", "FDK2String", "FDK3String", "FDK4String", "FDK5String", "FDK6String", "FDK7String", "FDK8String"];
+		//CDIText = "EDPLEASE SELECT A TRANSACTION TYPE (SAVINGS OR CURRENT):0FMERCHANT A0IMERCHANT B0LMERCHANT C0OMERCHANT DBOMERCHANT FBLMERCHANT GBIMERCHANT HBFMERCHANT I";
+		//CDIText = "CEPLEASE SELECT A TRANSACTION TYPE:EECURRENT OR SAVINGS ACCOUNTP0MERCHANT AAA2N0MERCHANT AAA10HMERCHANT BBB10JMERCHANT BBB20KMERCHANT CCC110MMERCHANT CCC220NMERCHANT DDD10@MERCHANT DDD2BNMERCHANT FFF11B@MERCHANT FFF22BKMERCHANT GGG1BMMERCHANT GGG2BHMERCHANT HHH1BJMERCHANT HHH2OCMERCHANT III111PCMERCHANT III222";
+		//CDIText = "[80m(1FBDO YOU AGREE TO PAY SURCHARGEP100\FFFOR THIS TRANSACTION ?P2001\CF  2,00.00P0999;\F>(48(3](1ADYES[90pL>(48(3](1@JNO[900z"
+		//CDIText = "[80m(1DFXXXXXXXXXXXXXXXXXXXXFFXXXXXXXXXXXXXXXXXXXXF@(5ZY(1FC00000000000012345678CFPAYEE_MID_1    PAYEBNKID1I@(5ZY(1IC00000000000012345679CKBPI             7774";
+		//CDIText = "@@@A@AB@BC@CD@DE@EF@FG@GH@HI@IJ@JK@KL@LM@MN@NO@O";
+		//CDIText = CDIText + "@AA@BB@CC@DD@EE@FF@GG@HH@II@JJ@KK@LL@MM@NN@OO@00@11@22@33@44@55@66@77@88@99@::@;;@<<@==@>>@??";
+		//CDIText = "[80m(1DBDO YOU AGREE TO PAY SURCHARGEEF  2,00.00F>(48(3](1GOYESL>(48(3](1HONO";
+		CDIText = parent.leftFrame.COM_UCDI_INTERFACE.UCDIstring("DMITRData");
+		CDIText = fnRemoveCntrlChars(CDIText);
+		fnPrintMessageToScreen(CDIText, "", "ReplyMessage", 0, 0);
+		/*for (i=1; i < CDIText.length;i++)
+		{
+			fnPrintReplyDataToScreen(CDIText[i]);
+		}*/
+</SCRIPT>  	
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="doeffect()" style="filter:revealTrans(duration=0.0,transition=23)">
+
+<!-- P class="ndcLine1Text" style="left:10px; text-align:center">Please select an option</P>
+<div id="FDK1"></div>
+<div class="FDK1Text">PCODE: 31</div>
+<div id="FDK2"></div>
+<div class="FDK2Text">PCODE: 32</div>
+<div id="FDK3"></div>
+<div class="FDK3Text">PCODE: 33</div>
+<div id="FDK4"></div>
+<div class="FDK4Text">MORE</div>
+<div id="FDK5"></div>
+<div class="FDK5Text">PCODE: 34</div>
+<div id="FDK6"></div>
+<div class="FDK6Text">PCODE: 35</div>
+<div id="FDK7"></div>
+<div class="FDK7Text">PCODE: 36</div>
+<div id="FDK8"></div>
+<div class="FDK8Text">PCODE: 37</div -->
+
+</BODY>
+</HTML>

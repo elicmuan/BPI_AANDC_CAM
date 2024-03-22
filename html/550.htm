@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+
+<TITLE>Screen 550</TITLE>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+<SCRIPT LANGUAGE="javascript">
+function DisplayScreen()
+{		var CDIText, count = 1;
+		//CDIText = parent.leftFrame.COM_UCDI_INTERFACE.UCDIstring("DMITRData");
+		CDIText = parent.leftFrame.RETRIEVESCRINTERFACE.RetrieveCurrentScreen();
+		CDIText = fnRemoveCntrlChars(CDIText);
+		CDIText = CDIText.replace(" >", "");
+		CDIText = CDIText.split("");
+		for (i = count; i < CDIText.length; i++)
+		{
+			CDIText[i] = CDIText[i].replace(" >", "");
+			CDIText[i] = CDIText[i].replace("< ", "");
+			fnPrintReplyDataToScreen(CDIText[i]);
+		}
+}
+</SCRIPT>  	
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="DisplayScreen()" style="filter:revealTrans(duration=0.0,transition=23)">
+<div id="MainText" class="ndcLine1Text" style="top:150px; left:10px; text-align:center"></div>
+<div id="MainText1" class="ndcLine1AText"></div>
+<div id="MainText2" class="ndcLine1BText"></div>
+<div id="FDK1" style="visibility:hidden"></div>
+<div id="FDKAString" class="FDK1Text"></div>
+<div id="FDKA1String" class="FDKA1Text"></div>
+<div id="FDKA2String" class="FDKA2Text"></div>
+<div id="FDK2" style="visibility:hidden"></div>
+<div id="FDKBString" class="FDK2Text"></div>
+<div id="FDKB1String" class="FDKB1Text"></div>
+<div id="FDKB2String" class="FDKB2Text"></div>
+<div id="FDK3" style="visibility:hidden"></div>
+<div id="FDKCString" class="FDK3Text"></div>
+<div id="FDKC1String" class="FDKC1Text"></div>
+<div id="FDKC2String" class="FDKC2Text"></div>
+<div id="FDK4" style="visibility:hidden"></div>
+<div id="FDKDString" class="FDK4Text"></div>
+<div id="FDKD1String" class="FDKD1Text"></div>
+<div id="FDKD2String" class="FDKD2Text"></div>
+<div id="FDK5" style="visibility:hidden"></div>
+<div id="FDKIString" class="FDK5Text"></div>
+<div id="FDKI1String" class="FDKI1Text"></div>
+<div id="FDKI2String" class="FDKI2Text"></div>
+<div id="FDK6" style="visibility:hidden"></div>
+<div id="FDKHString" class="FDK6Text"></div>
+<div id="FDKH1String" class="FDKH1Text"></div>
+<div id="FDKH2String" class="FDKH2Text"></div>
+<div id="FDK7" style="visibility:hidden"></div>
+<div id="FDKGString" class="FDK7Text"></div>
+<div id="FDKG1String" class="FDKG1Text"></div>
+<div id="FDKG2String" class="FDKG2Text"></div>
+<div id="FDK8" style="visibility:hidden"></div>
+<div id="FDKFString" class="FDK8Text"></div>
+<div id="FDKF1String" class="FDKF1Text"></div>
+<div id="FDKF2String" class="FDKF2Text"></div>
+</BODY>
+</HTML>

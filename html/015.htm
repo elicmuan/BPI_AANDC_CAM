@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+ <TITLE>Screen 15</TITLE>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+<script language="javascript">
+function disableFDKText()
+{
+var screenData;
+screenData = parent.leftFrame.RetrieveCurrentScreen();
+hideFDKKey(screenData, "DEPOSIT", document.getElementById("FDK2"),
+ document.getElementById("FDK2Text"));
+}
+ </script>
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="disableFDKText()" style="filter:revealTrans(duration=0.0,transition=23)">
+<P class="ndcLine1Text">Please select a transaction</P>
+<div id="FDK1"></div>
+<div id="FDK1Text" class="FDK1Text">PAY BILLS </div>
+<div id="FDK2"></div>
+<div id="FDK2Text" class="FDK2Text" style="top:302px;">DEPOSIT/<br>PAYMENTS ENCL</div>
+<div id="FDK3"></div>
+<div id="FDK3Text" class="FDK3Text">CHANGE PIN </div>
+<div id="FDK4"></div>
+<div id="FDK4Text" class="FDK4Text">SPECIAL SERVICES </div>
+<div id="FDK5"></div>
+<div id="FDK5Text" class="FDK5Text">FAST CASH </div>
+<div id="FDK6"></div>
+<div id="FDK6Text" class="FDK6Text">WITHDRAW </div>
+<div id="FDK7"></div>
+<div id="FDK7Text" class="FDK7Text">INQUIRE BALANCE</div>
+<div id="FDK8"></div>
+<div id="FDK8Text" class="FDK8Text">TRANSFER </div>
+</BODY>
+</HTML>

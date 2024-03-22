@@ -1,0 +1,590 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+
+<TITLE>Screen 622</TITLE>
+<script type="text/javascript">
+if (typeof document.onselectstart!="undefined") {
+  document.onselectstart=new Function ("return false");
+}
+else{
+  document.onmousedown=new Function ("return false");
+  document.onmouseup=new Function ("return true");
+}
+</script>
+
+<OBJECT ID=COM_UCDI_INTERFACE  style="VISIBILITY: hidden" CLASSID="clsid:15673D3C-03B4-11D4-8034-0060973C442B" VIEWASTEXT></OBJECT>
+<OBJECT ID=COMCDIINTERFACE style="VISIBILITY: hidden" CLASSID="clsid:AB3A5FC0-A24E-11D3-BFEE-0060973C442B" VIEWASTEXT></OBJECT>
+
+<style>
+    @font-face {
+      font-family: 'Dax-Regular';
+      src: url('../../projectAssets/fonts/DaxRegular.ttf'),
+           url('../../projectAssets/fonts/DaxMedium.eot?') format('embedded-opentype');
+      src: url('../../projectAssets/fonts/DaxRegular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Dax-bold';
+      src: url('../../projectAssets/fonts/DaxRegular.ttf'),
+           url('../../projectAssets/fonts/DaxRegular.eot?') format('embedded-opentype');;
+      src: url('../../projectAssets/fonts/DaxRegular.ttf') format('truetype');
+      
+    }
+    @font-face {
+      font-family: 'Dax-Regular';
+      src: url('../../projectAssets/fonts/DaxRegular.ttf'),
+            url('../../projectAssets/fonts/DaxRegular.eot?') format('embedded-opentype');
+      src: url('../../projectAssets/fonts/DaxRegular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Dax-Medium';
+      src: url('../../projectAssets/fonts/Dax-Medium.ttf'),
+           url('../../projectAssets/fonts/Dax-Regular.eot?') format('embedded-opentype');
+      src: url('../../projectAssets/fonts/Dax-Medium.ttf') format('truetype');
+    } 
+    #divDepositSummaryTable {width: 1024px; margin-top:205px;font-size:1.25em;font-family:Dax-Regular; padding: 0px !	important;}
+    table {font-size: 28px;font-family:Montserrat;border-collapse:collapse;border:1px solid #7f7f7f;}
+	.tbldetails {
+    width: 600px;
+    border: 1px solid #b7b7b7;
+    border-collapse: collapse;
+    padding: 30px;
+    margin-top: 245px;
+	}
+	p.depositLbl{
+	font-size: 28px;font-family:Montserrat; text-align: center; width: 1024px; position: absolute; margin-top: 150px; 
+	}
+	table tr.depositTotal:last-child {
+    	background: #a7a7a7;
+	}	
+    td, th {font-size: 28px;font-family:Montserrat; border: 1px solid #b7b7b7;height:40px;text-align:center;width: 1024px;}
+    td.bill1, td.bill2, td.bill3, td.amount1, td.amount2, td.amount3, td.totalvalue, td.totallbl {font-size: 28px;text-align: right; padding-right: 20px;}
+	body#depositBg { background-image: url("../html/theme/000/images/deposit_bg.png"); background-repeat: no-repeat; }
+	#divDepositSummaryTable tr:nth-child(1) span.bill1:first-child:before {
+    content: "PHP  ";
+	}
+	#divDepositSummaryTable tr:nth-child(1) span.amount1:first-child:before {
+    content: "PHP  ";
+	}
+    .lblMainMenuDepositGreetings {
+        font-family: 'Montserrat';
+        position: absolute;
+        margin-top: 42px;
+        color: #c0010c;
+        font-size: 30px !important;
+        
+        z-index: 10;
+        text-align: center;
+        width: 1024px;
+    }    
+	.btnSelect1{
+	    height: 84px;
+	    width: 303px;
+	    color: #FFFFFF;
+	    position: absolute;
+	    font-size: 25px;
+	    top: 300px;
+	    left: 630px;
+	    height: 84px;
+	    width: 303px;
+	    padding-top: 25px;
+	    
+	    text-decoration: none;
+	    background: url(../html/theme/000/images/timeoutbutton.png) 0px 0px no-repeat;
+	    font-family: Montserrat;
+	}
+	.btnred-err{
+		width:258px;
+		height:84px;
+		z-index:41;
+		font-size:25px;
+		font-family:Montserrat;
+		position:absolute;
+		margin-top:520px;
+		margin-left:530px;
+		padding-top:28px;
+		background:url("../html/theme/000/images/Amount Button.png") 0px 0px no-repeat;
+    }
+    .languageButton .languageFontScreenButtonsLabels {
+        
+        font-family: Montserrat;
+    }  
+.languageFontScreenBtnEnglish {
+    right: 155px;
+    background: url(../../projectAssets/BPI/btn_lang.png) 0px 0px no-repeat;
+    margin-top: -30px;
+    margin-right: -140px;
+}       
+</style>
+
+<SCRIPT src="includes.js"></SCRIPT>
+
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+
+
+
+<SCRIPT LANGUAGE="javascript">
+document.getElementById('lblEnglish').style.visibility = "visible";
+document.getElementById('lblTaglish').style.visibility = "hidden";
+var str_opcode = '';
+str_opcode = parent.leftFrame.COM_UCDI_INTERFACE.ucdiString("lang_type");
+
+
+
+function depositEngLanguage() {
+    //var acct_num = 1111;
+    var acct_num = parent.leftFrame.COMCDIINTERFACE.comString(2003);  
+    acct_num = acct_num.toString();
+    var acct_num2 = "";
+    str_opcode = 'E';
+    var cdiobject = new ActiveXObject("APTRAUSERCDI.APTRAUCDI");
+    //alert( cdiobject.UCDIstring("lang_type"));
+    cdiobject.UCDIstring("lang_type") = "E";
+    //alert( cdiobject.UCDIstring("lang_type"));
+    setGreetings();
+    document.getElementById('lblEnglish').style.visibility = "visible";
+    document.getElementById('lblTaglish').style.visibility = "hidden";
+    document.getElementById("buttonLanguageTaglish").style.backgroundImage = "url('../html/theme/000/images/btn_lang.png')";
+    document.getElementById("buttonLanguageEnglish").style.backgroundImage = "url('../html/theme/000/images/btn_lang_red.png')";
+    document.getElementById("btnEnglish_color").style.color = "#FFFFFF";  
+    document.getElementById("btnTaglish_color").style.color = "rgb(100, 100, 100)";     
+
+        var acct_len = acct_num.length;
+	var num_zero = 0;        	
+	var attached_zero = "";
+        
+	if(acct_len < 10 && acct_len != 1){
+		num_zero = 10 - acct_len;
+		for($x = 0; $x < num_zero; $x++){
+			attached_zero+="0";
+		}
+		acct_num = attached_zero + acct_num;
+        }
+
+
+	var str_temp = [];
+	
+	for(var $x = 0; $x <= acct_num.length; $x++ ){
+		 if ($x == "4" || $x == "8"){
+			 //str_temp[$x] = " ";
+			 str_temp[$x] = "     " + acct_num.charAt($x);
+			
+		 }
+		 else{
+			str_temp[$x] = acct_num.charAt($x);
+		 }
+	}
+        
+
+	acct_num2 = "";
+	for(var $x = 0; $x <= str_temp.length-1; $x++ ){
+		 acct_num2 += str_temp[$x];
+	}
+	
+	//acct_num = str_temp.toString();
+	
+
+	
+ 		if (acct_num != null  && acct_num != 0 && acct_len != 1){
+			//Cardless
+			
+    			document.getElementById("lblEnglish").innerHTML = "You are about to make a cardless deposit.</br> Account number: " + acct_num2;
+    			document.getElementById("lblEnglish").style.fontSize = "28px";
+			document.getElementById("lblEnglish").style.lineHeight = "1.5";
+                        document.getElementById("lblEnglish").style.marginTop = "-4px !important"; 
+		} 
+
+}
+
+function depositTagLanguage() {
+    //var acct_num = 1111;
+    var acct_num = parent.leftFrame.COMCDIINTERFACE.comString(2003);  
+    acct_num = acct_num.toString();
+    var acct_num2 = "";
+    str_opcode = 'T';
+    //document.getElementById("COM_UCDI_INTERFACE").UCDIstring("lang_type","T");
+    var cdiobject = new ActiveXObject("APTRAUSERCDI.APTRAUCDI");
+    cdiobject.UCDIstring("lang_type") = "T";
+    //alert( cdiobject.UCDIstring("lang_type"));
+    setGreetings(); 	
+    document.getElementById('lblEnglish').style.visibility = "hidden";
+    document.getElementById('lblTaglish').style.visibility = "visible";
+    document.getElementById("buttonLanguageEnglish").style.backgroundImage = "url('../html/theme/000/images/btn_lang.png')";
+    document.getElementById("buttonLanguageTaglish").style.backgroundImage = "url('../html/theme/000/images/btn_lang_red.png')";
+    document.getElementById("btnTaglish_color").style.color = "#FFFFFF";  
+    document.getElementById("btnEnglish_color").style.color = "rgb(100, 100, 100)";        
+
+        var acct_len = acct_num.length;
+	var num_zero = 0;        	
+	var attached_zero = "";
+	
+	if(acct_len < 10 && acct_len != 1){
+		num_zero = 10 - acct_len;
+		for($x = 0; $x < num_zero; $x++){
+			attached_zero+="0";
+		}
+		acct_num = attached_zero + acct_num;
+        }
+
+
+	var str_temp = [];
+	
+	for(var $x = 0; $x <= acct_num.length; $x++ ){
+		 if ($x == "4" || $x == "8"){
+			 //str_temp[$x] = " ";
+			 str_temp[$x] = "     " + acct_num.charAt($x);
+			
+		 }
+		 else{
+			str_temp[$x] = acct_num.charAt($x);
+		 }
+	}
+
+	
+	for(var $x = 0; $x <= str_temp.length-1; $x++ ){
+		 acct_num2 += str_temp[$x];
+	}
+	
+
+
+    		if (acct_num != null && acct_num != 0 && acct_len != 1){
+			//Cardless
+
+    			document.getElementById("lblTaglish").innerHTML = "Ikaw ay magde-deposit na sa ilang sandali.</br> Account number: " + acct_num2;
+    			document.getElementById("lblTaglish").style.fontSize = "28px";
+			document.getElementById("lblTaglish").style.lineHeight = "1.5";
+		        document.getElementById("lblTaglish").style.marginTop = "-4px !important";
+                }
+
+    
+}
+
+
+function depositSummaryTbl() {
+
+var str_opcode = '';
+str_opcode = parent.leftFrame.COM_UCDI_INTERFACE.ucdiString("lang_type");
+    
+    var ucdidata;
+    var d=document.getElementById("depositsummary");
+    var note3,note4,note5;
+    var acct_num = 0;
+    var noteAmt3, noteAmt4, noteAmt5;
+    var amtTotal;
+    var fin_disp = "";
+
+
+    acct_num = parent.leftFrame.COMCDIINTERFACE.comString(2003);  
+    acct_num = acct_num.toString();
+    note3 = parent.leftFrame.COMCDIINTERFACE.comInteger(3227);
+    noteAmt3 = parent.leftFrame.COMCDIINTERFACE.comInteger(3227)*100;
+
+    note4 = parent.leftFrame.COMCDIINTERFACE.comInteger(3228);
+    noteAmt4 = parent.leftFrame.COMCDIINTERFACE.comInteger(3228)*500;
+
+    note5 = parent.leftFrame.COMCDIINTERFACE.comInteger(3229);
+    noteAmt5 = parent.leftFrame.COMCDIINTERFACE.comInteger(3229)*1000;
+
+    amtTotal = noteAmt3+noteAmt4+noteAmt5;
+
+    noteAmt3 = noteAmt3.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+    noteAmt4 = noteAmt4.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+    noteAmt5 = noteAmt5.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+
+    amtTotal = amtTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",");
+   
+
+/*    
+    
+
+    var note3 = 1;
+    var noteAmt3 = note3 * 100;
+    
+    var note4 = 2;   
+    var noteAmt4 = note4 * 500; 
+
+    
+    var note5 = 5;
+    var noteAmt5 = note5 * 1000;
+    
+    var amtTotal = noteAmt3+noteAmt4+noteAmt5;
+
+*/
+
+    if (note5 != 0){
+        document.getElementById('count1').innerHTML = note5;
+        document.getElementById('bill1').innerHTML = 1000;
+        document.getElementById('amount1').innerHTML = noteAmt5;
+    }
+    else{
+        document.getElementById('DepositValue1').style.display = "none";
+    }
+
+    if (note4 != 0){
+        document.getElementById('count2').innerHTML = note4;
+        document.getElementById('bill2').innerHTML = 500;
+        document.getElementById('amount2').innerHTML = noteAmt4;
+    }
+    else{
+        document.getElementById('DepositValue2').style.display = "none";
+    }
+
+    if (note3 != 0){
+        document.getElementById('count3').innerHTML = note3;
+        document.getElementById('bill3').innerHTML = 100;
+        document.getElementById('amount3').innerHTML = noteAmt3;
+    }
+    else{
+        document.getElementById('DepositValue3').style.display = "none";
+    }
+    document.getElementById('totalvalue').innerHTML = "PHP  " + amtTotal;
+    if (note3 != 0 && note4 != 0 && note5 != 0){
+        document.getElementById('bill1').innerHTML = "PHP  1,000";
+        document.getElementById('amount1').innerHTML = "PHP  " + noteAmt5;
+    }
+    if (note3 == 0 && note4 != 0 && note5 != 0){
+        document.getElementById('bill1').innerHTML = "PHP  1,000";
+        document.getElementById('amount1').innerHTML = "PHP  " + noteAmt5;
+    }
+
+    if (note3 != 0 && note4 == 0 && note5 != 0){
+        document.getElementById('bill1').innerHTML = "PHP  1,000";
+        document.getElementById('amount1').innerHTML = "PHP  " + noteAmt5;
+    }    
+    if (note3 == 0 && note4 == 0 && note5 != 0){
+        document.getElementById('bill1').innerHTML = "PHP  1,000";
+        document.getElementById('amount1').innerHTML = "PHP  " + noteAmt5;
+    }
+    if (note3 != 0 && note4 != 0 && note5 == 0){
+        document.getElementById('bill2').innerHTML = "PHP  500";
+        document.getElementById('amount2').innerHTML = "PHP  " + noteAmt4;
+    }
+    if (note3 == 0 && note4 != 0 && note5 == 0){
+        document.getElementById('bill2').innerHTML = "PHP  500";
+        document.getElementById('amount2').innerHTML = "PHP  " + noteAmt4;
+    }
+    if (note3 != 0 && note4 == 0 && note5 == 0){
+        document.getElementById('bill3').innerHTML = "PHP  100";
+        document.getElementById('amount3').innerHTML = "PHP  " + noteAmt3;
+    }
+
+
+
+        var acct_len = acct_num.length;
+	var num_zero = 0;        	
+	var attached_zero = "";
+	if(acct_len < 10 && acct_len != 0){
+		num_zero = 10 - acct_len;
+		for($x = 0; $x < num_zero; $x++){
+			attached_zero+="0";
+		}
+		acct_num = attached_zero + acct_num;
+        }
+        
+	
+	var str_temp = [];
+	
+	for(var $x = 0; $x <= acct_num.length; $x++ ){
+		
+		 if ($x == "4" || $x == "8"){
+			 //str_temp[$x] = " ";
+			 str_temp[$x] = "     " + acct_num.charAt($x);
+			
+		 }
+		 else{
+			str_temp[$x] = acct_num.charAt($x);
+		 }
+	}
+        
+	acct_num = "";
+	for(var $x = 0; $x <= str_temp.length-1; $x++ ){
+		 acct_num += str_temp[$x];
+	}
+	
+	//acct_num = str_temp.toString();
+
+
+
+
+
+var currentTime = new Date().getHours();
+if(currentTime < 12){
+    if (document.body) {
+        document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/timeout_morning.png";
+        
+    }
+}
+else if (currentTime < 18){
+    if (document.body) {
+        document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/timeout_afternoon.png";
+    }
+}
+else {
+    if (document.body) {
+        document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/timeout_evening.png";
+        
+    }
+}
+
+
+	if(str_opcode == 'T'){
+		
+		depositTagLanguage();
+		 //Checks if Cardless or Carded
+
+    		if (acct_num != null && acct_num != 0 && acct_len != 1){
+			//Cardless
+			
+    			document.getElementById("lblEnglish").innerHTML = "Ikaw ay magde-deposit na sa ilang sandali.</br> Account number: " + acct_num;
+    			document.getElementById("lblEnglish").style.fontSize = "28px";
+			document.getElementById("lblEnglish").style.lineHeight = "1.5";
+                        document.getElementById("lblEnglish").style.marginTop = "-4px !important";
+				
+		}   		
+	
+	}
+	else{
+		depositEngLanguage();
+
+		 //Checks if Cardless or Carded
+   
+ 		if (acct_num != null  && acct_num != 0 && acct_len != 1){
+			//Cardless
+
+    			document.getElementById("lblTaglish").innerHTML = "You are about to make a cardless deposit.</br> Account number: " + acct_num;
+    			document.getElementById("lblTaglish").style.fontSize = "28px";
+			document.getElementById("lblTaglish").style.lineHeight = "1.5";	
+                        document.getElementById("lblTaglish").style.marginTop = "-4px !important";		
+			
+		} 
+    	
+
+	}
+
+
+}
+
+function setGreetings(){
+
+var time = new Date().toLocaleTimeString();
+
+
+if(time.charAt(time.length-2)=='A'){
+    if (str_opcode == 'T'){
+        document.getElementById("lblGreetings").innerHTML = "Magandang Umaga!";
+    }
+    else{
+        document.getElementById("lblGreetings").innerHTML = "Good Morning!";
+    }
+}
+else{
+    time = time.replace(" ","");
+    if(parseInt(time.charAt(0)) >= 6 && time.charAt(1) == ":" || parseInt(time.charAt(1)) == 0 || parseInt(time.charAt(1)) == 1){
+        if (str_opcode == 'T'){    
+                document.getElementById("lblGreetings").innerHTML = "Magandang Gabi!";
+        }
+        else{
+            document.getElementById("lblGreetings").innerHTML = "Good Evening!";
+        }
+        //evening
+    }
+    else if (parseInt(time.charAt(0)) == 1 && time.charAt(1) == 2 && parseInt(time.charAt(3)) >= 0  || parseInt(time.charAt(0)) < 2){
+            if (str_opcode == 'T'){
+                document.getElementById("lblGreetings").innerHTML = "Magandang Tanghali!";
+            }
+            else{
+                document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+            }
+        //Tanghali
+        }
+    else{
+        if (str_opcode == 'T'){
+            document.getElementById("lblGreetings").innerHTML = "Magandang Hapon!";
+        }
+        else{
+            document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+        }
+        //Hapon
+    }       
+
+
+}
+
+
+}
+
+ 
+</SCRIPT>  	
+</HEAD>
+<BODY ID="depositBg" scroll="no" noresize onload="depositSummaryTbl()" style="filter:revealTrans(duration=0.0,transition=23)">
+    <div id=showEnglish>
+    <div id="MainText" class="ndcLine1Text" style="top:160px;"></div>
+    <div id="divDepositSummaryTable" style="margin-left: -10px;">
+        <div><p id="lblGreetings" class="lblMainMenuDepositGreetings DaxMedium"></p></div>
+        <!--<div><p id="greetingsTaglishLbl" class="lblMainMenuDepositGreetings DaxMedium ">Magandang Tanghali!</p></div>-->
+
+
+        <div class="languageFontScreenButtons">
+
+
+            <a  onclick="depositEngLanguage()" class="languageFontScreenBtnEnglish languageButton text-center-english-taglish absolute" id="buttonLanguageEnglish" data-type="language" style="text-decoration: none;background: url(&quot;../html/theme/000/images/btn_lang_red.png&quot;) no-repeat;float: right; margin-right:-127px; margin-top: 5px;">
+                <div class="languageFontScreenButtonsLabels">
+                    <p id="btnEnglish_color" class="btnEnglish_color" style="font-size: 13px; text-decoration: none; padding-top: 6px; padding-left: 22px; height: 30px; color: rgb(255, 255, 255); width: 248px;">
+                    English</p>
+                </div>
+            </a>
+
+            <a onclick="depositTagLanguage()" class="languageFontScreenBtnTanglish languageButton text-center-english-taglish absolute" id="buttonLanguageTaglish" data-type="language" style="text-decoration: none;background: url(&quot;../html/theme/000/images/btn_lang.png&quot;) no-repeat;margin-left: 903px;margin-top: 50px; position: absolute;  padding: 5px 5px 5px 0px;">
+                <div class="languageFontScreenButtonsLabels">
+                    <p id="btnTaglish_color" class="btnTaglish_color" style="font-size: 13px; text-decoration: none; padding-top: 1px; padding-left: 22px; height: 30px;color: rgb(100, 100, 100); width: 90px;">
+                    Taglish</p>
+                </div>
+            </a>
+        </div>
+        <div><p id="lblEnglish" class="depositLbl">You are about to make a deposit.</p></div>
+        <div><p id="lblTaglish" class="depositLbl" style="visibility: hidden;">Ikaw ay magde-deposit na sa ilang sandali.</p></div>
+
+        <table id="depositSummaryID" align="center" class="tbldetails">
+            <thead>
+                <tr>
+                    <th>Count</th>
+                    <th>Bills</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>  
+            <tbody>    
+                <tr id="DepositValue1">
+                    <td class="count1"><span id="count1"></span></td>
+                    <td class="bill1"><span id="bill1" class="bill1"></span></td>
+                    <td class="amount1"><span id="amount1" class="amount1"></span></td>
+                </tr>
+                <tr id="DepositValue2">
+                    <td class="count2"><span id="count2"></span></td>
+                    <td class="bill2"><span id="bill2"></span></td>
+                    <td class="amount2"><span id="amount2"></span></td>
+                </tr>
+                <tr id="DepositValue3">
+                    <td class="count3"><span id="count3"></span></td>
+                    <td class="bill3"><span id="bill3"></span></td>
+                    <td class="amount3"><span id="amount3"></span></td>
+                </tr>
+                <tr id="DepositTotal" class="depositTotal">
+                    <td class="totallbl1" bgcolor="#9f9f9f"><span></span></td>
+                    <td class="totallbl" bgcolor="#9f9f9f"><span>Total</span></td>
+                    <td class="totalvalue" bgcolor="#9f9f9f"><span id="totalvalue"></span></td>
+                </tr>                  
+            </tbody>
+        </table>
+        <div class="btnSelect1 btnred-err" style="margin-top: 240px; color: #FFFFFF; margin-left:50px; font-family: Montserrat;  padding-top: 26px !important; text-align: center;">Deposit</span>
+        </div>
+        <div class="btnSelect1 btnred-err" style="margin-top: 340px; color: #FFFFFF; margin-left:-550px; font-family: Montserrat;  text-align: center; padding-top: 26px !important;">Add Cash
+        </div>
+        <div class="btnSelect1 btnred-err" style="margin-top: 340px; color: #FFFFFF; margin-left:50px; font-family: Montserrat;  text-align: center; padding-top: 26px !important;">Return
+        </div>
+    </div>
+</div>
+
+</BODY>
+</HTML>

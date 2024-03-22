@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+ <TITLE>Screen 209</TITLE>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT  LANGUAGE="VBScript">
+                Dim scrns
+                dim myUCDI
+                dim CDIText
+		dim arrText
+		dim updateScr
+		dim startPos
+		fnPrintMessageToScreen "CAMerchant           :DAAccount             :EAAmount             :FAValidation Data :","", "replyMessage",0,2
+          	CDIText=parent.leftFrame.COM_UCDI_INTERFACE.UCDIstring("DMITRData")                  
+		'CDIText ="075CMBPITFREM3025821083                  GM       P2,300.00I3123456              "
+		startPos=instr(CDIText,"")
+		CDIText = mid(CDIText,startPos+1)
+		arrText= split(CDIText,"")
+		
+		for index = 0 to ubound(arrText)
+			select case index
+					case 0:
+						updateScr ="CM" & trim(mid(arrText(0),3))
+					case 1:
+						updateScr = updateScr & "DM" & trim(mid(arrText(1),3))
+					case 2:
+						updateScr = updateScr & "EM" & trim(mid(arrText(2),3))
+					case 3:
+						updateScr =updateScr & "FM" & trim(mid(arrText(3),3))
+			end select
+		next 
+		fnPrintMessageToScreen updateScr,"", "replyMessage",0,2
+</SCRIPT>
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="doeffect()" style="filter:revealTrans(duration=0.0,transition=23)">
+<P class="ndcLine1Text">Check Free Payment</P>
+<div id="FDK3"></div>
+<div class="FDK3Text">PRESS IF CORRECT</div>
+<div id="FDK4"></div>
+<div class="FDK4Text">PRESS IF INCORRECT</div>
+</BODY>
+</HTML>

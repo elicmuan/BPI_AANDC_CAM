@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+
+ <TITLE>Screen 532</TITLE>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript">
+	
+	Sub KeyEchoed(data)
+    		TextBox.value = "*" & TextBox.value
+		
+	End Sub
+
+	Sub InitStatebUCDI()
+		Set UCDI = CreateObject("APTRAUSERCDI.APTRAUCDI")
+		Dim intStatebFlagUCDI
+
+		intStatebFlagUCDI = UCDI.UCDIinteger("BPIStatebFlagUCDI")
+		If intStatebFlagUCDI = 0 Then
+			document.getElementById("ErrorLine1").style.visibility = "hidden"
+			document.getElementById("ErrorLine2").style.visibility = "hidden"
+		Else
+			document.getElementById("ErrorLine1").style.visibility = "visible"
+			document.getElementById("ErrorLine2").style.visibility = "visible"
+		End If
+	End Sub
+</SCRIPT>
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="vbscript:InitStatebUCDI()" style="filter:revealTrans(duration=0.0,transition=23)">
+<FORM NAME="form1">
+<input Name="UCDITEXT" type="hidden"></input>
+</form>
+
+<TABLE style="WIDTH: 220px; HEIGHT: 7px" cellSpacing=0 cellPadding=0 width=500 border=0 height=30 align=right>
+	<TR>
+		<TD class="TextboxBackground"></TD>
+		<TD id="ErrorLine1" class="ndcLine1Text" style="top: 120px;">PIN change error, magkaiba<br>ang pinasok na PIN. Pakiulit.</td>
+		<TD class="ndcLine2Text" style="top:200px;left:120px">PIN Nomination</td>
+		<TD class="ndcLine2Text" style="top:250px;left:120px">Ipasok ang bagong PIN:</td>
+		<td><INPUT id="TextBox0" name="PinBox" class="PinBox" style="top:280;left:120px" value="******"></td>
+		<TD class="ndcLine2Text" style="top:350px;left:120px">Ipasok muli ang bagong PIN:</td>
+		<td><INPUT id="TextBox" name="PinBox" class="PinBox" style="top: 380px;left:120px"></td>
+		<TD id="ErrorLine2" class="ndcLine2Text" style="top:500px;left:120px;">Babala: Hanggang 3 beses lamang<br>maaaring sumubok.</td>
+	</TR>
+ </TABLE>
+</BODY>
+</HTML>

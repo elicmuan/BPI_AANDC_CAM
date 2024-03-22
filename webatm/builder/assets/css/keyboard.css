@@ -1,0 +1,487 @@
+/* SHARE CSS */
+#softKeyboardStringContainer, #softKeyboardFullStringContainer, #softKeyboardNumberContainer, #softKeyboardZuYingContainer,
+.softKeyboardStringFakeContainer, .softKeyboardFullKBStringFakeContainer, .softKeyboardNumberFakeContainer, .softKeyboardZuYingFakeContainer, 
+#softKeyboardZuYingNumberContainer, .softKeyboardZuYingNumberFakeContainer, #softKeyboardEmailContainer, .softKeyboardEmailFakeContainer 
+{ top : 0px; height: 100%; width: 100%; margin: 0; position: absolute; }
+#softKeyboardStringBtnContainer, #softKeyboardNumberBtnContainer, #softKeyboardZuYingBtnContainer, #softKeyboardZuYingNumberBtnContainer, 
+#softKeyboardEmailBtnContainer {
+  bottom: 0px; height: 37%; width: 100%; margin: 0; position: absolute; z-index: 10;
+  background: url("../../projectAssets/keyboard/bg_keyboard.png") no-repeat 0px 100%; background-size: 100% 111%;
+}
+#softKeyboardEmailBtnContainer { background-image: url("../../projectAssets/keyboard/bg_keyboard_email.png"); }
+#softKeyboardZuYingBtnContainer.zuying, #softKeyboardZuYingNumberBtnContainer.zuying { background-image: url("../../projectAssets/keyboard/bg_Keyboard_zuying.png"); }
+#softKeyboardStringBtnContainer a, #softKeyboardStringBtnContainer span, 
+#softKeyboardFullKBStringBtnContainer a, #softKeyboardFullKBStringBtnContainer span, 
+#softKeyboardNumberBtnContainer a, #softKeyboardNumberBtnContainer span,
+#softKeyboardZuYingBtnContainer a, #softKeyboardZuYingBtnContainer span, 
+#softKeyboardZuYingNumberBtnContainer a, #softKeyboardZuYingNumberBtnContainer span , 
+#softKeyboardEmailBtnContainer a, #softKeyboardEmailBtnContainer span {
+  background-repeat: no-repeat;
+}
+
+/* SINGLE BOX HEIGHT AND WIDTH */
+.skbString_Q, .skbString_W, .skbString_E, .skbString_R, .skbString_T, .skbString_Y, .skbString_U,
+.skbString_I, .skbString_O, .skbString_P, .skbString_1, .skbString_2, .skbString_3,
+.skbNumber_Q, .skbNumber_W, .skbNumber_E, .skbNumber_R, .skbNumber_T, .skbNumber_Y, .skbNumber_U,
+.skbNumber_I, .skbNumber_O, .skbNumber_P, .skbNumber_1, .skbNumber_2, .skbNumber_3,
+.alphabet_Q, .alphabet_W, .alphabet_E, .alphabet_R, .alphabet_T, .alphabet_Y, .alphabet_U,
+.alphabet_I, .alphabet_O, .alphabet_P, .number_1, .number_2, .number_3,
+.skbString_A, .skbString_S, .skbString_D, .skbString_F, .skbString_G, .skbString_H, .skbString_J,
+.skbString_K, .skbString_L, .skbString_CLEAR, .skbString_4, .skbString_5, .skbString_6,
+.skbNumber_A, .skbNumber_S, .skbNumber_D, .skbNumber_F, .skbNumber_G, .skbNumber_H, .skbNumber_J,
+.skbNumber_K, .skbNumber_L, .skbNumber_CLEAR, .skbNumber_4, .skbNumber_5, .skbNumber_6,
+.alphabet_A, .alphabet_S, .alphabet_D, .alphabet_F, .alphabet_G, .alphabet_H, .alphabet_J,
+.alphabet_K, .alphabet_L, .alphabet_CLEAR, .number_4, .number_5, .number_6,
+.skbString_Z, .skbString_X, .skbString_C, .skbString_V, .skbString_B, .skbString_N, .skbString_M,
+.skbString_7, .skbString_8, .skbString_9,
+.skbNumber_Z, .skbNumber_X, .skbNumber_C, .skbNumber_V, .skbNumber_B, .skbNumber_N, .skbNumber_M,
+.skbNumber_7, .skbNumber_8, .skbNumber_9,
+.alphabet_Z, .alphabet_X, .alphabet_C, .alphabet_V, .alphabet_B, .alphabet_N, .alphabet_M,
+.number_7, .number_8, .number_9,
+.alphabet_CASE, .skbString_0, .skbNumber_0, .number_0, .singleSpace, 
+.skbZuYing_dash, .skbZuYing_underscore, .zhuyinControl .softKeyboardZuYing_CLEAR {
+  width : 7.32%; height : 23%; margin: 0px; text-decoration: none; background-size: 100% 100%;
+}
+
+/* TWO BOX HEIGHT AND WIDTH */
+.skbString_BACKSPACE, .skbString_ENTER,
+.skbNumber_BACKSPACE, .skbNumber_ENTER,
+.number_ENTER, .twoSpace, 
+.skbZuYing_com, .skbZuYing_tw { width : 15.14%; height : 23%; margin: 0px; text-decoration: none; background-size: 100% 100%; }
+
+/* THREE BOX HEIGHT AND WIDTH */
+.skbString_HIDE, .skbNumber_HIDE { width : 21.97%; height : 23%; margin: 0px; text-decoration: none; background-size: 100% 100%; }
+
+/* FIVE BOX HEIGHT AND WIDTH */
+.skbString_SPACE, .skbNumber_SPACE { width : 51.27%; height : 23%; margin: 0px; text-decoration: none; background-size: 100% 100%; }
+
+/* ROW 1 */
+.skbString_Q, .skbString_W, .skbString_E, .skbString_R, .skbString_T, .skbString_Y, .skbString_U,
+.skbString_I, .skbString_O, .skbString_P, .skbString_1, .skbString_2, .skbString_3,
+.skbNumber_Q, .skbNumber_W, .skbNumber_E, .skbNumber_R, .skbNumber_T, .skbNumber_Y, .skbNumber_U,
+.skbNumber_I, .skbNumber_O, .skbNumber_P, .skbNumber_1, .skbNumber_2, .skbNumber_3,
+.alphabet_Q, .alphabet_W, .alphabet_E, .alphabet_R, .alphabet_T, .alphabet_Y, .alphabet_U,
+.alphabet_I, .alphabet_O, .alphabet_P, .number_1, .number_2, .number_3,
+.skbZuYing_escalation, .skbZuYing_alias, .skbZuYing_hash, .skbZuYing_dollar, .skbZuYing_percent, .skbZuYing_power, .skbZuYing_and,
+.skbZuYing_star, .skbZuYing_leftbracket, .skbZuYing_rightbracket,
+.skbZuYing_10, .skbZuYing_11, .skbZuYing_12, .skbZuYing_13, .skbZuYing_14, .skbZuYing_15, .skbZuYing_16, .skbZuYing_17, .skbZuYing_18, .skbZuYing_19,
+.skbZuYing_110, .skb_row2, .zhuyinControl .softKeyboardZuYing_BACKSPACE {
+   top: 2%; position: absolute;
+}
+.skbString_Q,.alphabet_Q { background-image: url("../../projectAssets/keyboard/String/Q.png"); }
+.skbString_W,.alphabet_W { background-image: url("../../projectAssets/keyboard/String/W.png"); }
+.skbString_E,.alphabet_E { background-image: url("../../projectAssets/keyboard/String/E.png"); }
+.skbString_R,.alphabet_R { background-image: url("../../projectAssets/keyboard/String/R.png"); }
+.skbString_T,.alphabet_T { background-image: url("../../projectAssets/keyboard/String/T.png"); }
+.skbString_Y,.alphabet_Y { background-image: url("../../projectAssets/keyboard/String/Y.png"); }
+.skbString_U,.alphabet_U { background-image: url("../../projectAssets/keyboard/String/U.png"); }
+.skbString_I,.alphabet_I { background-image: url("../../projectAssets/keyboard/String/I.png"); }
+.skbString_O,.alphabet_O { background-image: url("../../projectAssets/keyboard/String/O.png"); }
+.skbString_P,.alphabet_P { background-image: url("../../projectAssets/keyboard/String/P.png"); }
+.skbNumber_Q { background-image: url("../../projectAssets/keyboard/Number/Q.png"); }
+.skbNumber_W { background-image: url("../../projectAssets/keyboard/Number/W.png"); }
+.skbNumber_E { background-image: url("../../projectAssets/keyboard/Number/E.png"); }
+.skbNumber_R { background-image: url("../../projectAssets/keyboard/Number/R.png"); }
+.skbNumber_T { background-image: url("../../projectAssets/keyboard/Number/T.png"); }
+.skbNumber_Y { background-image: url("../../projectAssets/keyboard/Number/Y.png"); }
+.skbNumber_U { background-image: url("../../projectAssets/keyboard/Number/U.png"); }
+.skbNumber_I { background-image: url("../../projectAssets/keyboard/Number/I.png"); }
+.skbNumber_O { background-image: url("../../projectAssets/keyboard/Number/O.png"); }
+.skbNumber_P { background-image: url("../../projectAssets/keyboard/Number/P.png"); }
+.skbString_1, .skbNumber_1, .number_1 { background-image: url("../../projectAssets/keyboard/String/1.png"); }
+.skbString_2, .skbNumber_2, .number_2 { background-image: url("../../projectAssets/keyboard/String/2.png"); }
+.skbString_3, .skbNumber_3, .number_3 { background-image: url("../../projectAssets/keyboard/String/3.png"); }
+
+/* ROW 2 */
+.skbString_A, .skbString_S, .skbString_D, .skbString_F, .skbString_G, .skbString_H, .skbString_J,
+.skbString_K, .skbString_L, .skbString_CLEAR, .skbString_4, .skbString_5, .skbString_6,
+.skbNumber_A, .skbNumber_S, .skbNumber_D, .skbNumber_F, .skbNumber_G, .skbNumber_H, .skbNumber_J,
+.skbNumber_K, .skbNumber_L, .skbNumber_CLEAR, .skbNumber_4, .skbNumber_5, .skbNumber_6,
+.alphabet_A, .alphabet_S, .alphabet_D, .alphabet_F, .alphabet_G, .alphabet_H, .alphabet_J,
+.alphabet_K, .alphabet_L, .alphabet_CLEAR, .number_4, .number_5, .number_6,
+.skbZuYing_fullstop, .softKeyboardZuYing_CLEAR,
+.skbZuYing_20, .skbZuYing_21, .skbZuYing_22, .skbZuYing_23, .skbZuYing_24, .skbZuYing_25, .skbZuYing_26, .skbZuYing_27, .skbZuYing_28,
+.skbZuYing_29, .skb_row3, 
+.skbZuYing_dash, .skbZuYing_underscore, .softKeyboardZuYing_SPACE {
+  top: 26%; position: absolute;
+}
+
+.skbString_A, .alphabet_A { background-image: url("../../projectAssets/keyboard/String/A.png"); }
+.skbString_S, .alphabet_S { background-image: url("../../projectAssets/keyboard/String/S.png"); }
+.skbString_D, .alphabet_D { background-image: url("../../projectAssets/keyboard/String/D.png"); }
+.skbString_F, .alphabet_F { background-image: url("../../projectAssets/keyboard/String/F.png"); }
+.skbString_G, .alphabet_G { background-image: url("../../projectAssets/keyboard/String/G.png"); }
+.skbString_H, .alphabet_H { background-image: url("../../projectAssets/keyboard/String/H.png"); }
+.skbString_J, .alphabet_J { background-image: url("../../projectAssets/keyboard/String/J.png"); }
+.skbString_K, .alphabet_K { background-image: url("../../projectAssets/keyboard/String/K.png"); }
+.skbString_L, .alphabet_L { background-image: url("../../projectAssets/keyboard/String/L.png"); }
+.skbString_CLEAR, .skbNumber_CLEAR, .alphabet_CLEAR, .softKeyboardZuYing_CLEAR { background-image: url("../../projectAssets/keyboard/clear.png"); }
+.skbNumber_A { background-image: url("../../projectAssets/keyboard/Number/A.png"); }
+.skbNumber_S { background-image: url("../../projectAssets/keyboard/Number/S.png"); }
+.skbNumber_D { background-image: url("../../projectAssets/keyboard/Number/D.png"); }
+.skbNumber_F { background-image: url("../../projectAssets/keyboard/Number/F.png"); }
+.skbNumber_G { background-image: url("../../projectAssets/keyboard/Number/G.png"); }
+.skbNumber_H { background-image: url("../../projectAssets/keyboard/Number/H.png"); }
+.skbNumber_J { background-image: url("../../projectAssets/keyboard/Number/J.png"); }
+.skbNumber_K { background-image: url("../../projectAssets/keyboard/Number/K.png"); }
+.skbNumber_L { background-image: url("../../projectAssets/keyboard/Number/L.png"); }
+.skbString_4, .skbNumber_4, .number_4 { background-image: url("../../projectAssets/keyboard/String/4.png"); }
+.skbString_5, .skbNumber_5, .number_5 { background-image: url("../../projectAssets/keyboard/String/5.png"); }
+.skbString_6, .skbNumber_6, .number_6 { background-image: url("../../projectAssets/keyboard/String/6.png"); }
+
+/* ROW 3 */
+.skbString_Z, .skbString_X, .skbString_C, .skbString_V, .skbString_B, .skbString_N, .skbString_M,
+.skbString_BACKSPACE, .skbString_7, .skbString_8, .skbString_9,
+.skbNumber_Z, .skbNumber_X, .skbNumber_C, .skbNumber_V, .skbNumber_B, .skbNumber_N, .skbNumber_M,
+.skbNumber_BACKSPACE, .skbNumber_7, .skbNumber_8, .skbNumber_9,
+.alphabet_Z, .alphabet_X, .alphabet_C, .alphabet_V, .alphabet_B, .alphabet_N, .alphabet_M,
+.number_7, .number_8, .number_9, .softKeyboardZuYing_BACKSPACE,
+.skbZuYing_30, .skbZuYing_31, .skbZuYing_32, .skbZuYing_33, .skbZuYing_34, .skbZuYing_35, .skbZuYing_36, .skbZuYing_37, .skbZuYing_38,
+.skbZuYing_39, .skb_row4, .skbZuYing_fullstop1 {
+  top: 51%; position: absolute;
+}
+
+.skbString_Z, .alphabet_Z { background-image: url("../../projectAssets/keyboard/String/Z.png"); }
+.skbString_X, .alphabet_X { background-image: url("../../projectAssets/keyboard/String/X.png"); }
+.skbString_C, .alphabet_C { background-image: url("../../projectAssets/keyboard/String/C.png"); }
+.skbString_V, .alphabet_V { background-image: url("../../projectAssets/keyboard/String/V.png"); }
+.skbString_B, .alphabet_B { background-image: url("../../projectAssets/keyboard/String/B.png"); }
+.skbString_N, .alphabet_N { background-image: url("../../projectAssets/keyboard/String/N.png"); }
+.skbString_M, .alphabet_M { background-image: url("../../projectAssets/keyboard/String/M.png"); }
+.skbString_BACKSPACE, .skbNumber_BACKSPACE, .alphabet_BACKSPACE { background-image: url("../../projectAssets/keyboard/erase.png"); }
+.skbNumber_Z { background-image: url("../../projectAssets/keyboard/Number/Z.png"); }
+.skbNumber_X { background-image: url("../../projectAssets/keyboard/Number/X.png"); }
+.skbNumber_C { background-image: url("../../projectAssets/keyboard/Number/C.png"); }
+.skbNumber_V { background-image: url("../../projectAssets/keyboard/Number/V.png"); }
+.skbNumber_B { background-image: url("../../projectAssets/keyboard/Number/B.png"); }
+.skbNumber_N { background-image: url("../../projectAssets/keyboard/Number/N.png"); }
+.skbNumber_M { background-image: url("../../projectAssets/keyboard/Number/M.png"); }
+.skbString_7, .skbNumber_7, .number_7 { background-image: url("../../projectAssets/keyboard/String/7.png"); }
+.skbString_8, .skbNumber_8, .number_8 { background-image: url("../../projectAssets/keyboard/String/8.png"); }
+.skbString_9, .skbNumber_9, .number_9 { background-image: url("../../projectAssets/keyboard/String/9.png"); }
+
+/* ROW 4 */
+.skbString_SPACE, .skbString_HIDE, .skbString_0, .skbString_ENTER,
+.skbNumber_SPACE, .skbNumber_HIDE, .skbNumber_0, .skbNumber_ENTER,
+.number_0, .number_ENTER,
+.alphabet_CASE, .softKeyboardZuYing_SYMBOL, .softKeyboardZuYing_CHINESE, .softKeyboardZuYing_ALPHA,
+.skbZuYing_40, .skbZuYing_41, .skbZuYing_42, .skbZuYing_43, .skbZuYing_44, .skbZuYing_45, .skbZuYing_46, .skbZuYing_47, .skbZuYing_48,
+.skbZuYing_49, .skb_row5, 
+.skbZuYing_com, .skbZuYing_tw, 
+.skbZuYing_alias1 {
+  top: 75%; position: absolute;
+}
+.skbNumber_SPACE { }
+.skbString_SPACE { background-image: url("../../projectAssets/keyboard/String/space.png"); }
+.skbString_HIDE, .skbNumber_HIDE { background-image: url("../../projectAssets/keyboard/hidekeyboard.png"); }
+.skbString_ENTER, .skbNumber_ENTER, .number_ENTER { background-image: url("../../projectAssets/keyboard/btn_keyboard_enter.png"); }
+.skbString_0, .skbNumber_0, .number_0 { background-image: url("../../projectAssets/keyboard/String/0.png"); }
+.softKeyboardZuYing_SYMBOL { background-image: url("../../projectAssets/keyboard/Zuying/symbol.png"); }
+.softKeyboardZuYing_CHINESE { background-image: url("../../projectAssets/keyboard/Zuying/chinese.png"); }
+.softKeyboardZuYing_ALPHA { background-image: url("../../projectAssets/keyboard/Zuying/alpha.png"); }
+.softKeyboardZuYing_NUMBER { background-image: url("../../projectAssets/keyboard/Zuying/number.png"); }
+.softKeyboardZuYing_SPACE { background-image: url("../../projectAssets/keyboard/Zuying/space.png"); }
+
+/* COLUMN 1 */
+.skbString_Q, .skbString_A, .skbString_Z, .skbString_SPACE,
+.skbNumber_Q, .skbNumber_A, .skbNumber_Z, .skbNumber_SPACE,
+.alphabet_Q, .alphabet_A, .alphabet_Z, .alphabet_SPACE,
+.skbZuYing_10, .skbZuYing_20, .skbZuYing_30, .skbZuYing_40,
+.skbZuYing_escalation, .skb_col1, .skbZuYing_underscore {
+  left: 0.48%;
+}
+
+/* COLUMN 2 */
+.skbString_W, .skbString_S, .skbString_X,
+.skbNumber_W, .skbNumber_S, .skbNumber_X,
+.alphabet_W, .alphabet_S, .alphabet_X,
+.skbZuYing_11, .skbZuYing_21, .skbZuYing_31, .skbZuYing_41,
+.skbZuYing_alias, .skbZuYing_dash, .skb_col2 {
+  left: 8.11%;
+}
+
+/* COLUMN 3 */
+.skbString_E, .skbString_D, .skbString_C,
+.skbNumber_E, .skbNumber_D, .skbNumber_C,
+.alphabet_E, .alphabet_D, .alphabet_C,
+.skbZuYing_12, .skbZuYing_22, .skbZuYing_32, .skbZuYing_42,
+.skbZuYing_hash, .skb_col3 {
+  left: 15.72%;
+}
+
+/* COLUMN 4 */
+.skbString_R, .skbString_F, .skbString_V,
+.skbNumber_R, .skbNumber_F, .skbNumber_V,
+.alphabet_R, .alphabet_F, .alphabet_V,
+.skbZuYing_13, .skbZuYing_23, .skbZuYing_33, .skbZuYing_43,
+.skbZuYing_dollar, .skb_col4, 
+.skbZuYing_alias1 {
+  left: 23.34%;
+}
+
+/* COLUMN 5 */
+.skbString_T, .skbString_G, .skbString_B,
+.skbNumber_T, .skbNumber_G, .skbNumber_B,
+.alphabet_T, .alphabet_G, .alphabet_B,
+.skbZuYing_14, .skbZuYing_24, .skbZuYing_34, .skbZuYing_44,
+.skbZuYing_percent, .skb_col5, 
+.skbZuYing_com {
+  left: 30.96%;
+}
+
+/* COLUMN 6 */
+.skbString_Y, .skbString_H, .skbString_N,
+.skbNumber_Y, .skbNumber_H, .skbNumber_N,
+.alphabet_Y, .alphabet_H, .alphabet_N,
+.skbZuYing_15, .skbZuYing_25, .skbZuYing_35, .skbZuYing_45,
+.skbZuYing_power, .skb_col6 {
+  left: 38.57%;
+}
+
+/* COLUMN 7 */
+.skbString_U, .skbString_J, .skbString_M,
+.skbNumber_U, .skbNumber_J, .skbNumber_M,
+.alphabet_U, .alphabet_J, .alphabet_M,
+.skbZuYing_16, .skbZuYing_26, .skbZuYing_36, .skbZuYing_46,
+.skbZuYing_and, .skb_col7,
+.skbZuYing_tw {
+  left: 46.19%;
+}
+
+/* COLUMN 8 */
+.skbString_I, .skbString_K, .skbString_HIDE,
+.skbNumber_I, .skbNumber_K, .skbNumber_HIDE,
+.alphabet_I, .alphabet_K, .alphabet_HIDE,
+.skbZuYing_17, .skbZuYing_27, .skbZuYing_37, .skbZuYing_47,
+.alphabet_CASE, .skbZuYing_star, .softKeyboardZuYing_ALPHA,
+.skb_col8, 
+.skbZuYing_fullstop1 {
+  left: 53.81%;
+}
+
+/* COLUMN 9 */
+.skbString_O, .skbString_L, .skbString_BACKSPACE,
+.skbNumber_O, .skbNumber_L, .skbNumber_BACKSPACE,
+.alphabet_O, .alphabet_L, .alphabet_BACKSPACE,
+.skbZuYing_18, .skbZuYing_28, .skbZuYing_38, .skbZuYing_48,
+.softKeyboardZuYing_SYMBOL, .skbZuYing_leftbracket, .skbZuYing_fullstop,
+.softKeyboardZuYing_BACKSPACE, .skb_col9,
+#softKeyboardEmailBtnContainer .softKeyboardZuYing_ALPHA,
+#softKeyboardEmailBtnContainer .softKeyboardZuYing_SYMBOL {
+  left: 61.43%;
+}
+
+/* COLUMN 10 */
+.skbString_P, .skbString_CLEAR,
+.skbNumber_P, .skbNumber_CLEAR,
+.alphabet_P, .alphabet_CLEAR,
+.skbZuYing_19, .skbZuYing_29, .skbZuYing_39, .skbZuYing_49,
+.softKeyboardZuYing_CHINESE, .skbZuYing_rightbracket,
+.softKeyboardZuYing_CLEAR, .skb_col10 {
+  left: 69.04%;
+}
+
+/* COLUMN 11 */
+.skbString_1, .skbString_4, .skbString_7, .skbString_0,
+.skbNumber_1, .skbNumber_4, .skbNumber_7, .skbNumber_0,
+.number_1, .number_4, .number_7, .number_0,
+.skbZuYing_110, .zhuyinControl .softKeyboardZuYing_ALPHA,
+.skb_col11,
+.softKeyboardZuYing_SPACE {
+  left: 76.66%;
+}
+
+/* COLUMN 12 */
+.skbString_2, .skbString_5, .skbString_8, .skbString_ENTER,
+.skbNumber_2, .skbNumber_5, .skbNumber_8, .skbNumber_ENTER,
+.number_2, .number_5, .number_8, .number_ENTER,
+.zhuyinControl .softKeyboardZuYing_SYMBOL,
+.skb_col12,
+.zhuyinControl .softKeyboardZuYing_BACKSPACE {
+  left: 84.28%;
+}
+
+/* COLUMN 13 */
+.skbString_3, .skbString_6, .skbString_9,
+.skbNumber_3, .skbNumber_6, .skbNumber_9,
+.number_3, .number_6, .number_9,
+.skb_col13,
+.zhuyinControl .softKeyboardZuYing_CLEAR {
+  left: 91.89%;
+}
+
+/* LABEL */
+.skbEnterLblChi { color: #FFFFFF; font-size: 28px; text-shadow: 1px 1px 0px rgba(0,0,0,1); text-align: right; }
+.skbEnterLblEng { color: #FFFFFF; font-size: 16px; text-shadow: 1px 1px 0px rgba(0,0,0,1); text-align: right; }
+.skbStringSpaceLbl { color: #FFFFFF; font-size: 36px; text-shadow: 1px 1px 0px rgba(0,0,0,1); text-align: center; vertical-align : middle; }
+
+/* Zu Ying */
+.zhuyinResult {  }
+.zhuyinOutput { height: 125%; margin-top: -6.5%; }
+#zhuyinInput, #zhuyinNumberInput {margin-right: 6.5px; position: relative; float: right; width: 22.6%; height : 70px; font-size: 35px;background-color: #3b818d; border-style: solid; border-color: #94b9bf; border-width: 3px; }
+.softKeyboardZuYing_CH { margin: 2px 0;width : 7.32%;  color: #FFFFFF; font-size: 35px; border-radius: 10px; background-color: rgba(15, 34, 40, 0.63); text-align: center; line-height: 80px; }
+
+.skbZuYing_Q, .skbZuYing_W, .skbZuYing_E, .skbZuYing_R, .skbZuYing_T, .skbZuYing_Y, .skbZuYing_U, .skbZuYing_I, .skbZuYing_O, .skbZuYing_P,
+.skbZuYing_A, .skbZuYing_S, .skbZuYing_D, .skbZuYing_F, .skbZuYing_G, .skbZuYing_H, .skbZuYing_J, .skbZuYing_K, .skbZuYing_L, .skbZuYing_Z,
+.skbZuYing_X, .skbZuYing_C, .skbZuYing_V, .skbZuYing_B, .skbZuYing_N, .skbZuYing_M {
+  /* background: none; */
+}
+
+.uppercase .skbZuYing_Q { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/Q.png"); }
+.uppercase .skbZuYing_W { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/W.png"); }
+.uppercase .skbZuYing_E { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/E.png"); }
+.uppercase .skbZuYing_R { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/R.png"); }
+.uppercase .skbZuYing_T { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/T.png"); }
+.uppercase .skbZuYing_Y { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/Y.png"); }
+.uppercase .skbZuYing_U { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/U.png"); }
+.uppercase .skbZuYing_I { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/I.png"); }
+.uppercase .skbZuYing_O { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/O.png"); }
+.uppercase .skbZuYing_P { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/P.png"); }
+.uppercase .skbZuYing_A { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/A.png"); }
+.uppercase .skbZuYing_S { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/S.png"); }
+.uppercase .skbZuYing_D { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/D.png"); }
+.uppercase .skbZuYing_F { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/F.png"); }
+.uppercase .skbZuYing_G { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/G.png"); }
+.uppercase .skbZuYing_H { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/H.png"); }
+.uppercase .skbZuYing_J { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/J.png"); }
+.uppercase .skbZuYing_K { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/K.png"); }
+.uppercase .skbZuYing_L { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/L.png"); }
+.uppercase .skbZuYing_Z { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/Z.png"); }
+.uppercase .skbZuYing_X { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/X.png"); }
+.uppercase .skbZuYing_C { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/C.png"); }
+.uppercase .skbZuYing_V { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/V.png"); }
+.uppercase .skbZuYing_B { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/B.png"); }
+.uppercase .skbZuYing_N { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/N.png"); }
+.uppercase .skbZuYing_M { background-image: url("../../projectAssets/keyboard/Zuying/Uppercase/M.png"); }
+.uppercase .softKeyboardZuYing_CASE { background-image: url("../../projectAssets/keyboard/Zuying/lowercase.png"); }
+
+.lowercase .skbZuYing_Q { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/Q.png"); }
+.lowercase .skbZuYing_W { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/W.png"); }
+.lowercase .skbZuYing_E { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/E.png"); }
+.lowercase .skbZuYing_R { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/R.png"); }
+.lowercase .skbZuYing_T { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/T.png"); }
+.lowercase .skbZuYing_Y { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/Y.png"); }
+.lowercase .skbZuYing_U { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/U.png"); }
+.lowercase .skbZuYing_I { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/I.png"); }
+.lowercase .skbZuYing_O { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/O.png"); }
+.lowercase .skbZuYing_P { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/P.png"); }
+.lowercase .skbZuYing_A { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/A.png"); }
+.lowercase .skbZuYing_S { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/S.png"); }
+.lowercase .skbZuYing_D { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/D.png"); }
+.lowercase .skbZuYing_F { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/F.png"); }
+.lowercase .skbZuYing_G { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/G.png"); }
+.lowercase .skbZuYing_H { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/H.png"); }
+.lowercase .skbZuYing_J { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/J.png"); }
+.lowercase .skbZuYing_K { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/K.png"); }
+.lowercase .skbZuYing_L { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/L.png"); }
+.lowercase .skbZuYing_Z { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/Z.png"); }
+.lowercase .skbZuYing_X { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/X.png"); }
+.lowercase .skbZuYing_C { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/C.png"); }
+.lowercase .skbZuYing_V { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/V.png"); }
+.lowercase .skbZuYing_B { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/B.png"); }
+.lowercase .skbZuYing_N { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/N.png"); }
+.lowercase .skbZuYing_M { background-image: url("../../projectAssets/keyboard/Zuying/Lowercase/M.png"); }
+.lowercase .softKeyboardZuYing_CASE { background-image: url("../../projectAssets/keyboard/Zuying/uppercase.png"); }
+
+.skbZuYing_escalation { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/escalation.png"); }
+.skbZuYing_alias, .skbZuYing_alias1 { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/alias.png"); }
+.skbZuYing_hash { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/hash.png"); }
+.skbZuYing_dollar { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/dollar.png"); }
+.skbZuYing_percent { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/percent.png"); }
+.skbZuYing_power { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/power.png"); }
+.skbZuYing_and { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/and.png"); }
+.skbZuYing_star { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/star.png"); }
+.skbZuYing_leftbracket { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/left_bracket.png"); }
+.skbZuYing_rightbracket { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/right_bracket.png"); }
+.skbZuYing_fullstop, .skbZuYing_fullstop1 { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/fullstop.png"); }
+.skbZuYing_dash { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/dash.png"); }
+.skbZuYing_com { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/com.png"); }
+.skbZuYing_tw { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/tw.png"); }
+.skbZuYing_underscore { background-image: url("../../projectAssets/keyboard/Zuying/Symbol/underscore.png"); }
+.softKeyboardZuYing_BACKSPACE { background-image: url("../../projectAssets/keyboard/Zuying/erase.png"); }
+.softKeyboardZuYing_CLEAR { background-image: url("../../projectAssets/keyboard/Zuying/clear.png"); }
+
+.skbZuYing_10 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/10.png"); }
+.skbZuYing_11 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/11.png"); }
+.skbZuYing_12 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/12.png"); }
+.skbZuYing_13 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/13.png"); }
+.skbZuYing_14 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/14.png"); }
+.skbZuYing_15 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/15.png"); }
+.skbZuYing_16 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/16.png"); }
+.skbZuYing_17 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/17.png"); }
+.skbZuYing_18 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/18.png"); }
+.skbZuYing_19 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/19.png"); }
+.skbZuYing_20 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/20.png"); }
+.skbZuYing_21 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/21.png"); }
+.skbZuYing_22 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/22.png"); }
+.skbZuYing_23 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/23.png"); }
+.skbZuYing_24 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/24.png"); }
+.skbZuYing_25 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/25.png"); }
+.skbZuYing_26 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/26.png"); }
+.skbZuYing_27 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/27.png"); }
+.skbZuYing_28 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/28.png"); }
+.skbZuYing_29 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/29.png"); }
+.skbZuYing_30 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/30.png"); }
+.skbZuYing_31 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/31.png"); }
+.skbZuYing_32 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/32.png"); }
+.skbZuYing_33 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/33.png"); }
+.skbZuYing_34 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/34.png"); }
+.skbZuYing_35 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/35.png"); }
+.skbZuYing_36 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/36.png"); }
+.skbZuYing_37 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/37.png"); }
+.skbZuYing_38 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/38.png"); }
+.skbZuYing_39 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/39.png"); }
+.skbZuYing_40 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/40.png"); }
+.skbZuYing_41 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/41.png"); }
+.skbZuYing_42 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/42.png"); }
+.skbZuYing_43 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/43.png"); }
+.skbZuYing_44 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/44.png"); }
+.skbZuYing_45 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/45.png"); }
+.skbZuYing_46 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/46.png"); }
+.skbZuYing_47 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/47.png"); }
+.skbZuYing_48 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/48.png"); }
+.skbZuYing_49 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/49.png"); }
+.skbZuYing_110 { background-image: url("../../projectAssets/keyboard/Zuying/zuying/110.png"); }
+
+.skbZhuyinToggle.skbZhuyin_Open { margin: 2px 0; border-radius: 10px; width: 14.9%; height: 21.1%;background-color: rgba(63, 17, 17, 0.93); background-image: url("../../projectAssets/keyboard/Zuying/open.png"); }
+.skbZhuyinToggle {margin: 2px 0; border-radius: 10px; width: 14.9%; height: 21.1%;background-color: rgba(63, 17, 17, 0.93); background-image: url("../../projectAssets/keyboard/Zuying/close.png"); }
+.skbZhuyin_up {width: 14.9%; height:21.1%; margin: 2px 0;background-image: url("../../projectAssets/keyboard/Zuying/up.png"); border-radius: 10px; background-color: #0078a0;}
+.skbZhuyin_down {width: 14.9%; height:21.1%; margin: 2px 0;background-image: url("../../projectAssets/keyboard/Zuying/down.png"); border-radius: 10px; background-color:  #43ac6a;}
+
+.softKeyboardZuYing_ALPHA.twoSpace, .softKeyboardZuYing_SYMBOL.twoSpace { background-size: auto 100%; background-position: 50% 50%; }
+
+/* New Design */
+.zhuyinResult, .zhuyinResult > div { width: 100%; height: 100%; }
+.skb_row1 { position: absolute; position: 11.8%;}
+div[class$="row1"]{
+  width: 100%;
+  height: 19.3%;
+  background-color: rgb(26, 57, 73);
+  border-radius: 10px;
+  opacity: 0.99;
+  border-style: dotted;
+  border-width: 4px;
+  border-color: rgba(255, 255, 255, 0.5)
+}
+div[class$="rowother"]{
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0.99;
+  height: 78%;
+  background-color: rgb(26, 57, 73);
+  border-style: dotted;
+  border-width: 4px;
+  border-top-width: 0px;
+  border-color: rgba(255, 255, 255, 0.5)
+}
+
+.zhuyinTopBar {
+  width: 100%;
+  height: 23%;
+  float: left;
+  position: absolute;
+  background-color: rgb(26, 57, 73);
+}
+ .zhuyinResult > div{
+    width: 76.7%;
+ }

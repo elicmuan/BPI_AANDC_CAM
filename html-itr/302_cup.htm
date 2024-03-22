@@ -1,0 +1,152 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+<link rel="stylesheet" type="text/css" href="Labels.css">
+ <TITLE>Screen 302</TITLE>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+
+<SCRIPT LANGUAGE="javascript">
+function DisplayScreen()
+{
+
+		var CDIText;
+		var MainText;
+		var strAmount;
+		
+		//CDIText = "P101\[11;20;80mEO 313(`F@ FN     UICC CREDITHO 313(`I@ IN      UICC DEBITKO 313(`L@ LNUICC QUASICREDIT";
+		//CDIText = parent.leftFrame.COM_UCDI_INTERFACE.UCDIstring("DMITRData");
+		CDIText = parent.leftFrame.RETRIEVESCRINTERFACE.RetrieveCurrentScreen();
+		
+		CDIText = CDIText.replace("F@","F0");
+		CDIText = CDIText.replace("FN","F0");
+		CDIText = CDIText.replace("I@","I0");
+		CDIText = CDIText.replace("IN","I0");
+		CDIText = CDIText.replace("L@","L0");
+		CDIText = CDIText.replace("LN","L0");
+		CDIText = CDIText.replace("EO 313","");
+		CDIText = CDIText.replace("HO 313","");
+		CDIText = CDIText.replace("KO 313","");
+
+		CDIText = rem_Controls(CDIText);
+		
+		
+		CDIText = CDIText.split("");
+		
+		for (i = 1; i < CDIText.length; i++)
+		{
+			fnPrintReplyDataToScreen(CDIText[i]);
+		}
+		
+
+
+
+				var time = new Date().toLocaleTimeString();
+				
+				var str_opcode = '';
+
+				str_opcode = parent.leftFrame.COM_UCDI_INTERFACE.ucdiString("lang_type");
+				
+			
+				if(time.charAt(time.length-2)=='A'){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Umaga!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Morning!";
+								}
+				}
+				else{
+				
+					time = time.replace(" ","");
+					
+						if(parseInt(time.charAt(0)) >= 6 && time.charAt(1) == ":" || parseInt(time.charAt(1)) == 0 || parseInt(time.charAt(1)) == 1){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Gabi!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Evening!";
+								}
+								//evening
+						}
+						else if (parseInt(time.charAt(0)) == 1 && time.charAt(1) == 2 && parseInt(time.charAt(3)) >= 0  || parseInt(time.charAt(0)) < 2){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Tanghali!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+								}
+								//Tanghali
+						}
+						else{
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Hapon!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+								}
+								//Hapon
+						}						
+						
+				}
+
+
+}
+
+
+
+
+</SCRIPT>  	
+
+
+
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="DisplayScreen()" style="filter:revealTrans(duration=0.0,transition=23)">
+<P id="lblGreetings"></p>
+<div id="redwarning" style="background-image:url('graywarning.png');margin-left:0px;margin-top:170px;margin-left:180px;width:50px;height:50px;z-index:5;position:absolute;visibility:hidden;"></div>
+<div id="boxmess" style="background-image:url('boxmess.png');width:807px;height:357px;position:absolute;left:80px;top:120px;visibility:hidden;"></div>
+<div id="MainTextLeft" class="ndcLineTextLeft" style="top:170px; left:-35px; font-size:35px;"><span id="title" style="font-family:Dax-Regular;"></span></div>	
+<div id="MainTextLeft"  class="ndcLineTextLeft" style="top:188px; left:123px; text-align:center;font-size:35px;"><span id="title2" style="font-family:Dax-Regular;"></span></div>
+<div id="MainText1" class="ndcLine1AText"></div>
+<div id="MainText2" class="ndcLine1BText"></div>
+
+<div id="FDK1" style="background-image:url('button_fdkA.png');margin-left:140px;margin-top:50px;visibility:hidden;"></div>
+<div id="FDKAString" class="FDK1Text" style="top:283px;left:383px;"></div>
+<div id="FDKA1String" class="FDKA1Text"></div>
+<div id="FDKA2String" class="FDKA2Text"></div>
+<div id="FDK2" style="background-image:url('button_fdkA.png');margin-left:140px;margin-top:84px;visibility:hidden;"></div>
+<div id="FDKBString" class="FDK2Text" style="top:422px;left:383px;"></div>
+<div id="FDKB1String" class="FDKB1Text"></div>
+<div id="FDKB2String" class="FDKB2Text"></div>
+<div id="FDK3" style="background-image:url('button_fdkA.png');margin-left:140px;margin-top:120px;visibility:hidden;"></div>
+<div id="FDKCString" class="FDK3Text" style="top:564px;left:383px;"></div>
+<div id="FDKC1String" class="FDKC1Text"></div>
+<div id="FDKC2String" class="FDKC2Text"></div>
+<div id="FDK4" style="background-image:url('Amount Button.png');margin-left:288px;margin-top:150px;visibility:hidden;"></div>
+<div id="FDKDString" class="FDK4Text" style="color:white;top:662px;left:358px;"></div>
+<div id="FDKD1String" class="FDKD1Text"></div>
+<div id="FDKD2String" class="FDKD2Text"></div>
+<div id="FDK5" style="background-image:url('button_fdkA.png');margin-left:80px;margin-top:50px;visibility:hidden;"></div>
+<div id="FDKIString" class="FDK5Text" style="top:265px;left:180px;"></div>
+<div id="FDKI1String" class="FDKI1Text"></div>
+<div id="FDKI2String" class="FDKI2Text"></div>
+<div id="FDK6" style="background-image:url('button_fdkA.png');margin-left:80px;margin-top:84px;visibility:hidden;"></div>
+<div id="FDKHString" class="FDK6Text" style="top:410px;left:180px;"></div>
+<div id="FDKH1String" class="FDKH1Text"></div>
+<div id="FDKH2String" class="FDKH2Text"></div>
+<div id="FDK7" style="background-image:url('button_fdkA.png');margin-left:80px;margin-top:120px;visibility:hidden;"></div>
+<div id="FDKGString" class="FDK7Text" style="top:550px;left:180px;"></div>
+<div id="FDKG1String" class="FDKG1Text"></div>
+<div id="FDKG2String" class="FDKG2Text" ></div>
+<div id="FDK8" style="background-image:url('Amount Button.png');margin-left:79px;margin-top:150px;visibility:hidden;"></div>
+<div id="FDKFString" class="FDK8Text" style="color:white;top:662px;left:170px;"></div>
+<div id="FDKF1String" class="FDKF1Text"></div>
+<div id="FDKF2String" class="FDKF2Text"></div>
+</BODY>
+</HTML>

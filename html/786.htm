@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+ <TITLE>Screen 122</TITLE>
+<SCRIPT src="includes.js"></SCRIPT>
+<script language="javascript">
+
+function showCounter()
+{
+var screenData;
+var ucdidata;
+var d=document.getElementById("depositsummary");
+
+screenData = parent.leftFrame.RETRIEVESCRINTERFACE.RetrieveCurrentScreen();
+
+screenData = screenData.substring(55);
+
+d.innerText=screenData;
+}
+</script>
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="showCounter()" style="filter:revealTrans(duration=0.0,transition=23)">
+<P class="ndcLine1Text" style="margin-left:-450px;margin-top:70px;">Notes Deposited</P>
+<div id="depositsummary" class="ndcdepositSummary"></div>
+<div id="FDK8"></div>
+<div class="FDK8Text">ADD MORE CASH</div>
+<div id="FDK3"></div>
+<div class="FDK3Text">DEPOSIT</div>
+<div id="FDK4"></div>
+<div class="FDK4Text">RETURN</div>
+</BODY>
+</HTML>

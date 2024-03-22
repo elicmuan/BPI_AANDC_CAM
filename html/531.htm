@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+
+<TITLE>Screen 31</TITLE>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript">
+	'=====================
+	Sub KeyEchoed(data)
+	'=====================
+	    TextBox.value = "*" & TextBox.value
+	End sub
+	Sub InitStatebUCDI()
+		Dim UCDI
+		Dim blnSuccess
+		Set UCDI = CreateObject("APTRAUSERCDI.APTRAUCDI")
+		blnSuccess = UCDI.newUCDIstore("BPIStatebFlagUCDI", 0, "Normal")
+		UCDI.UCDIinteger("BPIStatebFlagUCDI") = 0
+		Set UCDI = Nothing
+	End Sub
+</SCRIPT>
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="vbscript:InitStatebUCDI()" style="filter:revealTrans(duration=0.0,transition=23)">
+<FORM NAME="form1">
+<input Name="UCDITEXT" type="hidden"></input>
+</form>
+
+
+
+
+<TABLE style="WIDTH: 220px; HEIGHT: 7px" cellSpacing=0 cellPadding=0 width=500
+border=0 height=30 align=right>
+ <TR>
+ <TD class="TextboxBackground"></TD>
+
+ <TD class="ndcLine2Text" style="top:200px;left:120px">PIN Change</td>
+ <TD class="ndcLine2Text" style="top:250px;left:120px">Ipasok ang bagong PIN:</td>
+ <td><INPUT  id="TextBox" name="PinBox" class="PinBox" style="top:280;left:120px"></td>
+ <TD class="ndcLine2Text" style="top:350px;left:120px">Ipasok muli ang bagong PIN:</td>
+ <td><INPUT  id="TextBox0" name="PinBox" class="PinBox" style="top:380;left:120px"></td>
+ </TABLE>
+</BODY>
+</HTML>

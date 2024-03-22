@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+<link rel="stylesheet" type="text/css" href="Labels.css">
+ <TITLE>Screen 233</TITLE>
+ <script type="text/javascript">
+if (typeof document.onselectstart!="undefined") {
+  document.onselectstart=new Function ("return false");
+}
+else{
+  document.onmousedown=new Function ("return false");
+  document.onmouseup=new Function ("return true");
+}
+</script>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+
+</HEAD>
+<BODY ID="" scroll="no" noresize onload="doeffect()" style="filter:revealTrans(duration=0.0,transition=23);background:url('C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/pin_change_bg.png')">
+<P class="ndcLine4Text"   style="margin-top:0px;font-size:30px;font-family:Montserrat;width:1024px;margin-left:-120px;text-align:center;">Your MPIN will be sent via SMS.</P>
+<P id="lblGreetings"></p>
+<div id="btncheck" style="position:absolute;margin-left:420px;margin-top:360px;background:url('C:/Program Files/NCR APTRA/Advance NDC/html/btncheck.png');width:150px;height:150px;"></div>
+</BODY>
+<script type="text/javascript">
+   document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/pin_change_bg.png";
+
+
+				var time = new Date().toLocaleTimeString();
+				
+				var str_opcode = '';
+
+				str_opcode = parent.leftFrame.COM_UCDI_INTERFACE.ucdiString("lang_type");
+				
+			
+				if(time.charAt(time.length-2)=='A'){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Umaga!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Morning!";
+								}
+				}
+				else{
+				
+					time = time.replace(" ","");
+					
+						if(parseInt(time.charAt(0)) >= 6 && time.charAt(1) == ":" || parseInt(time.charAt(1)) == 0 || parseInt(time.charAt(1)) == 1){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Gabi!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Evening!";
+								}
+								//evening
+						}
+						else if (parseInt(time.charAt(0)) == 1 && time.charAt(1) == 2 && parseInt(time.charAt(3)) >= 0  || parseInt(time.charAt(0)) < 2){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Tanghali!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+								}
+								//Tanghali
+						}
+						else{
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Hapon!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+								}
+								//Hapon
+						}
+							
+						
+						
+				}
+
+
+</script>
+</HTML>
+

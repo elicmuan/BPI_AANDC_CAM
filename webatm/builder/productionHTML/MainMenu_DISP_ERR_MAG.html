@@ -1,0 +1,35 @@
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=10" charset="UTF-8">
+	<SCRIPT LANGUAGE="JavaScript">
+
+		function initApp() {
+			window.focus();
+			parent.frames["ACContainer"].ACCoreJS.DisplayTransactScreen('MAINMENU_UNABLE_TO_DISPENSE_CASH_MAG');
+            parent.maximizeTransactContainer();
+		}
+
+        function unload() {
+           // parent.frames["ACContainer"].ACCoreJS.unloadApp();
+           parent.maximizeRightFrame();
+        }
+		function ProcessKeyPad(Key) { 
+			try {
+				parent.frames["ACContainer"].ACCoreJS.ProcessKeyPad(Key);
+			} catch(e) {
+			}
+		}
+		function ProcessFDK(Key) {
+			try {
+				parent.frames["ACContainer"].ACCoreJS.ProcessFDK(Key);
+			} catch(e) {
+			}
+		}
+
+		
+	</script>
+</head>
+<body onload="initApp()" onunload="unload()"></body>	
+</html>
+
+

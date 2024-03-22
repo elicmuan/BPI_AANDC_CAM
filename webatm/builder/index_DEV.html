@@ -1,0 +1,4430 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		
+        <title>TransactX HTML</title>
+
+        <link rel="stylesheet" href="assets/css/foundation.css" >
+        <link rel="stylesheet" href="assets/css/owl.carousel.css" >
+        <link rel="stylesheet" href="assets/css/owl.theme.css" >
+        <link rel="stylesheet" href="assets/css/video-js.css" >
+        <link rel="stylesheet" href="assets/css/swiper.min.css" >
+
+        <link rel="stylesheet" href="assets/css/style.css" >
+        <link rel="stylesheet" href="assets/css/interactEffect.css" >
+        <link rel="stylesheet" href="assets/css/keyboard.css" >
+    </head>
+    <body>
+    	<!-- HTML Container Structure Begin -->
+		<div id="main">
+
+		</div>
+		<div id="dataProcessCenter">
+
+		</div>
+		<div id="reqProcessCenter">
+
+		</div>
+		<div id="activeListener">
+
+		</div>
+
+		<div id="campaignContainer">
+
+		</div>
+
+		<div id="idleContainer">
+
+		</div>
+
+		<div style="width:500px; height: 600px; overflow-y: hidden; overflow-x: scroll; top : 150px; left :1325px; position : fixed; border-style: solid; border-width: 3px; border-color: #000000;">
+
+			<input type='button' id= 'fdkI' value='I|1' onClick="fdkPress('FDK1')" STYLE="position:absolute;top:10px;left:0px; width : 30px;"/>
+			<input type='button' id= 'fdkH' value='H|2' onClick="fdkPress('FDK2')" STYLE="position:absolute;top:40px;left:0px; width : 30px;"/>
+			<input type='button' id= 'fdkG' value='G|3' onClick="fdkPress('FDK3')" STYLE="position:absolute;top:70px;left:0px; width : 30px;"/>
+			<input type='button' id= 'fdkF' value='F|4' onClick="fdkPress('FDK4')" STYLE="position:absolute;top:100px;left:0px; width : 30px;"/>
+			
+			
+			
+			
+			<input type='button' id= 'fdkD' value='D|8' onClick="fdkPress('FDK8')" STYLE="position:absolute;top:100px;left:35px; width : 30px;"/>
+			<input type='button' id= 'fdkC' value='C|7' onClick="fdkPress('FDK7')" STYLE="position:absolute;top:70px;left:35px; width : 30px;"/>
+			<input type='button' id= 'fdkB' value='B|6' onClick="fdkPress('FDK6')" STYLE="position:absolute;top:40px;left:35px; width : 30px;"/>
+			<input type='button' id= 'fdkA' value='A|5' onClick="fdkPress('FDK5')" STYLE="position:absolute;top:10px;left:35px; width : 30px;"/>
+
+
+			<input type='button' id= 'epp1' value='1' onClick="eppPress('1')" STYLE="position:absolute;top: 10px;left:70px;"/>
+			<input type='button' id= 'epp2' value='2' onClick="eppPress('2')" STYLE="position:absolute;top:10px;left:100px;"/>
+			<input type='button' id= 'epp3' value='3' onClick="eppPress('3')" STYLE="position:absolute;top:10px;left:130px;"/>
+			<input type='button' id= 'epp4' value='4' onClick="eppPress('4')" STYLE="position:absolute;top:40px;left:70px;"/>
+			<input type='button' id= 'epp5' value='5' onClick="eppPress('5')" STYLE="position:absolute;top:40px;left:100px;"/>
+			<input type='button' id= 'epp6' value='6' onClick="eppPress('6')" STYLE="position:absolute;top:40px;left:130px;"/>
+			<input type='button' id= 'epp7' value='7' onClick="eppPress('7')" STYLE="position:absolute;top:70px;left:70px;"/>
+			<input type='button' id= 'epp8' value='8' onClick="eppPress('8')" STYLE="position:absolute;top:70px;left:100px;"/>
+			<input type='button' id= 'epp9' value='9' onClick="eppPress('9')" STYLE="position:absolute;top:70px;left:130px;"/>
+
+			<input type='button' id= 'eppFullStop' value='.' onClick="eppPress('.')" STYLE="position:absolute;top:100px;left:70px;"/>
+			<input type='button' id= 'epp0' value='0' onClick="eppPress('0')" STYLE="position:absolute;top:100px;left:100px;"/>
+			<input type='button' id= 'epp00' value='00' onClick="eppPress('00')" STYLE="position:absolute;top:100px;left:130px;"/>
+
+			<input type='button' id= 'eppCancel' value='CANCEL'onClick="eppPress('11')" STYLE="position:absolute;TOP:10px;LEFT:160px; width : 75px;"/>
+			<input type='button' id= 'eppClear' value='CLEAR' onClick="eppPress('13')" STYLE="position:absolute;TOP:40px;LEFT:160px; width : 75px;"/>
+			<input type='button' id= 'eppEnter' value='ENTER' onClick="eppPress('10')" STYLE="position:absolute;TOP:70px;LEFT:160px; width : 75px;"/>
+			
+			<input type='button' value='Response - GOOD' onClick="ATMCGoodResponse()" STYLE="position:absolute;TOP:10px;LEFT:250px; width:150px"/>
+			<input type='text' id="RESPONSE_GOOD" value="0" STYLE="position:absolute;TOP:10px;LEFT:420px; width : 70px; height: 20px;"/>
+			<input type='button' value='Response - BAD' onClick="ATMCBadResponse()" STYLE="position:absolute;TOP:40px;LEFT:250px; width:150px"/>
+			<input type='button' value='Test Execute' onClick="testExecute()" STYLE="position:absolute;TOP:70px;LEFT:250px; width:150px"/>
+			
+			<input type='button' value='IDLE_MAIN' onClick="DisplayTransact('IDLE_MAIN')" STYLE="position:absolute;TOP:150px;LEFT:0px; width : 150px"/>
+			<input type='button' value='INIT_PLEASEWAIT_GET_CARD' onClick="DisplayTransact('INIT_PLEASEWAIT_GET_CARD')" STYLE="position:absolute;TOP:180px;LEFT:0px; width : 150px"/>
+			<input type='button' value='CARDLESS_DEPOSIT' onClick="DisplayTransact('CARDLESS_DEPOSIT')" STYLE="position:absolute;TOP:210px;LEFT:0px; width : 150px"/>
+
+			<input type='button' value='INIT_PLEASEWAIT_3' onClick="DisplayTransact('INIT_PLEASEWAIT_3')" STYLE="position:absolute;TOP:150px;LEFT:155px; width : 150px"/>
+			<input type='button' value='TRANS_CANCELLED' onClick="DisplayTransact('TRANS_CANCELLED')" STYLE="position:absolute;TOP:180px;LEFT:155px; width : 150px"/>
+			<input type='button' value='TEMPORARILY_UNABLE_TO_PROCESS_TRANSACTION' onClick="DisplayTransact('TEMPORARILY_UNABLE_TO_PROCESS_TRANSACTION')" STYLE="position:absolute;TOP:210px;LEFT:155px; width : 150px"/>
+
+			<input type='button' value='OOS' onClick="DisplayTransact('OOS')" STYLE="position:absolute;TOP:150px;LEFT:310px; width : 150px"/>
+			<input type='button' value='INVALIDCARD' onClick="DisplayTransact('INVALIDCARD')" STYLE="position:absolute;TOP:180px;LEFT:310px; width : 150px"/>
+			<input type='button' value='CASH_TAKECASH' onClick="DisplayTransact('CASH_TAKECASH')" STYLE="position:absolute;TOP:210px;LEFT:310px; width : 150px; display: none; "/>
+		
+			<p id="debugLog" STYLE="position:absolute;TOP:250px;LEFT:0px; width : 500px ; height: 330px; max-width: 600px; max-height: 450px;white-space: nowrap; overflow: auto; border-style: solid; border-width: 1px;"></p>
+		</div>
+		<!-- HTML Container Structure End -->
+
+		<!-- Application Layout Manager Template Begin -->
+		<script id="dataProcessTemp" type="text/template">
+
+		</script>
+
+		<script id="requestProcessTemp" type="text/template">
+
+		</script>
+
+		<script id="shell" type="text/template">
+			<div id="headerContainer" class="columns">
+				 <div id="logo"><div></div></div>
+				 <div id="headerButtonsContainer"></div>
+				 <div id="selectedAcctContainer"></div>
+			</div>
+			<div id="contentViewContainer" class="columns">
+
+			</div>
+
+
+
+			<div id="myFavoriteContainer" class="columns">
+				<div class="content">
+					<div class="labels">
+						<p class="label1">個人設定</p>
+						<p class="label2">My Preference</p>
+					</div>
+					<div id="myFavoriteSettingsContainer">
+
+					</div>
+					<div id="myFavoritePrintingContainer">
+
+					</div>
+				</div>
+			</div>
+			<div id="personalContainer" class="columns">
+
+			</div>
+
+			<div id="menuBarContainer" class="columns">
+
+			</div>
+
+			<div id="softKeyboardStringContainer">
+
+			</div>
+			<div id="softKeyboardNumberContainer">
+
+			</div>
+			<div id="softKeyboardZuYingContainer">
+
+			</div>
+			<div id="softKeyboardFullStringContainer">
+
+			</div>
+			<div id="softKeyboardZuYingNumberContainer">
+
+			</div>
+			<div id="softKeyboardEmailContainer">
+
+			</div>
+			<div id="exitAppContainer">
+
+			</div>
+
+			<div id="popUpContainer">
+
+			</div>
+			
+			<div id="languageFontContainer" class="">
+			
+			</div>
+
+			<div id="dateTimeContainer">
+			
+			</div>
+
+			<div id="timerContainer">
+			
+			</div>
+
+			<div id="themeContainer" class="">
+			
+			</div>
+
+			<div id="loadingBarContainer">
+
+			</div>
+
+			<iframe id="selfVideoConference" seamless="seamless" scrolling="no" style="width : 0px; height:0px ; overflow-y: hidden; overflow-x: hidden; overflow: hidden; position : absolute; visibility : hidden;" ></iframe>
+
+			<iframe id="agentVideoConference" seamless="seamless" scrolling="no" style="width : 0px; height:0px ; overflow-y: hidden; overflow-x: hidden; overflow: hidden; position : absolute; visibility : hidden;" ></iframe>
+
+			<iframe id="terminalSecondCamera" seamless="seamless" scrolling="no" style="width : 0px; height:0px ; overflow-y: hidden; overflow-x: hidden; overflow: hidden; position : absolute; visibility : hidden;" ></iframe>
+
+		</script>
+
+      </div>
+		<script id="activeListenerContainer" type="text/template">
+			<div class="messageArea radius">
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="activeListnerLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p 
+							<% if (typeof labels[i].localClass != "undefined" ) { %> 
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="activeListnerLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+				
+				<div class="activeListenerButtons">
+					<% if(typeof buttons != "undefined"){ %>
+						<% for(var i=0; i<buttons.length; i++) { %>
+							<a href="#<%= buttons[i].naviType%>/<%= buttons[i].nextScreenTemplate%>/<%=buttons[i].nextScreenID %>"
+								class="radius <% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %> <% } %>"
+								id="<%= buttons[i].ID %>">
+							<% if (typeof buttons[i].labels != "undefined"  ) { %>
+								<div class="activeListenerButtonsLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<p 
+										<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %> 
+										class="<%= buttons[i].labels[x].localClass %> radius"
+										<% } else { %>
+										class="activeListenerButtonsLabelsStandardLbl"
+										<% } %>>
+										<%= buttons[i].labels[x].text %></p>
+									<% } %>
+								</div>
+								<% } %>
+							</a>
+						<% } %>
+					<% } %>
+				</div>
+			</div>
+		</script>
+
+		<script id="exitContainer" type="text/template">
+			<div class="messageArea radius">
+				<div class="activeListenerLabels">
+					<% for(var i=0; i<labels.length; i++) {%>
+						<span class="<%= labels[i].localClass %>">
+							<%= labels[i].text %>
+						</span>
+					<% } %>
+				</div>
+				
+				<div class="activeListenerButtons">
+					<% for(var i=0; i<buttons.length; i++) { %>
+						<a id="<%= buttons[i].ID %>" class="<%= buttons[i].localClass %>">
+							<span><%= buttons[i].labels[0].text %></span>
+						</a>
+					<% } %>
+				</div>
+			</div>
+		</script>
+
+		<script id="loadingBarScreen" type="text/template" class="loadingBarScreen">
+			<% if (typeof loadingImages != "undefined" ) { %>
+				<div class="loadingBarScreenIcons">
+				<% for(var i=0; i < loadingImages.length; i++) { %>
+					<% if (typeof loadingImages[i].localClass != "undefined") { %>
+						<img src="<%= loadingImages[i].src %>" class="<%= loadingImages[i].localClass %>"/>
+					<% } else { %>
+						<img src="<%= loadingImages[i] %>" />
+					<% } %>
+				<% } %>
+				</div>
+			<% } %>
+		</script>
+
+		<script id="transactionInfoScreen" type="text/template">
+			<div class="transactionInfoScreen">
+				<% if (typeof imgClass != "undefined" ) { %>
+					<img src="<%= imgClass %>" />
+				<% } %>
+
+				<div class="transactionInfoLabels">
+						<p class="transactionInfoLabelsStandardLbl">
+						<% if (typeof label != "undefined" ) { %>
+							<%= label.text %>
+						<% } %>
+						</p>
+				</div>
+			</div>
+		</script>
+
+		<!-- Application Layout Manager Template End -->
+
+		<!-- Component Template Begin -->
+
+		<!-- Index HTML Template Begin -->
+		<script id="menuBarItem" type="text/template">
+			<a id="<%=ID%>" class="menuBtnContainer <%= localClass %>" href="#<%=naviType%>/<%=navigate%>/<%=nextScreenID%>">
+				<div class="menuBarBtnChiLbl"><%= label1 %></div>
+	    		<div class="menuBarBtnEngLbl"><%= label2 %></div>
+			</a>
+	  	</script>
+
+	  	<script id="listButton" type="text/template" class="listButton">
+	  		<a id="<%=ID%>" class="menuBtnContainer <%= localClass =>" href="#navi/<%=navigate%>/<%=nextScreenID%>">
+				<div class="menuBarBtnChiLbl"><%= label1 %></div>
+	    		<div class="menuBarBtnEngLbl"><%= label2 %></div>
+			</a>
+	  	</script>
+
+	  	<script id="softKeyboardString" type="text/template" class="softKeyboardString">
+	  		<div id="softKeyboardStringFakeContainer" class="softKeyboardStringFakeContainer">
+
+	  		</div>
+	  		<div id="softKeyboardStringBtnContainer" class="softKeyboardStringBtnContainer">
+	  			<a id="Q" class="skbString_Q" />
+		  		<a id="W" class="skbString_W" />
+		  		<a id="E" class="skbString_E" />
+		  		<a id="R" class="skbString_R" />
+		  		<a id="T" class="skbString_T" />
+		  		<a id="Y" class="skbString_Y" />
+		  		<a id="U" class="skbString_U" />
+		  		<a id="I" class="skbString_I" />
+		  		<a id="O" class="skbString_O" />
+		  		<a id="P" class="skbString_P" />
+		  		<a id="1" class="skbString_1" />
+		  		<a id="2" class="skbString_2" />
+		  		<a id="3" class="skbString_3" />
+
+		  		<a id="A" class="skbString_A" />
+		  		<a id="S" class="skbString_S" />
+		  		<a id="D" class="skbString_D" />
+		  		<a id="F" class="skbString_F" />
+		  		<a id="G" class="skbString_G" />
+		  		<a id="H" class="skbString_H" />
+		  		<a id="J" class="skbString_J" />
+		  		<a id="K" class="skbString_K" />
+		  		<a id="L" class="skbString_L" />
+		  		<a id="CLEAR" class="skbString_CLEAR" />
+		  		<a id="4" class="skbString_4" />
+		  		<a id="5" class="skbString_5" />
+		  		<a id="6" class="skbString_6" />
+
+		  		<a id="Z" class="skbString_Z" />
+		  		<a id="X" class="skbString_X" />
+		  		<a id="C" class="skbString_C" />
+		  		<a id="V" class="skbString_V" />
+		  		<a id="B" class="skbString_B" />
+		  		<a id="N" class="skbString_N" />
+		  		<a id="M" class="skbString_M" />
+		  		<a id="BACKSPACE" class="skbString_BACKSPACE" />
+		  		<a id="7" class="skbString_7" />
+		  		<a id="8" class="skbString_8" />
+		  		<a id="9" class="skbString_9" />
+
+
+		  		<a id="SPACE" class="skbString_SPACE">
+	  				<!--<p class="skbStringSpaceLbl">SPACE</p>-->
+		  		</a>
+		  		<a id="HIDEKEYBOARD" class="skbString_HIDE" />
+		  		<a id="0" class="skbString_0" />
+		  		<a id="ENTER" class="skbString_ENTER">
+		  			<p class="skbEnterLblChi"></p>
+					<p class="skbEnterLblEng"></p>
+		  		</a>
+	  		</div>
+
+	  	</script>
+
+	  	<script id="softKeyboardFullKBString" type="text/template" class="softKeyboardString">
+	  		<div id="softKeyboardFullKBStringFakeContainer" class="softKeyboardFullKBStringFakeContainer">
+
+	  		</div>
+	  		<div id="softKeyboardFullKBStringBtnContainer" class="softKeyboardFullKBStringBtnContainer">
+	  			<a id="Q" class="skbString_Q" />
+		  		<a id="W" class="skbString_W" />
+		  		<a id="E" class="skbString_E" />
+		  		<a id="R" class="skbString_R" />
+		  		<a id="T" class="skbString_T" />
+		  		<a id="Y" class="skbString_Y" />
+		  		<a id="U" class="skbString_U" />
+		  		<a id="I" class="skbString_I" />
+		  		<a id="O" class="skbString_O" />
+		  		<a id="P" class="skbString_P" />
+		  		<a id="1" class="skbString_1" />
+		  		<a id="2" class="skbString_2" />
+		  		<a id="3" class="skbString_3" />
+
+		  		<a id="A" class="skbString_A" />
+		  		<a id="S" class="skbString_S" />
+		  		<a id="D" class="skbString_D" />
+		  		<a id="F" class="skbString_F" />
+		  		<a id="G" class="skbString_G" />
+		  		<a id="H" class="skbString_H" />
+		  		<a id="J" class="skbString_J" />
+		  		<a id="K" class="skbString_K" />
+		  		<a id="L" class="skbString_L" />
+		  		<a id="CLEAR" class="skbString_CLEAR" />
+		  		<a id="4" class="skbString_4" />
+		  		<a id="5" class="skbString_5" />
+		  		<a id="6" class="skbString_6" />
+
+		  		<a id="Z" class="skbString_Z" />
+		  		<a id="X" class="skbString_X" />
+		  		<a id="C" class="skbString_C" />
+		  		<a id="V" class="skbString_V" />
+		  		<a id="B" class="skbString_B" />
+		  		<a id="N" class="skbString_N" />
+		  		<a id="M" class="skbString_M" />
+		  		<a id="BACKSPACE" class="skbString_BACKSPACE" />
+		  		<a id="7" class="skbString_7" />
+		  		<a id="8" class="skbString_8" />
+		  		<a id="9" class="skbString_9" />
+
+
+		  		<a id="SPACE" class="skbString_SPACE">
+	  				<!--<p class="skbStringSpaceLbl">SPACE</p>-->
+		  		</a>
+		  		<a id="HIDEKEYBOARD" class="skbString_HIDE" />
+		  		<a id="0" class="skbString_0" />
+		  		<a id="ENTER" class="skbString_ENTER">
+		  			<p class="skbEnterLblChi"></p>
+					<p class="skbEnterLblEng"></p>
+		  		</a>
+	  		</div>
+
+	  	</script>
+
+	  	<script id="softKeyboardNumber" type="text/template" class="softKeyboardNumber">
+	  		<div id="softKeyboardNumberFakeContainer" class="softKeyboardNumberFakeContainer">
+
+	  		</div>
+	  		<div id="softKeyboardNumberBtnContainer" class="softKeyboardNumberBtnContainer">
+	  			<span id="Q" class="skbNumber_Q" />
+		  		<span id="W" class="skbNumber_W" />
+		  		<span id="E" class="skbNumber_E" />
+		  		<span id="R" class="skbNumber_R" />
+		  		<span id="T" class="skbNumber_T" />
+		  		<span id="Y" class="skbNumber_Y" />
+		  		<span id="U" class="skbNumber_U" />
+		  		<span id="I" class="skbNumber_I" />
+		  		<span id="O" class="skbNumber_O" />
+		  		<span id="P" class="skbNumber_P" />
+		  		<a id="1" class="skbNumber_1" />
+		  		<a id="2" class="skbNumber_2" />
+		  		<a id="3" class="skbNumber_3" />
+
+		  		<span id="A" class="skbNumber_A" />
+		  		<span id="S" class="skbNumber_S" />
+		  		<span id="D" class="skbNumber_D" />
+		  		<span id="F" class="skbNumber_F" />
+		  		<span id="G" class="skbNumber_G" />
+		  		<span id="H" class="skbNumber_H" />
+		  		<span id="J" class="skbNumber_J" />
+		  		<span id="K" class="skbNumber_K" />
+		  		<span id="L" class="skbNumber_L" />
+		  		<a id="CLEAR" class="skbNumber_CLEAR" />
+		  		<a id="4" class="skbNumber_4" />
+		  		<a id="5" class="skbNumber_5" />
+		  		<a id="6" class="skbNumber_6" />
+
+		  		<span id="Z" class="skbNumber_Z" />
+		  		<span id="X" class="skbNumber_X" />
+		  		<span id="C" class="skbNumber_C" />
+		  		<span id="V" class="skbNumber_V" />
+		  		<span id="B" class="skbNumber_B" />
+		  		<span id="N" class="skbNumber_N" />
+		  		<span id="M" class="skbNumber_M" />
+		  		<a id="BACKSPACE" class="skbNumber_BACKSPACE" />
+		  		<a id="7" class="skbNumber_7" />
+		  		<a id="8" class="skbNumber_8" />
+		  		<a id="9" class="skbNumber_9" />
+
+		  		<a id="SPACE" class="skbNumber_SPACE" />
+		  		<a id="HIDEKEYBOARD" class="skbNumber_HIDE" />
+		  		<a id="0" class="skbNumber_0" />
+		  		<a id="ENTER" class="skbNumber_ENTER">
+		  			<p class="skbEnterLblChi"></p>
+					<p class="skbEnterLblEng"></p>
+		  		</a>
+	  		</div>
+
+	  	</script>
+
+	  	<script id="softKeyboardZuYing" type="text/template" class="softKeyboardZuYing">
+	  		<div id="softKeyboardZuYingFakeContainer" class="softKeyboardZuYingFakeContainer"></div>
+	  		<div id="softKeyboardZuYingBtnContainer" class="softKeyboardZuYingBtnContainer">
+	  			<div class="alphabetPad uppercase">
+		  			<a id="Q" class="skbZuYing_Q alphabet_Q alphabet"></a>
+			  		<a id="W" class="skbZuYing_W alphabet_W alphabet"></a>
+			  		<a id="E" class="skbZuYing_E alphabet_E alphabet"></a>
+			  		<a id="R" class="skbZuYing_R alphabet_R alphabet"></a>
+			  		<a id="T" class="skbZuYing_T alphabet_T alphabet"></a>
+			  		<a id="Y" class="skbZuYing_Y alphabet_Y alphabet"></a>
+			  		<a id="U" class="skbZuYing_U alphabet_U alphabet"></a>
+			  		<a id="I" class="skbZuYing_I alphabet_I alphabet"></a>
+			  		<a id="O" class="skbZuYing_O alphabet_O alphabet"></a>
+			  		<a id="P" class="skbZuYing_P alphabet_P alphabet"></a>
+
+			  		<a id="A" class="skbZuYing_A alphabet_A alphabet"></a>
+			  		<a id="S" class="skbZuYing_S alphabet_S alphabet"></a>
+			  		<a id="D" class="skbZuYing_D alphabet_D alphabet"></a>
+			  		<a id="F" class="skbZuYing_F alphabet_F alphabet"></a>
+			  		<a id="G" class="skbZuYing_G alphabet_G alphabet"></a>
+			  		<a id="H" class="skbZuYing_H alphabet_H alphabet"></a>
+			  		<a id="J" class="skbZuYing_J alphabet_J alphabet"></a>
+			  		<a id="K" class="skbZuYing_K alphabet_K alphabet"></a>
+			  		<a id="L" class="skbZuYing_L alphabet_L alphabet"></a>
+			  		<span id="CASE" class="softKeyboardZuYing_CASE alphabet_CASE"></span>
+
+			  		<a id="Z" class="skbZuYing_Z alphabet_Z alphabet"></a>
+			  		<a id="X" class="skbZuYing_X alphabet_X alphabet"></a>
+			  		<a id="C" class="skbZuYing_C alphabet_C alphabet"></a>
+			  		<a id="V" class="skbZuYing_V alphabet_V alphabet"></a>
+			  		<a id="B" class="skbZuYing_B alphabet_B alphabet"></a>
+			  		<a id="N" class="skbZuYing_N alphabet_N alphabet"></a>
+			  		<a id="M" class="skbZuYing_M alphabet_M alphabet"></a>
+	  			</div>
+	  			<div class="symbolPad">
+	  				<a id="SYMBOL_0" class="skbZuYing_escalation singleSpace"></a>
+			  		<a id="SYMBOL_1" class="skbZuYing_alias singleSpace"></a>
+			  		<a id="SYMBOL_2" class="skbZuYing_hash singleSpace"></a>
+			  		<a id="SYMBOL_3" class="skbZuYing_dollar singleSpace"></a>
+			  		<a id="SYMBOL_4" class="skbZuYing_percent singleSpace"></a>
+			  		<a id="SYMBOL_5" class="skbZuYing_power singleSpace"></a>
+			  		<a id="SYMBOL_6" class="skbZuYing_and singleSpace"></a>
+			  		<a id="SYMBOL_7" class="skbZuYing_star singleSpace"></a>
+			  		<a id="SYMBOL_8" class="skbZuYing_leftbracket singleSpace"></a>
+			  		<a id="SYMBOL_9" class="skbZuYing_rightbracket singleSpace"></a>
+
+			  		<a id="SYMBOL_10" class="skbZuYing_fullstop singleSpace"></a>
+			  		<a id="SYMBOL_11" class="skbZuYing_dash singleSpace"></a>
+			  		<a id="SYMBOL_14" class="skbZuYing_underscore singleSpace"></a>
+
+			  		<span id="ALPHA" class="softKeyboardZuYing_ALPHA singleSpace"></span>
+	  			</div>
+	  			<div class="alphabetControl">
+			  		<a id="BACKSPACE" class="softKeyboardZuYing_BACKSPACE singleSpace" />
+			  		<a id="CLEAR" class="softKeyboardZuYing_CLEAR twoSpace" />
+			  		<a id="SPACE" class="softKeyboardZuYing_SPACE"></a>
+			  		<span id="SYMBOL" class="softKeyboardZuYing_SYMBOL singleSpace"></span>
+			  		<span id="CHINESE" class="softKeyboardZuYing_CHINESE singleSpace"></span>
+	  			</div>
+
+		  		<div class="numericPad">
+			  		<a id="1" class="skbZuYing_1 number_1" />
+			  		<a id="2" class="skbZuYing_2 number_2" />
+			  		<a id="3" class="skbZuYing_3 number_3" />
+			  		<a id="4" class="skbZuYing_4 number_4" />
+			  		<a id="5" class="skbZuYing_5 number_5" />
+			  		<a id="6" class="skbZuYing_6 number_6" />
+			  		<a id="7" class="skbZuYing_7 number_7" />
+			  		<a id="8" class="skbZuYing_8 number_8" />
+			  		<a id="9" class="skbZuYing_9 number_9" />
+			  		<a id="0" class="skbZuYing_0 number_0" />
+			  		<a id="ENTER" class="softKeyboardZuYing_ENTER number_ENTER">
+			  			<p class="skbEnterLblChi"></p>
+						<p class="skbEnterLblEng"></p>
+			  		</a>
+		  		</div>
+
+		  		<div class="zuyingPad">
+		  			<a id="ZY_0" class="skbZuYing_10 zuying singleSpace"></a>
+			  		<a id="ZY_1" class="skbZuYing_11 zuying singleSpace"></a>
+			  		<a id="ZY_2" class="skbZuYing_12 zuying singleSpace"></a>
+			  		<a id="ZY_3" class="skbZuYing_13 zuying singleSpace"></a>
+			  		<a id="ZY_4" class="skbZuYing_14 zuying singleSpace"></a>
+			  		<a id="ZY_5" class="skbZuYing_15 zuying singleSpace"></a>
+			  		<a id="ZY_6" class="skbZuYing_16 zuying singleSpace"></a>
+			  		<a id="ZY_7" class="skbZuYing_17 zuying singleSpace"></a>
+			  		<a id="ZY_8" class="skbZuYing_18 zuying singleSpace"></a>
+			  		<a id="ZY_9" class="skbZuYing_19 zuying singleSpace"></a>
+			  		<a id="ZY_10" class="skbZuYing_110 zuying singleSpace"></a>
+
+			  		<a id="ZY_11" class="skbZuYing_20 zuying singleSpace"></a>
+			  		<a id="ZY_12" class="skbZuYing_21 zuying singleSpace"></a>
+			  		<a id="ZY_13" class="skbZuYing_22 zuying singleSpace"></a>
+			  		<a id="ZY_14" class="skbZuYing_23 zuying singleSpace"></a>
+			  		<a id="ZY_15" class="skbZuYing_24 zuying singleSpace"></a>
+			  		<a id="ZY_16" class="skbZuYing_25 zuying singleSpace"></a>
+			  		<a id="ZY_17" class="skbZuYing_26 zuying singleSpace"></a>
+			  		<a id="ZY_18" class="skbZuYing_27 zuying singleSpace"></a>
+			  		<a id="ZY_19" class="skbZuYing_28 zuying singleSpace"></a>
+			  		<a id="ZY_20" class="skbZuYing_29 zuying singleSpace"></a>
+
+			  		<a id="ZY_21" class="skbZuYing_30 zuying singleSpace"></a>
+			  		<a id="ZY_22" class="skbZuYing_31 zuying singleSpace"></a>
+			  		<a id="ZY_23" class="skbZuYing_32 zuying singleSpace"></a>
+			  		<a id="ZY_24" class="skbZuYing_33 zuying singleSpace"></a>
+			  		<a id="ZY_25" class="skbZuYing_34 zuying singleSpace"></a>
+			  		<a id="ZY_26" class="skbZuYing_35 zuying singleSpace"></a>
+			  		<a id="ZY_27" class="skbZuYing_36 zuying singleSpace"></a>
+			  		<a id="ZY_28" class="skbZuYing_37 zuying singleSpace"></a>
+			  		<a id="ZY_29" class="skbZuYing_38 zuying singleSpace"></a>
+			  		<a id="ZY_30" class="skbZuYing_39 zuying singleSpace"></a>
+
+			  		<a id="ZY_31" class="skbZuYing_40 zuying singleSpace"></a>
+			  		<a id="ZY_32" class="skbZuYing_41 zuying singleSpace"></a>
+			  		<a id="ZY_33" class="skbZuYing_42 zuying singleSpace"></a>
+			  		<a id="ZY_34" class="skbZuYing_43 zuying singleSpace"></a>
+			  		<a id="ZY_35" class="skbZuYing_44 zuying singleSpace"></a>
+			  		<a id="ZY_36" class="skbZuYing_45 zuying singleSpace"></a>
+			  		<a id="ZY_37" class="skbZuYing_46 zuying singleSpace"></a>
+			  		<a id="ZY_38" class="skbZuYing_47 zuying singleSpace"></a>
+			  		<a id="ZY_39" class="skbZuYing_48 zuying singleSpace"></a>
+			  		<a id="ZY_40" class="skbZuYing_49 zuying singleSpace"></a>
+	  			</div>
+	  			<div class="zhuyinOutput">
+            <div class="zhuyinTopBar" style=""></div>
+	  				<input value="" id="zhuyinInput" type="text" />
+	  				<div class="zhuyinResult"></div>
+	  			</div>
+	  			<div class="zhuyinControl">
+			  		<span id="BACKSPACE_ZY" class="softKeyboardZuYing_BACKSPACE singleSpace"></span>
+			  		<span id="CLEAR_ZY" class="softKeyboardZuYing_CLEAR twoSpace"></span>
+			  		<span id="ZY_41" class="softKeyboardZuYing_SPACE twoSpace"></span>
+			  		<span id="ALPHA" class="softKeyboardZuYing_ALPHA singleSpace"></span>
+			  		<span id="SYMBOL" class="softKeyboardZuYing_SYMBOL singleSpace"></span>
+	  			</div>
+	  		</div>
+	  	</script>
+
+	  	<script id="softKeyboardZuYingNumber" type="text/template" class="softKeyboardZuYing">
+	  		<div id="softKeyboardZuYingNumberFakeContainer" class="softKeyboardZuYingNumberFakeContainer"></div>
+	  		<div id="softKeyboardZuYingNumberBtnContainer" class="softKeyboardZuYingNumberBtnContainer">
+	  			<div class="alphabetPad uppercase">
+		  			<span id="Q" class="skbNumber_Q" />
+			  		<span id="W" class="skbNumber_W" />
+			  		<span id="E" class="skbNumber_E" />
+			  		<span id="R" class="skbNumber_R" />
+			  		<span id="T" class="skbNumber_T" />
+			  		<span id="Y" class="skbNumber_Y" />
+			  		<span id="U" class="skbNumber_U" />
+			  		<span id="I" class="skbNumber_I" />
+			  		<span id="O" class="skbNumber_O" />
+			  		<span id="P" class="skbNumber_P" />
+
+		  			<span id="A" class="skbNumber_A" />
+			  		<span id="S" class="skbNumber_S" />
+			  		<span id="D" class="skbNumber_D" />
+			  		<span id="F" class="skbNumber_F" />
+			  		<span id="G" class="skbNumber_G" />
+			  		<span id="H" class="skbNumber_H" />
+			  		<span id="J" class="skbNumber_J" />
+			  		<span id="K" class="skbNumber_K" />
+			  		<span id="L" class="skbNumber_L" />
+
+		  			<span id="Z" class="skbNumber_Z" />
+			  		<span id="X" class="skbNumber_X" />
+			  		<span id="C" class="skbNumber_C" />
+			  		<span id="V" class="skbNumber_V" />
+			  		<span id="B" class="skbNumber_B" />
+			  		<span id="N" class="skbNumber_N" />
+			  		<span id="M" class="skbNumber_M" />
+	  			</div>
+
+	  			<div class="alphabetControl">
+			  		<a id="BACKSPACE" class="softKeyboardZuYing_BACKSPACE twoSpace" />
+			  		<a id="CLEAR" class="softKeyboardZuYing_CLEAR singleSpace" />
+			  		<a id="SPACE" class="softKeyboardZuYing_SPACE"></a>
+			  		<span id="CHINESE" class="softKeyboardZuYing_CHINESE singleSpace"></span>
+	  			</div>
+
+		  		<div class="numericPad">
+			  		<a id="1" class="skbZuYing_1 number_1" />
+			  		<a id="2" class="skbZuYing_2 number_2" />
+			  		<a id="3" class="skbZuYing_3 number_3" />
+			  		<a id="4" class="skbZuYing_4 number_4" />
+			  		<a id="5" class="skbZuYing_5 number_5" />
+			  		<a id="6" class="skbZuYing_6 number_6" />
+			  		<a id="7" class="skbZuYing_7 number_7" />
+			  		<a id="8" class="skbZuYing_8 number_8" />
+			  		<a id="9" class="skbZuYing_9 number_9" />
+			  		<a id="0" class="skbZuYing_0 number_0" />
+		  		</div>
+
+		  		<div class="zuyingPad">
+		  			<a id="ZY_0" class="skbZuYing_10 zuying singleSpace"></a>
+			  		<a id="ZY_1" class="skbZuYing_11 zuying singleSpace"></a>
+			  		<a id="ZY_2" class="skbZuYing_12 zuying singleSpace"></a>
+			  		<a id="ZY_3" class="skbZuYing_13 zuying singleSpace"></a>
+			  		<a id="ZY_4" class="skbZuYing_14 zuying singleSpace"></a>
+			  		<a id="ZY_5" class="skbZuYing_15 zuying singleSpace"></a>
+			  		<a id="ZY_6" class="skbZuYing_16 zuying singleSpace"></a>
+			  		<a id="ZY_7" class="skbZuYing_17 zuying singleSpace"></a>
+			  		<a id="ZY_8" class="skbZuYing_18 zuying singleSpace"></a>
+			  		<a id="ZY_9" class="skbZuYing_19 zuying singleSpace"></a>
+			  		<a id="ZY_10" class="skbZuYing_110 zuying singleSpace"></a>
+
+			  		<a id="ZY_11" class="skbZuYing_20 zuying singleSpace"></a>
+			  		<a id="ZY_12" class="skbZuYing_21 zuying singleSpace"></a>
+			  		<a id="ZY_13" class="skbZuYing_22 zuying singleSpace"></a>
+			  		<a id="ZY_14" class="skbZuYing_23 zuying singleSpace"></a>
+			  		<a id="ZY_15" class="skbZuYing_24 zuying singleSpace"></a>
+			  		<a id="ZY_16" class="skbZuYing_25 zuying singleSpace"></a>
+			  		<a id="ZY_17" class="skbZuYing_26 zuying singleSpace"></a>
+			  		<a id="ZY_18" class="skbZuYing_27 zuying singleSpace"></a>
+			  		<a id="ZY_19" class="skbZuYing_28 zuying singleSpace"></a>
+			  		<a id="ZY_20" class="skbZuYing_29 zuying singleSpace"></a>
+
+			  		<a id="ZY_21" class="skbZuYing_30 zuying singleSpace"></a>
+			  		<a id="ZY_22" class="skbZuYing_31 zuying singleSpace"></a>
+			  		<a id="ZY_23" class="skbZuYing_32 zuying singleSpace"></a>
+			  		<a id="ZY_24" class="skbZuYing_33 zuying singleSpace"></a>
+			  		<a id="ZY_25" class="skbZuYing_34 zuying singleSpace"></a>
+			  		<a id="ZY_26" class="skbZuYing_35 zuying singleSpace"></a>
+			  		<a id="ZY_27" class="skbZuYing_36 zuying singleSpace"></a>
+			  		<a id="ZY_28" class="skbZuYing_37 zuying singleSpace"></a>
+			  		<a id="ZY_29" class="skbZuYing_38 zuying singleSpace"></a>
+			  		<a id="ZY_30" class="skbZuYing_39 zuying singleSpace"></a>
+
+			  		<a id="ZY_31" class="skbZuYing_40 zuying singleSpace"></a>
+			  		<a id="ZY_32" class="skbZuYing_41 zuying singleSpace"></a>
+			  		<a id="ZY_33" class="skbZuYing_42 zuying singleSpace"></a>
+			  		<a id="ZY_34" class="skbZuYing_43 zuying singleSpace"></a>
+			  		<a id="ZY_35" class="skbZuYing_44 zuying singleSpace"></a>
+			  		<a id="ZY_36" class="skbZuYing_45 zuying singleSpace"></a>
+			  		<a id="ZY_37" class="skbZuYing_46 zuying singleSpace"></a>
+			  		<a id="ZY_38" class="skbZuYing_47 zuying singleSpace"></a>
+			  		<a id="ZY_39" class="skbZuYing_48 zuying singleSpace"></a>
+			  		<a id="ZY_40" class="skbZuYing_49 zuying singleSpace"></a>
+	  			</div>
+	  			<div class="zhuyinOutput">
+            		<div class="zhuyinTopBar" style=""></div>
+	  				<input value="" id="zhuyinNumberInput" type="text" />
+	  				<div class="zhuyinResult"></div>
+	  			</div>
+	  			<div class="zhuyinControl">
+			  		<span id="BACKSPACE_ZY" class="softKeyboardZuYing_BACKSPACE twoSpace"></span>
+			  		<span id="CLEAR_ZY" class="softKeyboardZuYing_CLEAR singleSpace"></span>
+			  		<span id="ZY_41" class="softKeyboardZuYing_SPACE twoSpace"></span>
+			  		<span id="ALPHA" class="softKeyboardZuYing_ALPHA softKeyboardZuYing_NUMBER singleSpace"></span>
+	  			</div>
+	  			<div>
+			  		<a id="ENTER" class="softKeyboardZuYing_ENTER number_ENTER">
+			  			<p class="skbEnterLblChi"></p>
+						<p class="skbEnterLblEng"></p>
+			  		</a>
+	  			</div>
+	  		</div>
+	  	</script>
+
+	  	<script id="softKeyboardEmail" type="text/template" class="softKeyboardEmail">
+	  		<div id="softKeyboardEmailFakeContainer" class="softKeyboardEmailFakeContainer"></div>
+	  		<div id="softKeyboardEmailBtnContainer" class="softKeyboardEmailBtnContainer">
+	  			<div class="alphabetPad uppercase">
+		  			<a id="Q" class="skbZuYing_Q alphabet_Q alphabet"></a>
+			  		<a id="W" class="skbZuYing_W alphabet_W alphabet"></a>
+			  		<a id="E" class="skbZuYing_E alphabet_E alphabet"></a>
+			  		<a id="R" class="skbZuYing_R alphabet_R alphabet"></a>
+			  		<a id="T" class="skbZuYing_T alphabet_T alphabet"></a>
+			  		<a id="Y" class="skbZuYing_Y alphabet_Y alphabet"></a>
+			  		<a id="U" class="skbZuYing_U alphabet_U alphabet"></a>
+			  		<a id="I" class="skbZuYing_I alphabet_I alphabet"></a>
+			  		<a id="O" class="skbZuYing_O alphabet_O alphabet"></a>
+			  		<a id="P" class="skbZuYing_P alphabet_P alphabet"></a>
+
+			  		<a id="A" class="skbZuYing_A alphabet_A alphabet"></a>
+			  		<a id="S" class="skbZuYing_S alphabet_S alphabet"></a>
+			  		<a id="D" class="skbZuYing_D alphabet_D alphabet"></a>
+			  		<a id="F" class="skbZuYing_F alphabet_F alphabet"></a>
+			  		<a id="G" class="skbZuYing_G alphabet_G alphabet"></a>
+			  		<a id="H" class="skbZuYing_H alphabet_H alphabet"></a>
+			  		<a id="J" class="skbZuYing_J alphabet_J alphabet"></a>
+			  		<a id="K" class="skbZuYing_K alphabet_K alphabet"></a>
+			  		<a id="L" class="skbZuYing_L alphabet_L alphabet"></a>
+
+			  		<a id="Z" class="skbZuYing_Z alphabet_Z alphabet"></a>
+			  		<a id="X" class="skbZuYing_X alphabet_X alphabet"></a>
+			  		<a id="C" class="skbZuYing_C alphabet_C alphabet"></a>
+			  		<a id="V" class="skbZuYing_V alphabet_V alphabet"></a>
+			  		<a id="B" class="skbZuYing_B alphabet_B alphabet"></a>
+			  		<a id="N" class="skbZuYing_N alphabet_N alphabet"></a>
+			  		<a id="M" class="skbZuYing_M alphabet_M alphabet"></a>
+	  			</div>
+	  			<div class="symbolPad">
+	  				<a id="SYMBOL_0" class="skbZuYing_escalation singleSpace"></a>
+			  		<a id="SYMBOL_1" class="skbZuYing_alias singleSpace"></a>
+			  		<a id="SYMBOL_2" class="skbZuYing_hash singleSpace"></a>
+			  		<a id="SYMBOL_3" class="skbZuYing_dollar singleSpace"></a>
+			  		<a id="SYMBOL_4" class="skbZuYing_percent singleSpace"></a>
+			  		<a id="SYMBOL_5" class="skbZuYing_power singleSpace"></a>
+			  		<a id="SYMBOL_6" class="skbZuYing_and singleSpace"></a>
+			  		<a id="SYMBOL_7" class="skbZuYing_star singleSpace"></a>
+			  		<a id="SYMBOL_8" class="skbZuYing_leftbracket singleSpace"></a>
+			  		<a id="SYMBOL_9" class="skbZuYing_rightbracket singleSpace"></a>
+
+			  		<a id="SYMBOL_10" class="skbZuYing_fullstop singleSpace hidden"></a>
+			  		<a id="SYMBOL_11" class="skbZuYing_dash singleSpace"></a>
+			  		<a id="SYMBOL_14" class="skbZuYing_underscore singleSpace"></a>
+			  		<span id="ALPHA" class="softKeyboardZuYing_ALPHA twoSpace"></span>
+	  			</div>
+	  			<div class="alphabetControl">
+			  		<a id="BACKSPACE" class="softKeyboardZuYing_BACKSPACE twoSpace" />
+			  		<a id="CLEAR" class="softKeyboardZuYing_CLEAR singleSpace" />
+			  		<a id="SPACE" class="softKeyboardZuYing_SPACE"></a>
+			  		<span id="SYMBOL" class="softKeyboardZuYing_SYMBOL twoSpace"></span>
+	  			</div>
+
+		  		<div class="numericPad">
+			  		<a id="1" class="skbZuYing_1 number_1" />
+			  		<a id="2" class="skbZuYing_2 number_2" />
+			  		<a id="3" class="skbZuYing_3 number_3" />
+			  		<a id="4" class="skbZuYing_4 number_4" />
+			  		<a id="5" class="skbZuYing_5 number_5" />
+			  		<a id="6" class="skbZuYing_6 number_6" />
+			  		<a id="7" class="skbZuYing_7 number_7" />
+			  		<a id="8" class="skbZuYing_8 number_8" />
+			  		<a id="9" class="skbZuYing_9 number_9" />
+			  		<a id="0" class="skbZuYing_0 number_0" />
+			  		<a id="ENTER" class="softKeyboardZuYing_ENTER number_ENTER">
+			  			<p class="skbEnterLblChi"></p>
+						<p class="skbEnterLblEng"></p>
+			  		</a>
+		  		</div>
+
+		  		<div>
+			  		<a id="SYMBOL_1" class="skbZuYing_alias1 singleSpace"></a>
+			  		<a id="SYMBOL_10" class="skbZuYing_fullstop1 singleSpace"></a>
+			  		<a id="SYMBOL_12" class="skbZuYing_com singleSpace"></a>
+			  		<a id="SYMBOL_13" class="skbZuYing_tw singleSpace"></a>
+		  		</div>
+	  		</div>
+	  	</script>
+		<!-- Index HTML Template End -->
+
+		<!-- Content View Template -->
+
+		<script id="listButtonScreen" type="text/template" class="listButtonScreen" >
+			<p class="sixButtonScreenLabel1"><%= label1 %></p>
+			<p class="sixButtonScreenLabel2"><%= label2 %></p>
+			<listButton id="listButtonContainer" class="listButtonContainer" templatetype="listButton">
+
+			</listButton>
+		</script>
+
+		<script id="myFavoriteSettingScreen" type="text/template" class="myFavoriteSettingScreen" >
+  			<div id="myFavoriteSettingContent">
+				<!--<div class="title">
+					<p class="sixButtonScreenLabel1">最愛設定</p>
+					<p class="sixButtonScreenLabel2">My Favorite Settings</p>
+				</div>-->
+				<div class="items">
+					<a id="buttonEnableFav">
+						<span class="label1">啟用最愛功能</span><br />
+						<span class="label2">Enable My Favorite</span><br />
+						<span class="label3" id="buttonEnableFavSelected">已選定</span>
+					</a>
+					<a id="buttonDisableFav">
+						<span class="label1">關閉最愛功能</span><br />
+						<span class="label2">Disable My Favorite</span><br />
+						<span class="label3" id="buttonDisableFavSelected">已選定</span>
+					</a>
+				</div>
+			</div>
+			<div id="btnOpenFavSettingContent">
+				<p class="sixButtonScreenLabel1">最愛設定</p>
+				<p class="sixButtonScreenLabel2">My Favorite Settings</p>
+			</div>
+
+		</script>
+
+		<script id="myFavoritePrintingScreen" type="text/template" class="myFavoritePrintingScreen" >
+			<div id="myFavoritPrintingContent">
+				<!--<div class="title">
+					<p class="sixButtonScreenLabel1">列印設定</p>
+					<p class="sixButtonScreenLabel2">Receipt Settings</p>
+				</div>-->
+				<div class="items">
+					<a id="buttonEnablePrint">
+						<span class="label1">列印明細</span><br />
+						<span class="label2">Print Receipt</span><br />
+						<span class="label3" id="buttonEnablePrintSelected">已選定</span>
+					</a>
+					<a id="buttonDisablePrint">
+						<span class="label1">顯示於螢幕</span><br />
+						<span class="label2">Display On Screen</span><br />
+						<span class="label3" id="buttonDisablePrintSelected">已選定</span>
+					</a>
+					<a id="buttonDefaultSetting">
+						<span class="label1">每次詢問</span><br />
+						<span class="label2">Always ask</span><br />
+						<span class="label3" id="buttonDefaultSettingSelected">已選定</span>
+					</a>
+				</div>
+			</div>
+			<div id="btnOpenPrintingSettingContent">
+				<p class="sixButtonScreenLabel1">列印設定</p>
+				<p class="sixButtonScreenLabel2">Receipt Settings</p>
+			</div>
+		</script>
+
+
+		<script id="selectedAcct" type="text/template" class="selectedAcct">
+			<p class="sixButtonScreenLabel1"><%= labels.label1 %></p>
+			<p class="sixButtonScreenLabel1"><%= labels.label2 %></p>
+		</script>
+
+		<script id="emptyScreen" type="text/template" class="emptyScreen">
+
+		</script>
+
+		<script id="dateTime" type="text/template" class="emptyScreen">
+
+		</script>
+
+		<script id="timer" type="text/template" class="emptyScreen">
+			<div id="timerDisplay"></div>
+		</script>
+
+		<script id="conditionScreen" type="text/template" class="conditionScreen">
+			<div class="conditionScreen">
+				<p class="processScreenLblChi"><%= label1 %></p>
+				<p class="processScreenLblEng"><%= label2 %></p>
+			</div>
+		</script>
+
+		<script id="sixButtonScreen" type="text/template" class="sixButtonScreen">
+			<div class="sixButtonScreenContent">
+				<div class="leftNavigation <% if (typeof list[0].itemListClass != 'undefined') { %> <%= list[0].itemListClass %> <% } %>"></div>
+				<div class="centerColumn">
+					<p class="sixButtonScreenLabel1"><%= label1 %></p>
+          <p class="sixButtonScreenLabel2"><%= label2 %></p>
+
+
+          <% if (typeof labels != "undefined"  ) { %>
+  					<div class="sixButtonScreenLabels">
+  						<% for(var i=0; i<labels.length; i++) { %>
+  							<p
+  							<% if (typeof labels[i].localClass != "undefined" ) { %>
+  							class="<%= labels[i].localClass %> radius"
+  							<% } else { %>
+  							class="sixButtonScreenLabelsStandardLbl"
+  							<% } %>>
+  							<%= labels[i].text %></p>
+  						<% } %>
+  					</div>
+  				<% } %>
+
+					<div id="sixButtonNaviArea" class="sixButtonScreenButtons <% if (typeof list[0].itemListClass != 'undefined') { %> <%= list[0].itemListClass %> <% } %>">
+					<%
+						var sixButtonCounter = 0;
+						for(var i=0; i<list.length; i++) {
+							sixButtonCounter++;
+							if(sixButtonCounter == 1) { %>
+								<div class="item <% if (typeof list[i].itemListClass != 'undefined') { %> <%= list[i].itemListClass %> <% } %>"><ul class="block3">
+							<% } %>
+
+							<li>
+							<a id="<%= buttonIDPrefix %><%= i+1 %>"
+
+								<% if (typeof list[i].localClass != "undefined" ) { %>
+								class="<%= list[i].localClass %> sixButtonLink radius <% if (typeof list[i].enable != 'undefined') { %>
+                  <% if (list[i].enable == 0 ) { %> disabled
+                 <% } else { %> enabled <% } } %>"
+								<% } else { %>
+								class="sixButtonScreenFastCashButton sixButtonLink radius"
+								<% } %>
+								>
+								<div class="line1">
+									<% if(typeof list[i].label1 != "undefined") { %>
+									<span class="label1 <% if (typeof list[i].labelClass1 != 'undefined') { %><%= list[i].labelClass1 %> <% } %>"><%= list[i].label1 %></span>
+									<% } %>
+									<% if(typeof list[i].label2 != "undefined") { %>
+									<span class="label2 <% if (typeof list[i].labelClass2 != 'undefined') { %><%= list[i].labelClass2 %> <% } %>"><%= list[i].label2 %></span>
+									<% } %>
+								</div>
+					    		<div class="line2">
+									<% if(typeof list[i].label3 != "undefined") { %>
+					    			<span class="label3 <% if (typeof list[i].labelClass3 != 'undefined') { %><%= list[i].labelClass3 %> <% } %>"><%= list[i].label3 %></span>
+									<% } %>
+									<% if(typeof list[i].label4 != "undefined") { %>
+					    			<span class="label4 <% if (typeof list[i].labelClass4 != 'undefined') { %><%= list[i].labelClass4 %> <% } %>"><%= list[i].label4 %></span>
+									<% } %>
+					    		</div>
+
+                  <div><% if (typeof list[i].backgroundImage != "undefined") { %>
+                   <span><img src="<%= list[i].backgroundImage %>" /></span>
+                  <% } %>
+                </div>
+							</a>
+							</li>
+
+							<% if(sixButtonCounter == 6 || i == list.length-1) { %>
+								</ul></div>
+							<%	sixButtonCounter = 0;
+							}
+						}
+					%>
+					</div>
+				</div>
+				<div class="rightNavigation <% if (typeof list[0].itemListClass != 'undefined') { %> <%= list[0].itemListClass %> <% } %> "></div>
+			</div>
+			<div class="sixButtonScreenExtraButtons <% if(typeof localClass != 'undefined') { %><%= localClass %><% } %>">
+				<% if(typeof buttons != "undefined"){ %>
+					<% for(var i=0; i<buttons.length; i++) { %>
+						<a href="#<%= buttons[i].naviType%>/<%= buttons[i].nextScreenTemplate%>/<%=buttons[i].nextScreenID %>"
+							class="radius <% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %> <% } %>"
+							id="<%= buttons[i].ID %>">
+						<div class="sixBtnScreenBtnLbl1"><%= buttons[i].label1 %></div>
+						<div class="sixBtnScreenBtnLbl2"><%= buttons[i].label2 %></div>
+						</a>
+					<% } %>
+				<% } %>
+			</div>
+			<div class="sixButtonScreen">
+				<% if(typeof notice != "undefined" && notice.display == "1") { %>
+				<div class="notification <% if(typeof notice.localClass != 'undefined') { %><%= notice.localClass %> <% } %>">
+					<p class="label1"><%= notice.label1 %></p>
+					<p class="label2"><%= notice.label2 %></p>
+					<p class="label3"><%= notice.label3 %></p>
+					<p class="label4"><%= notice.label4 %></p>
+					<p class="label5"><%= notice.label5 %></p>
+					<p class="label6"><%= notice.label6 %></p>
+          <p class="label7"><%= notice.label7 %></p>
+          <p class="label8"><%= notice.label8 %></p>
+				</div>
+				<% } %>
+			</div>
+
+
+    </script>
+
+		<script id="myFavoriteSreen" type="text/template" class="myFavoriteSreen">
+			<div class="myFavleftNavigation"></div>
+			<div class="myFavcenterColumn">
+				<p class="myFavScreenLabel1"><%= label1 %></p>
+				<p class="myFavScreenLabel2"><%= label2 %></p>
+				<div id="favoriteButtonNaviArea" class="favoriteButtons">
+				<%
+					var favoriteButtonCounter = 0;
+					for(var i=0; i<list.length; i++) {
+						favoriteButtonCounter++;
+						if(favoriteButtonCounter == 1) { %>
+							<div class="item"><ul class="block3">
+						<% } %>
+
+						<li>
+						<a id="<%= buttonIDPrefix %><%= i+1 %>"
+							<% if (typeof list[i].localClass != "undefined" ) { %>
+
+							class="<%= list[i].localClass %> myFavoriteBtnLink radius"
+							<% } else { %>
+							class="myFavoriteButtonClass myFavoriteBtnLink radius"
+							<% } %>
+							href="#<%= list[i].naviType%>/<%=list[i].nextScreenTemplate%>/<%=list[i].nextScreenID%>">
+								<% if(list[i].favlabel1 != "undefined" && list[i].favlabel2 != "undefined" ) { %>
+									<span class="myFavoriteButtonLbl1"><%= list[i].favlabel1 %> <%= list[i].favlabel2 %></span><br />
+								<% } %>
+								<% if(list[i].favlabel3 != "undefined") { %>
+									<span class="myFavoriteButtonLbl2"><%= list[i].favlabel3 %></span><br />
+								<% } %>
+								<% if(list[i].favlabel4 != "undefined") { %>
+									<span class="myFavoriteButtonLbl4"><%= list[i].favlabel4 %></span>&nbsp;
+								<% } %>
+								<% if(list[i].favlabel5 != "undefined") { %>
+				    				<span class="myFavoriteButtonLbl5"><%= list[i].favlabel5 %></span><br />
+								<% } %>
+								<% if(list[i].favlabel6 != "undefined") { %>
+				    				<span class="myFavoriteButtonLbl6"><%= list[i].favlabel6 %></span>&nbsp;
+								<% } %>
+								<% if(list[i].favlabel7 != "undefined") { %>
+				    				<span class="myFavoriteButtonLbl7"><%= list[i].favlabel7 %></span><br />
+								<% } %>
+						</a>
+						<div id="<%= list[i].id %>" class="favoriteRemoveBtn"></div>
+						</li>
+
+						<% if(favoriteButtonCounter == 6 || i == list.length-1) { %>
+							</ul></div>
+						<%	favoriteButtonCounter = 0;
+						}
+					}
+				%>
+				</div>
+				<div id="removeConfirmationBox">
+					<div class="messageArea radius">
+						<p class="label1">確定刪除?</p>
+						<p class="label2">Are you sure want to remove?</p>
+						<div class="buttons">
+							<a id="removeYes" class="radius">
+								<span class="label1">是</span><br />
+								<span class="label2">YES</span>
+							</a>
+							<a id="removeNo" class="radius">
+								<span class="label1">否</span><br />
+								<span class="label2">NO</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div id="removeLoadingBox">
+					<div class="messageArea radius">
+						<p class="label1">請稍後...</p>
+						<p class="label2">Please Wait...</p>
+					</div>
+				</div>
+			</div>
+			<div class="myFavrightNavigation"></div>
+			<div class="myFavoriteScreen">
+				<% if(typeof notice != "undefined" && notice.display == "1") { %>
+					<div class="notification <% if(typeof notice.localClass != 'undefined') { %><%= notice.localClass %> <% } %>">
+						<p class="label1"><%= notice.label1 %></p>
+						<p class="label2"><%= notice.label2 %></p>
+						<p class="label3"><%= notice.label3 %></p>
+						<p class="label4"><%= notice.label4 %></p>
+						<p class="label5"><%= notice.label5 %></p>
+						<p class="label6"><%= notice.label6 %></p>
+					</div>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="listBoxScreen" type="text/template" class="listBoxScreen">
+			<div class="listBoxScreen <%= ID %>">
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="listBoxScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p 
+							<% if (typeof labels[i].localClass != "undefined" ) { %> 
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="listBoxScreenLabelsStandardLbl"
+							<% } %>>
+							<span><%= labels[i].text %></span></p>
+						<% } %>
+					</div>
+				<% } %>
+				
+				<div class="listBoxScreenButtons listBoxExtraButtons">
+					<% if(typeof buttons != "undefined"){ %>
+						<% for(var i=0; i<buttons.length; i++) { %>
+							<a href="#<%= buttons[i].naviType%>/<%= buttons[i].nextScreenTemplate%>/<%=buttons[i].nextScreenID %>"
+								class="radius <% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %> <% } %>"
+								id="<%= buttons[i].ID %>">
+							<% if (typeof buttons[i].labels != "undefined"  ) { %>
+								<div class="listBoxScreenButtonsLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<p 
+										<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %> 
+										class="<%= buttons[i].labels[x].localClass %> radius"
+										<% } else { %>
+										class="listBoxScreenButtonsLabelsStandardLbl"
+										<% } %>>
+										<%= buttons[i].labels[x].text %></p>
+									<% } %>
+								</div>
+							<% } %>
+							</a>
+						<% } %>
+					<% } %>
+				</div>
+
+				<div class="listBoxsContainer">
+					<% if (typeof lists.list != "undefined"  ) { %>
+						<% if (typeof lists.search != "undefined" && lists.search !="" ) { %>
+							<div class="listboxSearchContainer">   
+								<input type="text" id="listboxSearch" class="listboxSearch" placeholder="&#xf002; Search bank codes or bank name" />
+							</div>
+						<% } %>
+						<div class="listBox" id="<%= lists.ID %>" >
+							<div class="leftNavigation"></div>
+							<div class="centerColumn">
+								<div id="listBoxNaviArea" class="listBoxScreenButtons">
+									<% 
+										var listBoxItemCounter = 0;
+										for(var i=0 ; i < lists.list.length ; i++) 
+										{
+											listBoxItemCounter++;
+											if(listBoxItemCounter == 1) { %>
+												<div class="item"><ul class="block4">
+											<% } %>
+									
+											<li>
+											<a id="<% if(typeof lists.list[i].ID != "undefined") { %><%= lists.list[i].ID %><% } else { %><%= buttonIDPrefix %><%= i+1 %> <% } %>" 
+												<% if (typeof lists.list[i].localClass != "undefined" ) { %> 
+												class="<%= lists.list[i].localClass %> listLink radius"
+												<% } else { %>
+												class="listBoxButton listLink radius"
+												<% } %>
+												href="#<%= lists.naviType%>/<%=lists.nextScreenTemplate%>/<%=lists.nextScreenID%>">
+												<div class="listBoxScreenButtonBackground">
+												<% if (typeof lists.list[i].labels != "undefined"  ) { %>
+													<div class="listBoxScreenButtonsLabels">
+														<% for(var x=0; x<lists.list[i].labels.length; x++) { %>
+															<p 
+															<% if ((typeof lists.list[i].labels[x].localClass != "undefined" ) && (lists.list[i].labels[x].localClass.indexOf("bankID") != -1 ) ) { %> 
+															id= "bankID"  class="bankID smaller grey radius"   
+															<% } else if ((typeof lists.list[i].labels[x].localClass != "undefined" ) && (lists.list[i].labels[x].localClass.indexOf("bankName") != -1 ) ) { %>
+															id= "bankName" class="bankName regular grey radius" 
+															<% } else if ((typeof lists.list[i].labels[x].localClass != "undefined" ) && (lists.list[i].labels[x].localClass.indexOf("bankID") == -1) && (lists.list[i].labels[x].localClass.indexOf("bankName") == -1 )){ %>
+															class="<%= lists.list[i].labels[x].localClass %> radius "
+															<% } else { %> 
+															class="listBoxScreenButtonsLabelsStandardLbl"
+															<% } %>>
+															<%= lists.list[i].labels[x].text %></p>
+														<% } %>
+													</div>
+												<% } %>
+
+												<% if (typeof lists.list[i].images != "undefined"  ) { %>
+													<div class="listBoxButtonImages">
+														<% for(var x=0; x<lists.list[i].images.length; x++) { %>
+
+															<img id="<%= lists.list[i].images[x].ID %>" 
+															<% if (typeof lists.list[i].images[x].localClass != "undefined" ) { %> 
+															class="<%= lists.list[i].images[x].localClass %>"
+															<% } else { %>
+															class="listBoxButtonImages"
+															<% } %>
+															src="<%= lists.list[i].images[x].source %>" />
+															
+														<% } %>
+													</div>
+												<% } %>
+												</div>
+											</a>
+											</li>
+											
+											<%  if((lists.list.length > lists.firstPageMaxItem && listBoxItemCounter == lists.afterMaxItemToDisplay) || i == lists.list.length-1)  { %>
+												</ul></div>
+											<%	listBoxItemCounter = 0;
+											}
+										}
+									%>
+								</div>
+							</div>
+							<div class="rightNavigation"></div>	
+						</div>
+						
+						<% if (typeof lists.inputNavigation != "undefined") { %>
+							<div class="listboxInputContainer">   
+								<input type="text" id="listboxInputNavigation" class="listboxInputNavigation" />
+							</div>
+						<% } %>
+					<% } %>						
+				</div>
+				<% if(typeof moreInfo != "undefined") { %>
+					<div class="moreInfoContainer">
+						<% if (typeof moreInfo.images != "undefined"  ) { %>
+							<div class="moreInfoImages">
+								<% for(var x=0; x < moreInfo.images.length; x++) { %>
+
+									<img id="<%= moreInfo.images[x].ID %>" 
+									<% if (typeof moreInfo.images[x].localClass != "undefined" ) { %> 
+									class="moreInfoDetail <%= moreInfo.images[x].localClass %>"
+									<% } else { %>
+									class="moreInfoImages"
+									<% } %>
+									src="<%= moreInfo.images[x].source %>" />
+									
+								<% } %>
+							</div>
+						<% } %>
+
+
+						<% if (typeof moreInfo.labels != "undefined"  ) { %>
+							<div class="moreInfoLabels">
+								<% for(var x=0; x < moreInfo.labels.length; x++) { %>
+									<p 
+									<% if (typeof moreInfo.labels[x].localClass != "undefined" ) { %> 
+									class="moreInfoDetail <%= moreInfo.labels[x].localClass %>"
+									<% } else { %>
+									class="moreInfoLabelsStandardLbl"
+									<% } %>>
+									<%= moreInfo.labels[x].text %></p>
+								<% } %>
+							</div>
+						<% } %>
+					</div>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="transactionStateScreen" type="text/template" class="transactionStateScreen">
+			<div class="transactionStateScreen">
+				<div id="campaignArea" class="campaignArea"></div>
+
+				<% if (typeof imgClass != "undefined" ) { %>
+					<img src="<%= imgClass %>" />
+				<% } %>
+				<% if (typeof images != "undefined") { %>
+				  <div class="deviceScreenImages">
+					<% for(var i=0; i<images.length; i++) { %>
+					  <% if(typeof images[i].source != "undefined" || typeof images[i].src != "undefined") { %>
+						<div <% if (typeof images[i].localClass != "undefined" ) { %>
+						class="<%= images[i].localClass %> images"
+						<% } else { %>
+						class="deviceScreenImages images"
+						<% } %>>
+						<img id="<%= images[i].ID %>"
+						<% if(typeof images[i].source != "undefined") { %>
+							src="<%= images[i].source %>"
+						<% } else { %>
+							src="<%= images[i].src %>"
+						<% } %>
+						/>
+						</div>
+					  <% } else { %>
+						<span id="<%= images[i].ID %>"
+						<% if (typeof images[i].localClass != "undefined" ) { %>
+						class="<%= images[i].localClass %>"
+						<% } else { %>
+						class="deviceScreenImages"
+						<% } %>
+						></span>
+					  <% } %>
+					<% } %>
+				  </div>
+				<% } %>
+				<% if (typeof video != "undefined") { %>
+					<video id="device_video" class="video-js vjs-default-skin "
+						 preload="auto" width="<%= video.width %>" height="<%= video.height %>"
+						 autoplay loop data-setup='{"controls": false, "autoplay": true, "preload": "auto"}'>
+					  <source src="<%= video.path %>" type="<%= video.format %>" />
+					  <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+					</video>
+				  <% } %>
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="transactionStateScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="transactionStateScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+				<% if (typeof audios != "undefined") { %>
+					<div class="deviceScreenAudios">
+						<% for(var i=0; i<audios.length; i++) { %>
+							<% if(typeof audios[i].src != "undefined") { %>
+								<audio 
+										<% if(typeof audios[i].autoplay != "undefined" && audios[i].autoplay == "1") { %> autoplay="autoplay" <% } %>
+										<% if(typeof audios[i].loop != "undefined" && audios[i].loop == "1") { %> loop="loop" <% } %>
+										preload="auto"
+										>
+									<% if(audios[i].src.substr(audios[i].src.length - 3).toUpperCase() == "WAV") { %>
+										<source src="<%= audios[i].src %>" type="audio/wav">
+									<% } else { %>
+										<source src="<%= audios[i].src %>" type="audio/mpeg">
+									<% } %>
+								</audio>
+							<% } %>
+						<% } %>
+					</div>
+				<% } %>
+				<p class="processScreenLblChi"><% if (typeof label1 != "undefined" ) { %><%= label1 %><% } %></p>
+				<p class="processScreenLblEng"><% if (typeof label2 != "undefined" ) { %><%= label2 %><% } %></p>
+			</div>
+		</script>
+
+		<script id="acTransactionStateScreen" type="text/template" class="acTransactionStateScreen">
+			<div class="<% if (typeof imgClass != 'undefined' ) { %> <%= imgClass %><% } %> <%= ID %>">
+
+				<% if (typeof images != "undefined" ) { %>
+					<div class="acTransactionStateScreenImages">
+					<% for(var i=0; i < images.length; i++) { %>
+						<% if (typeof images[i].localClass != "undefined") { %>
+							<img src="<%= images[i].src %>" class="<%= images[i].localClass %>"/>
+						<% } else { %>
+							<img src="<%= images[i] %>" />
+						<% } %>
+					<% } %>
+					</div>
+				<% } %>
+
+				<p class="processScreenLblChi"><%= label1 %></p>
+				<p class="processScreenLblEng"><%= label2 %></p>
+
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="acTransactionScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="acTransactionScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+			</div>
+		</script>
+
+        <script id="acNodeJSServiceScreen" type="text/template" class="acNodeJSServiceScreen">
+			<div class="<% if (typeof imgClass != 'undefined' ) { %> <%= imgClass %><% } %> <%= ID %>">
+				<% if (typeof iconClass != "undefined" ) { %>
+					<img src="<%= iconClass %>" />
+				<% } %>
+
+				<% if (typeof images != "undefined" ) { %>
+					<div class="acNodeJSServiceScreenImages">
+					<% for(var i=0; i < images.length; i++) { %>
+						<% if (typeof images[i].localClass != "undefined") { %>
+							<img src="<%= images[i].src %>" class="<%= images[i].localClass %>"/>
+						<% } else { %>
+							<img src="<%= images[i] %>" />
+						<% } %>
+					<% } %>
+					</div>
+				<% } %>
+				<p class="processScreenLblChi"><%= label1 %></p>
+				<p class="processScreenLblEng"><%= label2 %></p>
+
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="acNodeJSServiceScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="acNodeJSServiceScreenStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="acNodeAssistanceScreen" type="text/template" class="acNodeAssistanceScreen">
+			<div class="<% if (typeof imgClass != 'undefined' ) { %> <%= imgClass %><% } %> <%= ID %> <% if (typeof localClass != 'undefined' ) { %> <%= localClass %><% } %> ">
+				<% if (typeof iconClass != "undefined" ) { %>
+					<img src="<%= iconClass %>" />
+				<% } %>
+				<p class="processScreenLblChi"><%= label1 %></p>
+				<p class="processScreenLblEng"><%= label2 %></p>
+
+				<% if (typeof images != "undefined" ) { %>
+					<div class="acNodeAssistanceScreenImages">
+					<% for(var i=0; i < images.length; i++) { %>
+						<% if (typeof images[i].localClass != "undefined") { %>
+							<img src="<%= images[i].src %>" class="<%= images[i].localClass %>"/>
+						<% } else { %>
+							<img src="<%= images[i] %>" />
+						<% } %>
+					<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="acNodeAssistanceScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="acNodeAssistanceScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+
+				<div class="acNodeAssistanceScreenButtons">
+					<% if(typeof buttons != "undefined"){ %>
+						<% for(var i=0; i<buttons.length; i++) { %>
+							<a href="#<%= buttons[i].naviType%>/<%= buttons[i].nextScreenTemplate%>/<%=buttons[i].nextScreenID %>"
+								class="<% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %> <% } %>"
+								id="<%= buttons[i].ID %>">
+							<% if (typeof buttons[i].labels != "undefined"  ) { %>
+								<div class="acNodeAssistanceScreenButtonsLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<p
+										<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %>
+										class="<%= buttons[i].labels[x].localClass %>"
+										<% } else { %>
+										class="acNodeAssistanceScreenButtonsLabelsStandardLbl"
+										<% } %>>
+										<%= buttons[i].labels[x].text %></p>
+									<% } %>
+								</div>
+								<% } %>
+							</a>
+						<% } %>
+					<% } %>
+				</div>
+
+				<% if (typeof form != "undefined" ) { %>
+					<table class="acNodeAssistanceScreenDetails" cellspacing="0" cellpadding="0">
+						<% for(var i=0; i<form.length; i++) { %>
+							<tr class="line<%= i %>">
+								<% for(var x=0; x < form[i].length; x++) { %>
+									<td class="colText <% if(typeof form[i][x].labelCol.localClass != 'undefined') { %><%= form[i][x].labelCol.localClass %><% } %>">
+										<% if (typeof form[i][x].labelCol != "undefined"  ) { %>
+											<div class="acNodeAssistanceScreenDetailsColTextLabels">
+												<% for(var z=0; z<form[i][x].labelCol.labels.length; z++) { %>
+													<p
+													<% if (typeof form[i][x].labelCol.labels[z].localClass != "undefined" ) { %>
+													class="<%= form[i][x].labelCol.labels[z].localClass %> radius"
+													<% } else { %>
+													class="acNodeAssistanceScreenDetailsColTextLabelsStandardLbl"
+													<% } %>>
+													<%= form[i][x].labelCol.labels[z].text %></p>
+												<% } %>
+											</div>
+										<% } %>
+									</td>
+									<td class="colItem <% if(typeof form[i][x].itemCol.localClass != 'undefined') { %><%= form[i][x].itemCol.localClass %><% } %>" <% if(typeof form[i][x].itemCol.colspan != 'undefined') { %>colspan="<%= form[i][x].itemCol.colspan %>"<% } %>>
+										<% if (typeof form[i][x].itemCol != "undefined"  ) { %>
+											<div class="acNodeAssistanceScreenDetailsColItemLabels">
+												<% for(var z=0; z<form[i][x].itemCol.labels.length; z++) { %>
+													<p
+													<% if (typeof form[i][x].itemCol.labels[z].localClass != "undefined" ) { %>
+													class="<%= form[i][x].itemCol.labels[z].localClass %> radius"
+													<% } else { %>
+													class="acNodeAssistanceScreenDetailsColItemLabelsStandardLbl"
+													<% } %>>
+													<%= form[i][x].itemCol.labels[z].text %></p>
+												<% } %>
+											</div>
+										<% } %>
+									</td>
+								<% } %>
+							</tr>
+						<% } %>
+					</table>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="deviceProcessStateScreen" type="text/template" class="deviceProcessStateScreen">
+			<div class="deviceProcessing <%= ID %> <% if(typeof localClass != 'undefined') { %> <%= localClass %><% } %>">
+				<% if (typeof imgClass != "undefined" ) { %>
+					<img src="<%= imgClass %>" />
+				<% } %>
+
+				<% if (typeof images != "undefined" ) { %>
+					<div class="deviceProcessImages">
+					<% for(var i=0; i < images.length; i++) { %>
+						<% if (typeof images[i].localClass != "undefined") { %>
+							<img <% if (typeof images[i]["ID"] != "undefined" ) { %>id="<%= images[i].ID %>"<% } %> src="<%= images[i].src %>" class="<%= images[i].localClass %>"/>
+						<% } else { %>
+							<img src="<%= images[i] %>" />
+						<% } %>
+					<% } %>
+					</div>
+				<% } %>
+
+				<p class="deviceProcessScreenLblChi"><% if(typeof label1 != "undefined"){ %><%= label1 %><% } %></p>
+				<p class="deviceProcessScreenLblEng"><% if(typeof label1 != "undefined"){ %><%= label2 %><% } %></p>
+				<% if (typeof label3 != "undefined" ) { %>
+					<p class="deviceProcessScreenLblEng"><%= label3 %></p>
+				<% } %>
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="deviceProcessScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="deviceProcessScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+
+				<div class="deviceProcessScreenButtons">
+					<% if(typeof buttons != "undefined"){ %>
+						<% for(var i=0; i<buttons.length; i++) { %>
+							<a href="#<%= buttons[i].naviType%>/<%= buttons[i].nextScreenTemplate%>/<%=buttons[i].nextScreenID %>"
+								class="<% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %> <% } %>"
+								id="<%= buttons[i].ID %>">
+							<% if (typeof buttons[i].labels != "undefined"  ) { %>
+								<div class="deviceProcessScreenButtonsLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<p
+										<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %>
+										class="<%= buttons[i].labels[x].localClass %>"
+										<% } else { %>
+										class="deviceProcessScreenButtonsLabelsStandardLbl"
+										<% } %>>
+										<%= buttons[i].labels[x].text %></p>
+									<% } %>
+								</div>
+								<% } %>
+							</a>
+						<% } %>
+					<% } %>
+				</div>
+
+				<% if (typeof video != "undefined") { %>
+					<video id="device_video" class="video-js vjs-default-skin"
+							preload="auto" width="<%= video.width %>" height="<%= video.height %>"
+							autoplay loop data-setup='{"controls": false, "autoplay": true, "preload": "auto"}'>
+						<source src="<%= video.path %><%= video.fileName %>" type="<%= video.format %>" />
+						<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+					</video>
+				<% } %>
+				<% if (typeof audio != "undefined") { %>
+					<!-- <embed src="<%= audio.path %>" width="0" height="0" id="devide_audio" autostart="true"></embed> -->
+					<div class="deviceScreenAudios">
+						<audio 
+								<% if(typeof audio.autoplay != "undefined" && (audio.autoplay == "1" || audio.autoplay == "true")) { %> autoplay="autoplay" <% } %>
+								<% if(typeof audio.loop != "undefined" && (audio.loop == "1" || audio.loop == "true")) { %> loop="loop" <% } %>
+								preload="auto"
+								>
+							<% if(audio.path.substr(audio.path.length - 3).toUpperCase() == "WAV") { %>
+								<source src="<%= audio.path %>" type="audio/wav">
+							<% } else { %>
+								<source src="<%= audio.path %>" type="audio/mpeg">
+							<% } %>
+						</audio>
+					</div>
+				<% } %>
+				<div class="deviceScreenNotice">
+					<% if(typeof notice != "undefined" && notice.display == "1") {%>
+					<div class="notification <% if(typeof notice.localClass != 'undefined') { %><%= notice.localClass %> <% } %>">
+						<p class="label1"><%= notice.label1 %></p>
+						<p class="label2"><%= notice.label2 %></p>
+						<p class="label3"><%= notice.label3 %></p>
+						<p class="label4"><%= notice.label4 %></p>
+						<p class="label5"><%= notice.label5 %></p>
+						<p class="label6"><%= notice.label6 %></p>
+					</div>
+					<% } %>
+				</div>
+				<% if (typeof audios != "undefined") { %>
+					<div class="deviceScreenAudios">
+						<% for(var i=0; i<audios.length; i++) { %>
+							<% if(typeof audios[i].src != "undefined") { %>
+								<audio 
+										<% if(typeof audios[i].autoplay != "undefined" && audios[i].autoplay == "1") { %> autoplay="autoplay" <% } %>
+										<% if(typeof audios[i].loop != "undefined" && audios[i].loop == "1") { %> loop="loop" <% } %>
+										preload="auto"
+										>
+									<% if(audios[i].src.substr(audios[i].src.length - 3).toUpperCase() == "WAV") { %>
+										<source src="<%= audios[i].src %>" type="audio/wav">
+									<% } else { %>
+										<source src="<%= audios[i].src %>" type="audio/mpeg">
+									<% } %>
+								</audio>
+							<% } %>
+						<% } %>
+					</div>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="twoButtonScreen" type="text/template" class="twoButtonScreen">
+			<div class="twoButtonScreen <%= ID %>">
+				<p class="twoButtonScreenLbl1"><%= label1 %></p>
+				<p class="twoButtonScreenLbl2"><%= label2 %></p>
+				<p class="twoButtonScreenLbl3"><%= label3 %></p>
+				<p class="twoButtonScreenLbl4"><%= label4 %></p>
+
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="twoButtonScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="twoButtonScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].label %></p>
+						<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof images != "undefined" ) { %>
+					<div class="twoButtonScreenImages">
+					<% for(var i=0; i < images.length; i++) { %>
+						<% if (typeof images[i].localClass != "undefined") { %>
+							<img src="<%= images[i].src %>" class="<%= images[i].localClass %>"/>
+						<% } else { %>
+							<img src="<%= images[i] %>" />
+						<% } %>
+					<% } %>
+					</div>
+				<% } %>
+
+				<div class="buttons">
+				<% if (typeof button1 != "undefined"  ) { %>
+					<a id="button1"
+						<% if (typeof button1.localClass != "undefined" ) { %>
+						class="<%= button1.localClass %> radius"
+						<% } else { %>
+						class="twoBtnScreenYes radius"
+						<% } %>
+						href="#<%= button1.naviType%>/<%=button1.nextScreenTemplate%>/<%=button1.nextScreenID%>">
+						<div class="line1">
+							<span class="label1"><%= button1.label1 %>&nbsp;</span>
+				    		<span class="label2"><%= button1.label2 %>&nbsp;</span>
+				    		<span class="label3"><%= button1.label3 %></span>
+			    		</div>
+			    		<div class="line2">
+							<span class="label4"><%= button1.label4 %>&nbsp;</span>
+				    		<span class="label5"><%= button1.label5 %>&nbsp;</span>
+				    		<span class="label6"><%= button1.label6 %></span>
+			    		</div>
+					</a>
+				<% } %>
+
+				<% if (typeof button2 != "undefined"  ) { %>
+					<a id="button2"
+						<% if (typeof button2.localClass != "undefined" ) { %>
+						class="<%= button2.localClass %> radius"
+						<% } else { %>
+						class="twoBtnScreenNo radius"
+						<% } %>
+						href="#<%= button2.naviType%>/<%= button2.nextScreenTemplate%>/<%=button2.nextScreenID%>">
+						<div class="line1">
+							<span class="label1"><%= button2.label1 %>&nbsp;</span>
+				    		<span class="label2"><%= button2.label2 %>&nbsp;</span>
+				    		<span class="label3"><%= button2.label3 %></span>
+			    		</div>
+			    		<div class="line2">
+							<span class="label4"><%= button2.label4 %>&nbsp;</span>
+				    		<span class="label5"><%= button2.label5 %>&nbsp;</span>
+				    		<span class="label6"><%= button2.label6 %></span>
+			    		</div>
+					</a>
+				<% } %>
+
+				<% if (typeof button3 != "undefined"  ) { %>
+					<a id="button3"
+						<% if (typeof button3.localClass != "undefined" ) { %>
+						class="<%= button3.localClass %> radius"
+						<% } else { %>
+						class="twoBtnScreenOthers radius"
+						<% } %>
+						href="#<%= button3.naviType%>/<%= button3.nextScreenTemplate%>/<%=button3.nextScreenID%>">
+						<div class="line1">
+							<span class="label1"><%= button3.label1 %>&nbsp;</span>
+				    		<span class="label2"><%= button3.label2 %>&nbsp;</span>
+				    		<span class="label3"><%= button3.label3 %></span>
+			    		</div>
+			    		<div class="line2">
+							<span class="label4"><%= button3.label4 %>&nbsp;</span>
+				    		<span class="label5"><%= button3.label5 %>&nbsp;</span>
+				    		<span class="label6"><%= button3.label6 %></span>
+			    		</div>
+					</a>
+				<% } %>
+				</div>
+
+				<% if(typeof notice != "undefined") { %>
+				<div class="notification <% if(typeof notice.localClass != 'undefined') { %><%= notice.localClass %> <% } %>">
+					<p class="label1"><%= notice.label1 %></p>
+					<p class="label2"><%= notice.label2 %></p>
+					<p class="label3"><%= notice.label3 %></p>
+					<p class="label4"><%= notice.label4 %></p>
+					<p class="label5"><%= notice.label5 %></p>
+					<p class="label6"><%= notice.label6 %></p>
+				</div>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="inputScreen" type="text/template" class="inputScreen">
+			<div class="inputScreen <% if (typeof localClass != 'undefined') { %><%= localClass %><% } %> <%= ID %>">
+				<div class="inputBackground"></div>
+				<p class="inputScreenLbl1"><% if(typeof label1 != "undefined") { %><%= label1 %><% } %></p>
+				<p class="inputScreenLbl2"><% if(typeof label2 != "undefined") { %><%= label2 %><% } %></p>
+
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="inputScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="inputScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof images != "undefined" ) { %>
+					<div class="inputScreemImages">
+					<% for(var i=0; i < images.length; i++) { %>
+						<% if (typeof images[i].localClass != "undefined") { %>
+							<img src="<%= images[i].src %>" class="<%= images[i].localClass %>"/>
+						<% } else { %>
+							<img src="<%= images[i] %>" />
+						<% } %>
+					<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof checkbox != "undefined" ) { %>
+					<div class="inputScreenCheckBox">
+						<input type="checkbox" id="<%= checkbox.ID %>"  name="<%= checkbox.ID %>"
+							<% if (typeof checkbox.localClass != "undefined" ) { %>
+								class="<%= checkbox.localClass %>"/>
+							<% } else { %>
+								class="checkBoxInputDefaultBox"/>
+							<% } %>
+						<% if (typeof checkbox.labels != "undefined"  ) { %>
+								<label for="<%= checkbox.ID %>"
+									<% if (typeof checkbox.localClass != "undefined" ) { %>
+									class="<%= checkbox.localClass %>"
+									<% } else { %>
+									class="inputScreenCheckBoxLabel"
+									<% } %>
+								>
+									<% for(var x=0; x<checkbox.labels.length; x++) { %>
+										<span class="<%= checkbox.labels[x].localClass %>">
+											<%= checkbox.labels[x].text %>
+										</span><br />
+									<% } %>
+								</label>
+							<% } %>
+					</div>
+				<% } %>
+
+				<table class="inputArea" cellpadding="0" cellspacing="0">
+				<% for(var i=0; i<inputs.length; i++) { %>
+					<tr class="line<%= i %>">
+						<td class="col1">
+							<span class="label1 <%= inputs[i].inputQuestLbl1Class %>"><%= inputs[i].inputQuestLbl1 %></span><br />
+							<span class="label2 <%= inputs[i].inputQuestLbl2Class %>"><%= inputs[i].inputQuestLbl2 %></span>
+						</td>
+						<td class="col2">
+							<div class="content">
+								<div class="col21">
+									<% if (typeof inputs[i].displayType != 'undefined' && inputs[i].displayType == "label" ) { %>
+										<span class="inputLabel" id="<%= inputs[i].ID %>" ><%= inputs[i].inputValueLbl %></span><br />
+									<% } else if (typeof inputs[i].displayType != 'undefined' && inputs[i].displayType == "radioButton" ) { %>
+										<div class="radioButtons">
+											<% for(var x=0; x<inputs[i].radionButton.length; x++) { %>
+												<radioButton class="<% if(typeof inputs[i].radionButton[x].selected != 'undefined' && inputs[i].radionButton[x].selected == '1') { %><%= inputs[i].radionButton[x].selectedClass %>
+												<% } else {%><%= inputs[i].radionButton[x].deselectClass %><%}%>"
+												   ID="<%= inputs[i].radionButton[x].ID %>" data-location="<%= inputs[i].radionButton[x].buttonLocation %>">
+													<div class="inputScreenBtnLbl1"><%= inputs[i].radionButton[x].label1 %></div>
+													<div class="inputScreenBtnLbl2"><%= inputs[i].radionButton[x].label2 %></div>
+												</radioButton>
+											<% } %>
+										</div>
+									<% } else if (typeof inputs[i].displayType != 'undefined' &&
+										inputs[i].displayType == "dropDownList" ) { %>
+										<div class="dropDownList">
+											<input id="<%= inputs[i].dropDownList.ID %>" type="text" class="radius <%= inputs[i].dropDownList.localClass %>"
+												<% if (typeof inputs[i].dropDownList.enable != 'undefined' && inputs[i].dropDownList.enable == "0" ) { %> disabled <% } %>
+												<% if (typeof inputs[i].dropDownList.placeHolder != 'undefined') { %> placeholder = "<%= inputs[i].dropDownList.placeHolder %>" <% } %>
+												data-activeElement="<%= inputs[i].ID %>" readonly />
+											<a class="radius dropDownButton <% if(typeof inputs[i].dropDownList.button.localClass != 'undefined') { %><%= inputs[i].dropDownList.button.localClass %><% } %>"
+												ID="<%= inputs[i].dropDownList.button.ID %>" data-location="<%= inputs[i].dropDownList.button.buttonLocation %>"
+												data-activeElement="<%= inputs[i].ID %>" />
+										</div>
+									<% } else if (typeof inputs[i].displayType != 'undefined' &&
+										inputs[i].displayType == "upDownAmtSelection" ) { %>
+
+										<div class="upDownAmtSelection" id="<%= inputs[i].ID %>">
+											<div class="descreseBtn" id="descreseBtn"
+													<% if (typeof inputs[i].cashAmtSelections.enable != "undefined" && inputs[i].cashAmtSelections.enable == "0") { %>
+													style="visibility: hidden;"
+													<% } %>/>
+
+											<% if (typeof inputs[i].cashAmtSelections.input != "undefined" ) { %>
+												<input  id="<%= inputs[i].cashAmtSelections.input.ID %>" type="text" class="<%= inputs[i].cashAmtSelections.input.localClass %>"
+													value ="<%= inputs[i].cashAmtSelections.input.initVal %>" />
+											<% } else {%>
+												<span class="totalValueLbl"><%= inputs[i].cashAmtSelections.totalValueLbl %></span><br/>
+											<% } %>		
+
+											<div class="increaseBtn" id="increaseBtn"
+													<% if (typeof inputs[i].cashAmtSelections.enable != "undefined" && inputs[i].cashAmtSelections.enable == "0") { %>
+													style="visibility: hidden;"
+													<% } %>/>											
+										</div>
+
+									<% } else { %>
+
+										<input id="<%= inputs[i].ID %>"
+										<% if (typeof inputs[i].inputType != 'undefined' && inputs[i].inputType == "password" ) { %> type="password"  <% } else {  %> type="text"  <% } %>
+										class="radius <%= inputs[i].localClass %> <% if(typeof inputs[i].softkeyboardType != 'undefined') { %><%= inputs[i].softkeyboardType %><% } %>"
+										<% if (typeof inputs[i].enable != 'undefined' && inputs[i].enable == "0" ) { %> disabled <% } %>
+										<% if (typeof inputs[i].placeHolder != 'undefined') { %> placeholder = "<%= inputs[i].placeHolder %>" <% } %> />
+									<% } %>
+								</div>
+								<div class="col22"></div>
+							</div>
+						</td>
+						<td class="col3">
+							<div class="inputError">
+								<div class="errorArea radius">
+									<p class="error1"></p>
+									<p class="error2"></p>
+								</div>
+							</div>
+						</td>
+					</tr>
+				<% } %>
+				</table>
+
+				<table class="inputScreenSummaryDetails" cellspacing="0" cellpadding="0">
+					<% for(var i=0; i<summaryData.length; i++) { %>
+					<tr class="line<%= i %>">
+						<td class="col1">
+							<span class="label1"><%= summaryData[i].label1 %></span><br />
+							<span class="label2"><%= summaryData[i].label2 %></span>
+						</td>
+						<td class="col2">
+							<span class="label3"><%= summaryData[i].label3 %></span>
+						</td>
+					</tr>
+					<% } %>
+				</table>
+
+				<p class="line">
+					<span class="inputScreenLbl3"><% if(typeof label3 != "undefined") { %><%= label3 %><% } %></span>
+					<span class="inputScreenLbl4"><% if(typeof label4 != "undefined") { %><%= label4 %><% } %></span>
+				</p>
+				<p class="line">
+					<span class="inputScreenLbl5"><% if(typeof label5 != "undefined") { %><%= label5 %><% } %></span>
+					<span class="inputScreenLbl6"><% if(typeof label6 != "undefined") { %><%= label6 %><% } %></span>
+				</p>
+				<p class="line">
+					<span class="inputScreenLbl7"><% if(typeof label7 != "undefined") { %><%= label7 %><% } %></span>
+					<span class="inputScreenLbl8"><% if(typeof label8 != "undefined") { %><%= label8 %><% } %></span>
+					<span class="inputScreenLbl9"><% if(typeof label9 != "undefined") { %><%= label9 %><% } %></span>
+				</p>
+				<p class="line">
+					<span class="inputScreenLbl10"><% if(typeof label10 != "undefined") { %><%= label10 %><% } %></span>
+					<span class="inputScreenLbl11"><% if(typeof label11 != "undefined") { %><%= label11 %><% } %></span>
+					<span class="inputScreenLbl12"><% if(typeof label12 != "undefined") { %><%= label12 %><% } %></span>
+				</p>
+				<div class="inputScreenButtons">
+					<% for(var i=0; i<buttons.length; i++) { %>
+						<a 
+							class="radius inputButton <% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %><% } %>"
+							ID="<%= buttons[i].ID %>" data-location="<%= buttons[i].buttonLocation %>">
+							<% if (typeof buttons[i].labels != "undefined" && buttons[i].labels.length > 0) { %>
+								<div class="inputScreenButtonsLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<p
+										<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %>
+										class="<%= buttons[i].labels[x].localClass %>"
+										<% } else { %>
+										class="inputScreenButtonsLabelsStandardLbl"
+										<% } %>>
+										<%= buttons[i].labels[x].text %></p>
+									<% } %>
+								</div>
+							<% } else { %>
+								<div class="inputScreenBtnLbl1"><%= buttons[i].label1 %></div>
+								<div class="inputScreenBtnLbl2"><%= buttons[i].label2 %></div>
+							<% } %>
+						</a>
+					<% } %>
+				</div>
+
+				<div class="inputScreenNotice">
+					<% if(typeof notice != "undefined") { %>
+					<div class="notification <% if(typeof notice.localClass != 'undefined') { %><%= notice.localClass %> <% } %>">
+						<p class="label1"><%= notice.label1 %></p>
+						<p class="label2"><%= notice.label2 %></p>
+						<p class="label3"><%= notice.label3 %></p>
+						<p class="label4"><%= notice.label4 %></p>
+						<p class="label5"><%= notice.label5 %></p>
+						<p class="label6"><%= notice.label6 %></p>
+					</div>
+					<% } %>
+				</div>
+				<input id="hiddenFocusTextbox" type="text" value="" style="display: none; "/>
+				<div class="inputScreenSoftkeyboardButtons">
+					<a href="#" id="1" class="inputScreenSKB_1 inputNum"><p class="inputScreenSoftkeyboardButtonsLabels">1</p></a>
+					<a href="#" id="2" class="inputScreenSKB_2 inputNum"><p class="inputScreenSoftkeyboardButtonsLabels">2</p></a>
+					<a href="#" id="3" class="inputScreenSKB_3 inputNum"><p class="inputScreenSoftkeyboardButtonsLabels">3</p></a>
+					<a href="#" id="4" class="inputScreenSKB_4 inputNum"><p class="inputScreenSoftkeyboardButtonsLabels">4</p></a>
+					<a href="#" id="5" class="inputScreenSKB_5 inputNum"><p class="inputScreenSoftkeyboardButtonsLabels">5</p></a>
+					<a href="#" id="6" class="inputScreenSKB_6 inputNum"><p class="inputScreenSoftkeyboardButtonsLabels">6</p></a>
+					<a href="#" id="7" class="inputScreenSKB_7 inputNum"><p class="inputScreenSoftkeyboardButtonsLabels">7</p></a>
+					<a href="#" id="8" class="inputScreenSKB_8 inputNum"><p class="inputScreenSoftkeyboardButtonsLabels">8</p></a>
+					<a href="#" id="9" class="inputScreenSKB_9 inputNum"><p class="inputScreenSoftkeyboardButtonsLabels">9</p></a>
+					<a href="#" id="BACKSPACE" class="inputScreenSKB_BACKSPACE inputNum"><div class="inputScreenSoftkeyboardButtonsBackSpaceIcon"></div></a>
+					<a href="#" id="0" class="inputScreenSKB_0 inputNum"><p class="inputScreenSoftkeyboardButtonsLabels">0</p></a>
+					<a href="#" id="CLEAR" class="inputScreenSKB_CLEAR inputNum"><p class="inputScreenSoftkeyboardButtonsLabels">CLR</p></a>
+				</div>
+			</div>
+		</script>
+
+
+		<script id="summaryScreen" type="text/template" class="summaryScreen">
+			<div class="summaryScreen <% if (typeof localClass != 'undifined') { %><%= localClass %><% } %>">
+				<% if (typeof image != "undefined" && image != ""  ) { %>
+					<p class="summaryScreenImage"><img src="<%= image %>"/></p>
+				<% } %>
+
+				<% if (typeof label1 != "undefined"  ) { %>
+					<p class="summaryScreenLbl1"><%= label1 %></p>
+				<% } %>
+
+				<% if (typeof label2 != "undefined"  ) { %>
+					<p class="summaryScreenLbl2"><%= label2 %></p>
+				<% } %>
+
+				<% if (typeof label3 != "undefined"  ) { %>
+					<p class="summaryScreenWarningLbl3"><%= label3 %></p>
+				<% } %>
+
+				<% if (typeof images != "undefined" ) { %>
+					<div class="summaryScreenImages">
+					<% for(var i=0; i < images.length; i++) { %>
+						<% if (typeof images[i].localClass != "undefined") { %>
+							<img src="<%= images[i].src %>" class="<%= images[i].localClass %>"/>
+						<% } else { %>
+							<img src="<%= images[i] %>" />
+						<% } %>
+					<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="summaryScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="summaryScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+
+				<% if(typeof summary != "undefined"){ %>
+					<table class="summaryScreenDetails" cellspacing="0" cellpadding="0">
+							<% for(var i=0; i<summary.length; i++) { %>
+								
+								<tr class="line<%= i %>">
+								<% for(var x=0; x<summary[i].labels.length; x++) { %>
+									<td class="col_<%= i %>">
+										<span class="label1 <% if(typeof summary[i].labels[x].localClass != 'undefined') { %><%= summary[i].labels[x].localClass %> <% } %>"><%= summary[i].labels[x].text %>
+									</td>
+									<% } %>
+								</tr>
+								
+							<% } %>
+					</table>
+				<% } %>
+
+				<% if(typeof summarys != "undefined"){ %>
+					<% for(var x=0 ; x<summarys.length ; x++) { 
+						var currentForm = summarys[x];
+						%>
+						<div>
+							<table ID="<%= currentForm.ID %>" 
+							<% if (typeof currentForm.localClass != "undefined" ) { %>
+								class="<%= currentForm.localClass %>"
+							<% } else { %>
+								class="summaryScreenDetails"
+							<% } %>
+							cellspacing="0" cellpadding="0">
+								<% for(var y=0 ; y<summarys[x].summary.length ; y++) { 
+									var currentRow = summarys[x].summary[y];
+									%>
+									<tr class="line<%= y %>" >
+									<% for(var z=0 ; z < currentRow.length ; z++) { 
+										var currentCol = currentRow[z];
+										%>
+										<td class="col_<%= z %>">
+											<% if(typeof currentCol.images != "undefined"){ %>
+												<div>
+													<% for(var z1=0 ; z1 < currentCol.images.length ; z1++) { %>
+														<% if (typeof currentCol.images[z1].localClass != "undefined") { %>
+															<img src="<%= currentCol.images[z1].src %>" class="<%= currentCol.images[z1].localClass %>"/>
+														<% } else { %>
+															<img src="<%= currentCol.images[z1] %>" />
+														<% } %>
+													<% } %>
+												</div>
+											<% } %>
+											<% if(typeof currentCol.data != "undefined"){ %>
+												<div>
+													<% for(var z2=0; z2< currentCol.data.length; z2++) { %>
+														<span class="label1 <% if(currentCol.data[z2].localClass != 'undefined') { %><%= currentCol.data[z2].localClass %> <% } %>"><%= currentCol.data[z2].text %>
+													<% } %>
+												</div>
+											<% } %>
+										</td>
+										<% } %>
+									</tr>
+									
+								<% } %>
+							</table>
+						<div>
+					<% } %>
+				<% } %>
+
+				<% if(typeof reminder != 'undefined') { %>
+					<table class="summaryScreenReminder" cellspacing="0" cellpadding="0">
+						<% for(var i=0; i<reminder.length; i++) { %>
+						<tr class="line<%= i %>">
+							<td class="col1">
+								<span class="label1"><%= reminder[i].label1 %></span><br />
+								<span class="label2"><%= reminder[i].label2 %></span>
+							</td>
+						</tr>
+						<% } %>
+					</table>
+				<% } %>
+
+				<div class="summaryScreenButtons">
+					<% for(var i=0; i<buttons.length; i++) { %>
+					<% if(buttons[i].enable != "undefined" && buttons[i].enable != "0"){ %> 
+
+						<a
+							class="<% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %><% } %> radius"
+							ID="<%= buttons[i].ID %>"
+							<% if(typeof buttons[i].fdk != "undefined") { %>
+								data-fdk = "<%= buttons[i].fdk %>"
+								<% } %> >
+							<% if (typeof buttons[i].labels != "undefined"  ) { %>
+								<div class="summaryScreenButtonLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<p
+										<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %>
+										class="<%= buttons[i].labels[x].localClass %>"
+										<% } else { %>
+										class="summaryScreenButtonLabelsStandardLbl"
+										<% } %>>
+										<%= buttons[i].labels[x].text %></p>
+									<% } %>
+								</div>
+								<% } %>
+						</a>
+						<% } %>
+					<% } %>
+				</div>
+				
+				<div class="summaryScreenNotice">
+					<% if(typeof notice != "undefined" && notice.display == "1") { %>
+					<div class="notification <% if(typeof notice.localClass != 'undefined') { %><%= notice.localClass %> <% } %>">
+						<p class="label1"><%= notice.label1 %></p>
+						<p class="label2"><%= notice.label2 %></p>
+						<p class="label3"><%= notice.label3 %></p>
+						<p class="label4"><%= notice.label4 %></p>
+						<p class="label5"><%= notice.label5 %></p>
+						<p class="label6"><%= notice.label6 %></p>
+						<p class="label7"><%= notice.label7 %></p>
+						<p class="label8"><%= notice.label8 %></p>
+					</div>
+					<% } %>
+				</div>
+				<% if (typeof audios != "undefined") { %>
+					<div class="deviceScreenAudios">
+						<% for(var i=0; i<audios.length; i++) { %>
+							<% if(typeof audios[i].src != "undefined") { %>
+								<audio 
+										<% if(typeof audios[i].autoplay != "undefined" && audios[i].autoplay == "1") { %> autoplay="autoplay" <% } %>
+										<% if(typeof audios[i].loop != "undefined" && audios[i].loop == "1") { %> loop="loop" <% } %>
+										preload="auto"
+										>
+									<% if(audios[i].src.substr(audios[i].src.length - 3).toUpperCase() == "WAV") { %>
+										<source src="<%= audios[i].src %>" type="audio/wav">
+									<% } else { %>
+										<source src="<%= audios[i].src %>" type="audio/mpeg">
+									<% } %>
+								</audio>
+							<% } %>
+						<% } %>
+					</div>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="transactionSummaryScreen" type="text/template" class="transactionSummaryScreen">
+			<div class="transactionSummaryScreen <% if (typeof localClass != 'undifined') { %><%= localClass %><% } %>">
+				<% if (typeof image != "undefined" && image != ""  ) { %>
+					<p class="image"><img src="<%= image %>"/></p>
+				<% } %>
+				<p class="descriptionLine1"><%= label1 %></p>
+				<p class="descriptionLine2"><%= label2 %></p>
+
+				<p class="descriptionLine3">
+					<span class="descriptionLabel3"><%= label3 %></span>
+					<span class="descriptionLabel4"><%= idNo.label %></span>
+				</p>
+
+				<table class="details" cellspacing="0" cellpadding="0">
+					<thead>
+						<tr >
+							<td class="col1">
+								<span class="label1"><%= title.label1 %></span><br />
+								<span class="label2"><%= title.label2 %></span>
+							</td>
+							<td class="col2">
+								<span class="label1"><%= title.label3 %></span><br />
+								<span class="label2"><%= title.label4 %></span>
+							</td>
+							<td class="col3">
+								<span class="label1"><%= title.label5 %></span><br />
+								<span class="label2"><%= title.label6 %></span>
+							</td>
+							<td class="col4">
+								<span class="label1"><%= title.label7 %></span><br />
+								<span class="label2"><%= title.label8 %></span>
+							</td>
+						</tr>
+					</thead>
+					<tbody>
+					<% for(var i=0; i<summaryData.length; i++) { %>
+						<tr class="line<%= i %> <% if(typeof localClass != 'undefined') { %>localClass<% } %>">
+							<td>
+								<span class="label1"><%= summaryData[i].label1 %></span>
+							</td>
+							<td>
+								<span class="label2"><%= summaryData[i].label2 %></span>
+							</td>
+							<td>
+								<span class="label3"><%= summaryData[i].label3 %></span>
+							</td>
+							<td>
+								<span class="label4"><%= summaryData[i].label4 %></span>
+							</td>
+						</tr>
+					<% } %>
+					</tbody>
+				</table>
+
+				<div class="transactionSummaryButtons">
+					<% for(var i=0; i<buttons.length; i++) { %>
+						<a href="#<%= buttons[i].naviType%>/<%= buttons[i].nextScreenTemplate%>/<%=buttons[i].nextScreenID %>"
+							class="<% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %><% } %> transactionSummaryButton radius"
+							ID="<%= buttons[i].ID %>">
+							<div class="label1"><%= buttons[i].label1 %></div>
+			    			<div class="label2"><%= buttons[i].label2 %></div>
+						</a>
+					<% } %>
+				</div>
+				<% if(typeof notice != "undefined") { %>
+				<div class="notification <% if(typeof notice.localClass != 'undefined') { %><%= notice.localClass %> <% } %>">
+					<p class="label1"><%= notice.label1 %></p>
+					<p class="label2"><%= notice.label2 %></p>
+					<p class="label3"><%= notice.label3 %></p>
+					<p class="label4"><%= notice.label4 %></p>
+					<p class="label5"><%= notice.label5 %></p>
+					<p class="label6"><%= notice.label6 %></p>
+				</div>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="cashCounterSummaryScreen" type="text/template" class="cashCounterSummaryScreen">
+			<div class="cashCounterSummaryScreen <% if (typeof localClass != 'undifined') { %><%= localClass %><% } %>">
+				<% if (typeof image != "undefined" && image != ""  ) { %>
+					<p class="image"><img src="<%= image %>"/></p>
+				<% } %>
+				<p class="descriptionLine1"><%= label1 %></p>
+				<p class="descriptionLine2"><%= label2 %></p>
+				<p class="descriptionLine3">
+					<span class="descriptionLabel3"><%= label3 %></span>
+					<span class="descriptionLabel4"><%= idNo %></span>
+				</p>
+
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="cashCounterSummaryScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="cashCounterSummaryScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+
+				<% if(typeof summary != "undefined"){ %>
+					<% if(typeof this.model.get("summaryMultipleLanguage") != "undefined" && this.model.get("summaryMultipleLanguage") == "1" ) { %>
+						<table class="details" cellspacing="0" cellpadding="0">
+							<% for(var i=0; i<summary.length; i++) { %>
+								<tr class="line<%= i %>">
+								<% for(var x=0; x<summary[i].labels.length; x++) { %>
+									<td class="col_<%= i %>">
+										<span class="label1 <% if(typeof summary[i].labels[x].localClass != "undefined") { %><%= summary[i].labels[x].localClass %> <% } %>"><%= summary[i].labels[x].text %>
+									</td>
+									<% } %>
+								</tr>
+								
+							<% } %>
+						</table>
+					<% } else { %>
+						<table class="details" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<td class="col1">
+										<span class="label1"><%= title.label1 %></span><br />
+										<span class="label2"><%= title.label2 %></span>
+									</td>
+									<td class="col2">
+										<span class="label1"><%= title.label3 %></span><br />
+										<span class="label2"><%= title.label4 %></span>
+									</td>
+									<td class="col3">
+										<span class="label1"><%= title.label5 %></span><br />
+										<span class="label2"><%= title.label6 %></span>
+									</td>
+									<td class="col4">
+										<span class="label1"><%= title.label7 %></span><br />
+										<span class="label2"><%= title.label8 %></span>
+									</td>
+								</tr>
+							</thead>
+							<tbody>
+							<% for(var i=0; i<summary.length; i++) { %>
+								<tr class="line<%= i %> <%= summary[i].localClass %>">
+									<td>
+										<span class="label1"><%= summary[i].label1a %></span>
+										<span class="label1a"><%= summary[i].label1 %></span>
+
+									</td>
+									<td>
+										<span class="label2"><%= summary[i].label2 %></span>
+									</td>
+									<td>
+										<span class="label3"><%= summary[i].label3 %></span>
+									</td>
+									<td>
+										<span class="label4"><%= summary[i].label4 %></span>
+									</td>
+								</tr>
+							<% } %>
+							</tbody>
+						</table>
+					<% } %>
+				<% } %>
+
+				<div class="cashCounterSummaryButtons">
+					<% for(var i=0; i<buttons.length; i++) { %>
+						<a 
+							class="<% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %><% } %> cashCounterSummaryButton radius"
+							ID="<%= buttons[i].ID %>">
+							<div class="label1"><% if(typeof buttons[i].label1 != "undefined") { %><%= buttons[i].label1 %><% } %></div>
+			    			<div class="label2"><% if(typeof buttons[i].label1 != "undefined") { %><%= buttons[i].label2 %><% } %></div>
+							<% if (typeof buttons[i].labels != "undefined"  ) { %>
+								<div class="cashCounterSummaryScreenButtonLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<p
+										<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %>
+										class="<%= buttons[i].labels[x].localClass %>"
+										<% } else { %>
+										class="cashCounterSummaryScreenButtonLabelsStandardLbl"
+										<% } %>>
+										<%= buttons[i].labels[x].text %></p>
+									<% } %>
+								</div>
+							<% } %>
+						</a>
+					<% } %>
+				</div>
+				<% if (typeof audios != "undefined") { %>
+					<div class="cashCounterSummaryAudios">
+						<% for(var i=0; i<audios.length; i++) { %>
+							<% if(typeof audios[i].src != "undefined") { %>
+								<audio 
+										<% if(typeof audios[i].autoplay != "undefined" && audios[i].autoplay == "1") { %> autoplay="autoplay" <% } %>
+										<% if(typeof audios[i].loop != "undefined" && audios[i].loop == "1") { %> loop="loop" <% } %>
+										preload="auto"
+										>
+									<% if(audios[i].src.substr(audios[i].src.length - 3).toUpperCase() == "WAV") { %>
+										<source src="<%= audios[i].src %>" type="audio/wav">
+									<% } else { %>
+										<source src="<%= audios[i].src %>" type="audio/mpeg">
+									<% } %>
+								</audio>
+							<% } %>
+						<% } %>
+					</div>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="listSelectionScreen" type="text/template" class="listSelectionScreen">
+			<a href="#" class="listSelectionScreenButton">
+				<span class="label1"><%= buttonLabel1 %></span><br />
+				<span class="label2"><%= buttonLabel2 %></span>
+			</a>
+
+			<ul class="listSelectionScreenSelection">
+				<!--<li class="title">
+					<p class="label1"><%= titleLabel1 %></p>
+					<p class="label2"><%= titleLabel2 %></p>
+				</li>-->
+				<% for(var i=0; i<selections.length; i++) { %>
+					<li class="item" data-account="<%= selections[i].label1 %>" data-bank="<%= selections[i].bankID %>">
+						<p class="label1"><%= selections[i].label1 %></p>
+						<p class="label2"><%= selections[i].label2 %></p>
+					</li>
+				<% } %>
+			</ul>
+		</script>
+
+		<script id="accountInformationScreen" type="text/template" class="accountInformationScreen">
+			<div <% if(typeof localClass != "undefined") { %>class="<%= localClass %>"<% } %>>
+				<div class="line1">
+					<span class="label1"><%= labels.label1 %></span>
+					<span class="label2"><%= labels.label2 %></span>
+				</div>
+				<div class="line2">
+					<span class="label3"><%= labels.label3 %></span>
+				</div>
+			</div>
+		</script>
+
+		<script id="pinEntryScreen" type="text/template" class="pinEntryScreen">
+			<div class="pinEntryScreen <% if (typeof localClass != 'undefined') { %><%= localClass %><% } %>">
+				<% if (typeof images != "undefined"  ) { %>
+					<div class="pinEntryImages images">
+						<% for(var i=0; i<images.length; i++) { %>
+							<div
+									<% if (typeof images[i].localClass != "undefined" ) { %>
+									class="<%= images[i].localClass %>"
+									<% } else { %>
+									class="deviceScreenImages"
+									<% } %>>
+								<img id="<%= images[i].ID %>" src="<%= images[i].source %>" />
+							</div>
+						<% } %>
+					</div>
+				<% } %>
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="pinEntryScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass !== "undefined" && labels[i].localClass !== "") { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="pinEntryScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+				<% if(typeof buttons != "undefined"){ %>
+					<div class="pinEntryScreenButtons">
+						<% for(var i=0; i<buttons.length; i++) { %>
+							<a
+								class="<% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %> <% } %>"
+								id="<%= buttons[i].ID %>">
+							<% if (typeof buttons[i].labels != "undefined"  ) { %>
+								<div class="pinEntryScreenButtonLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<p
+										<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %>
+										class="<%= buttons[i].labels[x].localClass %>"
+										<% } else { %>
+										class="pinEntryScreenButtonLabelsStandardLbl"
+										<% } %>>
+										<%= buttons[i].labels[x].text %></p>
+									<% } %>
+								</div>
+								<% } %>
+							</a>
+						<% } %>
+					</div>
+				<% } %>
+				<% if (typeof audios != "undefined") { %>
+					<div class="deviceScreenAudios">
+						<% for(var i=0; i<audios.length; i++) { %>
+							<% if(typeof audios[i].src != "undefined") { %>
+								<audio 
+										<% if(typeof audios[i].autoplay != "undefined" && audios[i].autoplay == "1") { %> autoplay="autoplay" <% } %>
+										<% if(typeof audios[i].loop != "undefined" && audios[i].loop == "1") { %> loop="loop" <% } %>
+										preload="auto"
+										>
+									<% if(audios[i].src.substr(audios[i].src.length - 3).toUpperCase() == "WAV") { %>
+										<source src="<%= audios[i].src %>" type="audio/wav">
+									<% } else { %>
+										<source src="<%= audios[i].src %>" type="audio/mpeg">
+									<% } %>
+								</audio>
+							<% } %>
+						<% } %>
+					</div>
+				<% } %>
+				<div class="pinAreaContainer"><div class="pinArea"></div></div>
+				<div class="messageArea"></div>
+			</div>
+		</script>
+
+		<script id="menuButtonScreen" type="text/template" class="menuButtonScreen">
+			<div class="menuButtonScreen <%= ID %> <% if(typeof localClass != 'undefined') { %><%= localClass %><% } %>">
+
+				<div class="menuButtonScreenButtons">
+					<% if(typeof buttons != "undefined"){ %>
+						<% for(var i=0; i<buttons.length; i++) { %>
+							<a 
+								class="<% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %> <% } %>"
+								id="<%= buttons[i].ID %>">
+							<% if (typeof buttons[i].labels != "undefined"  ) { %>
+								<div class="menuButtonScreenButtonLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<p
+										<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %>
+										class="<%= buttons[i].labels[x].localClass %>"
+										<% } else { %>
+										class="menuButtonScreenButtonLabelsStandardLbl"
+										<% } %>>
+										<%= buttons[i].labels[x].text %></p>
+									<% } %>
+								</div>
+								<% } %>
+							</a>
+						<% } %>
+					<% } %>
+				</div>
+
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="menuButtonScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="menuButtonScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof images != "undefined") { %>
+		          <div class="deviceScreenImages">
+		            <% for(var i=0; i<images.length; i++) { %>
+		              <% if(typeof images[i].source != "undefined") { %>
+		                <img id="<%= images[i].ID %>"
+		                <% if (typeof images[i].localClass != "undefined" ) { %>
+		                class="<%= images[i].localClass %>"
+		                <% } else { %>
+		                class="deviceScreenImages"
+		                <% } %>
+		                src="<%= images[i].source %>"
+		                />
+		              <% } else { %>
+		                <span id="<%= images[i].ID %>"
+		                <% if (typeof images[i].localClass != "undefined" ) { %>
+		                class="<%= images[i].localClass %>"
+		                <% } else { %>
+		                class="deviceScreenImages"
+		                <% } %>
+		                ></span>
+		              <% } %>
+		            <% } %>
+		          </div>
+		          <% } %>
+
+				<% if (typeof audios != "undefined") { %>
+					<div class="deviceScreenAudios">
+						<% for(var i=0; i<audios.length; i++) { %>
+							<% if(typeof audios[i].src != "undefined") { %>
+								<audio 
+										<% if(typeof audios[i].autoplay != "undefined" && audios[i].autoplay == "1") { %> autoplay="autoplay" <% } %>
+										<% if(typeof audios[i].loop != "undefined" && audios[i].loop == "1") { %> loop="loop" <% } %>
+										preload="auto"
+										>
+									<% if(audios[i].src.substr(audios[i].src.length - 3).toUpperCase() == "WAV") { %>
+										<source src="<%= audios[i].src %>" type="audio/wav">
+									<% } else { %>
+										<source src="<%= audios[i].src %>" type="audio/mpeg">
+									<% } %>
+								</audio>
+							<% } %>
+						<% } %>
+					</div>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="signaturePadScreen" type="text/template" class="signaturePadScreen">
+			<div class="signaturePadScreen">
+				<% if (typeof imgClass != "undefined" ) { %>
+					<img src="<%= imgClass %>" />
+				<% } %>
+				<% if (typeof image != "undefined" && image != ""  ) { %>
+					<p class="twoButtonScreenImage"><img src="<%= image %>"/></p>
+				<% } %>
+				<p class="signaturePadScreenLbl1"><%= label1 %></p>
+				<p class="signaturePadScreenLbl2"><%= label2 %></p>
+				<p class="signaturePadScreenLbl3"><%= label3 %></p>
+				<p class="signaturePadScreenLbl4"><%= label4 %></p>
+
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="signaturePadScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="signaturePadScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].label %></p>
+						<% } %>
+					</div>
+				<% } %>
+
+				<div id="signaturepad" class="signaturepad">
+				    <div class="signaturepadBody">
+				      <canvas id="signatureLocation"></canvas>
+				    </div>
+			  	</div>
+
+				<div class="buttons">
+				<% if (typeof button1 != "undefined"  ) { %>
+					<a id="button1"
+						<% if (typeof button1.localClass != "undefined" ) { %>
+						class="<%= button1.localClass %> radius"
+						<% } else { %>
+						class="twoBtnScreenYes radius"
+						<% } %>
+						href="#<%= button1.naviType%>/<%=button1.nextScreenTemplate%>/<%=button1.nextScreenID%>">
+						<div class="line1">
+							<span class="label1"><%= button1.label1 %>&nbsp;</span>
+				    		<span class="label2"><%= button1.label2 %>&nbsp;</span>
+				    		<span class="label3"><%= button1.label3 %></span>
+			    		</div>
+			    		<div class="line2">
+							<span class="label4"><%= button1.label4 %>&nbsp;</span>
+				    		<span class="label5"><%= button1.label5 %>&nbsp;</span>
+				    		<span class="label6"><%= button1.label6 %></span>
+			    		</div>
+					</a>
+				<% } %>
+
+				<% if (typeof button2 != "undefined"  ) { %>
+					<a id="button2"
+						<% if (typeof button2.localClass != "undefined" ) { %>
+						class="<%= button2.localClass %> radius"
+						<% } else { %>
+						class="twoBtnScreenNo radius"
+						<% } %>
+						>
+						<div class="line1">
+							<span class="label1"><%= button2.label1 %>&nbsp;</span>
+				    		<span class="label2"><%= button2.label2 %>&nbsp;</span>
+				    		<span class="label3"><%= button2.label3 %></span>
+			    		</div>
+			    		<div class="line2">
+							<span class="label4"><%= button2.label4 %>&nbsp;</span>
+				    		<span class="label5"><%= button2.label5 %>&nbsp;</span>
+				    		<span class="label6"><%= button2.label6 %></span>
+			    		</div>
+					</a>
+				<% } %>
+
+				<% if(typeof notice != "undefined" && notice.display == "1") { %>
+				<div class="notification <% if(typeof notice.localClass != 'undefined') { %><%= notice.localClass %> <% } %>">
+					<p class="label1"><%= notice.label1 %></p>
+					<p class="label2"><%= notice.label2 %></p>
+					<p class="label3"><%= notice.label3 %></p>
+					<p class="label4"><%= notice.label4 %></p>
+					<p class="label5"><%= notice.label5 %></p>
+					<p class="label6"><%= notice.label6 %></p>
+				</div>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="cashAmtSelectionScreen" type="text/template" class="cashAmtSelectionScreen">
+			<div class="cashAmtSelectionScreen <%= ID %>">
+				<% if (typeof bgImg != "undefined" ) { %>
+					<div class="<%= bgImg %>" />
+				<% } %>
+				<% if (typeof imgClass != "undefined" ) { %>
+					<img src="<%= imgClass %>" />
+				<% } %>
+				<% if (typeof image != "undefined" && image != ""  ) { %>
+					<p class="cashAmtSelectionScreenImage"><img src="<%= image %>"/></p>
+				<% } %>
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="cashAmtSelectionScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %>"
+							<% } else { %>
+							class="cashAmtSelectionScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+
+				<% if(typeof cashAmtSelections != 'undefined') { %>
+					<table class="cashAmtSelections" cellspacing="0" cellpadding="0">
+						<% for(var i=0; i<cashAmtSelections.length; i++) { %>
+						<tr class="line<%= i %>" id="<%= cashAmtSelections[i].ID %>">
+							<td class="col1">
+								<span class="title1"><%= cashAmtSelections[i].title1 %></span>
+							</td>
+							<td class="col2">
+
+								<div class="descreseBtn" id="descreseBtn"
+										<% if (typeof cashAmtSelections[i].enable != "undefined" && cashAmtSelections[i].enable == "0") { %>
+										style="visibility: hidden;"
+										<% } %>/>
+							</td>
+							<td class="col3">
+								<% if (typeof cashAmtSelections[i].input != "undefined" ) { %>
+									<input  id="<%= cashAmtSelections[i].input.ID %>" type="text" class="<%= cashAmtSelections[i].input.localClass %>"
+										value ="<%= cashAmtSelections[i].max %>" />
+								<% } else {%>
+									<span class="totalValueLbl"><%= cashAmtSelections[i].totalValueLbl %></span><br/>
+								<% } %>
+							</td>
+							<td class="col4">
+								<div class="increaseBtn" id="increaseBtn"
+										<% if (typeof cashAmtSelections[i].enable != "undefined" && cashAmtSelections[i].enable == "0") { %>
+										style="visibility: hidden;"
+										<% } %>/>
+							</td>
+							<td class="col5">
+								<span class="othersLbl1"><%= cashAmtSelections[i].othersLbl1 %></span><br/>
+								<span class="othersLbl2"><%= cashAmtSelections[i].othersLbl2 %></span><br/>
+							</td>
+						</tr>
+						<% } %>
+					</table>
+				<% } %>
+
+				<div class="cashAmtSelectionScreenButtons">
+					<% if(typeof buttons != "undefined"){ %>
+						<% for(var i=0; i<buttons.length; i++) { %>
+							<a href="#<%= buttons[i].naviType%>/<%= buttons[i].nextScreenTemplate%>/<%=buttons[i].nextScreenID %>"
+								class="<% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %> <% } %>"
+								id="<%= buttons[i].ID %>">
+							<% if (typeof buttons[i].labels != "undefined"  ) { %>
+								<div class="cashAmtSelectionScreenButtonsLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<p
+										<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %>
+										class="<%= buttons[i].labels[x].localClass %>"
+										<% } else { %>
+										class="cashAmtSelectionScreenButtonsLabelsStandardLbl"
+										<% } %>>
+										<%= buttons[i].labels[x].text %></p>
+									<% } %>
+								</div>
+								<% } %>
+							</a>
+						<% } %>
+					<% } %>
+				</div>
+
+
+			</div>
+		</script>
+
+		<script id="CheckBoxScreen" type="text/template" class="CheckBoxScreen">
+			<div class="CheckBoxScreen <%= ID %> <% if(typeof localClass != 'undefined') { %><%= localClass %><% } %>">
+
+				<% if (typeof images != "undefined" ) { %>
+					<div class="CheckBoxScreenImages">
+					<% for(var i=0; i < images.length; i++) { %>
+						<% if (typeof images[i].localClass != "undefined") { %>
+							<img src="<%= images[i].src %>" class="<%= images[i].localClass %>"/>
+						<% } else { %>
+							<img src="<%= images[i] %>" />
+						<% } %>
+					<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="CheckBoxScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="CheckBoxScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof agreementArea != "undefined"  ) { %>
+					<div class="agreementArea">
+						<% if (typeof agreementArea.headerlabels != "undefined"  ) { %>
+							<div class="agreementAreaHeaderLabels">
+								<% for(var i=0; i < agreementArea.headerlabels.length; i++) { %>
+									<p
+									<% if (typeof agreementArea.headerlabels[i].localClass != "undefined" ) { %>
+									class="<%= agreementArea.headerlabels[i].localClass %> radius"
+									<% } else { %>
+									class="agreementAreaHeaderLabelsStandardLbl"
+									<% } %>>
+									<%= agreementArea.headerlabels[i].text %></p>
+								<% } %>
+							</div>
+						<% } %>
+
+						<% if (typeof agreementArea.agreementInfo != "undefined"  ) { %>
+							<table class="details" cellspacing="0" cellpadding="0">
+								<tbody>
+								<% for(var i=0; i < agreementArea.agreementInfo.length; i++) { %>
+									<tr class="line<%= i %> <% if(typeof agreementArea.agreementInfo[i].localClass != 'undefined') { %><%= agreementArea.agreementInfo[i].localClass %><% } %>">
+										<td>
+											<span class="col1">
+											<% for(var x=0; x < agreementArea.agreementInfo[i].col1.labels.length; x++) { %>
+												<p
+												<% if (typeof agreementArea.agreementInfo[i].col1.labels[x].localClass != "undefined" ) { %>
+												class="<%= agreementArea.agreementInfo[i].col1.labels[x].localClass %> radius"
+												<% } %>>
+												<%= agreementArea.agreementInfo[i].col1.labels[x].text %></p>
+											<% } %>
+											</span>
+										</td>
+										<td>
+											<span class="col2">
+											<% for(var x=0; x < agreementArea.agreementInfo[i].col2.labels.length; x++) { %>
+												<% if (typeof agreementArea.agreementInfo[i].col2.labels[x].hyperlink != "undefined" ) { %>
+													<a href="<%= agreementArea.agreementInfo[i].col2.labels[x].hyperlink.location %>"
+													class="<% if(agreementArea.agreementInfo[i].col2.labels[x].localClass != 'undefined') { %><%= agreementArea.agreementInfo[i].col2.labels[x].localClass %> <% } %>"
+														id="hyperlink"><%= agreementArea.agreementInfo[i].col2.labels[x].text %></a>
+												<% } else { %>
+												<p
+												<% if (typeof agreementArea.agreementInfo[i].col2.labels[x].localClass != "undefined" ) { %>
+												class="<%= agreementArea.agreementInfo[i].col2.labels[x].localClass %> radius"
+												<% } %>>
+												<%= agreementArea.agreementInfo[i].col2.labels[x].text %></p>
+												<% } %>
+											<% } %>
+											</span>
+										</td>
+									</tr>
+								<% } %>
+								</tbody>
+							</table>
+						<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof checkbox != "undefined"  ) { %>
+
+					<div class="CheckBoxList">
+						<% if(typeof checkbox.checkBoxList != "undefined"){ %>
+							<form id="checkBoxListContainer">
+							<% for(var i=0; i<checkbox.checkBoxList.length; i++) { %>
+								<input type="checkbox" id="<%= checkbox.checkBoxList[i].ID %>"  name="<%= checkbox.checkBoxList[i].ID %>"
+								<% if (typeof checkbox.checkBoxList[i].localClass != "undefined" ) { %>
+									class="<%= checkbox.checkBoxList[i].localClass %>"/>
+								<% } else { %>
+									class="checkBoxInputDefaultBox"/>
+								<% } %>
+
+								<% if (typeof checkbox.checkBoxList[i].labels != "undefined"  ) { %>
+									<label for="<%= checkbox.checkBoxList[i].ID %>"
+										<% if (typeof checkbox.checkBoxList[i].localClass != "undefined" ) { %>
+										class="<%= checkbox.checkBoxList[i].localClass %>"
+										<% } else { %>
+										class="CheckBoxScreenLabel"
+										<% } %>
+									>
+										<% for(var x=0; x<checkbox.checkBoxList[i].labels.length; x++) { %>
+											<span class="<%= checkbox.checkBoxList[i].labels[x].localClass %>">
+												<%= checkbox.checkBoxList[i].labels[x].text %>
+											</span><br />
+										<% } %>
+									</label>
+								<% } %>
+							<% } %>
+							</form>
+						<% } %>
+					</div>
+
+					<div class="CheckBoxListButtons">
+						<% if(typeof checkbox.button != "undefined"){ %>
+							<a href="#<%= checkbox.button.naviType%>/<%= checkbox.button.nextScreenTemplate%>/<%=checkbox.button.nextScreenID %>"
+								class="<% if(typeof checkbox.button.disableClass != 'undefined') { %><%= checkbox.button.disableClass %> <% } %>"
+								id="<%= checkbox.button.ID %>">
+							<% if (typeof checkbox.button.labels != "undefined"  ) { %>
+								<div class="CheckBoxListButtonsLabels">
+									<% for(var x=0; x<checkbox.button.labels.length; x++) { %>
+										<p
+										<% if (typeof checkbox.button.labels[x].localClass != "undefined" ) { %>
+										class="<%= checkbox.button.labels[x].localClass %>"
+										<% } else { %>
+										class="CheckBoxListButtonsLabelsStandardLbl"
+										<% } %>>
+										<%= checkbox.button.labels[x].text %></p>
+									<% } %>
+								</div>
+								<% } %>
+							</a>
+						<% } %>
+					</div>
+
+				<% } %>
+
+				<div class="CheckBoxScreenButtons">
+					<% if(typeof buttons != "undefined"){ %>
+						<% for(var i=0; i<buttons.length; i++) { %>
+							<a href="#<%= buttons[i].naviType%>/<%= buttons[i].nextScreenTemplate%>/<%=buttons[i].nextScreenID %>"
+								class="<% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %> <% } %>"
+								id="<%= buttons[i].ID %>">
+							<% if (typeof buttons[i].labels != "undefined"  ) { %>
+								<div class="CheckBoxScreenButtonLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<p
+										<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %>
+										class="<%= buttons[i].labels[x].localClass %>"
+										<% } else { %>
+										class="CheckBoxScreenButtonLabelsStandardLbl"
+										<% } %>>
+										<%= buttons[i].labels[x].text %></p>
+									<% } %>
+								</div>
+								<% } %>
+							</a>
+						<% } %>
+					<% } %>
+				</div>
+
+				<% if (typeof popUpArea != "undefined") { %>
+					<div id="popUpContainer" class="popUpContainer" style=" display:none;" scrolling="no" >
+						<div id="popUpArea" scrolling="no"
+								<% if (typeof popUpArea.localClass != "undefined" ) { %>
+								class="<%= popUpArea.localClass %>"
+								<% } else { %>
+								class="popUpAreaContainer"
+								<% } %>>
+
+								<!-- <iframe id="popUpDisplayArea" seamless="seamless" scrolling="no"
+											<% if (typeof popUpArea.displayArea.localClass != "undefined" ) { %>
+											class="<%= popUpArea.displayArea.localClass %>"
+											<% } else { %>
+											class="popUpDisplayArea"
+											<% } %>>
+								></iframe> -->
+
+								<embed id="popUpDisplayArea"
+											<% if (typeof popUpArea.displayArea.localClass != "undefined" ) { %>
+											class="<%= popUpArea.displayArea.localClass %>"
+											<% } else { %>
+											class="popUpDisplayArea"
+											<% } %>>
+
+								<% if (typeof popUpArea.images != "undefined" ) { %>
+									<div class="popUpAreaImages">
+										<div class="outerPopUpAreaImages">
+											<div class="innerPopUpAreaImages">
+												<% for(var i=0; i < popUpArea.images.length; i++) { %>
+													<% if (typeof popUpArea.images[i].localClass != "undefined") { %>
+														<img src="<%= popUpArea.images[i].src %>" class="<%= popUpArea.images[i].localClass %>"/>
+													<% } else { %>
+														<img src="<%= popUpArea.images[i] %>" />
+													<% } %>
+												<% } %>
+											</div>
+										</div>
+									</div>
+								<% } %>
+
+								<% if (typeof popUpArea.labels != "undefined"  ) { %>
+									<div class="popUpAreaLabels">
+										<% for(var i=0; i<popUpArea.labels.length; i++) { %>
+											<p
+											<% if (typeof popUpArea.labels[i].localClass != "undefined" ) { %>
+											class="<%= popUpArea.labels[i].localClass %> radius"
+											<% } else { %>
+											class="popUpAreaLabelsStandardLbl"
+											<% } %>>
+											<%= popUpArea.labels[i].text %></p>
+										<% } %>
+									</div>
+								<% } %>
+
+								<% if (typeof popUpArea.buttons != "undefined") { %>
+									<div class="popUpAreaChildButtons">
+										<% if(typeof popUpArea.buttons != "undefined"){ %>
+											<% for(var i=0; i<popUpArea.buttons.length; i++) { %>
+												<a href="#<%= popUpArea.buttons[i].naviType%>/<%= popUpArea.buttons[i].nextScreenTemplate%>/<%=popUpArea.buttons[i].nextScreenID %>"
+													class="<% if(typeof popUpArea.buttons[i].localClass != 'undefined') { %><%= popUpArea.buttons[i].localClass %> <% } %>"
+													id="<%= popUpArea.buttons[i].ID %>">
+												<% if (typeof popUpArea.buttons[i].labels != "undefined"  ) { %>
+													<div class="popUpAreaButtonsLabels">
+														<% for(var x=0; x<popUpArea.buttons[i].labels.length; x++) { %>
+															<p
+															<% if (typeof popUpArea.buttons[i].labels[x].localClass != "undefined" ) { %>
+															class="<%= popUpArea.buttons[i].labels[x].localClass %>"
+															<% } else { %>
+															class="popUpAreaButtonsLabelsStandardLbl"
+															<% } %>>
+															<%= popUpArea.buttons[i].labels[x].text %></p>
+														<% } %>
+													</div>
+													<% } %>
+												</a>
+											<% } %>
+										<% } %>
+									</div>
+								<% } %>
+						</div>
+					</div>
+				<% } %>
+
+			</div>
+		</script>
+
+
+
+		<script id="deviceActionProcessStateScreen" type="text/template" class="deviceProcessStateScreen">
+			<div class="deviceActionProcessStateScreen <%= ID %>">
+				<div id="deviceActionProcessBaseScreen" class="deviceActionProcessBaseScreen" style="display: none;">
+					<% if (typeof images != "undefined" ) { %>
+						<div class="deviceActionProcessImages">
+						<% for(var i=0; i < images.length; i++) { %>
+							<% if (typeof images[i].localClass != "undefined") { %>
+								<img src="<%= images[i].src %>" class="<%= images[i].localClass %>"/>
+							<% } else { %>
+								<img src="<%= images[i] %>" />
+							<% } %>
+						<% } %>
+						</div>
+					<% } %>
+
+					<% if (typeof labels != "undefined"  ) { %>
+						<div class="deviceActionProcesLabels">
+							<% for(var i=0; i<labels.length; i++) { %>
+								<p
+								<% if (typeof labels[i].localClass != "undefined" ) { %>
+								class="<%= labels[i].localClass %> radius"
+								<% } else { %>
+								class="deviceActionProcesLabelsStandardLbl"
+								<% } %>>
+								<%= labels[i].text %></p>
+							<% } %>
+						</div>
+					<% } %>
+
+					<% if (typeof buttons != "undefined") { %>
+						<div class="deviceActionProcessButtons">
+							<% if(typeof buttons != "undefined"){ %>
+								<% for(var i=0; i<buttons.length; i++) { %>
+									<a href="#<%= buttons[i].naviType%>/<%= buttons[i].nextScreenTemplate%>/<%=buttons[i].nextScreenID %>"
+										class="<% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %> <% } %>"
+										id="<%= buttons[i].ID %>">
+									<% if (typeof buttons[i].labels != "undefined"  ) { %>
+										<div class="deviceActionProcessButtonsLabels">
+											<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+												<p
+												<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %>
+												class="<%= buttons[i].labels[x].localClass %>"
+												<% } else { %>
+												class="deviceActionProcessButtonsLabelsStandardLbl"
+												<% } %>>
+												<%= buttons[i].labels[x].text %></p>
+											<% } %>
+										</div>
+										<% } %>
+									</a>
+								<% } %>
+							<% } %>
+						</div>
+					<% } %>
+				</div>
+
+				<% if (typeof integration.process != "undefined") { %>
+					<div id="processContainer"
+							<% if (typeof integration.process.localClass != "undefined" ) { %>
+							class="<%= integration.process.localClass %>"
+							<% } else { %>
+							class="processContainer"
+							<% } %> style="display: none;">
+
+							<% if (typeof integration.process.images != "undefined" ) { %>
+								<div class="deviceActionProcessImages">
+								<% for(var i=0; i < integration.process.images.length; i++) { %>
+									<% if (typeof integration.process.images[i].localClass != "undefined") { %>
+										<img src="<%= integration.process.images[i].src %>" class="<%= integration.process.images[i].localClass %>"/>
+									<% } else { %>
+										<img src="<%= integration.process.images[i] %>" />
+									<% } %>
+								<% } %>
+								</div>
+							<% } %>
+
+							<% if (typeof integration.process.labels != "undefined"  ) { %>
+								<div class="deviceActionProcesLabels">
+									<% for(var i=0; i<integration.process.labels.length; i++) { %>
+										<p
+										<% if (typeof integration.process.labels[i].localClass != "undefined" ) { %>
+										class="<%= integration.process.labels[i].localClass %> radius"
+										<% } else { %>
+										class="deviceActionProcesLabelsStandardLbl"
+										<% } %>>
+										<%= integration.process.labels[i].text %></p>
+									<% } %>
+								</div>
+							<% } %>
+
+							<% if (typeof integration.process.buttons != "undefined") { %>
+								<div class="deviceActionProcessChildButtons">
+									<% if(typeof integration.process.buttons != "undefined"){ %>
+										<% for(var i=0; i<integration.process.buttons.length; i++) { %>
+											<a href="#<%= integration.process.buttons[i].naviType%>/<%= integration.process.buttons[i].nextScreenTemplate%>/<%=integration.process.buttons[i].nextScreenID %>"
+												class="<% if(typeof integration.process.buttons[i].localClass != 'undefined') { %><%= integration.process.buttons[i].localClass %> <% } %>"
+												id="<%= integration.process.buttons[i].ID %>">
+											<% if (typeof integration.process.buttons[i].labels != "undefined"  ) { %>
+												<div class="deviceActionProcessButtonsLabels">
+													<% for(var x=0; x<integration.process.buttons[i].labels.length; x++) { %>
+														<p
+														<% if (typeof integration.process.buttons[i].labels[x].localClass != "undefined" ) { %>
+														class="<%= integration.process.buttons[i].labels[x].localClass %>"
+														<% } else { %>
+														class="deviceActionProcessButtonsLabelsStandardLbl"
+														<% } %>>
+														<%= integration.process.buttons[i].labels[x].text %></p>
+													<% } %>
+												</div>
+												<% } %>
+											</a>
+										<% } %>
+									<% } %>
+								</div>
+							<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof integration.processEnd != "undefined") { %>
+					<div id="processEndContainer"
+							<% if (typeof integration.processEnd.localClass != "undefined" ) { %>
+							class="<%= integration.processEnd.localClass %>"
+							<% } else { %>
+							class="processEndContainer"
+							<% } %> style="display: none;">
+
+							<% if (typeof integration.processEnd.images != "undefined" ) { %>
+								<div class="deviceActionProcessImages">
+								<% for(var i=0; i < integration.processEnd.images.length; i++) { %>
+									<% if (typeof integration.processEnd.images[i].localClass != "undefined") { %>
+										<img src="<%= integration.processEnd.images[i].src %>" class="<%= integration.processEnd.images[i].localClass %>"/>
+									<% } else { %>
+										<img src="<%= integration.processEnd.images[i] %>" />
+									<% } %>
+								<% } %>
+								</div>
+							<% } %>
+
+							<% if (typeof integration.processEnd.labels != "undefined"  ) { %>
+								<div class="deviceActionProcesLabels">
+									<% for(var i=0; i<integration.processEnd.labels.length; i++) { %>
+										<p
+										<% if (typeof integration.processEnd.labels[i].localClass != "undefined" ) { %>
+										class="<%= integration.processEnd.labels[i].localClass %> radius"
+										<% } else { %>
+										class="deviceActionProcesLabelsStandardLbl"
+										<% } %>>
+										<%= integration.processEnd.labels[i].text %></p>
+									<% } %>
+								</div>
+							<% } %>
+
+							<% if (typeof integration.processEnd.buttons != "undefined") { %>
+								<div class="deviceActionProcessChildButtons">
+									<% if(typeof integration.processEnd.buttons != "undefined"){ %>
+										<% for(var i=0; i<integration.processEnd.buttons.length; i++) { %>
+											<a href="#<%= integration.processEnd.buttons[i].naviType%>/<%= integration.processEnd.buttons[i].nextScreenTemplate%>/<%=integration.processEnd.buttons[i].nextScreenID %>"
+												class="<% if(typeof integration.processEnd.buttons[i].localClass != 'undefined') { %><%= integration.processEnd.buttons[i].localClass %> <% } %>"
+												id="<%= integration.processEnd.buttons[i].ID %>">
+											<% if (typeof integration.processEnd.buttons[i].labels != "undefined"  ) { %>
+												<div class="deviceActionProcessButtonsLabels">
+													<% for(var x=0; x<integration.processEnd.buttons[i].labels.length; x++) { %>
+														<p
+														<% if (typeof integration.processEnd.buttons[i].labels[x].localClass != "undefined" ) { %>
+														class="<%= integration.processEnd.buttons[i].labels[x].localClass %>"
+														<% } else { %>
+														class="deviceActionProcessButtonsLabelsStandardLbl"
+														<% } %>>
+														<%= integration.processEnd.buttons[i].labels[x].text %></p>
+													<% } %>
+												</div>
+												<% } %>
+											</a>
+										<% } %>
+									<% } %>
+								</div>
+							<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof integration.complete != "undefined") { %>
+					<div id="completeContainer"
+							<% if (typeof integration.complete.localClass != "undefined" ) { %>
+							class="<%= integration.complete.localClass %>"
+							<% } else { %>
+							class="completeContainer"
+							<% } %> style="display: none;">
+
+							<% if (typeof integration.complete.images != "undefined" ) { %>
+								<div class="deviceActionProcessImages">
+								<% for(var i=0; i < integration.complete.images.length; i++) { %>
+									<% if (typeof integration.complete.images[i].localClass != "undefined") { %>
+										<img src="<%= integration.complete.images[i].src %>" class="<%= integration.complete.images[i].localClass %>"/>
+									<% } else { %>
+										<img src="<%= integration.complete.images[i] %>" />
+									<% } %>
+								<% } %>
+								</div>
+							<% } %>
+
+							<% if (typeof integration.complete.labels != "undefined"  ) { %>
+								<div class="deviceActionProcesLabels">
+									<% for(var i=0; i<integration.complete.labels.length; i++) { %>
+										<p
+										<% if (typeof integration.complete.labels[i].localClass != "undefined" ) { %>
+										class="<%= integration.complete.labels[i].localClass %> radius"
+										<% } else { %>
+										class="deviceActionProcesLabelsStandardLbl"
+										<% } %>>
+										<%= integration.complete.labels[i].text %></p>
+									<% } %>
+								</div>
+							<% } %>
+
+							<% if (typeof integration.complete.buttons != "undefined") { %>
+								<div class="deviceActionProcessChildButtons">
+									<% if(typeof integration.complete.buttons != "undefined"){ %>
+										<% for(var i=0; i<integration.complete.buttons.length; i++) { %>
+											<a href="#<%= integration.complete.buttons[i].naviType%>/<%= integration.complete.buttons[i].nextScreenTemplate%>/<%=integration.complete.buttons[i].nextScreenID %>"
+												class="<% if(typeof integration.complete.buttons[i].localClass != 'undefined') { %><%= integration.complete.buttons[i].localClass %> <% } %>"
+												id="<%= integration.complete.buttons[i].ID %>">
+											<% if (typeof integration.complete.buttons[i].labels != "undefined"  ) { %>
+												<div class="deviceActionProcessButtonsLabels">
+													<% for(var x=0; x<integration.complete.buttons[i].labels.length; x++) { %>
+														<p
+														<% if (typeof integration.complete.buttons[i].labels[x].localClass != "undefined" ) { %>
+														class="<%= integration.complete.buttons[i].labels[x].localClass %>"
+														<% } else { %>
+														class="deviceActionProcessButtonsLabelsStandardLbl"
+														<% } %>>
+														<%= integration.complete.buttons[i].labels[x].text %></p>
+													<% } %>
+												</div>
+												<% } %>
+											</a>
+										<% } %>
+									<% } %>
+								</div>
+							<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof integration.failure != "undefined") { %>
+					<div id="failureContainer"
+							<% if (typeof integration.failure.localClass != "undefined" ) { %>
+							class="<%= integration.failure.localClass %>"
+							<% } else { %>
+							class="failureContainer"
+							<% } %> style="display: none;">
+
+							<% if (typeof integration.failure.images != "undefined" ) { %>
+								<div class="deviceActionProcessImages">
+								<% for(var i=0; i < integration.failure.images.length; i++) { %>
+									<% if (typeof integration.failure.images[i].localClass != "undefined") { %>
+										<img src="<%= integration.failure.images[i].src %>" class="<%= integration.failure.images[i].localClass %>"/>
+									<% } else { %>
+										<img src="<%= integration.failure.images[i] %>" />
+									<% } %>
+								<% } %>
+								</div>
+							<% } %>
+
+							<% if (typeof integration.failure.labels != "undefined"  ) { %>
+								<div class="deviceActionProcesLabels">
+									<% for(var i=0; i<integration.failure.labels.length; i++) { %>
+										<p
+										<% if (typeof integration.failure.labels[i].localClass != "undefined" ) { %>
+										class="<%= integration.failure.labels[i].localClass %> radius"
+										<% } else { %>
+										class="deviceActionProcesLabelsStandardLbl"
+										<% } %>>
+										<%= integration.failure.labels[i].text %></p>
+									<% } %>
+								</div>
+							<% } %>
+
+							<% if (typeof integration.failure.buttons != "undefined") { %>
+								<div class="deviceActionProcessChildButtons">
+									<% if(typeof integration.failure.buttons != "undefined"){ %>
+										<% for(var i=0; i<integration.failure.buttons.length; i++) { %>
+											<a href="#<%= integration.failure.buttons[i].naviType%>/<%= integration.failure.buttons[i].nextScreenTemplate%>/<%=integration.failure.buttons[i].nextScreenID %>"
+												class="<% if(typeof integration.failure.buttons[i].localClass != 'undefined') { %><%= integration.failure.buttons[i].localClass %> <% } %>"
+												id="<%= integration.failure.buttons[i].ID %>">
+											<% if (typeof integration.failure.buttons[i].labels != "undefined"  ) { %>
+												<div class="deviceActionProcessButtonsLabels">
+													<% for(var x=0; x<integration.failure.buttons[i].labels.length; x++) { %>
+														<p
+														<% if (typeof integration.failure.buttons[i].labels[x].localClass != "undefined" ) { %>
+														class="<%= integration.failure.buttons[i].labels[x].localClass %>"
+														<% } else { %>
+														class="deviceActionProcessButtonsLabelsStandardLbl"
+														<% } %>>
+														<%= integration.failure.buttons[i].labels[x].text %></p>
+													<% } %>
+												</div>
+												<% } %>
+											</a>
+										<% } %>
+									<% } %>
+								</div>
+							<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof integration.timeout != "undefined") { %>
+					<div id="timeoutContainer"
+							<% if (typeof integration.timeout.localClass != "undefined" ) { %>
+							class="<%= integration.timeout.localClass %>"
+							<% } else { %>
+							class="timeoutContainer"
+							<% } %> style="display: none;">
+
+							<% if (typeof integration.timeout.images != "undefined" ) { %>
+								<div class="deviceActionProcessImages">
+								<% for(var i=0; i < integration.timeout.images.length; i++) { %>
+									<% if (typeof integration.timeout.images[i].localClass != "undefined") { %>
+										<img src="<%= integration.timeout.images[i].src %>" class="<%= integration.timeout.images[i].localClass %>"/>
+									<% } else { %>
+										<img src="<%= integration.timeout.images[i] %>" />
+									<% } %>
+								<% } %>
+								</div>
+							<% } %>
+
+							<% if (typeof integration.timeout.labels != "undefined"  ) { %>
+								<div class="deviceActionProcesLabels">
+									<% for(var i=0; i<integration.timeout.labels.length; i++) { %>
+										<p
+										<% if (typeof integration.timeout.labels[i].localClass != "undefined" ) { %>
+										class="<%= integration.timeout.labels[i].localClass %> radius"
+										<% } else { %>
+										class="deviceActionProcesLabelsStandardLbl"
+										<% } %>>
+										<%= integration.timeout.labels[i].text %></p>
+									<% } %>
+								</div>
+							<% } %>
+
+							<% if (typeof integration.timeout.buttons != "undefined") { %>
+								<div class="deviceActionProcessChildButtons">
+									<% if(typeof integration.timeout.buttons != "undefined"){ %>
+										<% for(var i=0; i<integration.timeout.buttons.length; i++) { %>
+											<a href="#<%= integration.timeout.buttons[i].naviType%>/<%= integration.timeout.buttons[i].nextScreenTemplate%>/<%=integration.timeout.buttons[i].nextScreenID %>"
+												class="<% if(typeof integration.timeout.buttons[i].localClass != 'undefined') { %><%= integration.timeout.buttons[i].localClass %> <% } %>"
+												id="<%= integration.timeout.buttons[i].ID %>">
+											<% if (typeof integration.timeout.buttons[i].labels != "undefined"  ) { %>
+												<div class="deviceActionProcessButtonsLabels">
+													<% for(var x=0; x<integration.timeout.buttons[i].labels.length; x++) { %>
+														<p
+														<% if (typeof integration.timeout.buttons[i].labels[x].localClass != "undefined" ) { %>
+														class="<%= integration.timeout.buttons[i].labels[x].localClass %>"
+														<% } else { %>
+														class="deviceActionProcessButtonsLabelsStandardLbl"
+														<% } %>>
+														<%= integration.timeout.buttons[i].labels[x].text %></p>
+													<% } %>
+												</div>
+												<% } %>
+											</a>
+										<% } %>
+									<% } %>
+								</div>
+							<% } %>
+					</div>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="popUpContainerScreen" type="text/template" class="popUpContainerScreen">
+			<div class="popUpContainerScreen <% if(typeof localClass != 'undefined') { %><%= localClass %><% } %>">
+
+				<% if (typeof images != "undefined" ) { %>
+					<div class="popUpContainerScreenImages">
+					<% for(var i=0; i < images.length; i++) { %>
+						<% if (typeof images[i].localClass != "undefined") { %>
+							<img src="<%= images[i].src %>" class="<%= images[i].localClass %>"/>
+						<% } else { %>
+							<img src="<%= images[i] %>" />
+						<% } %>
+					<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="popUpContainerScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="popUpContainerScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof textAreas != "undefined"  ) { %>
+					<div class="popUpContainerScreentextAreas">
+						<% for(var i=0; i<textAreas.length; i++) { %>
+							<p
+							<% if (typeof textAreas[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %>"
+							<% } else { %>
+							class="popUpContainerScreentextAreasStandardLbl"
+							<% } %>>
+							<%= textAreas[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+
+				<div class="popUpContainerScreenButtons">
+					<% if(typeof buttons != "undefined"){ %>
+						<% for(var i=0; i<buttons.length; i++) { %>
+							<a
+								class="<% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %> <% } %>"
+								id="<%= buttons[i].ID %>">
+							<% if (typeof buttons[i].labels != "undefined"  ) { %>
+								<div class="popUpContainerScreenButtonsLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<p
+										<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %>
+										class="<%= buttons[i].labels[x].localClass %>"
+										<% } else { %>
+										class="popUpContainerScreenButtonsLabelsStandardLbl"
+										<% } %>>
+										<%= buttons[i].labels[x].text %></p>
+									<% } %>
+								</div>
+								<% } %>
+							</a>
+						<% } %>
+					<% } %>
+				</div>
+
+				<% if (typeof lists != "undefined"  ) { %>
+					<div class="popUpContainerScreenLists">
+						<% if (typeof lists.type != "undefined" && lists.type == "horizontal") { %>
+							<div class="popUpContainerScreenListsContent">
+								<%
+								var listItemCounter = 0;
+								for(var i=0; i<lists.listItem.length; i++) {
+									listItemCounter++;
+									if(listItemCounter == 1) { %>
+										<div class="item"><ul class="block3">
+									<% } %>
+
+									<li>
+										<a data-value="<%= lists.listItem[i].value %>"
+											data-code="<%= lists.listItem[i].code %>"
+												class="popUpContainerScreenListsDetailsRowButton"
+												id="<%= lists.listItem[i].ID %>">
+											<% if (typeof lists.listItem[i].labels != "undefined"  ) { %>
+												<div class="popUpContainerScreenListsDetailsRowButtonLabels">
+													<% for(var z=0; z < lists.listItem[i].labels.length; z++) { %>
+														<p
+														<% if (typeof lists.listItem[i].labels[z].localClass != "undefined" ) { %>
+														class="<%= lists.listItem[i].labels[z].localClass %>"
+														<% } else { %>
+														class="popUpContainerScreenListsDetailsRowButtonLabelsStandardLbl"
+														<% } %>>
+														<%= lists.listItem[i].labels[z].text %></p>
+													<% } %>
+												</div>
+											<% } %>
+										</a>
+									</li>
+
+									<% if(listItemCounter == lists.itemPerPage || i == lists.listItem.length-1) { %>
+										</ul></div>
+									<%	listItemCounter = 0;
+									}
+								}
+								%>
+							</div>
+						<% } else { %>
+							<table class="popUpContainerScreenListsDetails" cellspacing="0" cellpadding="0">
+								<% for(var i=0; i<lists.listItem.length; i++) { %>
+								<tr class="line">
+									<td class="rowItem">
+										<a data-value="<%= lists.listItem[i].value %>"
+											data-code="<%= lists.listItem[i].code %>"
+												class="popUpContainerScreenListsDetailsRowButton"
+												id="<%= lists.listItem[i].ID %>">
+											<% if (typeof lists.listItem[i].labels != "undefined"  ) { %>
+											<div class="popUpContainerScreenListsDetailsRowButtonLabels">
+												<% for(var z=0; z < lists.listItem[i].labels.length; z++) { %>
+													<p
+															<% if (typeof lists.listItem[i].labels[z].localClass != "undefined" ) { %>
+															class="<%= lists.listItem[i].labels[z].localClass %>"
+															<% } else { %>
+															class="popUpContainerScreenListsDetailsRowButtonLabelsStandardLbl"
+															<% } %>>
+														<%= lists.listItem[i].labels[z].text %></p>
+												<% } %>
+											</div>
+											<% } %>
+										</a>
+									</td>
+								</tr>
+								<% } %>
+							</table>
+						<% } %>
+					</div>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="campaignScreen" type="text/template" class="campaignScreen">
+			<div id="campaignArea" class="campaignArea"></div>
+		</script>
+
+		<script id="idleScreen" type="text/template" class="idleScreen">
+			<!-- <div id="idleScreenArea" class="idleScreenArea"></div> -->
+			<div class="idleScreen <% if(typeof localClass != 'undefined') { %><%= localClass %><% } %>">
+				<div class="idleArea">
+				</div>
+				<div class="swiper-container">
+				<% if (typeof swiperProperties != "undefined") { %>
+					<div class="swiper-wrapper">
+						<% var dt = new Date(); %>
+						<% for(var i=0; i<swiperProperties["images"].length; i++) { %>
+							<div class="swiper-slide">
+								<img 
+									id="<%= swiperProperties["images"][i]["ID"] %>"
+									src="<%= swiperProperties["images"][i]["source"] %>?<%= dt.getTime() %>" 
+									<% if (typeof swiperProperties["images"][i]["localClass"] != "undefined" ) { %>
+									class="<%= swiperProperties["images"][i]["localClass"] %>"
+									<% } else { %>
+									class="swiperImages"
+									<% } %>
+									/>
+							</div>
+						<% } %>
+					</div>
+					<div class="swiper-pagination"></div>
+				<% } %>
+				</div>
+				<div class="messageArea"></div>
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="idleScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].ID != "undefined" ) { %>
+								id="<%= labels[i].ID %>"
+							<% } %>
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="idleScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+				<% if (typeof images != "undefined"  ) { %>
+					<div class="idleScreenImages">
+						<% for(var i=0; i<images.length; i++) { %>
+							<img id="<%= images[i].ID %>"
+							<% if (typeof images[i].localClass != "undefined" ) { %>
+							class="<%= images[i].localClass %>"
+							<% } else { %>
+							class="deviceScreenImages"
+							<% } %>
+							src="<%= images[i].source %>" />
+
+						<% } %>
+					</div>
+				<% } %>
+				<% if(typeof InteractXPrototype != "undefined") { %>
+					<div class="<% if(typeof InteractXPrototype.localClass != 'undefined') { %><%= InteractXPrototype.localClass %><% } %>">
+						<% for(var i=0; i < InteractXPrototype.idleScreens.length; i++) { %>
+							<div class="<% if(typeof InteractXPrototype.idleScreens[i].localClass != 'undefined') { %><%= InteractXPrototype.idleScreens[i].localClass %><% } %>"
+									id="<% if(typeof InteractXPrototype.idleScreens[i].ID != 'undefined') { %><%= InteractXPrototype.idleScreens[i].ID %><% } %>">
+								<% if(typeof InteractXPrototype.idleScreens[i].type != 'undefined' && InteractXPrototype.idleScreens[i].type.toUpperCase() == "IMAGE") { %>
+									<img src="<%= InteractXPrototype.idleScreens[i].path %>" />
+								<% } %>
+							</div>
+						<% } %>
+					</div>
+				<% } %>
+				<div class="deviceMessageArea"></div>
+				<div class="idleScreenButtons">
+					<% if(typeof buttons != "undefined"){ %>
+						<% for(var i=0; i<buttons.length; i++) { %>
+							<a href="#<%= buttons[i].naviType%>/<%= buttons[i].nextScreenTemplate%>/<%=buttons[i].nextScreenID %>"
+								class="<% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %> <% } %>"
+								id="<%= buttons[i].ID %>">
+							<% if (typeof buttons[i].labels != "undefined"  ) { %>
+								<div class="idleScreenButtonLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<p
+										<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %>
+										class="<%= buttons[i].labels[x].localClass %>"
+										<% } else { %>
+										class="idleScreenButtonLabelsStandardLbl"
+										<% } %>>
+										<%= buttons[i].labels[x].text %></p>
+									<% } %>
+								</div>
+								<% } %>
+							</a>
+						<% } %>
+					<% } %>
+				</div>
+				<% if (typeof video != "undefined") { %>
+					<video id="device_video" class="video-js vjs-default-skin "
+						 preload="auto" width="<%= video.width %>" height="<%= video.height %>"
+						 autoplay loop data-setup='{"controls": false, "autoplay": true, "preload": "auto"}'>
+					  <source src="<%= video.path %>" type="<%= video.format %>" />
+					  <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+					</video>
+				<% } %>
+			</div>
+		</script>
+		
+		<script id="fdkSelectionScreen" type="text/template" class="fdkSelectionScreen">
+			<div class="fdkSelectionScreen">
+				<div class="topSection">
+					<div class="topLabels">
+						<div class="label1"><% if(typeof label1 != "undefined") { %><%= label1 %><% } %></div>
+						<div class="label2"><% if(typeof label2 != "undefined") { %><%= label2 %><% } %></div>
+
+						<div class="menuTitle1"><% if(typeof menuTitle1 != "undefined") { %><%= menuTitle1 %><% } %></div>
+						<div class="menuTitle2"><% if(typeof menuTitle2 != "undefined") { %><%= menuTitle2 %><% } %></div>
+					</div>
+				</div>
+				<div class="menuButtons">
+					<% for (var i=0; i<buttons.mainmenu.length; i++) {  %>
+						<a id="<%= buttonIDPrefix + i %>" class="buttons <% if(typeof buttons.mainmenu[i].localClass != 'undefined') { %><%= buttons.mainmenu[i].localClass %><% } %>" 
+							href="<%= '#' + buttons.mainmenu[i].naviType + '/' + buttons.mainmenu[i].nextScreenTemplate + '/' + buttons.mainmenu[i].nextScreenID %>"
+							>
+							<%= buttons.mainmenu[i].label1 %>
+							<%= buttons.mainmenu[i].label2 %>
+						</a>
+					<% } %>
+				</div>
+				<% if (typeof labels != "undefined" ) { %>
+					<div class="fdkSelectionScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="fdkSelectionScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="languageFontScreen" type="text/template" class="languageFontScreen">
+			<div class="languageFontScreenPopUpContainer">
+				<% if (typeof modelsData != "undefined"  ) { %>
+					<% for(var j = 0; j < modelsData.length; j++){ %>
+						<div class="languageFontParent<%= j %>" id="<%= modelsData[j].ID %>">
+							<% if (typeof modelsData[j].labels != "undefined"  ) { %>
+								<div class="languageFontScreenLabels">
+									<% for(var i=0; i<modelsData[j].labels.length; i++) { %>
+										<p
+										<% if (typeof modelsData[j].labels[i].localClass != "undefined" ) { %>
+										class="<%= modelsData[j].labels[i].localClass %> radius" id="<%= modelsData[j].labels[i].ID %>"
+										<% } else { %>
+										class="languageFontScreenLabelsStandardLbl"
+										<% } %>>
+										<%= modelsData[j].labels[i].text %></p>
+									<% } %>
+								</div>
+							<% } %>
+
+							<div class="languageFontScreenButtons">
+								<% if(typeof modelsData[j].buttons != "undefined"){ %>
+									<% for(var i=0; i<modelsData[j].buttons.length; i++) { %>
+										<a href="#<%= modelsData[j].buttons[i].naviType%>/<%= modelsData[j].buttons[i].nextScreenTemplate%>/<%=modelsData[j].buttons[i].nextScreenID %>"
+											class="<% if(typeof modelsData[j].buttons[i].localClass != 'undefined') { %><%= modelsData[j].buttons[i].localClass %> <% } %>
+												<% if(typeof modelsData[j].buttons[i].selected !='undefined' && modelsData[j].buttons[i].selected === '1') { %>selected<% } %>"
+											id="<%= modelsData[j].buttons[i].ID %>"
+											<% if(typeof modelsData[j].buttons[i].type != "undefined"){ %> data-type="<%= modelsData[j].buttons[i].type %>" <% } %>>
+										<% if (typeof modelsData[j].buttons[i].labels != "undefined"  ) { %>
+											<div class="languageFontScreenButtonsLabels">
+												<% for(var x=0; x<modelsData[j].buttons[i].labels.length; x++) { %>
+													<p
+													<% if (typeof modelsData[j].buttons[i].labels[x].localClass != "undefined" ) { %>
+													class="<%= modelsData[j].buttons[i].labels[x].localClass %>"
+													<% } else { %>
+													class="languageFontScreenButtonsLabelsStandardLbl"
+													<% } %>>
+													<%= modelsData[j].buttons[i].labels[x].text %></p>
+												<% } %>
+											</div>
+											<% } %>
+										</a>
+									<% } %>
+								<% } %>
+							</div>
+						</div>
+					<% } %>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="headerButtons" type="text/template" class="headerButtons">
+			<% if(typeof button1 != "undefined") { %>
+			<a href="#<%= button1.naviType%>/<%= button1.nextScreenTemplate%>/<%=button1.nextScreenID %>" 
+			class="<% if(typeof button1.localClass != 'undefined') { %><%= button1.localClass %> <% } %>"
+				id="button1">
+				<% if (typeof button1.labels != "undefined"  ) { %>
+					<div class="headerButtonLabels">
+						<% for(var x=0; x<button1.labels.length; x++) { %>
+							<p
+							<% if (typeof button1.labels[x].localClass != "undefined" ) { %>
+							class="<%= button1.labels[x].localClass %>"
+							<% } else { %>
+							class="headerButtonLabelsStandardLbl"
+							<% } %>>
+							<%= button1.labels[x].text %></p>
+						<% } %>
+					</div>
+					<% } %>
+			</a>
+			<% } %>
+			<% if(typeof button2 != "undefined") { %>
+			<a href="#<%= button2.naviType%>/<%= button2.nextScreenTemplate%>/<%=button2.nextScreenID %>"
+			 class="<% if(typeof button2.localClass != 'undefined') { %><%= button2.localClass %> <% } %>"
+				id="button2">
+				<% if (typeof button2.labels != "undefined"  ) { %>
+					<div class="headerButtonLabels">
+
+						<% for(var x=0; x<button2.labels.length; x++) { %>
+							<p
+							<% if (typeof button2.labels[x].localClass != "undefined" ) { %>
+							class="<%= button2.labels[x].localClass %>"
+							<% } else { %>
+							class="headerButtonLabelsStandardLbl"
+							<% } %>>
+							<%= button2.labels[x].text %></p>
+						<% } %>
+					</div>
+					<% } %>
+			</a>
+			<% } %>
+			<% if(typeof button3 != "undefined") { %>
+			<a href="#<%= button3.naviType%>/<%= button3.nextScreenTemplate%>/<%=button3.nextScreenID %>"
+			 class="<% if(typeof button3.localClass != 'undefined') { %><%= button3.localClass %> <% } %>"
+				id="button3">
+				<% if (typeof button3.labels != "undefined"  ) { %>
+					<div class="headerButtonLabels">
+						<% for(var x=0; x<button3.labels.length; x++) { %>
+							<p
+							<% if (typeof button3.labels[x].localClass != "undefined" ) { %>
+							class="<%= button3.labels[x].localClass %>"
+							<% } else { %>
+							class="headerButtonLabelsStandardLbl"
+							<% } %>>
+							<%= button3.labels[x].text %></p>
+						<% } %>
+					</div>
+					<% } %>
+			</a>
+			<% } %>
+			<% if(typeof button4 != "undefined") { %>
+			<a href="#<%= button4.naviType%>/<%= button4.nextScreenTemplate%>/<%=button4.nextScreenID %>"
+			 class="<% if(typeof button4.localClass != 'undefined') { %><%= button4.localClass %> <% } %>"
+				id="button4">
+				<% if (typeof button3.labels != "undefined"  ) { %>
+					<div class="headerButtonLabels">
+						<% for(var x=0; x<button3.labels.length; x++) { %>
+							<p
+							<% if (typeof button3.labels[x].localClass != "undefined" ) { %>
+							class="<%= button4.labels[x].localClass %>"
+							<% } else { %>
+							class="headerButtonLabelsStandardLbl"
+							<% } %>>
+							<%= button4.labels[x].text %></p>
+						<% } %>
+					</div>
+					<% } %>
+			</a>
+			<% } %>
+		</script>
+
+		<script id="themeScreen" type="text/template" class="themeScreen">
+			<div class="themeTopBg">
+				<div class="themeBottomBg">
+					<div class="themeScreenPopUpContainer">
+						<% if (typeof labels != "undefined"  ) { %>
+							<div class="themeScreenLabels">
+								<% for(var i=0; i<labels.length; i++) { %>
+									<p
+									<% if (typeof labels[i].localClass != "undefined" ) { %>
+									class="<%= labels[i].localClass %> radius"
+									<% } else { %>
+									class="themeScreenLabelsStandardLbl"
+									<% } %>>
+									<%= labels[i].text %></p>
+								<% } %>
+							</div>
+						<% } %>
+
+						<div class="themeScreenButtons">
+							<% if(typeof buttons != "undefined"){ %>
+								<% for(var i=0; i<buttons.length; i++) { %>
+									<a href="#<%= buttons[i].naviType%>/<%= buttons[i].nextScreenTemplate%>/<%=buttons[i].nextScreenID %>"
+										class="<% if(typeof buttons[i].localClass != 'undefined') { %><%= buttons[i].localClass %> <% } %>
+											<% if(typeof buttons[i].selected !='undefined' && buttons[i].selected === '1') { %>selected<% } %>"
+										id="<%= buttons[i].ID %>"
+										<% if(typeof buttons[i].type != "undefined"){ %> data-type="<%= buttons[i].type %>" <% } %>>
+									<% if (typeof buttons[i].labels != "undefined"  ) { %>
+										<div class="themeScreenButtonsLabels">
+											<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+												<p
+												<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %>
+												class="<%= buttons[i].labels[x].localClass %>"
+												<% } else { %>
+												class="themeScreenButtonsLabelsStandardLbl"
+												<% } %>>
+												<%= buttons[i].labels[x].text %></p>
+											<% } %>
+										</div>
+										<% } %>
+									</a>
+								<% } %>
+							<% } %>
+						</div>
+					</div>
+				</div>
+			</div>
+		</script>
+
+		<script id="externalSiteScreen" type="text/template" class="externalSiteScreen">
+			<div class="externalSiteScreen <%= ID %> <% if(typeof localClass != "undefined") { %><%= localClass %><% } %>">
+				<% if(typeof externalSite != "undefined") { %>
+				<div class="externalSiteScreenExternalSite">
+					<% if(typeof externalSite.link != "undefined") { %>
+						<iframe src="<%= externalSite.link %>"></iframe>
+						<!-- <object type="text/html" data="<%= externalSite.link %>"></object> -->
+					<% } %>
+				</div>
+				<% } %>
+				<div class="externalSiteScreenButtons">
+					<% if(typeof buttons != "undefined"){ %>
+						<% for(var i=0; i<buttons.length; i++) { %>
+							<a 
+								class="<% if(typeof buttons[i].localClass != "undefined") { %><%= buttons[i].localClass %> <% } %>"
+								id="<%= buttons[i].ID %>">
+							<% if (typeof buttons[i].labels != "undefined"  ) { %>
+								<div class="externalSiteScreenButtonLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<p
+										<% if (typeof buttons[i].labels[x].localClass != "undefined" ) { %>
+										class="<%= buttons[i].labels[x].localClass %>"
+										<% } else { %>
+										class="externalSiteScreenButtonLabelsStandardLbl"
+										<% } %>>
+										<%= buttons[i].labels[x].text %></p>
+									<% } %>
+								</div>
+								<% } %>
+							</a>
+						<% } %>
+					<% } %>
+				</div>
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="externalSiteScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="externalSiteScreenLabelsStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof images != "undefined") { %>
+		          <div class="externalSiteScreenImages">
+		            <% for(var i=0; i<images.length; i++) { %>
+		              <% if(typeof images[i].source != "undefined") { %>
+		                <img id="<%= images[i].ID %>"
+		                <% if (typeof images[i].localClass != "undefined" ) { %>
+		                class="<%= images[i].localClass %>"
+		                <% } else { %>
+		                class="externalSiteScreenImages"
+		                <% } %>
+		                src="<%= images[i].source %>"
+		                />
+		              <% } else { %>
+		                <span id="<%= images[i].ID %>"
+		                <% if (typeof images[i].localClass != "undefined" ) { %>
+		                class="<%= images[i].localClass %>"
+		                <% } else { %>
+		                class="externalSiteScreenImages"
+		                <% } %>
+		                ></span>
+		              <% } %>
+		            <% } %>
+		          </div>
+		          <% } %>
+				<% if (typeof audios != "undefined") { %>
+					<div class="externalSiteScreenAudios">
+						<% for(var i=0; i<audios.length; i++) { %>
+							<% if(typeof audios[i].src != "undefined") { %>
+								<audio 
+										<% if(typeof audios[i].autoplay != "undefined" && audios[i].autoplay == "1") { %> autoplay="autoplay" <% } %>
+										<% if(typeof audios[i].loop != "undefined" && audios[i].loop == "1") { %> loop="loop" <% } %>
+										preload="auto"
+										>
+									<% if(audios[i].src.substr(audios[i].src.length - 3).toUpperCase() == "WAV") { %>
+										<source src="<%= audios[i].src %>" type="audio/wav">
+									<% } else { %>
+										<source src="<%= audios[i].src %>" type="audio/mpeg">
+									<% } %>
+								</audio>
+							<% } %>
+						<% } %>
+					</div>
+				<% } %>
+			</div>
+		</script>
+		
+		<script id="menuSlidingScreen" type="text/template" class="menuSlidingScreen">
+			<div class="menuSlidingScreen <%= ID %> <% if(typeof localClass != 'undefined') { %><%= localClass %><% } %>">
+				<div class="menuSlidingPanelScreenButtons">
+
+					<% if(typeof buttons != "undefined"){ %>
+						<% for(var i=0; i<buttons.length; i++) { %>
+							<a href="#<%= buttons[i].naviType%>/<%= buttons[i].nextScreenTemplate%>/<%=buttons[i].nextScreenID %>"
+								class="<% if(typeof buttons[i].localClass != "undefined") { %><%= buttons[i].localClass %> <% } %> <% if(typeof buttons[i].enable != "undefined" 
+								&& buttons[i].enable == "0") { %>disbaleButton<% } %>"
+								id="<%= buttons[i].ID %>">
+							<% if (typeof buttons[i].labels != "undefined"  ) { %>
+								<div class="menuSlidingPanelScreenButtonLabels">
+									<% for(var x=0; x<buttons[i].labels.length; x++) { %>
+										<% if (typeof buttons[i].labels[x].L1 != "undefined" ) { %>
+											<p lang="L1"
+												<% if (typeof buttons[i].labels[x].L1Class != "undefined" ) { %>
+													class="<%= buttons[i].labels[x].L1Class %>"
+												<% } else { %>
+												class="menuButtonScreenButtonLabelsStandardLbl"
+												<% } %> lang="L1">
+												<%=  buttons[i].labels[x].L1 %>
+											</p>
+										<% } %>
+										<% if (typeof buttons[i].labels[x].L2 != "undefined" ) { %>
+											<p lang="L2"
+												<% if (typeof buttons[i].labels[x].L2Class != "undefined" ) { %>
+													class="<%= buttons[i].labels[x].L2Class %>"
+												<% } else { %>
+												class="menuButtonScreenButtonLabelsStandardLbl"
+												<% } %> lang="L2">
+												<%=  buttons[i].labels[x].L2 %>
+											</p>
+										<% } %>
+										<% if (typeof buttons[i].labels[x].L3 != "undefined" ) { %>
+											<p lang="L3"
+												<% if (typeof buttons[i].labels[x].L3Class != "undefined" ) { %>
+													class="<%= buttons[i].labels[x].L3Class %>"
+												<% } else { %>
+												class="menuButtonScreenButtonLabelsStandardLbl"
+												<% } %> lang="L3">
+												<%=  buttons[i].labels[x].L3 %>
+											</p>
+										<% } %>	
+										<% if (typeof buttons[i].labels[x].L4 != "undefined" ) { %>
+											<p lang="L4"
+												<% if (typeof buttons[i].labels[x].L4Class != "undefined" ) { %>
+													class="<%= buttons[i].labels[x].L4Class %>"
+												<% } else { %>
+												class="menuButtonScreenButtonLabelsStandardLbl"
+												<% } %> lang="L4">
+												<%=  buttons[i].labels[x].L4 %>
+											</p>
+										<% } %>	
+										<% if (typeof buttons[i].labels[x].L5 != "undefined" ) { %>
+											<p lang="L5"
+												<% if (typeof buttons[i].labels[x].L5Class != "undefined" ) { %>
+													class="<%= buttons[i].labels[x].L5Class %>"
+												<% } else { %>
+												class="menuButtonScreenButtonLabelsStandardLbl"
+												<% } %> lang="L5">
+												<%=  buttons[i].labels[x].L5 %>
+											</p>
+										<% } %>								
+									<% } %>
+								</div>
+								<% } %>
+							</a>
+						<% } %>
+					<% } %>
+				</div>
+
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="menuButtonScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<% if (typeof labels[i].L1 != "undefined" ) { %>
+								<p lang="L1"
+									<% if (typeof labels[i].L1Class != "undefined" ) { %>
+									class="<%= labels[i].L1Class %> radius"
+									<% } else { %>
+									class="menuButtonScreenLabelsStandardLbl"
+									<% } %>>
+									<%= labels[i].L1 %></p>
+							<% } %>
+							<% if (typeof labels[i].L2 != "undefined" ) { %>
+								<p lang="L2"
+									<% if (typeof labels[i].L2Class != "undefined" ) { %>
+									class="<%= labels[i].L2Class %> radius"
+									<% } else { %>
+									class="menuButtonScreenLabelsStandardLbl"
+									<% } %>>
+									<%= labels[i].L2 %></p>
+							<% } %>
+							<% if (typeof labels[i].L3 != "undefined" ) { %>
+								<p lang="L3"
+									<% if (typeof labels[i].L3Class != "undefined" ) { %>
+									class="<%= labels[i].L3Class %> radius"
+									<% } else { %>
+									class="menuButtonScreenLabelsStandardLbl"
+									<% } %>>
+									<%= labels[i].L3 %></p>
+							<% } %>
+							<% if (typeof labels[i].L4 != "undefined" ) { %>
+								<p lang="L4"
+									<% if (typeof labels[i].L4Class != "undefined" ) { %>
+									class="<%= labels[i].L4Class %> radius"
+									<% } else { %>
+									class="menuButtonScreenLabelsStandardLbl"
+									<% } %>>
+									<%= labels[i].L4 %></p>
+							<% } %>
+							<% if (typeof labels[i].L5 != "undefined" ) { %>
+								<p lang="L5"
+									<% if (typeof labels[i].L5Class != "undefined" ) { %>
+									class="<%= labels[i].L5Class %> radius"
+									<% } else { %>
+									class="menuButtonScreenLabelsStandardLbl"
+									<% } %>>
+									<%= labels[i].L5 %></p>
+							<% } %>
+						<% } %>
+					</div>
+				<% } %>
+
+				<% if (typeof images != "undefined") { %>
+		        <div class="deviceScreenImages">
+		            <% for(var i=0; i<images.length; i++) { %>
+		              <% if(typeof images[i].source != "undefined") { %>
+		                <img id="<%= images[i].ID %>"
+		                <% if (typeof images[i].localClass != "undefined" ) { %>
+		                class="<%= images[i].localClass %>"
+		                <% } else { %>
+		                class="deviceScreenImages"
+		                <% } %>
+		                src="<%= images[i].source %>"
+		                />
+		              <% } else { %>
+		                <span id="<%= images[i].ID %>"
+		                <% if (typeof images[i].localClass != "undefined" ) { %>
+		                class="<%= images[i].localClass %>"
+		                <% } else { %>
+		                class="deviceScreenImages"
+		                <% } %>
+		                ></span>
+		              <% } %>
+		            <% } %>
+		        </div>
+		        <% } %>
+			    <div class="panels swiper-container">
+			    	 <div class="swiper-wrapper">
+
+						<% if(typeof menu != "undefined"){  %>
+							<% for(var i=0; i<menu.length; i++) { %>
+								<!-- <div class="panel panel swiper-slide <%= i %> <% if(i==0) { %> frontmost <% } %>"> -->
+								<div class="swiper-slide <%= i %>">
+
+									<% if (typeof menu[i].buttons != "undefined"  ) { %>
+									<div class="menuSlidingPanelScreenButton ">
+										<!-- 1 -->							
+											<% for(var j=0; j< menu[i].buttons.length; j++) { %>
+										<!-- 2 -->					
+											<a  class="<% if(typeof menu[i].buttons[j].localClass != "undefined") { %><%= menu[i].buttons[j].localClass %> <% } %> <% if(typeof menu[i].buttons[j].enable != "undefined" && menu[i].buttons[j].enable == "0") { %>disbaleButton<% } %>"id="<%= menu[i].buttons[j].ID %>">
+											<!-- 3 -->
+											<% if (typeof menu[i].buttons[j].labels != "undefined"  ) { %>
+												<div class="menuButtonScreenButtonLabels">
+													<% for(var x=0; x<menu[i].buttons[j].labels.length; x++) { %>
+														<% if (typeof menu[i].buttons[j].labels[x].L1 != "undefined" ) { %>
+															<p lang="L1"
+																<% if (typeof menu[i].buttons[j].labels[x].L1Class != "undefined" ) { %>
+																class="<%= menu[i].buttons[j].labels[x].L1Class %>"
+																<% } else { %>
+																class="menuButtonScreenButtonLabelsStandardLbl"
+																<% } %>>
+																<%= menu[i].buttons[j].labels[x].L1 %></p>
+														<% } %>
+														<% if (typeof menu[i].buttons[j].labels[x].L2 != "undefined" ) { %>
+															<p lang="L2"
+																<% if (typeof menu[i].buttons[j].labels[x].L2Class != "undefined" ) { %>
+																class="<%= menu[i].buttons[j].labels[x].L2Class %>"
+																<% } else { %>
+																class="menuButtonScreenButtonLabelsStandardLbl"
+																<% } %>>
+																<%= menu[i].buttons[j].labels[x].L2 %></p>
+														<% } %>
+														<% if (typeof menu[i].buttons[j].labels[x].L3 != "undefined" ) { %>
+															<p lang="L3"
+																<% if (typeof menu[i].buttons[j].labels[x].L3Class != "undefined" ) { %>
+																class="<%= menu[i].buttons[j].labels[x].L3Class %>"
+																<% } else { %>
+																class="menuButtonScreenButtonLabelsStandardLbl"
+																<% } %>>
+																<%= menu[i].buttons[j].labels[x].L3 %></p>
+														<% } %>	
+														<% if (typeof menu[i].buttons[j].labels[x].L4 != "undefined" ) { %>
+															<p lang="L4"
+																<% if (typeof menu[i].buttons[j].labels[x].L4Class != "undefined" ) { %>
+																class="<%= menu[i].buttons[j].labels[x].L4Class %>"
+																<% } else { %>
+																class="menuButtonScreenButtonLabelsStandardLbl"
+																<% } %>>
+																<%= menu[i].buttons[j].labels[x].L4 %></p>
+														<% } %>	
+														<% if (typeof menu[i].buttons[j].labels[x].L5 != "undefined" ) { %>
+															<p lang="L5"
+																<% if (typeof menu[i].buttons[j].labels[x].L5Class != "undefined" ) { %>
+																class="<%= menu[i].buttons[j].labels[x].L5Class %>"
+																<% } else { %>
+																class="menuButtonScreenButtonLabelsStandardLbl"
+																<% } %>>
+																<%= menu[i].buttons[j].labels[x].L5 %></p>
+														<% } %>	
+													<% } %>
+													<% if (typeof menu[i].buttons[j].labelsFav != "undefined"  ) { %>
+														<% for(var x=0; x<menu[i].buttons[j].labelsFav.length; x++) { %>
+															<% if (typeof menu[i].buttons[j].labelsFav[x].L1 != "undefined" ) { %>
+																<p lang="L1"
+																	<% if (typeof menu[i].buttons[j].labelsFav[x].L1Class != "undefined" ) { %>
+																	class="<%= menu[i].buttons[j].labelsFav[x].L1Class %>"
+																	<% } else { %>
+																	class="menuButtonScreenButtonLabelsStandardLbl"
+																	<% } %>>
+																	<%= menu[i].buttons[j].labelsFav[x].L1 %></p>
+															<% } %>
+															<% if (typeof menu[i].buttons[j].labelsFav[x].L2 != "undefined" ) { %>
+																<p lang="L2"
+																	<% if (typeof menu[i].buttons[j].labelsFav[x].L2Class != "undefined" ) { %>
+																	class="<%= menu[i].buttons[j].labelsFav[x].L2Class %>"
+																	<% } else { %>
+																	class="menuButtonScreenButtonLabelsStandardLbl"
+																	<% } %>>
+																	<%= menu[i].buttons[j].labelsFav[x].L2 %></p>
+															<% } %>
+															<% if (typeof menu[i].buttons[j].labelsFav[x].L3 != "undefined" ) { %>
+																<p lang="L3"
+																	<% if (typeof menu[i].buttons[j].labelsFav[x].L3Class != "undefined" ) { %>
+																	class="<%= menu[i].buttons[j].labelsFav[x].L3Class %>"
+																	<% } else { %>
+																	class="menuButtonScreenButtonLabelsStandardLbl"
+																	<% } %>>
+																	<%= menu[i].buttons[j].labelsFav[x].L3 %></p>
+															<% } %>	
+															<% if (typeof menu[i].buttons[j].labelsFav[x].L4 != "undefined" ) { %>
+																<p lang="L4"
+																	<% if (typeof menu[i].buttons[j].labelsFav[x].L4Class != "undefined" ) { %>
+																	class="<%= menu[i].buttons[j].labelsFav[x].L4Class %>"
+																	<% } else { %>
+																	class="menuButtonScreenButtonLabelsStandardLbl"
+																	<% } %>>
+																	<%= menu[i].buttons[j].labelsFav[x].L4 %></p>
+															<% } %>	
+															<% if (typeof menu[i].buttons[j].labelsFav[x].L5 != "undefined" ) { %>
+																<p lang="L5"
+																	<% if (typeof menu[i].buttons[j].labelsFav[x].L5Class != "undefined" ) { %>
+																	class="<%= menu[i].buttons[j].labelsFav[x].L5Class %>"
+																	<% } else { %>
+																	class="menuButtonScreenButtonLabelsStandardLbl"
+																	<% } %>>
+																	<%= menu[i].buttons[j].labelsFav[x].L5 %></p>
+															<% } %>						
+														<% } %>
+													<% } %>
+												</div>
+												<% } %>
+												<% if (typeof menu[i].buttons[j].isMyFavouriteButton != "undefined" && 
+											    	menu[i].buttons[j].isMyFavouriteButton == "1"  ) { %>
+												    <div id="menuButtonMyFavourteRemoveBtn" 
+												    class="menuButtonMyFavourteRemoveBtn">
+											    	</div>
+												<% } %>	
+											</a>
+									
+										<% } %>
+									</div>
+									<% } %>
+									
+									<% if (typeof menu[i].labels != "undefined"  ) { %>
+									<div class="menuSlidingPanelScreenLabels">
+										<% for(var j=0; j<menu[i].labels.length; j++) { %>
+											<% if (typeof menu[i].labels[j].L1 != "undefined" ) { %>
+												<p lang="L1"
+													<% if (typeof menu[i].labels[j].L1Class != "undefined" ) { %>
+													class="<%=  menu[i].labels[j].L1Class %> radius"
+													<% } else { %>
+													class="menuButtonScreenLabelsStandardLbl"
+													<% } %>>
+													<%=  menu[i].labels[j].L1 %></p>
+											<% } %>
+											<% if (typeof menu[i].labels[j].L2 != "undefined" ) { %>
+												<p lang="L2"
+													<% if (typeof menu[i].labels[j].L2Class != "undefined" ) { %>
+													class="<%=  menu[i].labels[j].L2Class %> radius"
+													<% } else { %>
+													class="menuButtonScreenLabelsStandardLbl"
+													<% } %>>
+													<%=  menu[i].labels[j].L2 %></p>
+											<% } %>
+											<% if (typeof menu[i].labels[j].L3 != "undefined" ) { %>
+												<p lang="L3"
+													<% if (typeof menu[i].labels[j].L3Class != "undefined" ) { %>
+													class="<%=  menu[i].labels[j].L3Class %> radius"
+													<% } else { %>
+													class="menuButtonScreenLabelsStandardLbl"
+													<% } %>>
+													<%=  menu[i].labels[j].L3 %></p>
+											<% } %>
+											<% if (typeof menu[i].labels[j].L4 != "undefined" ) { %>
+												<p lang="L4"
+													<% if (typeof menu[i].labels[j].L4Class != "undefined" ) { %>
+													class="<%=  menu[i].labels[j].L4Class %> radius"
+													<% } else { %>
+													class="menuButtonScreenLabelsStandardLbl"
+													<% } %>>
+													<%=  menu[i].labels[j].L4 %></p>
+											<% } %>
+											<% if (typeof menu[i].labels[j].L5 != "undefined" ) { %>
+												<p lang="L5"
+													<% if (typeof menu[i].labels[j].L5Class != "undefined" ) { %>
+													class="<%=  menu[i].labels[j].L5Class %> radius"
+													<% } else { %>
+													class="menuButtonScreenLabelsStandardLbl"
+													<% } %>>
+													<%=  menu[i].labels[j].L5 %></p>
+											<% } %>
+										<% } %>
+									</div>
+									<% } %>
+									
+									<% if (typeof  menu[i].images != "undefined") { console.log(menu[i].images) %>
+							        <div class="menuSlidingPanelScreenImages">
+							            <% for(var j=0; j< menu[i].images.length; j++) { %>
+							              <% if(typeof  menu[i].images[j].source != "undefined") { %>
+							                <img id="<%= menu[i].images[j].ID %>"
+							                <% if (typeof menu[i].images[j].localClass != "undefined" ) { %>
+							                class="<%= menu[i].images[j].localClass %>"
+							                <% } else { %>
+							                class="deviceScreenImages"
+							                <% } %>
+							                src="<%= menu[i].images[j].source %>"
+							                />
+							              <% } else { %>
+							                <span id="<%= menu[i].images[j].ID %>"
+							                <% if (typeof menu[i].images[j].localClass != "undefined" ) { %>
+							                class="<%= menu[i].images[j].localClass %>"
+							                <% } else { %>
+							                class="deviceScreenImages"
+							                <% } %>
+							                ></span>
+							              <% } %>
+							            <% } %>
+							        </div>
+							        <% } %>
+								</div>
+							<% } %>
+						<% } %>
+			      	
+			    </div>
+			    </div>
+			    <div class="swiper-pagination"></div>
+			</div>
+
+			<div id="removeConfirmationBox">
+				<div class="messageArea radius">
+
+						<p class="f40 rotate4 textGrey1 bold center radius">
+						<i class="fa fa-chain-broken fa-3x" aria-hidden="true"></i></i></p>
+					
+						<p lang="L1" class="f40 noteTitle9 textBlack bold center radius">
+								Are you sure want to remove?</p>
+
+						<p lang="L2" class="f40 noteTitle9 textBlack bold center radius">
+								請問你確定要刪除該最愛?</p>
+
+						<p lang="L3" class="f40 noteTitle9 textBlack bold center radius">
+								Are you sure want to remove?</p>														
+
+					<p class="label2"</p>
+					<div class="buttons">
+						<a id="removeYes" class="radius">
+							<span class="label2"><div lang="L1">YES</div><div lang="L2">是</div><div lang="L3">YES</div></span>
+						</a>
+						<a id="removeNo" class="radius">
+							<span class="label2"><div lang="L1">NO</div><div lang="L2">否</div><div lang="L3">NO</div></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="removeLoadingBox">
+				<div class="messageArea radius">
+					<p lang="L1" class="label2">Please Wait...</p>
+					<p lang="L2" class="label2">請稍後...</p>
+					<p lang="L3" class="label2">Please Wait...</p>
+				</div>
+			</div>
+		</script>
+
+		<script id="acParallelCallScreen" type="text/template" class="acParallelCallScreen">
+			<div class="<% if (typeof imgClass != "undefined" ) { %> <%= imgClass %><% } %> <%= ID %> <% if (typeof localClass != "undefined" ) { %> <%= localClass %><% } %>">
+				<% if (typeof iconClass != "undefined" ) { %>
+					<img src="<%= iconClass %>" />
+				<% } %>
+
+				<% if (typeof images != "undefined" ) { %>
+					<div class="acNodeJSServiceScreenImages">
+					<% for(var i=0; i < images.length; i++) { %>
+						<% if (typeof images[i].localClass != "undefined") { %>
+							<img src="<%= images[i].src %>" class="<%= images[i].localClass %>"/>
+						<% } else { %>
+							<img src="<%= images[i] %>" />
+						<% } %>
+					<% } %>
+					</div>
+				<% } %>
+				
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="acNodeJSServiceScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="acNodeJSServiceScreenStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+			</div>
+		</script>
+		
+		<script id="acSingleRequestScreen" type="text/template" class="acSingleRequestScreen">
+			<div class="<% if (typeof imgClass != "undefined" ) { %> <%= imgClass %><% } %> <%= ID %> <% if (typeof localClass != "undefined" ) { %> <%= localClass %><% } %>">
+				<% if (typeof iconClass != "undefined" ) { %>
+					<img src="<%= iconClass %>" />
+				<% } %>
+
+				<% if (typeof images != "undefined" ) { %>
+					<div class="acSingleRequestScreenImages">
+					<% for(var i=0; i < images.length; i++) { %>
+						<% if (typeof images[i].localClass != "undefined") { %>
+							<img src="<%= images[i].src %>" class="<%= images[i].localClass %>"/>
+						<% } else { %>
+							<img src="<%= images[i] %>" />
+						<% } %>
+					<% } %>
+					</div>
+				<% } %>
+				
+				<% if (typeof labels != "undefined"  ) { %>
+					<div class="acSingleRequestScreenLabels">
+						<% for(var i=0; i<labels.length; i++) { %>
+							<p
+							<% if (typeof labels[i].localClass != "undefined" ) { %>
+							class="<%= labels[i].localClass %> radius"
+							<% } else { %>
+							class="acSingleRequestScreenStandardLbl"
+							<% } %>>
+							<%= labels[i].text %></p>
+						<% } %>
+					</div>
+				<% } %>
+			</div>
+		</script>
+
+		<script id="themeBackground" type="text/template">
+			<div></div>
+		</script>
+
+		<!-- Content View Template End -->
+
+		<script language="JavaScript" type="text/javascript" src="coreScripts/standaloneScripts/GlobalErrorCapture.js"></script>
+		<script language="JavaScript" type="text/javascript" src="coreScripts/standaloneScripts/TransactXServer.js"></script>
+		<script language="JavaScript" type="text/javascript" src="coreScripts/standaloneScripts/VTMDemoSinglePageScript.js"></script>
+
+
+		<script language="JavaScript" type="text/javascript" src="coreScripts/standaloneScripts/AptraConnsFuncStandalone.js"></script>
+		<script language="JavaScript" type="text/javascript" src="coreScripts/standaloneScripts/DemoSinglePageScript.js"></script>
+		<!-- <script language="JavaScript" type="text/javascript" src="../activate/activate.js"></script> -->
+
+
+		<!-- <object id="ATMeTX" classid="clsid:DC735647-BB6D-42FB-909A-B7E8E531077C" style="VISIBILITY: hidden ; width : 0px ; height : 0px;" viewastext></object>
+
+		<object id="COM_UCDI_INTERFACE" classid="clsid:DC735647-BB6D-42FB-909A-B7E8E531077C" style="VISIBILITY: hidden; width : 0px ; height : 0px;" viewastext>
+
+		<PARAM NAME="ObjectID" VALUE="ATME">
+		</object>
+		<object id="COMCDIINTERFACE" classid="clsid:DC735647-BB6D-42FB-909A-B7E8E531077C" style="VISIBILITY: hidden; width : 0px ; height : 0px;" viewastext>
+			<PARAM NAME="ObjectID" VALUE="ATME">
+		</object>
+		<object id="RECEIPT" style="VISIBILITY: hidden; width : 0px ; height : 0px;" classid="clsid:A25A3297-F38C-4270-9FB5-9E1B297FD0FC"></object>
+		<object id="SSMGHELPER" style="VISIBILITY: hidden; width : 0px ; height : 0px;" classid="clsid:FD467D5F-A4D9-4B58-ABB0-8D3E7C5F93E0"></object>
+		<object id="SSMGBEEPER"  style="VISIBILITY: hidden; width : 0px ; height : 0px;" classid="clsid:47384F2A-A755-4A76-8E3A-6ED49A1792C4"></object>
+		<object id="KEYBOARD"  style="VISIBILITY: hidden; width : 0px ; height : 0px;" classid="clsid:131C7101-B5FA-474E-B9ED-3BC964497F3A"></object>
+		<object id="DBGLOG"  style="VISIBILITY: hidden; width : 0px ; height : 0px;" classid="clsid:E9067AC0-975A-48D3-8FCA-38AE4E7BEECA"></object>
+		<object id="InteractWS" style="VISIBILITY: hidden; width : 0px ; height : 0px;" classid="clsid:52A8FD06-7AB7-4A99-9164-3500FC555ECB" VIEWASTEXT></object> --> <!--update by 1.6.0 webatm/interAct/InterActWebClientService.DLL-->
+
+
+        <!-- Application source. -->
+  		<script data-main="app/initConfig" src="assets/js/libs/require.min.js"></script>
+
+
+    </body>
+</html>

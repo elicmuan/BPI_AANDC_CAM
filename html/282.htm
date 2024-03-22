@@ -1,0 +1,97 @@
+
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+<link rel="stylesheet" type="text/css" href="Labels.css">
+ <TITLE>Screen 233</TITLE>
+ <script type="text/javascript">
+if (typeof document.onselectstart!="undefined") {
+  document.onselectstart=new Function ("return false");
+}
+else{
+  document.onmousedown=new Function ("return false");
+  document.onmouseup=new Function ("return true");
+}
+</script>
+<SCRIPT src="includes.js"></SCRIPT>
+<SCRIPT LANGUAGE="vbscript" src="fdkEvents.vb"></SCRIPT>
+
+</HEAD>
+<BODY ID="" scroll="no" noresize onload="doeffect()" style="filter:revealTrans(duration=0.0,transition=23);background:url('C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/pin_change_bg.png')">
+<P id="lblGreetings"></p>
+<P class="ndcLine4Text" id="msg1" style="margin-top:-50px;font-size:30px;font-family:Montserrat;width:1024px;margin-left:-120px;text-align:center;">Success! Your EMV activation request is accepted.</P>
+<div id="btncheck" style="position:absolute;margin-left:420px;margin-top:320px;background:url('C:/Program Files/NCR APTRA/Advance NDC/html/btncheck.png');width:150px;height:150px;"></div>
+<div id="warning" style="background-image:url('RedWarning.png');width:50px;height:50px;position:absolute;margin-top:598px;margin-left:160px;"></div>
+
+<P class="ndcLine4Text" id="msg" style="margin-top:355px;font-size:30px;font-family:Montserrat;width:1024px;margin-left:-120px;text-align:center;">Get your BPI Debit Mastercard ready to </br> nominate your new 6-digit PIN.</P>
+</BODY>
+<script type="text/javascript">
+   document.body.background = "C:/Program Files/NCR APTRA/Advance NDC/html/theme/000/pin_change_bg.png";
+
+
+
+				var time = new Date().toLocaleTimeString();
+				
+				var str_opcode = '';
+
+				str_opcode = parent.leftFrame.COM_UCDI_INTERFACE.ucdiString("lang_type");
+				
+			
+				if(time.charAt(time.length-2)=='A'){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Umaga!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Morning!";
+								}
+				}
+				else{
+				
+					time = time.replace(" ","");
+					
+						if(parseInt(time.charAt(0)) >= 6 && time.charAt(1) == ":" || parseInt(time.charAt(1)) == 0 || parseInt(time.charAt(1)) == 1){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Gabi!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Evening!";
+								}
+								//evening
+						}
+						else if (parseInt(time.charAt(0)) == 1 && time.charAt(1) == 2 && parseInt(time.charAt(3)) >= 0  || parseInt(time.charAt(0)) < 2){
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Tanghali!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+								}
+								//Tanghali
+						}
+						else{
+								if (str_opcode == 'T'){
+								
+									document.getElementById("lblGreetings").innerHTML = "Magandang Hapon!";
+								}
+								else{
+									document.getElementById("lblGreetings").innerHTML = "Good Afternoon!";
+								}
+								//Hapon
+						}						
+						
+				}
+
+				
+				if(str_opcode=='T'){
+					document.getElementById("warning").style.marginLeft = "160px";
+					document.getElementById("warning").style.marginTop = "600";				
+					document.getElementById("msg1").innerHTML= "Success! Natanggap na ang iyong </BR>EMV activation request.";
+					document.getElementById("msg").innerHTML= "Ihanda ang iyong BPI Debit Mastercard </br>upang makapag-nominate ng bagong 6-digit PIN.";
+				}
+
+</script>
+</HTML>

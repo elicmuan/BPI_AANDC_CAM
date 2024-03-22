@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<!-- META NAME="GENERATOR" Content="Make HTML" -->
+<META http-equiv="Page-Enter" Content="blendTrans(duration=0.01)">
+<META http-equiv="Page-Exit" Content="blendTrans(duration=0.01)">
+ <TITLE>Screen 103</TITLE>
+<SCRIPT src="newincludes.js"></SCRIPT>
+<SCRIPT LANGUAGE="VBScript">
+	dim CDIText
+	fnPrintMessageToScreen "KCCURR  BAL  :MCAVAIL BAL  :","", "replyMessage",0,0
+	CDIText=parent.leftFrame.COM_UCDI_INTERFACE.UCDIstring("DMITRData")		
+	CDIText = fnRemoveCntrlChars(CDIText)
+	fnPrintMessageToScreen CDIText,"", "replyMessage",0,0  	
+</SCRIPT> 
+</HEAD>
+<BODY ID="bodyid" scroll="no" noresize onload="doeffect()" style="filter:revealTrans(duration=0.0,transition=23)">
+</BODY>
+</HTML>
