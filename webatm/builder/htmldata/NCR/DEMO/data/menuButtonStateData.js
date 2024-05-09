@@ -131,7 +131,7 @@ function(app) {
 				  			}
 				  		],
 						setters: {},
-						localClass: "prepaidButton mainMenuButton grey absolute f20 row1 col3 shortLabel"
+						localClass: "reloadButton mainMenuButton grey absolute f20 row1 col3 shortLabel"
 
 	  				},
 	  				{
@@ -156,7 +156,7 @@ function(app) {
 				  			}
 				  		],
 						setters: {},
-						localClass: "payBillsButton mainMenuButton grey absolute f20 row1 col2 shortLabel"
+						localClass: "payBillsButton2 mainMenuButton grey absolute f20 row1 col2 shortLabel"
 
 	  				},
 
@@ -847,7 +847,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -897,7 +897,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -946,7 +946,7 @@ function(app) {
 	  					ID : "enrollmentsButton",
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
-						nextScreenID: "IMPORTANT_REMINDER_ENROLLMENTS",
+						nextScreenID: "MAINMENU_EMV_ACTIVATE_ENROLLMENTS",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -1413,7 +1413,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MC_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -1438,7 +1438,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MC_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -1512,7 +1512,7 @@ function(app) {
 	  					ID : "enrollmentsButton",
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
-						nextScreenID: "IMPORTANT_REMINDER_ENROLLMENTS_NOREC",
+						nextScreenID: "MAINMENU_EMV_ACTIVATE_ENROLLMENTS_NOREC",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -3901,10 +3901,10 @@ function(app) {
 				  	},
 					{
 				  		text : "",
-				  		L1 : "Activate Enrollments",
-				  		L1Class : "lblSelect black tab_bg DaxRegular",
-				  		L2 : "Activate Enrollments",
-				  		L2Class : "lblSelect black tab_bg DaxRegular",
+				  		L1 : "Other Services",
+				  		L1Class : "lblSelect4 black tab_bg DaxRegular",
+				  		L2 : "Other Services",
+				  		L2Class : "lblSelect4 black tab_bg DaxRegular",
 				  		L3 : "",
 				  		L3Class : "",
 				  		L4 : "",
@@ -3921,7 +3921,7 @@ function(app) {
 	  					ID : "buttonExpressOnline",
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
-						nextScreenID: "RECEIPT_EMV_EXPRESS_ONLINE",
+						nextScreenID: "MOBILE_NUMBER_CHANGE_REMINDER",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -3947,7 +3947,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "RECEIPT_EMV_EXPRESS_PHONE",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -3974,7 +3974,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "RECEIPT_EMV_BANKING_ENROLLMENT",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -3999,7 +3999,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "RECEIPT_EMV_BANKING_MPIN",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -4023,7 +4023,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "RECEIPT_EMV_EXPRESS_MOBILE_APP",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -4338,10 +4338,10 @@ function(app) {
 				  	},
 					{
 				  		text : "",
-				  		L1 : "Activate Enrollments",
-				  		L1Class : "lblSelect black tab_bg DaxRegular",
-				  		L2 : "Activate Enrollments",
-				  		L2Class : "lblSelect black tab_bg DaxRegular",
+				  		L1 : "Other Services",
+				  		L1Class : "lblSelect4 black tab_bg DaxRegular",
+				  		L2 : "Other Services",
+				  		L2Class : "lblSelect4 black tab_bg DaxRegular",
 				  		L3 : "",
 				  		L3Class : "",
 				  		L4 : "",
@@ -4358,7 +4358,7 @@ function(app) {
 	  					ID : "buttonExpressOnline",
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
-						nextScreenID: "RECEIPT_EMV_EXPRESS_ONLINE",
+						nextScreenID: "MOBILE_NUMBER_CHANGE_REMINDER",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -4384,7 +4384,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "RECEIPT_EMV_EXPRESS_PHONE",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -4411,7 +4411,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "RECEIPT_EMV_BANKING_ENROLLMENT",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -4436,7 +4436,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "RECEIPT_EMV_BANKING_MPIN",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -4460,7 +4460,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "RECEIPT_EMV_EXPRESS_MOBILE_APP",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -4774,10 +4774,10 @@ function(app) {
 				  	},
 					{
 				  		text : "",
-				  		L1 : "Activate Enrollments",
-				  		L1Class : "lblSelect black tab_bg DaxRegular",
-				  		L2 : "Activate Enrollments",
-				  		L2Class : "lblSelect black tab_bg DaxRegular",
+				  		L1 : "Other Services",
+				  		L1Class : "lblSelect4 black tab_bg DaxRegular",
+				  		L2 : "Other Services",
+				  		L2Class : "lblSelect4 black tab_bg DaxRegular",
 				  		L3 : "",
 				  		L3Class : "",
 				  		L4 : "",
@@ -4793,8 +4793,10 @@ function(app) {
 					{
 	  					ID : "buttonExpressOnline",
 						naviType: "navi",
-						nextScreenTemplate:"deviceProcessState",
-						nextScreenID: "INIT_PLEASEWAIT_EMV_EXPRESS_ONLINE_NOREC",
+						/* nextScreenTemplate:"deviceProcessState",
+						nextScreenID: "INIT_PLEASEWAIT_EMV_EXPRESS_ONLINE_NOREC", */
+						nextScreenTemplate:"menuButtonState",
+						nextScreenID: "MOBILE_NUMBER_CHANGE_REMINDER_NOREC",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -4820,7 +4822,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"deviceProcessState",
 						nextScreenID: "INIT_PLEASEWAIT_EMV_EXPRESS_PHONE_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -4847,7 +4849,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"deviceProcessState",
 						nextScreenID: "INIT_PLEASEWAIT_EMV_BANKING_ENROLLMENT_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -4872,7 +4874,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"deviceProcessState",
 						nextScreenID: "INIT_PLEASEWAIT_EMV_BANKING_MPIN_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -4896,7 +4898,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"deviceProcessState",
 						nextScreenID: "INIT_PLEASEWAIT_EMV_EXPRESS_MOBILE_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -5210,10 +5212,10 @@ function(app) {
 				  	},
 					{
 				  		text : "",
-				  		L1 : "Activate Enrollments",
-				  		L1Class : "lblSelect black tab_bg DaxRegular",
-				  		L2 : "Activate Enrollments",
-				  		L2Class : "lblSelect black tab_bg DaxRegular",
+				  		L1 : "Other Services",
+				  		L1Class : "lblSelect4 black tab_bg DaxRegular",
+				  		L2 : "Other Services",
+				  		L2Class : "lblSelect4 black tab_bg DaxRegular",
 				  		L3 : "",
 				  		L3Class : "",
 				  		L4 : "",
@@ -5229,8 +5231,8 @@ function(app) {
 					{
 	  					ID : "buttonExpressOnline",
 						naviType: "navi",
-						nextScreenTemplate:"deviceProcessState",
-						nextScreenID: "INIT_PLEASEWAIT_EMV_EXPRESS_ONLINE_NOREC",
+						nextScreenTemplate:"menuButtonState",
+						nextScreenID: "MOBILE_NUMBER_CHANGE_REMINDER_NOREC",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -5256,7 +5258,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"deviceProcessState",
 						nextScreenID: "INIT_PLEASEWAIT_EMV_EXPRESS_PHONE_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -5283,7 +5285,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"deviceProcessState",
 						nextScreenID: "INIT_PLEASEWAIT_EMV_BANKING_ENROLLMENT_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -5308,7 +5310,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"deviceProcessState",
 						nextScreenID: "INIT_PLEASEWAIT_EMV_BANKING_MPIN_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -5332,7 +5334,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"deviceProcessState",
 						nextScreenID: "INIT_PLEASEWAIT_EMV_EXPRESS_MOBILE_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -7789,7 +7791,7 @@ function(app) {
 	  					ID : "enrollmentsButton",
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
-						nextScreenID: "IMPORTANT_REMINDER_ENROLLMENTS_MAG",
+						nextScreenID: "MAINMENU_MAG_ACTIVATE_ENROLLMENTS",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -7839,7 +7841,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MAG",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -7864,7 +7866,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MAG",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -8250,7 +8252,7 @@ function(app) {
 	  					ID : "enrollmentsButton",
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
-						nextScreenID: "IMPORTANT_REMINDER_ENROLLMENTS_NOREC_MAG",
+						nextScreenID: "MAINMENU_MAG_ACTIVATE_ENROLLMENTS_NOREC",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -8301,7 +8303,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MAG_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -8326,7 +8328,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MAG_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -10929,7 +10931,7 @@ function(app) {
 				  			}
 				  		],
 						setters: {},
-						localClass: "prepaidButton mainMenuButton grey absolute f20 row2 col2 shortLabel"
+						localClass: "reloadButton mainMenuButton grey absolute f20 row2 col2 shortLabel"
 	  				},
 					{
 	  					ID : "buttonMiniStatement",
@@ -11468,7 +11470,7 @@ function(app) {
 				  			}
 				  		],
 						setters: {},
-						localClass: "prepaidButton mainMenuButton grey absolute f20 row2 col2 shortLabel"
+						localClass: "reloadButton mainMenuButton grey absolute f20 row2 col2 shortLabel"
 	  				},
 	  				
 					{
@@ -15689,10 +15691,10 @@ function(app) {
 				  	},
 					{
 				  		text : "",
-				  		L1 : "Activate Enrollments",
-				  		L1Class : "lblSelect black tab_bg DaxRegular",
-				  		L2 : "Activate Enrollments",
-				  		L2Class : "lblSelect black tab_bg DaxRegular",
+				  		L1 : "Other Services",
+				  		L1Class : "lblSelect4 black tab_bg DaxRegular",
+				  		L2 : "Other Services",
+				  		L2Class : "lblSelect4 black tab_bg DaxRegular",
 				  		L3 : "",
 				  		L3Class : "",
 				  		L4 : "",
@@ -15709,7 +15711,7 @@ function(app) {
 	  					ID : "buttonExpressOnline",
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
-						nextScreenID: "ACCOUNT_TYPE_EXPRESS_ONLINE",
+						nextScreenID: "MOBILE_NUMBER_CHANGE_REMINDER_MAG",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -15735,7 +15737,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACCOUNT_TYPE_EXPRESS_PHONE",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -15762,7 +15764,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACCOUNT_TYPE_BANKING_ENROLLMENT",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -15787,7 +15789,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACCOUNT_TYPE_BANKING_MPIN",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -15811,7 +15813,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACCOUNT_TYPE_EXPRESS_MOBILE_APP",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -16127,10 +16129,10 @@ function(app) {
 				  	},
 					{
 				  		text : "",
-				  		L1 : "Activate Enrollments",
-				  		L1Class : "lblSelect black tab_bg DaxRegular",
-				  		L2 : "Activate Enrollments",
-				  		L2Class : "lblSelect black tab_bg DaxRegular",
+				  		L1 : "Other Services",
+				  		L1Class : "lblSelect4 black tab_bg DaxRegular",
+				  		L2 : "Other Services",
+				  		L2Class : "lblSelect4 black tab_bg DaxRegular",
 				  		L3 : "",
 				  		L3Class : "",
 				  		L4 : "",
@@ -16147,7 +16149,7 @@ function(app) {
 	  					ID : "buttonExpressOnline",
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
-						nextScreenID: "ACCOUNT_TYPE_EXPRESS_ONLINE_NOREC",
+						nextScreenID: "MOBILE_NUMBER_CHANGE_REMINDER_MAG_NOREC",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -16173,7 +16175,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACCOUNT_TYPE_EXPRESS_PHONE_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -16200,7 +16202,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACCOUNT_TYPE_BANKING_ENROLLMENT_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -16225,7 +16227,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACCOUNT_TYPE_BANKING_MPIN_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -16249,7 +16251,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACCOUNT_TYPE_EXPRESS_MOBILE_APP_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -18162,10 +18164,10 @@ function(app) {
 			  	},
 				{
 			  		text : "",
-			  		L1 : "Activate Enrollments",
-			  		L1Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
-			  		L2 : "Activate Enrollments",
-			  		L2Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
+			  		L1 : "Other Services",
+			  		L1Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
+			  		L2 : "Other Services",
+			  		L2Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
 			  		L3 : "",
 			  		L3Class : "",
 			  		L4 : "",
@@ -18557,10 +18559,10 @@ function(app) {
 			  	},
 				{
 			  		text : "",
-			  		L1 : "Activate Enrollments",
-			  		L1Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
-			  		L2 : "Activate Enrollments",
-			  		L2Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
+			  		L1 : "Other Services",
+			  		L1Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
+			  		L2 : "Other Services",
+			  		L2Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
 			  		L3 : "",
 			  		L3Class : "",
 			  		L4 : "",
@@ -18952,10 +18954,10 @@ function(app) {
 			  	},
 				{
 			  		text : "",
-			  		L1 : "Activate Enrollments",
-			  		L1Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
-			  		L2 : "Activate Enrollments",
-			  		L2Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
+			  		L1 : "Other Services",
+			  		L1Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
+			  		L2 : "Other Services",
+			  		L2Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
 			  		L3 : "",
 			  		L3Class : "",
 			  		L4 : "",
@@ -19346,10 +19348,10 @@ function(app) {
 			  	},
 				{
 			  		text : "",
-			  		L1 : "Activate Enrollments",
-			  		L1Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
-			  		L2 : "Activate Enrollments",
-			  		L2Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
+			  		L1 : "Other Services",
+			  		L1Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
+			  		L2 : "Other Services",
+			  		L2Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
 			  		L3 : "",
 			  		L3Class : "",
 			  		L4 : "",
@@ -19740,10 +19742,10 @@ function(app) {
 			  	},
 				{
 			  		text : "",
-			  		L1 : "Activate Enrollments",
-			  		L1Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
-			  		L2 : "Activate Enrollments",
-			  		L2Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
+			  		L1 : "Other Services",
+			  		L1Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
+			  		L2 : "Other Services",
+			  		L2Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
 			  		L3 : "",
 			  		L3Class : "",
 			  		L4 : "",
@@ -20134,10 +20136,10 @@ function(app) {
 			  	},
 				{
 			  		text : "",
-			  		L1 : "Activate Enrollments",
-			  		L1Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
-			  		L2 : "Activate Enrollments",
-			  		L2Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
+			  		L1 : "Other Services",
+			  		L1Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
+			  		L2 : "Other Services",
+			  		L2Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
 			  		L3 : "",
 			  		L3Class : "",
 			  		L4 : "",
@@ -20528,10 +20530,10 @@ function(app) {
 			  	},
 				{
 			  		text : "",
-			  		L1 : "Activate Enrollments",
-			  		L1Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
-			  		L2 : "Activate Enrollments",
-			  		L2Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
+			  		L1 : "Other Services",
+			  		L1Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
+			  		L2 : "Other Services",
+			  		L2Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
 			  		L3 : "",
 			  		L3Class : "",
 			  		L4 : "",
@@ -20922,10 +20924,10 @@ function(app) {
 			  	},
 				{
 			  		text : "",
-			  		L1 : "Activate Enrollments",
-			  		L1Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
-			  		L2 : "Activate Enrollments",
-			  		L2Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
+			  		L1 : "Other Services",
+			  		L1Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
+			  		L2 : "Other Services",
+			  		L2Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
 			  		L3 : "",
 			  		L3Class : "",
 			  		L4 : "",
@@ -21316,10 +21318,10 @@ function(app) {
 			  	},
 				{
 			  		text : "",
-			  		L1 : "Activate Enrollments",
-			  		L1Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
-			  		L2 : "Activate Enrollments",
-			  		L2Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
+			  		L1 : "Other Services",
+			  		L1Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
+			  		L2 : "Other Services",
+			  		L2Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
 			  		L3 : "",
 			  		L3Class : "",
 			  		L4 : "",
@@ -21710,10 +21712,10 @@ function(app) {
 			  	},
 				{
 			  		text : "",
-			  		L1 : "Activate Enrollments",
-			  		L1Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
-			  		L2 : "Activate Enrollments",
-			  		L2Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
+			  		L1 : "Other Services",
+			  		L1Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
+			  		L2 : "Other Services",
+			  		L2Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
 			  		L3 : "",
 			  		L3Class : "",
 			  		L4 : "",
@@ -22498,10 +22500,10 @@ function(app) {
 				  	},
 					{
 				  		text : "",
-				  		L1 : "Activate Enrollments",
-				  		L1Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
-				  		L2 : "Activate Enrollments",
-				  		L2Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
+				  		L1 : "Other Services",
+				  		L1Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
+				  		L2 : "Other Services",
+				  		L2Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
 				  		L3 : "",
 				  		L3Class : "",
 				  		L4 : "",
@@ -22892,10 +22894,10 @@ function(app) {
 				  	},
 					{
 				  		text : "",
-				  		L1 : "Activate Enrollments",
-				  		L1Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
-				  		L2 : "Activate Enrollments",
-				  		L2Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
+				  		L1 : "Other Services",
+				  		L1Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
+				  		L2 : "Other Services",
+				  		L2Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
 				  		L3 : "",
 				  		L3Class : "",
 				  		L4 : "",
@@ -23725,7 +23727,7 @@ function(app) {
 	  					ID : "enrollmentsButton",
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
-						nextScreenID: "IMPORTANT_REMINDER_ENROLLMENTS_NOCASH",
+						nextScreenID: "MAINMENU_EMV_ACTIVATE_ENROLLMENTS_NOCASH",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -23751,7 +23753,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MC_NOCASH",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -23776,7 +23778,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MC_NOCASH",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -24534,7 +24536,7 @@ function(app) {
 	  					ID : "enrollmentsButton",
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
-						nextScreenID: "IMPORTANT_REMINDER_ENROLLMENTS_NOCASH_NOREC",
+						nextScreenID: "MAINMENU_EMV_ACTIVATE_ENROLLMENTS_NOCASH_NOREC",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -24585,7 +24587,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MC_NOCASH_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -24610,7 +24612,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MC_NOCASH_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -25931,10 +25933,10 @@ function(app) {
 				  	},
 					{
 				  		text : "",
-				  		L1 : "Activate Enrollments",
-				  		L1Class : "lblSelect black tab_bg DaxRegular",
-				  		L2 : "Activate Enrollments",
-				  		L2Class : "lblSelect black tab_bg DaxRegular",
+				  		L1 : "Other Services",
+				  		L1Class : "lblSelect4 black tab_bg DaxRegular",
+				  		L2 : "Other Services",
+				  		L2Class : "lblSelect4 black tab_bg DaxRegular",
 				  		L3 : "",
 				  		L3Class : "",
 				  		L4 : "",
@@ -26308,10 +26310,10 @@ function(app) {
 				  	},
 					{
 				  		text : "",
-				  		L1 : "Activate Enrollments",
-				  		L1Class : "lblSelect black tab_bg DaxRegular",
-				  		L2 : "Activate Enrollments",
-				  		L2Class : "lblSelect black tab_bg DaxRegular",
+				  		L1 : "Other Services",
+				  		L1Class : "lblSelect4 black tab_bg DaxRegular",
+				  		L2 : "Other Services",
+				  		L2Class : "lblSelect4 black tab_bg DaxRegular",
 				  		L3 : "",
 				  		L3Class : "",
 				  		L4 : "",
@@ -26744,7 +26746,7 @@ function(app) {
 	  					ID : "enrollmentsButton",
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
-						nextScreenID: "IMPORTANT_REMINDER_ENROLLMENTS_MAG_NOCASH",
+						nextScreenID: "ACTIVATE_ENROLLMENTS_UNABLE_MAG",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -26794,7 +26796,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MAG_NOCASH",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -26819,7 +26821,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MAG_NOCASH",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -27539,7 +27541,7 @@ function(app) {
 	  					ID : "enrollmentsButton",
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
-						nextScreenID: "IMPORTANT_REMINDER_ENROLLMENTS_MAG_NOCASH_NOREC",
+						nextScreenID: "ACTIVATE_ENROLLMENTS_UNABLE_MAG_NOREC",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -27565,7 +27567,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MAG_NOCASH_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -27589,7 +27591,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "TRANSACTION_NOT_AVAILABLE_NOTIFICATION_MAG_NOCASH_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -28642,10 +28644,10 @@ function(app) {
 				  	},
 					{
 				  		text : "",
-				  		L1 : "Activate Enrollments",
-				  		L1Class : "lblSelect black tab_bg DaxRegular",
-				  		L2 : "Activate Enrollments",
-				  		L2Class : "lblSelect black tab_bg DaxRegular",
+				  		L1 : "Other Services",
+				  		L1Class : "lblSelect4 black tab_bg DaxRegular",
+				  		L2 : "Other Services",
+				  		L2Class : "lblSelect4 black tab_bg DaxRegular",
 				  		L3 : "",
 				  		L3Class : "",
 				  		L4 : "",
@@ -28662,7 +28664,7 @@ function(app) {
 	  					ID : "buttonExpressOnline",
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
-						nextScreenID: "ACC_TYPE_EXPRESS_ONLINE_UNABLE_MAG",
+						nextScreenID: "MOBILE_NUMBER_CHANGE_REMINDER_MAG_NOCASH",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -28688,7 +28690,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACC_TYPE_EXPRESS_PHONE_UNABLE_MAG",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -28715,7 +28717,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACC_TYPE_BANKING_ENROLLMENT_UNABLE_MAG",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -28740,7 +28742,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACC_TYPE_BANKING_MPIN_UNABLE_MAG",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -28764,7 +28766,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACC_TYPE_EXPRESS_MOBILE_APP_UNABLE_MAG",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -29078,10 +29080,10 @@ function(app) {
 				  	},
 					{
 				  		text : "",
-				  		L1 : "Activate Enrollments",
-				  		L1Class : "lblSelect black tab_bg DaxRegular",
-				  		L2 : "Activate Enrollments",
-				  		L2Class : "lblSelect black tab_bg DaxRegular",
+				  		L1 : "Other Services",
+				  		L1Class : "lblSelect4 black tab_bg DaxRegular",
+				  		L2 : "Other Services",
+				  		L2Class : "lblSelect4 black tab_bg DaxRegular",
 				  		L3 : "",
 				  		L3Class : "",
 				  		L4 : "",
@@ -29098,7 +29100,7 @@ function(app) {
 	  					ID : "buttonExpressOnline",
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
-						nextScreenID: "ACC_TYPE_EXPRESS_ONLINE_UNABLE_MAG_NOREC",
+						nextScreenID: "MOBILE_NUMBER_CHANGE_REMINDER_MAG_NOCASH_NOREC",
 						enable: "1",
 						labelsOri: [
 				  			{
@@ -29124,7 +29126,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACC_TYPE_EXPRESS_PHONE_UNABLE_MAG_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -29151,7 +29153,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACC_TYPE_BANKING_ENROLLMENT_UNABLE_MAG_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -29176,7 +29178,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACC_TYPE_BANKING_MPIN_UNABLE_MAG_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -29200,7 +29202,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "ACC_TYPE_EXPRESS_MOBILE_APP_UNABLE_MAG_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -30157,9 +30159,12 @@ function(app) {
   				},
   				{
   					ID : "btnhome",
-					naviType: "exitAANDCShowScreenRemainVariables",
+					/* naviType: "exitAANDCShowScreenRemainVariables",
 					nextScreenTemplate:"PLEASEWAIT", 
-					nextScreenID : "3",
+					nextScreenID : "3", */
+					naviType: "navi",
+					nextScreenTemplate:"menuButtonState", 
+					nextScreenID : "MAINMENU_UNABLE_TO_DISPENSE_CASH_MAG_NOREC",
 					labelsOri: [
 						{
 			  				text : "",
@@ -34530,7 +34535,7 @@ function(app) {
 				  			}
 				  		],
 						setters: {},
-						localClass: "prepaidButton mainMenuButton grey absolute f20 row2 col2 shortLabel"
+						localClass: "reloadButton mainMenuButton grey absolute f20 row2 col2 shortLabel"
 	  				},
 	  				{
 	  					ID : "buttonPayBill",
@@ -34961,7 +34966,7 @@ function(app) {
 				  			}
 				  		],
 						setters: {},
-						localClass: "prepaidButton mainMenuButton grey absolute f20 row2 col2 shortLabel"
+						localClass: "reloadButton mainMenuButton grey absolute f20 row2 col2 shortLabel"
 	  				},
 	  				
 					{
@@ -37131,10 +37136,10 @@ function(app) {
 				  	},
 					{
 				  		text : "",
-				  		L1 : "Activate Enrollments",
-				  		L1Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
-				  		L2 : "Activate Enrollments",
-				  		L2Class : "lblSelect black tab_bg DaxRegular font-size-xlarge margin-left-30",
+				  		L1 : "Other Services",
+				  		L1Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
+				  		L2 : "Other Services",
+				  		L2Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge margin-left-30",
 				  		L3 : "",
 				  		L3Class : "",
 				  		L4 : "",
@@ -37922,10 +37927,10 @@ function(app) {
 				  	},
 					{
 				  		text : "",
-				  		L1 : "Activate Enrollments",
-				  		L1Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
-				  		L2 : "Activate Enrollments",
-				  		L2Class : "lblSelect black tab_bg DaxRegular font-size-xlarge",
+				  		L1 : "Other Services",
+				  		L1Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
+				  		L2 : "Other Services",
+				  		L2Class : "lblSelect4 black tab_bg DaxRegular font-size-xlarge",
 				  		L3 : "",
 				  		L3Class : "",
 				  		L4 : "",
@@ -49145,7 +49150,691 @@ function(app) {
 					nextScreenID : "1" 
 					
 				}
-			}
+		},
+		{
+			template:"menuButtonState",
+			ID:"MOBILE_NUMBER_CHANGE_REMINDER",
+			name:"MOBILE_NUMBER_CHANGE_REMINDER",
+			localClass: "buttonOverlayLabel",
+				  functions: {
+				  initFunctions: [ "showLanguage"  ,"checkTIME","hideCurrentTime","displayTime_Only","setBGDefault", "resetLanguagetText"]
+				  },
+				labelsOri: [
+					{
+						text : "",
+						  L1 : "",
+						  L1Class : "popUpPanelReceipt"
+					},				{
+						  text : "",
+						  L1 : "{greetings}",
+						  L1Class : "lblGreetings DaxMedium",
+						  L2 : "{greetings_tagalog}",
+						  L2Class : "lblGreetings_PL_REM3 DaxMedium",
+						  L3 : "",
+						  L3Class : "",
+						  L4 : "",
+						  L4Class : "",
+						  L5 : "",
+						  L5Class : ""
+					},
+					{
+						  text : "",
+						  L1 : "Your mobile number will be updated.",
+						L1Class : "lblselectaccount black heading1 absolute center",
+						L2 : "Ia-update na ang iyong mobile number.",
+						L2Class : "lblselectaccount black heading1 absolute center",
+					},
+					{
+						text : "",
+						L1 : "To ensure the security of your account, all future bank communications and Online Banking One-Time Pins (OTPs) will be sent to your new number.",
+						L1Class : "lblmobileupdatereminder-Eng black heading1 absolute ",
+						L2 : "Para sa security ng iyong account, lahat ng mga susunod na bank communications at Online Banking One-Time Pins (OTPs) ay ipadadala sa iyong bagong number.",
+						L2Class : "lblmobileupdatereminder-Tag black heading1 absolute ",
+					},
+					{
+						  text : "",
+						  L1 : "",
+						L1Class : "icon-mobileupdatereminder",
+						L2 : "",
+						L2Class : "icon-mobileupdatereminder-Tag"
+					} 
+				],
+	
+	
+				buttons: [
+					{
+						  ID : "btnWhite",
+						naviType: "exitAANDCShowScreenRemainVariables",
+						nextScreenTemplate:"PLEASEWAIT",
+						nextScreenID: "1",
+						enable: "1",
+						labelsOri: [
+							  {
+								  text : "",
+								  L1 : "Cancel",
+								  L1Class : "black f22 center Dax-bold font-weight-bold",
+								  L2 : "Cancel",
+								  L2Class : "black f22 center Dax-bold font-weight-bold",
+								  L3 : "",
+								  L3Class : "",
+								  L4 : "",
+								  L4Class : "",
+								  L5 : "",
+								  L5Class : ""
+							  }
+						  ],
+						setters: {
+							interNaviData: "closeSession"
+						},
+						localClass: "btnwhite-mobileupdatereminder"
+					  },
+					{
+						  ID : "btnRed",
+						naviType: "navi",
+						nextScreenTemplate:"menuButtonState" ,
+						nextScreenID : "RECEIPT_EMV_EXPRESS_ONLINE" ,
+						enable: "1",
+						labelsOri: [
+							  {
+								  text : "",
+								  L1 : "Confirm",
+								  L1Class : "black f22 center Dax-bold font-weight-bold white-text",
+								  L2 : "Confirm",
+								  L2Class : "black f22 center Dax-bold font-weight-bold white-text",
+								  L3 : "",
+								  L3Class : "",
+								  L4 : "",
+								  L4Class : "",
+								  L5 : "",
+								  L5Class : ""
+							  }
+						  ],
+						setters: {},
+						localClass: "btnred-mobileupdatereminder"
+					   }
+					
+				],
+	
+	
+				cancelNavi :
+				{
+					naviType: "exitAANDCShowScreenRemainVariables",
+					nextScreenTemplate:"PLEASEWAIT" ,
+					nextScreenID : "1" ,
+					setters :
+					{}
+				}
+		},
+		{
+			template:"menuButtonState",
+			ID:"MOBILE_NUMBER_CHANGE_REMINDER_NOREC",
+			name:"MOBILE_NUMBER_CHANGE_REMINDER_NOREC",
+			localClass: "buttonOverlayLabel",
+				  functions: {
+				  initFunctions: [ "showLanguage"  ,"checkTIME","hideCurrentTime","displayTime_Only","setBGDefault", "resetLanguagetText"]
+				  },
+				labelsOri: [
+					{
+						text : "",
+						  L1 : "",
+						  L1Class : "popUpPanelReceipt"
+					},				{
+						  text : "",
+						  L1 : "{greetings}",
+						  L1Class : "lblGreetings DaxMedium",
+						  L2 : "{greetings_tagalog}",
+						  L2Class : "lblGreetings_PL_REM3 DaxMedium",
+						  L3 : "",
+						  L3Class : "",
+						  L4 : "",
+						  L4Class : "",
+						  L5 : "",
+						  L5Class : ""
+					},
+					{
+						  text : "",
+						  L1 : "Your mobile number will be updated.",
+						L1Class : "lblselectaccount black heading1 absolute center",
+						L2 : "Ia-update na ang iyong mobile number.",
+						L2Class : "lblselectaccount black heading1 absolute center",
+					},
+					{
+						text : "",
+						L1 : "To ensure the security of your account, all future bank communications and Online Banking One-Time Pins (OTPs) will be sent to your new number.",
+						L1Class : "lblmobileupdatereminder-Eng black heading1 absolute ",
+						L2 : "Para sa security ng iyong account, lahat ng mga susunod na bank communications at Online Banking One-Time Pins (OTPs) ay ipadadala sa iyong bagong number.",
+						L2Class : "lblmobileupdatereminder-Tag black heading1 absolute ",
+					},
+					{
+						  text : "",
+						  L1 : "",
+						L1Class : "icon-mobileupdatereminder",
+						L2 : "",
+						L2Class : "icon-mobileupdatereminder-Tag"
+					} 
+				],
+	
+	
+				buttons: [
+					{
+						  ID : "btnWhite",
+						naviType: "exitAANDCShowScreenRemainVariables",
+						nextScreenTemplate:"PLEASEWAIT",
+						nextScreenID: "1",
+						enable: "1",
+						labelsOri: [
+							  {
+								  text : "",
+								  L1 : "Cancel",
+								  L1Class : "black f22 center Dax-bold font-weight-bold",
+								  L2 : "Cancel",
+								  L2Class : "black f22 center Dax-bold font-weight-bold",
+								  L3 : "",
+								  L3Class : "",
+								  L4 : "",
+								  L4Class : "",
+								  L5 : "",
+								  L5Class : ""
+							  }
+						  ],
+						setters: {
+							interNaviData: "closeSession"
+						},
+						localClass: "btnwhite-mobileupdatereminder"
+					  },
+					{
+						  ID : "btnRed",
+						naviType: "navi",
+						nextScreenTemplate:"deviceProcessState" ,
+						nextScreenID : "INIT_PLEASEWAIT_EMV_EXPRESS_ONLINE_NOREC" ,
+						enable: "1",
+						labelsOri: [
+							  {
+								  text : "",
+								  L1 : "Confirm",
+								  L1Class : "black f22 center Dax-bold font-weight-bold white-text",
+								  L2 : "Confirm",
+								  L2Class : "black f22 center Dax-bold font-weight-bold white-text",
+								  L3 : "",
+								  L3Class : "",
+								  L4 : "",
+								  L4Class : "",
+								  L5 : "",
+								  L5Class : ""
+							  }
+						  ],
+						setters: {},
+						localClass: "btnred-mobileupdatereminder"
+					   }
+					
+				],
+	
+	
+				cancelNavi :
+				{
+					naviType: "exitAANDCShowScreenRemainVariables",
+					nextScreenTemplate:"PLEASEWAIT" ,
+					nextScreenID : "1" ,
+					setters :
+					{}
+				}
+		},
+		{
+			template:"menuButtonState",
+			ID:"MOBILE_NUMBER_CHANGE_REMINDER_MAG",
+			name:"MOBILE_NUMBER_CHANGE_REMINDER_MAG",
+			localClass: "buttonOverlayLabel",
+				  functions: {
+				  initFunctions: [ "showLanguage"  ,"checkTIME","hideCurrentTime","displayTime_Only","setBGDefault", "resetLanguagetText"]
+				  },
+				labelsOri: [
+					{
+						text : "",
+						  L1 : "",
+						  L1Class : "popUpPanelReceipt"
+					},				{
+						  text : "",
+						  L1 : "{greetings}",
+						  L1Class : "lblGreetings DaxMedium",
+						  L2 : "{greetings_tagalog}",
+						  L2Class : "lblGreetings_PL_REM3 DaxMedium",
+						  L3 : "",
+						  L3Class : "",
+						  L4 : "",
+						  L4Class : "",
+						  L5 : "",
+						  L5Class : ""
+					},
+					{
+						  text : "",
+						  L1 : "Your mobile number will be updated.",
+						L1Class : "lblselectaccount black heading1 absolute center",
+						L2 : "Ia-update na ang iyong mobile number.",
+						L2Class : "lblselectaccount black heading1 absolute center",
+					},
+					{
+						text : "",
+						L1 : "To ensure the security of your account, all future bank communications and Online Banking One-Time Pins (OTPs) will be sent to your new number.",
+						L1Class : "lblmobileupdatereminder-Eng black heading1 absolute ",
+						L2 : "Para sa security ng iyong account, lahat ng mga susunod na bank communications at Online Banking One-Time Pins (OTPs) ay ipadadala sa iyong bagong number.",
+						L2Class : "lblmobileupdatereminder-Tag black heading1 absolute ",
+					},
+					{
+						  text : "",
+						  L1 : "",
+						L1Class : "icon-mobileupdatereminder",
+						L2 : "",
+						L2Class : "icon-mobileupdatereminder-Tag"
+					} 
+				],
+	
+	
+				buttons: [
+					{
+						  ID : "btnWhite",
+						naviType: "exitAANDCShowScreenRemainVariables",
+						nextScreenTemplate:"PLEASEWAIT",
+						nextScreenID: "1",
+						enable: "1",
+						labelsOri: [
+							  {
+								  text : "",
+								  L1 : "Cancel",
+								  L1Class : "black f22 center Dax-bold font-weight-bold",
+								  L2 : "Cancel",
+								  L2Class : "black f22 center Dax-bold font-weight-bold",
+								  L3 : "",
+								  L3Class : "",
+								  L4 : "",
+								  L4Class : "",
+								  L5 : "",
+								  L5Class : ""
+							  }
+						  ],
+						setters: {
+							interNaviData: "closeSession"
+						},
+						localClass: "btnwhite-mobileupdatereminder"
+					  },
+					{
+						  ID : "btnRed",
+						naviType: "navi",
+						nextScreenTemplate:"menuButtonState" ,
+						nextScreenID : "ACCOUNT_TYPE_EXPRESS_ONLINE" ,
+						enable: "1",
+						labelsOri: [
+							  {
+								  text : "",
+								  L1 : "Confirm",
+								  L1Class : "black f22 center Dax-bold font-weight-bold white-text",
+								  L2 : "Confirm",
+								  L2Class : "black f22 center Dax-bold font-weight-bold white-text",
+								  L3 : "",
+								  L3Class : "",
+								  L4 : "",
+								  L4Class : "",
+								  L5 : "",
+								  L5Class : ""
+							  }
+						  ],
+						setters: {},
+						localClass: "btnred-mobileupdatereminder"
+					   }
+					
+				],
+	
+	
+				cancelNavi :
+				{
+					naviType: "exitAANDCShowScreenRemainVariables",
+					nextScreenTemplate:"PLEASEWAIT" ,
+					nextScreenID : "1" ,
+					setters :
+					{}
+				}
+		},
+		{
+			template:"menuButtonState",
+			ID:"MOBILE_NUMBER_CHANGE_REMINDER_MAG_NOREC",
+			name:"MOBILE_NUMBER_CHANGE_REMINDER_MAG_NOREC",
+			localClass: "buttonOverlayLabel",
+				  functions: {
+				  initFunctions: [ "showLanguage"  ,"checkTIME","hideCurrentTime","displayTime_Only","setBGDefault", "resetLanguagetText"]
+				  },
+				labelsOri: [
+					{
+						text : "",
+						  L1 : "",
+						  L1Class : "popUpPanelReceipt"
+					},				{
+						  text : "",
+						  L1 : "{greetings}",
+						  L1Class : "lblGreetings DaxMedium",
+						  L2 : "{greetings_tagalog}",
+						  L2Class : "lblGreetings_PL_REM3 DaxMedium",
+						  L3 : "",
+						  L3Class : "",
+						  L4 : "",
+						  L4Class : "",
+						  L5 : "",
+						  L5Class : ""
+					},
+					{
+						  text : "",
+						  L1 : "Your mobile number will be updated.",
+						L1Class : "lblselectaccount black heading1 absolute center",
+						L2 : "Ia-update na ang iyong mobile number.",
+						L2Class : "lblselectaccount black heading1 absolute center",
+					},
+					{
+						text : "",
+						L1 : "To ensure the security of your account, all future bank communications and Online Banking One-Time Pins (OTPs) will be sent to your new number.",
+						L1Class : "lblmobileupdatereminder-Eng black heading1 absolute ",
+						L2 : "Para sa security ng iyong account, lahat ng mga susunod na bank communications at Online Banking One-Time Pins (OTPs) ay ipadadala sa iyong bagong number.",
+						L2Class : "lblmobileupdatereminder-Tag black heading1 absolute ",
+					},
+					{
+						  text : "",
+						  L1 : "",
+						L1Class : "icon-mobileupdatereminder",
+						L2 : "",
+						L2Class : "icon-mobileupdatereminder-Tag"
+					} 
+				],
+	
+	
+				buttons: [
+					{
+						  ID : "btnWhite",
+						naviType: "exitAANDCShowScreenRemainVariables",
+						nextScreenTemplate:"PLEASEWAIT",
+						nextScreenID: "1",
+						enable: "1",
+						labelsOri: [
+							  {
+								  text : "",
+								  L1 : "Cancel",
+								  L1Class : "black f22 center Dax-bold font-weight-bold",
+								  L2 : "Cancel",
+								  L2Class : "black f22 center Dax-bold font-weight-bold",
+								  L3 : "",
+								  L3Class : "",
+								  L4 : "",
+								  L4Class : "",
+								  L5 : "",
+								  L5Class : ""
+							  }
+						  ],
+						setters: {
+							interNaviData: "closeSession"
+						},
+						localClass: "btnwhite-mobileupdatereminder"
+					  },
+					{
+						  ID : "btnRed",
+						naviType: "navi",
+						nextScreenTemplate:"menuButtonState" ,
+						nextScreenID : "ACCOUNT_TYPE_EXPRESS_ONLINE_NOREC" ,
+						enable: "1",
+						labelsOri: [
+							  {
+								  text : "",
+								  L1 : "Confirm",
+								  L1Class : "black f22 center Dax-bold font-weight-bold white-text",
+								  L2 : "Confirm",
+								  L2Class : "black f22 center Dax-bold font-weight-bold white-text",
+								  L3 : "",
+								  L3Class : "",
+								  L4 : "",
+								  L4Class : "",
+								  L5 : "",
+								  L5Class : ""
+							  }
+						  ],
+						setters: {},
+						localClass: "btnred-mobileupdatereminder"
+					   }
+					
+				],
+	
+	
+				cancelNavi :
+				{
+					naviType: "exitAANDCShowScreenRemainVariables",
+					nextScreenTemplate:"PLEASEWAIT" ,
+					nextScreenID : "1" ,
+					setters :
+					{}
+				}
+		},
+		{
+			template:"menuButtonState",
+			ID:"MOBILE_NUMBER_CHANGE_REMINDER_MAG_NOCASH",
+			name:"MOBILE_NUMBER_CHANGE_REMINDER_MAG_NOCASH",
+			localClass: "buttonOverlayLabel",
+				  functions: {
+				  initFunctions: [ "showLanguage"  ,"checkTIME","hideCurrentTime","displayTime_Only","setBGDefault", "resetLanguagetText"]
+				  },
+				labelsOri: [
+					{
+						text : "",
+						  L1 : "",
+						  L1Class : "popUpPanelReceipt"
+					},				{
+						  text : "",
+						  L1 : "{greetings}",
+						  L1Class : "lblGreetings DaxMedium",
+						  L2 : "{greetings_tagalog}",
+						  L2Class : "lblGreetings_PL_REM3 DaxMedium",
+						  L3 : "",
+						  L3Class : "",
+						  L4 : "",
+						  L4Class : "",
+						  L5 : "",
+						  L5Class : ""
+					},
+					{
+						  text : "",
+						  L1 : "Your mobile number will be updated.",
+						L1Class : "lblselectaccount black heading1 absolute center",
+						L2 : "Ia-update na ang iyong mobile number.",
+						L2Class : "lblselectaccount black heading1 absolute center",
+					},
+					{
+						text : "",
+						L1 : "To ensure the security of your account, all future bank communications and Online Banking One-Time Pins (OTPs) will be sent to your new number.",
+						L1Class : "lblmobileupdatereminder-Eng black heading1 absolute ",
+						L2 : "Para sa security ng iyong account, lahat ng mga susunod na bank communications at Online Banking One-Time Pins (OTPs) ay ipadadala sa iyong bagong number.",
+						L2Class : "lblmobileupdatereminder-Tag black heading1 absolute ",
+					},
+					{
+						  text : "",
+						  L1 : "",
+						L1Class : "icon-mobileupdatereminder",
+						L2 : "",
+						L2Class : "icon-mobileupdatereminder-Tag"
+					} 
+				],
+	
+	
+				buttons: [
+					{
+						  ID : "btnWhite",
+						naviType: "exitAANDCShowScreenRemainVariables",
+						nextScreenTemplate:"PLEASEWAIT",
+						nextScreenID: "1",
+						enable: "1",
+						labelsOri: [
+							  {
+								  text : "",
+								  L1 : "Cancel",
+								  L1Class : "black f22 center Dax-bold font-weight-bold",
+								  L2 : "Cancel",
+								  L2Class : "black f22 center Dax-bold font-weight-bold",
+								  L3 : "",
+								  L3Class : "",
+								  L4 : "",
+								  L4Class : "",
+								  L5 : "",
+								  L5Class : ""
+							  }
+						  ],
+						setters: {
+							interNaviData: "closeSession"
+						},
+						localClass: "btnwhite-mobileupdatereminder"
+					  },
+					{
+						  ID : "btnRed",
+						naviType: "navi",
+						nextScreenTemplate:"menuButtonState" ,
+						nextScreenID : "ACC_TYPE_EXPRESS_ONLINE_UNABLE_MAG" ,
+						enable: "1",
+						labelsOri: [
+							  {
+								  text : "",
+								  L1 : "Confirm",
+								  L1Class : "black f22 center Dax-bold font-weight-bold white-text",
+								  L2 : "Confirm",
+								  L2Class : "black f22 center Dax-bold font-weight-bold white-text",
+								  L3 : "",
+								  L3Class : "",
+								  L4 : "",
+								  L4Class : "",
+								  L5 : "",
+								  L5Class : ""
+							  }
+						  ],
+						setters: {},
+						localClass: "btnred-mobileupdatereminder"
+					   }
+					
+				],
+	
+	
+				cancelNavi :
+				{
+					naviType: "exitAANDCShowScreenRemainVariables",
+					nextScreenTemplate:"PLEASEWAIT" ,
+					nextScreenID : "1" ,
+					setters :
+					{}
+				}
+		},
+		{
+			template:"menuButtonState",
+			ID:"MOBILE_NUMBER_CHANGE_REMINDER_MAG_NOCASH_NOREC",
+			name:"MOBILE_NUMBER_CHANGE_REMINDER_MAG_NOCASH_NOREC",
+			localClass: "buttonOverlayLabel",
+				  functions: {
+				  initFunctions: [ "showLanguage"  ,"checkTIME","hideCurrentTime","displayTime_Only","setBGDefault", "resetLanguagetText"]
+				  },
+				labelsOri: [
+					{
+						text : "",
+						  L1 : "",
+						  L1Class : "popUpPanelReceipt"
+					},				{
+						  text : "",
+						  L1 : "{greetings}",
+						  L1Class : "lblGreetings DaxMedium",
+						  L2 : "{greetings_tagalog}",
+						  L2Class : "lblGreetings_PL_REM3 DaxMedium",
+						  L3 : "",
+						  L3Class : "",
+						  L4 : "",
+						  L4Class : "",
+						  L5 : "",
+						  L5Class : ""
+					},
+					{
+						  text : "",
+						  L1 : "Your mobile number will be updated.",
+						L1Class : "lblselectaccount black heading1 absolute center",
+						L2 : "Ia-update na ang iyong mobile number.",
+						L2Class : "lblselectaccount black heading1 absolute center",
+					},
+					{
+						text : "",
+						L1 : "To ensure the security of your account, all future bank communications and Online Banking One-Time Pins (OTPs) will be sent to your new number.",
+						L1Class : "lblmobileupdatereminder-Eng black heading1 absolute ",
+						L2 : "Para sa security ng iyong account, lahat ng mga susunod na bank communications at Online Banking One-Time Pins (OTPs) ay ipadadala sa iyong bagong number.",
+						L2Class : "lblmobileupdatereminder-Tag black heading1 absolute ",
+					},
+					{
+						  text : "",
+						  L1 : "",
+						L1Class : "icon-mobileupdatereminder",
+						L2 : "",
+						L2Class : "icon-mobileupdatereminder-Tag"
+					} 
+				],
+	
+	
+				buttons: [
+					{
+						  ID : "btnWhite",
+						naviType: "exitAANDCShowScreenRemainVariables",
+						nextScreenTemplate:"PLEASEWAIT",
+						nextScreenID: "1",
+						enable: "1",
+						labelsOri: [
+							  {
+								  text : "",
+								  L1 : "Cancel",
+								  L1Class : "black f22 center Dax-bold font-weight-bold",
+								  L2 : "Cancel",
+								  L2Class : "black f22 center Dax-bold font-weight-bold",
+								  L3 : "",
+								  L3Class : "",
+								  L4 : "",
+								  L4Class : "",
+								  L5 : "",
+								  L5Class : ""
+							  }
+						  ],
+						setters: {
+							interNaviData: "closeSession"
+						},
+						localClass: "btnwhite-mobileupdatereminder"
+					  },
+					{
+						  ID : "btnRed",
+						naviType: "navi",
+						nextScreenTemplate:"menuButtonState" ,
+						nextScreenID : "ACC_TYPE_EXPRESS_ONLINE_UNABLE_MAG_NOREC" ,
+						enable: "1",
+						labelsOri: [
+							  {
+								  text : "",
+								  L1 : "Confirm",
+								  L1Class : "black f22 center Dax-bold font-weight-bold white-text",
+								  L2 : "Confirm",
+								  L2Class : "black f22 center Dax-bold font-weight-bold white-text",
+								  L3 : "",
+								  L3Class : "",
+								  L4 : "",
+								  L4Class : "",
+								  L5 : "",
+								  L5Class : ""
+							  }
+						  ],
+						setters: {},
+						localClass: "btnred-mobileupdatereminder"
+					   }
+					
+				],
+	
+	
+				cancelNavi :
+				{
+					naviType: "exitAANDCShowScreenRemainVariables",
+					nextScreenTemplate:"PLEASEWAIT" ,
+					nextScreenID : "1" ,
+					setters :
+					{}
+				}
+		}
 
 	];
 	return menuButtonStateData;

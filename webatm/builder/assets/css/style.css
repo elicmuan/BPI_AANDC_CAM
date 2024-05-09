@@ -291,6 +291,8 @@ position: fixed;
     height: 546px;
     font-family: Montserrat;
 }
+.lblSelect4{ position: absolute; top: 145px; left: 347px; padding-top: 53px; padding-left: 75px;  font-size:20px; width:650px; height:546px; font-family:Montserrat}
+.lblselectaccount{top: 100px; width:1024px; border-radius: 20px; padding-top: 65px; text-align:center; font-size:30px; font-family:Montserrat}
 
 .tab_bg{
   background:url("../../projectAssets/BPI/Tab.png") 0px 0px no-repeat; 
@@ -2658,7 +2660,7 @@ position:absolute;
 }
 .prepaidButton{
 /*border: 1px solid #000000;*/
-  background-image: url("../../projectAssets/BPI/btnReload.png");
+  background-image: url("../../projectAssets/BPI/btnDisabled.png");
     /*border-left: 10px solid #c0010c;*/
     width: 183px !important;
     height: 200px;
@@ -2677,12 +2679,17 @@ position:absolute;
 }
 .payBillsButton{
 /*border: 1px solid #000000;*/
-  background-image: url("../../projectAssets/BPI/btnPayBills.png");
+  background-image: url("../../projectAssets/BPI/btnDisabled.png");
     /*border-left: 10px solid #c0010c;*/
     width: 183px !important;
     height: 200px;
     /*box-shadow: 0 0 10px #5a5959;*/
 }
+.payBillsButton2{
+    background-image: url("../../projectAssets/BPI/btnPayBills.png");
+      width: 183px !important;
+      height: 200px;
+  }
 .btntransfer{
 /*border: 1px solid #000000;*/
   background-image: url("../../projectAssets/BPI/btnTransfer.png");
@@ -2744,7 +2751,7 @@ position:absolute;
 }
 
 .ExpressMobileAppButton{
-    background-image: url("../../projectAssets/BPI/btnExpressMobileApp.png");
+    background-image: url("../../projectAssets/BPI/btnDisabled.png");
     width: 183px !important;
     height: 200px;
 }
@@ -2761,21 +2768,27 @@ position:absolute;
 }
 
 .ExpressPhoneButton{
-    background-image: url("../../projectAssets/BPI/btnExpressPhone.png");
+    background-image: url("../../projectAssets/BPI/btnDisabled.png");
     width: 183px !important;
     height: 200px;
 }
 
 .SIMBankingEnrollmentButton{
-    background-image: url("../../projectAssets/BPI/btnSIMBankingEnrollment.png");
+    background-image: url("../../projectAssets/BPI/btnDisabled.png");
     width: 183px !important;
     height: 200px;
 }
 
 .SIMBankingMPINResendButton{
-    background-image: url("../../projectAssets/BPI/btnSIMBankingMPINResend.png");
+    background-image: url("../../projectAssets/BPI/btnDisabled.png");
     width: 183px !important;
     height: 200px;
+}
+
+.reloadButton{
+    background-image: url("../../projectAssets/BPI/btnReload.png");
+      width: 183px !important;
+      height: 200px;
 }
 
 .mainTitleLabel2{
@@ -3957,4 +3970,73 @@ margin-top: 10px;
     position: absolute;
 	margin-top:-200px;
 	margin-left: 308px;
+}
+
+/* CR > Approve mobile number change */
+
+.icon-mobileupdatereminder{
+    background: url(../../projectAssets/BPI/PhoneReminders.png) 0 100% no-repeat;
+    width: 222.8px;
+    height: 278.2px;
+    margin-top: 255px;
+    margin-left: 111px;
+    position: absolute;
+}
+
+.icon-mobileupdatereminder-Tag{
+  background: url(../../projectAssets/BPI/PhoneReminders.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  width: 222.8px;
+  height: 278.2px;
+  margin-top: -225px;
+  margin-left: 111px;
+  position: absolute;
+}
+
+.lblmobileupdatereminder-Eng{
+    font-family: Montserrat;
+    font-size: 30px;
+    color:#000000; 
+    margin-top: 330px;
+    width: 595px;
+    left: 364px;
+    text-align: justify;
+    line-height: 120%;
+}
+
+.lblmobileupdatereminder-Tag{
+    font-family: Montserrat;
+    font-size: 30px;
+    color: #000000;
+    margin-top: -150px;
+    width: 540px;
+    left: 364px;
+    text-align: justify;
+    line-height: 120%;
+}
+
+.btnred-mobileupdatereminder{
+  width: 258px;
+  height: 84px;
+  z-index: 41;
+  font-size: 25px;
+  font-family: Montserrat;
+  position: absolute;
+  margin-top: 608px;
+  margin-left: 537px;
+  padding-top: 30px;
+  background: url("../../projectAssets/BPI/Amount Button.png") 0px 0px no-repeat;
+}
+
+.btnwhite-mobileupdatereminder{
+  width: 258px;
+  height: 84px;
+  z-index: 41;
+  font-size: 25px;
+  font-family: Montserrat;
+  position: absolute;
+  margin-top: 608px;
+  margin-left: 229px;
+  padding-top: 30px;
+  background: url(../../projectAssets/BPI/btnwhite.png) 0px 0px no-repeat;
 }
