@@ -16158,7 +16158,7 @@ function(app , ATMCErrorCodeData , FormatInput , ACVar, ACPopupGeneration, Exter
 					$(params["elementBackground"]).css({ "background" : 'url("' + imagesPath[idleCounter] + '") no-repeat'});
 
 					if (idleCounter++ == imagesPath.length-1) idleCounter = 0;
-				}, 6000);
+				}, 5000);
 				
 				//idleCheckingInterval = setInterval(function() { ACLib.customIdle(object, params); }, params["interval"]);
 			} else { //Do nothing 
