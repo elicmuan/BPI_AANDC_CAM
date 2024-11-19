@@ -10889,7 +10889,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "RECEIPT_DEPOSIT_CASH_PREPAID",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -10906,7 +10906,7 @@ function(app) {
 				  			}
 				  		],
 						setters: {},
-						localClass: "depositButton mainMenuButton grey absolute f20 row2 col1 shortLabel"
+						localClass: "depositButtonGray mainMenuButton grey absolute f20 row2 col1 shortLabel"
 
 	  				},	  				
 					{
@@ -11526,7 +11526,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"deviceProcessState",
 						nextScreenID: "INIT_PLEASEWAIT_DEPOSIT_PREPAID_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -11543,7 +11543,7 @@ function(app) {
 				  			}
 				  		],
 						setters: {},
-						localClass: "depositButton mainMenuButton grey absolute f20 row2 col1 shortLabel"
+						localClass: "depositButtonGray mainMenuButton grey absolute f20 row2 col1 shortLabel"
 
 	  				},	  			
 	  				{
@@ -34493,7 +34493,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"menuButtonState",
 						nextScreenID: "RECEIPT_DEPOSIT_CASH_PREPAID",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -34510,7 +34510,7 @@ function(app) {
 				  			}
 				  		],
 						setters: {},
-						localClass: "depositButton mainMenuButton grey absolute f20 row2 col1 shortLabel"
+						localClass: "depositButtonGray mainMenuButton grey absolute f20 row2 col1 shortLabel"
 
 	  				},		
 					{
@@ -34924,7 +34924,7 @@ function(app) {
 						naviType: "navi",
 						nextScreenTemplate:"deviceProcessState",
 						nextScreenID: "INIT_PLEASEWAIT_DEPOSIT_PREPAID_NOREC",
-						enable: "1",
+						enable: "0",
 						labelsOri: [
 				  			{
 				  				text : "",
@@ -34941,7 +34941,7 @@ function(app) {
 				  			}
 				  		],
 						setters: {},
-						localClass: "depositButton mainMenuButton grey absolute f20 row2 col1 shortLabel"
+						localClass: "depositButtonGray mainMenuButton grey absolute f20 row2 col1 shortLabel"
 
 	  				},
 					{
@@ -35446,7 +35446,7 @@ function(app) {
 				  			}
 				  		],
 						setters: {},
-						localClass: "prepaidButton mainMenuButton grey absolute f20 row2 col2 shortLabel"
+						localClass: "reloadButton mainMenuButton grey absolute f20 row2 col2 shortLabel"
 	  				},
 	  				
 					{
